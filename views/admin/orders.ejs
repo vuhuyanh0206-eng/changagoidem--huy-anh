@@ -1,0 +1,10 @@
+<%- include('_top') %>
+<div class="toolbar">
+  <nav class="seg">
+    <a href="/admin/orders" class="<%= !status ? 'is-on' : '' %>">Tất cả</a>
+    <% Object.entries(ORDER_STATUS).forEach(([k, v]) => { %><a href="?status=<%= k %>" class="<%= status === k ? 'is-on' : '' %>"><%= v.label %></a><% }) %>
+  </nav>
+  <form class="toolbar__filters" method="get"><input type="hidden" name="status" value="<%= status %>"><input class="in" name="q" value="<%= q %>" placeholder="Mã đơn, SĐT, tên khách…" aria-label="Tìm đơn"><button class="b b--ghost">Tìm</button></form>
+</div>
+<section class="panel"><%- include('_orders-table', { orders }) %></section>
+<%- include('_bottom') %>

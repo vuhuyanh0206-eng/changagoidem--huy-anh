@@ -1,0 +1,247 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<main id="main">
+
+  <!-- HERO: danh mục dọc | slider | 3 banner phụ -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <aside class="hero__cats" aria-label="Danh mục sản phẩm">
+        <ul class="catlist">
+          <% menu.forEach(c => { %>
+            <li><a href="/danh-muc/<%= c.slug %>"><img src="<%= c.image %>" alt="" width="28" height="28"><%= c.name %><svg class="i"><use href="#i-chev-r"/></svg></a></li>
+          <% }) %>
+        </ul>
+      </aside>
+
+      <div class="slider" data-slider aria-roledescription="carousel" aria-label="Khuyến mại nổi bật">
+        <div class="slider__track">
+          <% mainBanners.forEach((b, i) => { %>
+            <a class="slide slide--<%= b.theme %> <%= i === 0 ? 'is-active' : '' %>" href="<%= b.link || '#' %>" role="group" aria-roledescription="slide" aria-label="<%= i + 1 %> / <%= mainBanners.length %>">
+              <img src="<%= b.image %>" alt="" <%= i === 0 ? 'fetchpriority=high' : 'loading=lazy' %> width="1300" height="866">
+              <span class="slide__content">
+                <span class="slide__eyebrow"><%= b.eyebrow %></span>
+                <span class="slide__title"><%= b.title %></span>
+                <span class="slide__sub"><%= b.subtitle %></span>
+                <span class="btn btn--gold"><%= b.cta || 'Xem ngay' %><svg class="i"><use href="#i-arrow-r"/></svg></span>
+              </span>
+            </a>
+          <% }) %>
+        </div>
+        <button class="slider__nav slider__nav--prev" type="button" data-prev aria-label="Banner trước"><svg class="i"><use href="#i-chev-l"/></svg></button>
+        <button class="slider__nav slider__nav--next" type="button" data-next aria-label="Banner sau"><svg class="i"><use href="#i-chev-r"/></svg></button>
+        <div class="slider__dots" role="tablist">
+          <% mainBanners.forEach((b, i) => { %><button type="button" role="tab" aria-label="Banner <%= i + 1 %>" class="<%= i === 0 ? 'is-active' : '' %>" data-dot="<%= i %>"></button><% }) %>
+        </div>
+      </div>
+
+      <div class="hero__side">
+        <% sideBanners.forEach(b => { %>
+          <a class="sbanner sbanner--<%= b.theme %>" href="<%= b.link || '#' %>">
+            <img src="<%= b.image %>" alt="" loading="lazy" width="700" height="460">
+            <span class="sbanner__content">
+              <span class="sbanner__eyebrow"><%= b.eyebrow %></span>
+              <span class="sbanner__title"><%= b.title %></span>
+              <span class="sbanner__cta"><%= b.cta %> <svg class="i"><use href="#i-arrow-r"/></svg></span>
+            </span>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cam kết -->
+  <section class="usp" aria-label="Cam kết của Kho Đệm HP">
+    <div class="container">
+      <ul class="usp__list">
+        <li><span class="usp__ico"><svg class="i"><use href="#i-truck"/></svg></span><div><b>Giao &amp; lắp miễn phí</b><small>Bán kính 20km, nhận trong ngày</small></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-moon"/></svg></span><div><b>Nằm thử 30 đêm</b><small>Không ưng, đổi sản phẩm khác</small></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-card"/></svg></span><div><b>Trả góp lãi suất 0%</b><small>100% hàng chính hãng</small></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-headset"/></svg></span><div><b>Hỗ trợ 24/7</b><small>Hotline: <%= s.hotline %></small></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Danh mục nổi bật -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Mua sắm theo danh mục</span>
+          <h2 class="section__title">Mọi thứ cho một giấc ngủ trọn vẹn</h2>
+        </div>
+        <a class="link-arrow" href="/dem">Xem tất cả đệm <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <div class="cat-grid">
+        <% cats.slice(0, 9).forEach((c, i) => { %>
+          <a class="cat-tile <%= i === 0 ? 'cat-tile--lg' : '' %>" href="/danh-muc/<%= c.slug %>">
+            <img src="<%= c.image %>" alt="" loading="lazy" width="600" height="600">
+            <span class="cat-tile__body"><b><%= c.name %></b><small><%= c.count %> sản phẩm</small></span>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash sale -->
+  <% if (flash.length) { %>
+  <section class="section flash">
+    <div class="container">
+      <div class="flash__head">
+        <div class="flash__title">
+          <svg class="i"><use href="#i-flame"/></svg>
+          <h2>Flash Sale</h2>
+          <span class="flash__sub">Giá sốc – số lượng có hạn</span>
+        </div>
+        <div class="countdown" data-countdown="<%= s.flash_sale_end %>" aria-label="Thời gian còn lại">
+          <span>Kết thúc sau</span>
+          <b data-h>00</b><i>:</i><b data-m>00</b><i>:</i><b data-s>00</b>
+        </div>
+        <a class="link-arrow link-arrow--light" href="/khuyen-mai">Xem tất cả <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <div class="rail" data-rail>
+        <button class="rail__nav rail__nav--prev" type="button" data-rail-prev aria-label="Trước"><svg class="i"><use href="#i-chev-l"/></svg></button>
+        <div class="rail__track">
+          <% flash.forEach(p => { %><%- include('../partials/product-card', { p }) %><% }) %>
+        </div>
+        <button class="rail__nav rail__nav--next" type="button" data-rail-next aria-label="Sau"><svg class="i"><use href="#i-chev-r"/></svg></button>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- Sản phẩm nổi bật có tab -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Được chọn nhiều nhất</span>
+          <h2 class="section__title">Sản phẩm nổi bật</h2>
+        </div>
+        <div class="tabs" role="tablist" data-tabs>
+          <button role="tab" class="is-active" data-filter="all" aria-selected="true">Tất cả</button>
+          <% cats.filter(c => featured.some(p => p.category_id === c.id)).slice(0, 5).forEach(c => { %>
+            <button role="tab" data-filter="<%= c.id %>" aria-selected="false"><%= c.name %></button>
+          <% }) %>
+        </div>
+      </div>
+      <div class="pgrid" data-tab-panel>
+        <% featured.forEach(p => { %><div class="pgrid__item" data-cat="<%= p.category_id %>"><%- include('../partials/product-card', { p }) %></div><% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chọn đệm theo nhu cầu -->
+  <section class="section need">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">Tư vấn nhanh</span>
+        <h2 class="section__title">Chọn đệm theo nhu cầu của bạn</h2>
+        <p class="section__lead">Mỗi cơ thể cần một độ nâng đỡ khác nhau. Chọn tình huống gần với bạn nhất, chúng tôi gợi ý ngay.</p>
+      </div>
+      <div class="need__grid">
+        <a class="need__card" href="/dem?firm=4&firm=5"><span class="need__ico"><svg class="i"><use href="#i-spine"/></svg></span><b>Hay đau lưng</b><p>Đệm cứng vừa – cứng, giữ cột sống thẳng, giảm đau thắt lưng.</p><span class="link-arrow">Xem gợi ý <svg class="i"><use href="#i-arrow-r"/></svg></span></a>
+        <a class="need__card" href="/danh-muc/dem-foam"><span class="need__ico"><svg class="i"><use href="#i-snow"/></svg></span><b>Hay nóng, đổ mồ hôi</b><p>Memory foam hạt gel và cao su thoáng khí, mát suốt đêm.</p><span class="link-arrow">Xem gợi ý <svg class="i"><use href="#i-arrow-r"/></svg></span></a>
+        <a class="need__card" href="/danh-muc/dem-lo-xo"><span class="need__ico"><svg class="i"><use href="#i-users"/></svg></span><b>Ngủ cùng vợ/chồng</b><p>Lò xo túi độc lập – trở mình không làm phiền người bên cạnh.</p><span class="link-arrow">Xem gợi ý <svg class="i"><use href="#i-arrow-r"/></svg></span></a>
+        <a class="need__card" href="/danh-muc/dem-cao-su"><span class="need__ico"><svg class="i"><use href="#i-leaf"/></svg></span><b>Có trẻ nhỏ, dị ứng</b><p>Cao su thiên nhiên kháng khuẩn, chống mạt bụi, an toàn cho bé.</p><span class="link-arrow">Xem gợi ý <svg class="i"><use href="#i-arrow-r"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner câu chuyện thương hiệu -->
+  <section class="story">
+    <div class="container story__grid">
+      <div class="story__media">
+        <img src="/images/stock/s16.jpg" alt="Phòng ngủ với đệm lò xo cao cấp" loading="lazy" width="1300" height="866">
+        <div class="story__badge"><b>10+</b><span>năm trong<br>ngành đệm</span></div>
+      </div>
+      <div class="story__body">
+        <span class="eyebrow">Về Kho Đệm HP</span>
+        <h2 class="section__title">Giá tại kho, chất lượng như showroom cao cấp</h2>
+        <p>Kho Đệm HP nhập hàng trực tiếp từ nhà máy, bỏ qua các tầng trung gian để bạn sở hữu chiếc đệm tốt với giá hợp lý nhất. Mỗi sản phẩm đều được kiểm tra kỹ trước khi giao, kèm phiếu bảo hành chính hãng.</p>
+        <ul class="stats">
+          <li><b data-count="15000">15.000</b><span>khách hàng tin dùng</span></li>
+          <li><b data-count="120">120</b><span>dự án khách sạn</span></li>
+          <li><b>4.9<small>/5</small></b><span>điểm đánh giá</span></li>
+        </ul>
+        <div class="story__cta">
+          <a class="btn btn--navy" href="/gioi-thieu">Câu chuyện của chúng tôi</a>
+          <a class="btn btn--outline-navy" href="/lien-he">Ghé showroom</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dự án khách sạn -->
+  <section class="section hotel-band">
+    <div class="container hotel-band__inner">
+      <div class="hotel-band__text">
+        <span class="eyebrow eyebrow--light">Giải pháp cho doanh nghiệp</span>
+        <h2>Cung cấp trọn gói cho khách sạn, homestay &amp; resort</h2>
+        <p>Đệm, chăn ga trắng tiêu chuẩn 5 sao, gối, topper – sản xuất theo kích thước riêng, giá dự án, giao lắp toàn quốc.</p>
+        <ul class="checks">
+          <li><svg class="i"><use href="#i-check"/></svg>Báo giá trong 2 giờ</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Hàng mẫu miễn phí</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Xuất hoá đơn VAT</li>
+        </ul>
+        <a class="btn btn--gold btn--lg" href="/du-an-khach-san">Nhận báo giá dự án <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <div class="hotel-band__gallery">
+        <img src="/images/stock/s17.jpg" alt="Phòng khách sạn" loading="lazy" width="700" height="500">
+        <img src="/images/stock/s18.jpg" alt="Phòng resort" loading="lazy" width="700" height="500">
+        <img src="/images/stock/s20.jpg" alt="Phòng ngủ homestay" loading="lazy" width="700" height="500">
+      </div>
+    </div>
+  </section>
+
+  <!-- Đánh giá -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">Khách hàng nói gì</span>
+        <h2 class="section__title">Hơn 15.000 giấc ngủ ngon mỗi đêm</h2>
+      </div>
+      <div class="reviews">
+        <% [
+          ['Chị Thu Hà', 'Hải Phòng', 'Mua đệm cao su Royal Latex được 3 tháng, chồng mình hết hẳn đau lưng. Nhân viên giao lắp nhanh, rất nhiệt tình.'],
+          ['Anh Minh Quân', 'Hà Nội', 'Giá rẻ hơn showroom gần 3 triệu mà vẫn đầy đủ bảo hành. Đệm lò xo Royal Dream nằm êm, không truyền động.'],
+          ['Khách sạn Sea Pearl', 'Đồ Sơn', 'Đã nhập 45 bộ đệm và chăn ga cho khách sạn. Báo giá nhanh, đúng hẹn, khách lưu trú khen giường êm.'],
+        ].forEach(r => { %>
+          <figure class="review">
+            <svg class="i review__q"><use href="#i-quote"/></svg>
+            <div class="review__stars" aria-label="5 sao"><% for (let i = 0; i < 5; i++) { %><svg class="i"><use href="#i-star"/></svg><% } %></div>
+            <blockquote><%= r[2] %></blockquote>
+            <figcaption><span class="avatar"><%= r[0].split(' ').pop()[0] %></span><span><b><%= r[0] %></b><small><%= r[1] %> · Đã mua hàng</small></span></figcaption>
+          </figure>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tin tức -->
+  <% if (latestPosts.length) { %>
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Cẩm nang giấc ngủ</span>
+          <h2 class="section__title">Kiến thức chọn đệm &amp; chăm sóc giấc ngủ</h2>
+        </div>
+        <a class="link-arrow" href="/tin-tuc">Tất cả bài viết <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <div class="post-grid">
+        <% latestPosts.forEach(p => { %>
+          <article class="post-card">
+            <a href="/tin-tuc/<%= p.slug %>" class="post-card__media"><img src="<%= p.image %>" alt="" loading="lazy" width="700" height="460"></a>
+            <div class="post-card__body">
+              <time><%= String(p.created_at).slice(0, 10).split('-').reverse().join('/') %></time>
+              <h3><a href="/tin-tuc/<%= p.slug %>"><%= p.title %></a></h3>
+              <p><%= p.excerpt %></p>
+            </div>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+</main>
+<%- include('../partials/footer') %>

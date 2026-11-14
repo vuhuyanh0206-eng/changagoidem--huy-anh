@@ -1,0 +1,17 @@
+<% if (!orders.length) { %><p class="muted" style="padding:16px 0">Chưa có đơn hàng nào.</p><% } else { %>
+<div class="tbl-wrap"><table class="tbl">
+  <thead><tr><th>Mã đơn</th><th>Khách hàng</th><th>Tổng tiền</th><th>Thanh toán</th><th>Trạng thái</th><th>Thời gian</th></tr></thead>
+  <tbody>
+    <% orders.forEach(o => { const st = ORDER_STATUS[o.status] || ORDER_STATUS.new; %>
+      <tr>
+        <td><a class="strong" href="/admin/orders/<%= o.id %>"><%= o.code %></a></td>
+        <td><b><%= o.customer_name %></b><br><a class="muted" href="tel:<%= o.phone %>"><%= o.phone %></a></td>
+        <td class="strong"><%= vnd(o.total) %></td>
+        <td><%= o.payment_method === 'bank' ? 'Chuyển khoản' : 'COD' %></td>
+        <td><span class="pill pill--<%= st.tone %>"><%= st.label %></span></td>
+        <td class="muted"><%= o.created_at %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table></div>
+<% } %>

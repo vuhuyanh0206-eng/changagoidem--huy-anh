@@ -1,0 +1,41 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<main id="main" class="container">
+  <div class="post-layout">
+    <article>
+      <header class="post-head">
+        <time><%= String(post.created_at).slice(0, 10).split('-').reverse().join('/') %></time>
+        <h1><%= post.title %></h1>
+        <p style="color:var(--muted);font-size:17px"><%= post.excerpt %></p>
+      </header>
+      <% if (post.image) { %><img class="post-cover" src="<%= post.image %>" alt="<%= post.title %>" width="1300" height="731"><% } %>
+      <div class="prose"><%- post.content %></div>
+    </article>
+    <aside>
+      <div class="aside-card aside-cta">
+        <h3>Cần tư vấn chọn đệm?</h3>
+        <p>Để lại số điện thoại, chuyên viên gọi lại miễn phí trong 15 phút.</p>
+        <form class="lead-form" method="post" action="/lien-he">
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+          <input type="hidden" name="source" value="blog">
+          <input type="hidden" name="back" value="<%= path %>">
+          <label class="sr-only" for="lp">Số điện thoại</label>
+          <input class="input" id="lp" name="phone" type="tel" placeholder="Số điện thoại" required>
+          <button class="btn btn--gold btn--block" type="submit">Gọi lại cho tôi</button>
+        </form>
+      </div>
+      <% if (more.length) { %>
+      <div class="aside-card">
+        <h3>Bài viết khác</h3>
+        <% more.forEach(m => { %><a class="aside-post" href="/tin-tuc/<%= m.slug %>"><img src="<%= m.image %>" alt="" loading="lazy" width="84" height="62"><b><%= m.title %></b></a><% }) %>
+      </div>
+      <% } %>
+      <div class="aside-card">
+        <h3>Sản phẩm gợi ý</h3>
+        <% picks.forEach(p => { %><a class="aside-post" href="/san-pham/<%= p.slug %>"><img src="<%= p.image %>" alt="" loading="lazy" width="84" height="62"><span><b><%= p.name %></b><br><span class="price__now" style="font-size:14px"><%= vnd(p.finalPrice) %></span></span></a><% }) %>
+      </div>
+    </aside>
+  </div>
+</main>
+<%- include('../partials/footer') %>

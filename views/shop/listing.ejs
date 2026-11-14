@@ -1,0 +1,96 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<main id="main" class="container">
+  <% if (heroImage) { %>
+  <header class="page-hero">
+    <img src="<%= heroImage %>" alt="" width="1300" height="866">
+    <span class="eyebrow eyebrow--light"><%= total %> sản phẩm</span>
+    <h1><%= title %></h1>
+    <% if (description) { %><p><%= description %></p><% } %>
+  </header>
+  <% } else { %>
+  <header class="page-hero page-hero--plain"><h1><%= title %></h1><p><%= total %> sản phẩm phù hợp</p></header>
+  <% } %>
+
+  <div class="listing">
+    <form class="filters" method="get" aria-label="Bộ lọc sản phẩm">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px">
+        <b class="filters__h" style="margin:0"><svg class="i" style="width:16px;height:16px;vertical-align:-3px"><use href="#i-sliders"/></svg> Bộ lọc</b>
+        <button type="button" class="icon-btn filters__close" data-close aria-label="Đóng bộ lọc" style="display:none"><svg class="i"><use href="#i-x"/></svg></button>
+      </div>
+      <% if (query.q) { %><input type="hidden" name="q" value="<%= query.q %>"><% } %>
+      <input type="hidden" name="sort" value="<%= sort %>">
+      <div class="filters__group">
+        <p class="filters__h">Khoảng giá</p>
+        <div class="chips" style="margin-bottom:10px">
+          <% [[0, 3000000, 'Dưới 3 triệu'], [3000000, 7000000, '3 – 7 triệu'], [7000000, 12000000, '7 – 12 triệu'], [12000000, 0, 'Trên 12 triệu']].forEach(r => { const on = String(filters.min) === String(r[0] || '') && String(filters.max) === String(r[1] || ''); %>
+            <a class="chip" href="?<%= new URLSearchParams({ ...query, min: r[0] || '', max: r[1] || '', page: '' }).toString() %>" style="<%= on ? 'background:var(--navy-800);color:#fff;border-color:var(--navy-800)' : '' %>"><%= r[2] %></a>
+          <% }) %>
+        </div>
+        <div class="price-inputs">
+          <label class="sr-only" for="fmin">Giá từ</label><input id="fmin" name="min" type="number" min="0" step="100000" placeholder="Từ (₫)" value="<%= filters.min %>">
+          <label class="sr-only" for="fmax">Giá đến</label><input id="fmax" name="max" type="number" min="0" step="100000" placeholder="Đến (₫)" value="<%= filters.max %>">
+        </div>
+      </div>
+      <% if (brandOptions.length > 1) { %>
+      <div class="filters__group">
+        <p class="filters__h">Thương hiệu</p>
+        <% brandOptions.forEach(b => { %>
+          <label class="check"><input type="checkbox" name="brand" value="<%= b %>" <%= filters.brands.includes(b) ? 'checked' : '' %>><%= b %></label>
+        <% }) %>
+      </div>
+      <% } %>
+      <div class="filters__group">
+        <p class="filters__h">Độ cứng</p>
+        <div class="chips">
+          <% ['Mềm', 'Mềm vừa', 'Vừa', 'Cứng vừa', 'Cứng'].forEach((f, i) => { %>
+            <label class="chip"><input type="checkbox" name="firm" value="<%= i + 1 %>" <%= filters.firm.includes(i + 1) ? 'checked' : '' %>><%= f %></label>
+          <% }) %>
+        </div>
+      </div>
+      <div class="filters__actions">
+        <button class="btn btn--navy" type="submit">Áp dụng</button>
+        <a class="btn btn--ghost" href="<%= path %><%= query.q ? '?q=' + encodeURIComponent(query.q) : '' %>">Xoá</a>
+      </div>
+    </form>
+
+    <section aria-label="Danh sách sản phẩm">
+      <div class="toolbar">
+        <button class="btn btn--ghost filter-btn" type="button" data-open-filters><svg class="i"><use href="#i-sliders"/></svg>Bộ lọc</button>
+        <p class="toolbar__count">Hiển thị <b><%= products.length %></b> / <%= total %> sản phẩm</p>
+        <div class="toolbar__right">
+          <label for="sort" class="sr-only">Sắp xếp</label>
+          <select id="sort" class="select" data-sort>
+            <% [['popular', 'Bán chạy nhất'], ['new', 'Mới nhất'], ['discount', 'Giảm giá nhiều'], ['price_asc', 'Giá thấp → cao'], ['price_desc', 'Giá cao → thấp']].forEach(o => { %>
+              <option value="<%= o[0] %>" <%= sort === o[0] ? 'selected' : '' %>><%= o[1] %></option>
+            <% }) %>
+          </select>
+        </div>
+      </div>
+
+      <% if (products.length) { %>
+        <div class="pgrid">
+          <% products.forEach(p => { %><%- include('../partials/product-card', { p }) %><% }) %>
+        </div>
+      <% } else { %>
+        <div class="card empty">
+          <div class="empty__ico"><svg class="i"><use href="#i-search"/></svg></div>
+          <b>Không có sản phẩm phù hợp</b>
+          <p>Thử bỏ bớt bộ lọc hoặc gọi <a href="tel:<%= s.hotline.replace(/\s/g, '') %>"><%= s.hotline %></a> để được tư vấn.</p>
+          <a class="btn btn--navy" href="<%= path %>">Xoá bộ lọc</a>
+        </div>
+      <% } %>
+
+      <% if (pages > 1) { %>
+        <nav class="pagination" aria-label="Phân trang">
+          <% for (let i = 1; i <= pages; i++) { %>
+            <% if (i === page) { %><span class="is-current" aria-current="page"><%= i %></span>
+            <% } else { %><a href="?<%= new URLSearchParams({ ...query, page: i }).toString() %>"><%= i %></a><% } %>
+          <% } %>
+        </nav>
+      <% } %>
+    </section>
+  </div>
+</main>
+<%- include('../partials/footer') %>

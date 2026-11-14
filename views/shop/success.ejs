@@ -1,0 +1,45 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<main id="main" class="container" data-order-done>
+  <div class="success">
+    <div class="success__ico"><svg class="i"><use href="#i-check"/></svg></div>
+    <h1>Cảm ơn <%= order.customer_name %>!</h1>
+    <p style="color:var(--muted)">Đơn hàng đã được ghi nhận. Nhân viên <%= s.site_name %> sẽ gọi số <b><%= order.phone %></b> để xác nhận trong ít phút.</p>
+    <span class="success__code">Mã đơn: <%= order.code %></span>
+
+    <% if (order.payment_method === 'bank') { %>
+      <section class="card">
+        <h2 class="card__h">Thanh toán chuyển khoản</h2>
+        <% if (s.bank_code && s.bank_account) { %>
+          <div class="qr-box">
+            <img src="https://img.vietqr.io/image/<%= encodeURIComponent(s.bank_code) %>-<%= encodeURIComponent(s.bank_account) %>-compact2.png?amount=<%= order.total %>&addInfo=<%= encodeURIComponent(order.code) %>&accountName=<%= encodeURIComponent(s.bank_holder) %>" alt="Mã VietQR thanh toán đơn <%= order.code %>" width="220" height="260">
+            <dl>
+              <dt>Ngân hàng</dt><dd><%= s.bank_code %></dd>
+              <dt>Số tài khoản</dt><dd><%= s.bank_account %></dd>
+              <dt>Chủ tài khoản</dt><dd><%= s.bank_holder %></dd>
+              <dt>Số tiền</dt><dd class="text-sale"><%= vnd(order.total) %></dd>
+              <dt>Nội dung</dt><dd><%= order.code %></dd>
+            </dl>
+          </div>
+        <% } else { %>
+          <p>Nhân viên sẽ gửi thông tin tài khoản qua Zalo <b><%= s.hotline %></b> khi xác nhận đơn.</p>
+        <% } %>
+      </section>
+    <% } %>
+
+    <section class="card">
+      <h2 class="card__h">Chi tiết đơn hàng</h2>
+      <% order.items.forEach(l => { %>
+        <div class="sum-line"><img src="<%= l.image %>" alt=""><div><b><%= l.name %></b><small><%= l.size ? l.size + ' · ' : '' %>x<%= l.qty %></small></div><span><%= vnd(l.total) %></span></div>
+      <% }) %>
+      <div class="summary__row" style="margin-top:8px"><span>Phí giao hàng</span><span><%= order.shipping ? vnd(order.shipping) : 'Miễn phí' %></span></div>
+      <div class="summary__row summary__row--total"><span>Tổng cộng</span><b><%= vnd(order.total) %></b></div>
+      <div class="summary__row"><span>Giao tới</span><span style="text-align:right;max-width:60%"><%= order.address %><%= order.province ? ', ' + order.province : '' %></span></div>
+    </section>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn--navy btn--lg" href="/">Về trang chủ</a>
+      <a class="btn btn--outline-navy btn--lg" href="https://zalo.me/<%= String(s.zalo).replace(/[^\d]/g, '') %>" target="_blank" rel="noopener">Nhắn Zalo cho shop</a>
+    </div>
+  </div>
+</main>
+<%- include('../partials/footer') %>

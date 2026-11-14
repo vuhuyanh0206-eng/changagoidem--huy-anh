@@ -1,0 +1,30 @@
+<%- include('_top') %>
+<% const p = post; %>
+<form class="form-layout" method="post" action="/admin/posts/save" enctype="multipart/form-data">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <input type="hidden" name="id" value="<%= p.id || '' %>">
+  <input type="hidden" name="image" value="<%= p.image || '' %>">
+  <div class="form-main">
+    <section class="panel">
+      <label class="f"><span>Tiêu đề *</span><input class="in in--lg" name="title" required value="<%= p.title || '' %>"></label>
+      <label class="f"><span>Đường dẫn (slug)</span><input class="in" name="slug" value="<%= p.slug || '' %>" placeholder="Tự tạo từ tiêu đề"></label>
+      <label class="f"><span>Tóm tắt (hiện ở danh sách &amp; Google)</span><textarea class="in" name="excerpt" rows="3"><%= p.excerpt || '' %></textarea></label>
+      <label class="f"><span>Nội dung <small>(HTML: &lt;h2&gt;, &lt;p&gt;, &lt;ul&gt;&lt;li&gt;, &lt;strong&gt;, &lt;a href&gt;, &lt;img src&gt;, &lt;blockquote&gt;)</small></span><textarea class="in mono" name="content" rows="20"><%= p.content || '' %></textarea></label>
+    </section>
+  </div>
+  <aside class="form-side">
+    <section class="panel">
+      <h2>Xuất bản</h2>
+      <label class="chk"><input type="checkbox" name="active" <%= p.active ? 'checked' : '' %>>Hiển thị trên website</label>
+      <div class="side-actions"><button class="b b--primary b--block" type="submit">Lưu bài viết</button><% if (p.id) { %><a class="b b--ghost b--block" href="/tin-tuc/<%= p.slug %>" target="_blank" rel="noopener">Xem bài</a><% } %></div>
+    </section>
+    <section class="panel">
+      <h2>Ảnh đại diện</h2>
+      <% if (p.image) { %><img src="<%= p.image %>" alt="" class="preview-lg"><% } %>
+      <label class="drop"><input type="file" name="image_file" accept="image/*"><svg class="i"><use href="#i-plus"/></svg><span><%= p.image ? 'Đổi ảnh' : 'Tải ảnh lên' %></span></label>
+    </section>
+    <% if (p.id) { %><section class="panel"><button class="b b--danger b--block" type="submit" form="del-post">Xoá bài viết</button></section><% } %>
+  </aside>
+</form>
+<% if (p.id) { %><form id="del-post" method="post" action="/admin/posts/<%= p.id %>/delete" data-confirm="Xoá bài viết này?"><input type="hidden" name="_csrf" value="<%= csrfToken %>"></form><% } %>
+<%- include('_bottom') %>

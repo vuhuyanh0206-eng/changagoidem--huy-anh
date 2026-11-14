@@ -1,0 +1,27 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<main id="main" class="container">
+  <header class="page-hero page-hero--plain" style="padding-top:6px"><h1>Giỏ hàng của bạn</h1></header>
+  <div class="cart-layout" data-cart-page>
+    <section class="card">
+      <div data-cart-lines><div class="skeleton-list"><span></span><span></span><span></span></div></div>
+      <a class="link-arrow" href="/dem" style="margin-top:18px"><svg class="i" style="transform:rotate(180deg)"><use href="#i-arrow-r"/></svg>Tiếp tục mua sắm</a>
+    </section>
+    <aside class="card summary" aria-label="Tóm tắt đơn hàng">
+      <h2 class="card__h">Tóm tắt đơn hàng</h2>
+      <div class="summary__row"><span>Tạm tính</span><span data-sum-sub>—</span></div>
+      <div class="summary__row" hidden><span>Tiết kiệm</span><span class="text-sale" data-sum-save></span></div>
+      <div class="summary__row"><span>Phí giao hàng</span><span data-sum-ship>—</span></div>
+      <div class="summary__row summary__row--total"><span>Tổng cộng</span><b data-sum-total>—</b></div>
+      <p class="summary__note">Đã bao gồm VAT (nếu có). Phí giao ngoại tỉnh sẽ được nhân viên báo khi xác nhận đơn.</p>
+      <a class="btn btn--gold btn--lg btn--block" href="/thanh-toan">Tiến hành đặt hàng <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      <ul class="trust-mini">
+        <li><svg class="i"><use href="#i-shield"/></svg>Hàng chính hãng, đầy đủ phiếu bảo hành</li>
+        <li><svg class="i"><use href="#i-truck"/></svg>Kiểm tra hàng trước khi thanh toán</li>
+        <li><svg class="i"><use href="#i-refresh"/></svg>Đổi size miễn phí trong 7 ngày</li>
+      </ul>
+    </aside>
+  </div>
+</main>
+<%- include('../partials/footer') %>

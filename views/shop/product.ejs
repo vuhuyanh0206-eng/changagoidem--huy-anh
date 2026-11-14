@@ -1,0 +1,129 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); const defSize = product.sizes.find(x => x.label === '1m6 x 2m') || product.sizes[0]; %>
+<main id="main" class="container">
+  <div class="pd" data-product>
+    <div class="gallery">
+      <div class="gallery__main" data-gallery-main>
+        <img src="<%= product.image %>" alt="<%= product.name %>" width="1300" height="975" fetchpriority="high">
+        <span class="pcard__tags">
+          <% if (product.discount) { %><span class="tag tag--sale">-<%= product.discount %>%</span><% } %>
+          <% if (product.badge) { %><span class="tag tag--gold"><%= product.badge %></span><% } %>
+        </span>
+      </div>
+      <% if (product.images.length > 1) { %>
+      <div class="gallery__thumbs">
+        <% product.images.forEach((im, i) => { %>
+          <button type="button" class="<%= i === 0 ? 'is-active' : '' %>" data-thumb="<%= im %>" aria-label="Ảnh <%= i + 1 %>"><img src="<%= im %>" alt="" loading="lazy" width="200" height="150"></button>
+        <% }) %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="pd__info">
+      <div class="pd__brand">
+        <a href="/tim-kiem?q=<%= encodeURIComponent(product.brand || '') %>"><%= product.brand %></a>
+        <span>Mã: <%= product.sku %></span>
+        <span style="color:var(--ok);font-weight:600"><%= product.in_stock ? '● Còn hàng' : '○ Tạm hết hàng' %></span>
+      </div>
+      <h1><%= product.name %></h1>
+      <div class="pd__rating">
+        <span class="stars" aria-hidden="true"><% for (let i = 0; i < 5; i++) { %><svg class="i"><use href="#i-star"/></svg><% } %></span>
+        <span><b><%= product.rating_avg %></b> (<%= product.rating_count %> đánh giá)</span>
+        <span>Đã bán <b><%= product.sold %></b></span>
+      </div>
+
+      <div class="pd__price">
+        <strong class="price__now" data-price-now><%= vnd(product.finalPrice) %></strong>
+        <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
+        <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
+      </div>
+
+      <p class="pd__short"><%= product.short_desc %></p>
+
+      <% if (product.sizes.length) { %>
+      <fieldset class="pd__opt" style="border:0;padding:0;margin-top:22px">
+        <legend class="pd__opt-h" style="width:100%;display:flex">Kích thước&nbsp;<span data-size-label><%= defSize.label %></span></legend>
+        <div class="sizes">
+          <% product.sizes.forEach(sz => { const fp = sz.sale_price > 0 && sz.sale_price < sz.price ? sz.sale_price : sz.price; %>
+            <label class="size"><input type="radio" name="size" value="<%= sz.label %>" <%= sz.label === defSize.label ? 'checked' : '' %>><span><%= sz.label %><small><%= vnd(fp) %></small></span></label>
+          <% }) %>
+        </div>
+      </fieldset>
+      <% } %>
+
+      <% if (product.firmness) { %>
+      <div class="pd__opt">
+        <div class="pd__opt-h">Độ cứng <span><%= ['', 'Mềm', 'Mềm vừa', 'Vừa', 'Cứng vừa', 'Cứng'][product.firmness] %></span></div>
+        <div class="firm-meter" aria-hidden="true"><% for (let i = 1; i <= 5; i++) { %><i class="<%= i <= product.firmness ? 'on' : '' %>"></i><% } %></div>
+      </div>
+      <% } %>
+
+      <div class="pd__buy">
+        <div class="qty">
+          <button type="button" data-qty-step="-1" aria-label="Giảm số lượng"><svg class="i"><use href="#i-minus"/></svg></button>
+          <input type="number" value="1" min="1" max="99" data-qty aria-label="Số lượng">
+          <button type="button" data-qty-step="1" aria-label="Tăng số lượng"><svg class="i"><use href="#i-plus"/></svg></button>
+        </div>
+        <button class="btn btn--gold btn--lg" type="button" data-pd-add="buy">Mua ngay</button>
+        <button class="btn btn--navy btn--lg" type="button" data-pd-add="cart"><svg class="i"><use href="#i-cart"/></svg>Thêm vào giỏ</button>
+      </div>
+      <div class="pd__consult">
+        <a href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg>Gọi <%= s.hotline %></a>
+        <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Tư vấn qua Zalo</a>
+      </div>
+
+      <ul class="perks">
+        <li><svg class="i"><use href="#i-truck"/></svg><span><b>Giao &amp; lắp miễn phí</b><small>Nội thành trong ngày</small></span></li>
+        <li><svg class="i"><use href="#i-shield"/></svg><span><b>Bảo hành <%= product.warranty || 'chính hãng' %></b><small>1 đổi 1 nếu lỗi NSX</small></span></li>
+        <li><svg class="i"><use href="#i-moon"/></svg><span><b>Nằm thử 30 đêm</b><small>Đổi size miễn phí 7 ngày</small></span></li>
+        <li><svg class="i"><use href="#i-card"/></svg><span><b>Trả góp 0%</b><small>Duyệt nhanh qua thẻ</small></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="pd-tabs">
+    <div class="pd-tabs__nav" role="tablist">
+      <button class="is-active" role="tab" aria-selected="true" data-pd-tab="desc">Mô tả sản phẩm</button>
+      <button role="tab" aria-selected="false" data-pd-tab="spec">Thông số kỹ thuật</button>
+      <button role="tab" aria-selected="false" data-pd-tab="policy">Giao hàng &amp; đổi trả</button>
+    </div>
+    <div class="pd-tabs__panel prose" data-pd-panel="desc"><%- product.description %></div>
+    <div class="pd-tabs__panel" data-pd-panel="spec" hidden>
+      <table class="spec-table"><tbody>
+        <% product.specs.forEach(r => { %><tr><th scope="row"><%= r[0] %></th><td><%= r[1] %></td></tr><% }) %>
+        <% if (product.sizes.length) { %><tr><th scope="row">Kích thước</th><td><%= product.sizes.map(x => x.label).join(' · ') %></td></tr><% } %>
+      </tbody></table>
+    </div>
+    <div class="pd-tabs__panel prose" data-pd-panel="policy" hidden>
+      <h3>Giao hàng</h3><p>Miễn phí giao và lắp đặt trong bán kính 20km. Đơn đặt trước 15h được giao ngay trong ngày.</p>
+      <h3>Đổi trả</h3><p>Nằm thử 30 đêm với dòng đệm áp dụng. Đổi size miễn phí trong 7 ngày nếu sản phẩm còn nguyên tem mác. <a href="/chinh-sach/doi-tra">Xem chi tiết</a></p>
+    </div>
+  </section>
+
+  <% if (related.length) { %>
+  <section style="padding-bottom:64px">
+    <div class="section__head"><div><span class="eyebrow">Có thể bạn thích</span><h2 class="section__title">Sản phẩm tương tự</h2></div></div>
+    <div class="rail" data-rail>
+      <button class="rail__nav rail__nav--prev" type="button" data-rail-prev aria-label="Trước"><svg class="i"><use href="#i-chev-l"/></svg></button>
+      <div class="rail__track"><% related.forEach(p => { %><%- include('../partials/product-card', { p }) %><% }) %></div>
+      <button class="rail__nav rail__nav--next" type="button" data-rail-next aria-label="Sau"><svg class="i"><use href="#i-chev-r"/></svg></button>
+    </div>
+  </section>
+  <% } %>
+</main>
+
+<div class="sticky-buy" aria-hidden="true">
+  <div><small style="display:block;font-size:12px;color:var(--muted)">Giá</small><strong class="price__now" data-sticky-price><%= vnd(product.finalPrice) %></strong></div>
+  <button class="btn btn--gold" type="button" data-sticky-add tabindex="-1">Mua ngay</button>
+</div>
+
+<script type="application/json" id="product-data"><%- JSON.stringify({ id: product.id, price: Number(product.price), sale_price: Number(product.sale_price), sizes: product.sizes }).replace(/</g, '\\u003c') %></script>
+<script type="application/ld+json"><%- JSON.stringify({
+  '@context': 'https://schema.org', '@type': 'Product', name: product.name, image: product.images.map(i => siteUrl + i), description: product.short_desc, sku: product.sku,
+  brand: { '@type': 'Brand', name: product.brand },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: product.rating_avg, reviewCount: product.rating_count },
+  offers: { '@type': 'Offer', priceCurrency: 'VND', price: product.finalPrice, availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', url: siteUrl + path }
+}).replace(/</g, '\\u003c') %></script>
+<%- include('../partials/footer') %>

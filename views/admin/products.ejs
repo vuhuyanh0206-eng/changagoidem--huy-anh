@@ -1,0 +1,41 @@
+<%- include('_top') %>
+<div class="toolbar">
+  <form class="toolbar__filters" method="get">
+    <input class="in" name="q" value="<%= q %>" placeholder="Tìm theo tên, mã SP…" aria-label="Tìm sản phẩm">
+    <select class="in" name="cat" aria-label="Lọc danh mục" onchange="this.form.submit()">
+      <option value="">Tất cả danh mục</option>
+      <% cats.forEach(c => { %><option value="<%= c.id %>" <%= c.id === cat ? 'selected' : '' %>><%= c.name %></option><% }) %>
+    </select>
+    <button class="b b--ghost" type="submit">Lọc</button>
+  </form>
+  <a class="b b--primary" href="/admin/products/new"><svg class="i"><use href="#i-plus"/></svg>Thêm sản phẩm</a>
+</div>
+<section class="panel">
+  <p class="muted" style="margin-bottom:10px"><%= total %> sản phẩm</p>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th style="width:70px">Ảnh</th><th>Tên sản phẩm</th><th>Danh mục</th><th>Giá</th><th>Đã bán</th><th>Hiển thị</th><th></th></tr></thead>
+    <tbody>
+      <% products.forEach(p => { %>
+        <tr>
+          <td><img class="thumb" src="<%= p.image %>" alt="" width="60" height="45"></td>
+          <td><a class="strong" href="/admin/products/<%= p.id %>"><%= p.name %></a><br><span class="muted"><%= p.sku %> · <%= p.brand %></span>
+            <% if (p.is_featured) { %><span class="pill pill--indigo">Nổi bật</span><% } %><% if (p.is_hot) { %><span class="pill pill--red">Flash sale</span><% } %></td>
+          <td><%= p.cat_name || '—' %></td>
+          <td><b class="red"><%= vnd(p.finalPrice) %></b><% if (p.discount) { %><br><s class="muted"><%= vnd(p.price) %></s><% } %></td>
+          <td><%= p.sold %></td>
+          <td>
+            <form method="post" action="/admin/products/<%= p.id %>/toggle"><input type="hidden" name="_csrf" value="<%= csrfToken %>">
+              <button class="switch <%= p.active ? 'is-on' : '' %>" type="submit" aria-label="<%= p.active ? 'Đang hiện – bấm để ẩn' : 'Đang ẩn – bấm để hiện' %>"><span></span></button>
+            </form>
+          </td>
+          <td class="actions">
+            <a class="b b--ghost b--sm" href="/admin/products/<%= p.id %>">Sửa</a>
+            <a class="b b--ghost b--sm" href="/san-pham/<%= p.slug %>" target="_blank" rel="noopener">Xem</a>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table></div>
+  <% if (pages > 1) { %><nav class="pager"><% for (let i = 1; i <= pages; i++) { %><a class="<%= i === page ? 'is-on' : '' %>" href="?q=<%= encodeURIComponent(q) %>&cat=<%= cat || '' %>&page=<%= i %>"><%= i %></a><% } %></nav><% } %>
+</section>
+<%- include('_bottom') %>

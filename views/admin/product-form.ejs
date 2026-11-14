@@ -1,0 +1,95 @@
+<%- include('_top') %>
+<% const p = product; %>
+<form class="form-layout" method="post" action="/admin/products/save" enctype="multipart/form-data">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <input type="hidden" name="id" value="<%= p.id || '' %>">
+  <div class="form-main">
+    <section class="panel">
+      <h2>Thông tin cơ bản</h2>
+      <label class="f"><span>Tên sản phẩm *</span><input class="in" name="name" required value="<%= p.name || '' %>"></label>
+      <div class="row3">
+        <label class="f"><span>Thương hiệu</span><input class="in" name="brand" value="<%= p.brand || '' %>" list="brands"></label>
+        <label class="f"><span>Mã sản phẩm (SKU)</span><input class="in" name="sku" value="<%= p.sku || '' %>"></label>
+        <label class="f"><span>Đường dẫn (slug)</span><input class="in" name="slug" value="<%= p.slug || '' %>" placeholder="Tự tạo từ tên"></label>
+      </div>
+      <datalist id="brands"><option value="HP Premium"><option value="HP Basic"><option value="HP Home"><option value="HP Hotel"></datalist>
+      <label class="f"><span>Mô tả ngắn (hiện dưới giá)</span><textarea class="in" name="short_desc" rows="2"><%= p.short_desc || '' %></textarea></label>
+      <label class="f"><span>Mô tả chi tiết <small>(hỗ trợ HTML: &lt;h3&gt;, &lt;p&gt;, &lt;ul&gt;&lt;li&gt;, &lt;strong&gt;, &lt;img&gt;)</small></span><textarea class="in mono" name="description" rows="12"><%= p.description || '' %></textarea></label>
+    </section>
+
+    <section class="panel">
+      <h2>Kích thước &amp; giá</h2>
+      <p class="muted">Mỗi dòng là một kích thước. Để trống “Giá KM” nếu không giảm giá. Giá hiển thị ngoài danh sách lấy theo size 1m6 x 2m (hoặc size đầu tiên).</p>
+      <div class="sizes" data-rows="size">
+        <div class="sizes__head"><span>Kích thước</span><span>Giá gốc (₫)</span><span>Giá KM (₫)</span><span></span></div>
+        <% (p.sizes.length ? p.sizes : [{ label: '', price: '', sale_price: '' }]).forEach(sz => { %>
+          <div class="sizes__row">
+            <input class="in" name="size_label" value="<%= sz.label %>" placeholder="VD: 1m6 x 2m">
+            <input class="in" name="size_price" value="<%= sz.price || '' %>" inputmode="numeric" placeholder="15900000">
+            <input class="in" name="size_sale" value="<%= sz.sale_price || '' %>" inputmode="numeric" placeholder="11290000">
+            <button type="button" class="b b--ghost b--sm" data-row-del aria-label="Xoá dòng"><svg class="i"><use href="#i-trash"/></svg></button>
+          </div>
+        <% }) %>
+      </div>
+      <button type="button" class="b b--ghost" data-row-add="size"><svg class="i"><use href="#i-plus"/></svg>Thêm kích thước</button>
+      <details class="muted" style="margin-top:14px"><summary>Sản phẩm không có kích thước? Nhập giá đơn</summary>
+        <div class="row2" style="margin-top:10px">
+          <label class="f"><span>Giá gốc</span><input class="in" name="price" value="<%= p.sizes.length ? '' : (p.price || '') %>" inputmode="numeric"></label>
+          <label class="f"><span>Giá khuyến mãi</span><input class="in" name="sale_price" value="<%= p.sizes.length ? '' : (p.sale_price || '') %>" inputmode="numeric"></label>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Thông số kỹ thuật</h2>
+      <div class="sizes sizes--2" data-rows="spec">
+        <% (p.specs.length ? p.specs : [['', '']]).forEach(sp => { %>
+          <div class="sizes__row"><input class="in" name="spec_key" value="<%= sp[0] %>" placeholder="VD: Chất liệu"><input class="in" name="spec_val" value="<%= sp[1] %>" placeholder="VD: Cao su thiên nhiên 100%"><button type="button" class="b b--ghost b--sm" data-row-del aria-label="Xoá dòng"><svg class="i"><use href="#i-trash"/></svg></button></div>
+        <% }) %>
+      </div>
+      <button type="button" class="b b--ghost" data-row-add="spec"><svg class="i"><use href="#i-plus"/></svg>Thêm thông số</button>
+    </section>
+  </div>
+
+  <aside class="form-side">
+    <section class="panel">
+      <h2>Xuất bản</h2>
+      <label class="chk"><input type="checkbox" name="active" <%= p.active ? 'checked' : '' %>>Hiển thị trên website</label>
+      <label class="chk"><input type="checkbox" name="in_stock" <%= p.in_stock ? 'checked' : '' %>>Còn hàng</label>
+      <label class="chk"><input type="checkbox" name="is_featured" <%= p.is_featured ? 'checked' : '' %>>Sản phẩm nổi bật (trang chủ)</label>
+      <label class="chk"><input type="checkbox" name="is_hot" <%= p.is_hot ? 'checked' : '' %>>Đưa vào Flash Sale</label>
+      <div class="side-actions">
+        <button class="b b--primary b--block" type="submit">Lưu sản phẩm</button>
+        <% if (p.id) { %><a class="b b--ghost b--block" href="/san-pham/<%= p.slug %>" target="_blank" rel="noopener">Xem trên website</a><% } %>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Phân loại</h2>
+      <label class="f"><span>Danh mục</span><select class="in" name="category_id"><option value="">— Chọn —</option><% cats.forEach(c => { %><option value="<%= c.id %>" <%= c.id === p.category_id ? 'selected' : '' %>><%= c.name %></option><% }) %></select></label>
+      <label class="f"><span>Nhãn (VD: Bán chạy, Mới)</span><input class="in" name="badge" value="<%= p.badge || '' %>"></label>
+      <div class="row2">
+        <label class="f"><span>Độ dày</span><input class="in" name="thickness" value="<%= p.thickness || '' %>" placeholder="20cm"></label>
+        <label class="f"><span>Bảo hành</span><input class="in" name="warranty" value="<%= p.warranty || '' %>" placeholder="10 năm"></label>
+      </div>
+      <label class="f"><span>Độ cứng</span><select class="in" name="firmness"><% ['Không áp dụng', 'Mềm', 'Mềm vừa', 'Vừa', 'Cứng vừa', 'Cứng'].forEach((f, i) => { %><option value="<%= i %>" <%= Number(p.firmness) === i ? 'selected' : '' %>><%= f %></option><% }) %></select></label>
+      <label class="f"><span>Số lượng đã bán (hiển thị)</span><input class="in" name="sold" value="<%= p.sold || 0 %>" inputmode="numeric"></label>
+    </section>
+    <section class="panel">
+      <h2>Hình ảnh</h2>
+      <p class="muted">Ảnh đầu tiên là ảnh đại diện. Kéo để sắp xếp, bấm × để bỏ.</p>
+      <div class="imgs" data-imgs>
+        <% p.images.forEach(im => { %><div class="imgs__item" draggable="true"><img src="<%= im %>" alt=""><input type="hidden" name="keep_images" value="<%= im %>"><button type="button" data-img-del aria-label="Bỏ ảnh">×</button></div><% }) %>
+      </div>
+      <label class="drop"><input type="file" name="new_images" accept="image/*" multiple data-img-input><svg class="i"><use href="#i-plus"/></svg><span>Tải ảnh lên (JPG, PNG, WEBP · tối đa 6MB/ảnh)</span></label>
+      <div class="imgs" data-img-preview></div>
+    </section>
+    <% if (p.id) { %>
+    <section class="panel">
+      <h2 class="red">Vùng nguy hiểm</h2>
+      <button class="b b--danger b--block" type="submit" form="del-form">Xoá sản phẩm</button>
+    </section>
+    <% } %>
+  </aside>
+</form>
+<% if (p.id) { %><form id="del-form" method="post" action="/admin/products/<%= p.id %>/delete" data-confirm="Xoá vĩnh viễn sản phẩm này?"><input type="hidden" name="_csrf" value="<%= csrfToken %>"></form><% } %>
+<%- include('_bottom') %>

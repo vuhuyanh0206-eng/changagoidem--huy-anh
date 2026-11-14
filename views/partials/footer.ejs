@@ -1,0 +1,92 @@
+<% const tel2 = (x) => String(x || '').replace(/[^\d+]/g, ''); %>
+<section class="newsletter">
+  <div class="container newsletter__inner">
+    <div>
+      <span class="eyebrow eyebrow--light">Tư vấn miễn phí 1:1</span>
+      <h2 class="newsletter__title">Chưa biết chọn đệm nào? Để chuyên viên gọi lại cho bạn</h2>
+      <p>Chỉ cần để lại số điện thoại, Kho Đệm HP sẽ gọi trong 15 phút (giờ hành chính).</p>
+    </div>
+    <form class="newsletter__form" method="post" action="/lien-he">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <input type="hidden" name="source" value="footer-callback">
+      <input type="hidden" name="back" value="<%= path %>">
+      <label class="sr-only" for="nl-name">Họ tên</label>
+      <input id="nl-name" name="name" placeholder="Họ tên" autocomplete="name">
+      <label class="sr-only" for="nl-phone">Số điện thoại</label>
+      <input id="nl-phone" name="phone" type="tel" placeholder="Số điện thoại *" required pattern="[0-9+ ]{9,15}" autocomplete="tel">
+      <button class="btn btn--gold" type="submit">Gọi lại cho tôi</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="/" class="logo logo--footer" aria-label="<%= s.site_name %>">
+        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="currentColor" stroke-opacity=".35"/><path d="M30.5 12.5a11 11 0 1 0 5 15.5 8.6 8.6 0 0 1-5-15.5z" fill="var(--gold-400)"/><path d="M9 33.5c4-2.2 9.6-3.3 15-3.3s11 1.1 15 3.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="logo__text"><span class="logo__name">Kho Đệm <b>HP</b></span><span class="logo__sub">Sleep &amp; Bedding Store</span></span>
+      </a>
+      <p class="footer__about"><%= s.tagline %>. Nhập trực tiếp từ nhà máy, cam kết hàng chính hãng, giá tốt nhất khu vực.</p>
+      <ul class="footer__contact">
+        <li><svg class="i"><use href="#i-pin"/></svg><span><%= s.address %></span></li>
+        <li><svg class="i"><use href="#i-phone"/></svg><span><a href="tel:<%= tel2(s.hotline) %>"><%= s.hotline %></a> – <a href="tel:<%= tel2(s.hotline2) %>"><%= s.hotline2 %></a> (Zalo)</span></li>
+        <li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:<%= s.email %>"><%= s.email %></a></li>
+        <li><svg class="i"><use href="#i-clock"/></svg><span><%= s.open_hours %></span></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__h">Sản phẩm</h3>
+      <ul class="footer__links">
+        <% menu.slice(0, 7).forEach(c => { %><li><a href="/danh-muc/<%= c.slug %>"><%= c.name %></a></li><% }) %>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__h">Chính sách</h3>
+      <ul class="footer__links">
+        <li><a href="/chinh-sach/giao-hang">Giao hàng &amp; lắp đặt</a></li>
+        <li><a href="/chinh-sach/doi-tra">Đổi trả – nằm thử 30 đêm</a></li>
+        <li><a href="/chinh-sach/bao-hanh">Bảo hành</a></li>
+        <li><a href="/chinh-sach/tra-gop">Trả góp 0%</a></li>
+        <li><a href="/chinh-sach/bao-mat">Bảo mật thông tin</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__h">Kết nối</h3>
+      <div class="footer__social">
+        <% if (s.facebook) { %><a href="<%= s.facebook %>" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#i-fb"/></svg></a><% } %>
+        <a href="https://zalo.me/<%= tel2(s.zalo) %>" target="_blank" rel="noopener" aria-label="Zalo" class="zalo-txt">Zalo</a>
+        <a href="tel:<%= tel2(s.hotline) %>" aria-label="Gọi điện"><svg class="i"><use href="#i-phone"/></svg></a>
+      </div>
+      <h3 class="footer__h footer__h--sm">Thanh toán</h3>
+      <div class="pay-badges"><span>COD</span><span>Chuyển khoản</span><span>VietQR</span><span>Trả góp 0%</span></div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>© <%= new Date().getFullYear() %> <%= s.site_name %>. Bảo lưu mọi quyền.</span>
+      <span>Đệm cao su · Đệm lò xo · Đệm foam · Chăn ga gối</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Nút liên hệ nổi -->
+<div class="fab" aria-label="Liên hệ nhanh">
+  <a class="fab__btn fab__btn--zalo" href="https://zalo.me/<%= tel2(s.zalo) %>" target="_blank" rel="noopener" aria-label="Chat Zalo"><span>Zalo</span></a>
+  <a class="fab__btn fab__btn--call" href="tel:<%= tel2(s.hotline) %>" aria-label="Gọi <%= s.hotline %>"><svg class="i"><use href="#i-phone"/></svg><span class="fab__ring"></span></a>
+  <button class="fab__btn fab__btn--top" type="button" data-to-top aria-label="Lên đầu trang" hidden><svg class="i"><use href="#i-up"/></svg></button>
+</div>
+
+<!-- Thanh điều hướng dưới cho mobile -->
+<nav class="bottom-nav" aria-label="Điều hướng nhanh">
+  <a href="/" class="<%= path === '/' ? 'is-active' : '' %>"><svg class="i"><use href="#i-home"/></svg><span>Trang chủ</span></a>
+  <button type="button" data-open="drawer-menu"><svg class="i"><use href="#i-grid"/></svg><span>Danh mục</span></button>
+  <a href="tel:<%= tel2(s.hotline) %>" class="bottom-nav__call"><svg class="i"><use href="#i-phone"/></svg><span>Gọi ngay</span></a>
+  <a href="https://zalo.me/<%= tel2(s.zalo) %>" target="_blank" rel="noopener"><span class="bn-zalo">Zalo</span><span>Chat</span></a>
+  <a href="/gio-hang" data-open="drawer-cart"><span class="cart-ico"><svg class="i"><use href="#i-cart"/></svg><em class="cart-count" data-cart-count>0</em></span><span>Giỏ hàng</span></a>
+</nav>
+
+<div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+<script>window.KHP = { csrf: '<%= csrfToken %>' };</script>
+<script src="/js/main.js?v=1" defer></script>
+</body>
+</html>

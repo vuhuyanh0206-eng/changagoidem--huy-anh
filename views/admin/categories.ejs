@@ -1,0 +1,43 @@
+<%- include('_top') %>
+<% const e = edit || { active: 1, sort: cats.length }; %>
+<div class="grid2 grid2--wide">
+  <section class="panel">
+    <h2>Danh sách danh mục</h2>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th style="width:60px">Ảnh</th><th>Tên</th><th>Sản phẩm</th><th>Thứ tự</th><th>Hiện</th><th></th></tr></thead>
+      <tbody>
+        <% cats.forEach(c => { %>
+          <tr>
+            <td><img class="thumb" src="<%= c.image || '/images/placeholder.svg' %>" alt="" width="48" height="48"></td>
+            <td><b><%= c.parent_id ? '↳ ' : '' %><%= c.name %></b><br><span class="muted">/danh-muc/<%= c.slug %></span></td>
+            <td><%= c.n %></td>
+            <td><%= c.sort %></td>
+            <td><%= c.active ? '✓' : '—' %></td>
+            <td class="actions">
+              <a class="b b--ghost b--sm" href="?edit=<%= c.id %>">Sửa</a>
+              <form method="post" action="/admin/categories/<%= c.id %>/delete" data-confirm="Xoá danh mục “<%= c.name %>”? Sản phẩm bên trong sẽ không bị xoá."><input type="hidden" name="_csrf" value="<%= csrfToken %>"><button class="b b--ghost b--sm red" type="submit">Xoá</button></form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table></div>
+  </section>
+  <form class="panel" method="post" action="/admin/categories/save" enctype="multipart/form-data">
+    <h2><%= e.id ? 'Sửa danh mục' : 'Thêm danh mục' %></h2>
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="id" value="<%= e.id || '' %>">
+    <input type="hidden" name="image" value="<%= e.image || '' %>">
+    <label class="f"><span>Tên danh mục *</span><input class="in" name="name" required value="<%= e.name || '' %>"></label>
+    <label class="f"><span>Đường dẫn (slug)</span><input class="in" name="slug" value="<%= e.slug || '' %>" placeholder="Tự tạo từ tên"></label>
+    <label class="f"><span>Danh mục cha</span><select class="in" name="parent_id"><option value="">— Không —</option><% cats.filter(c => !c.parent_id && c.id !== e.id).forEach(c => { %><option value="<%= c.id %>" <%= c.id === e.parent_id ? 'selected' : '' %>><%= c.name %></option><% }) %></select></label>
+    <label class="f"><span>Mô tả</span><textarea class="in" name="description" rows="3"><%= e.description || '' %></textarea></label>
+    <div class="row2">
+      <label class="f"><span>Thứ tự</span><input class="in" name="sort" value="<%= e.sort || 0 %>" inputmode="numeric"></label>
+      <label class="chk" style="margin-top:28px"><input type="checkbox" name="active" <%= e.active ? 'checked' : '' %>>Hiển thị</label>
+    </div>
+    <% if (e.image) { %><img src="<%= e.image %>" alt="" class="preview-lg"><% } %>
+    <label class="drop"><input type="file" name="image_file" accept="image/*"><svg class="i"><use href="#i-plus"/></svg><span><%= e.image ? 'Đổi ảnh' : 'Tải ảnh danh mục' %></span></label>
+    <div class="side-actions"><button class="b b--primary b--block" type="submit">Lưu danh mục</button><% if (e.id) { %><a class="b b--ghost b--block" href="/admin/categories">Huỷ</a><% } %></div>
+  </form>
+</div>
+<%- include('_bottom') %>

@@ -1,0 +1,48 @@
+const db = require('./db');
+
+const DEFAULTS = {
+  site_name: 'Kho Đệm HP',
+  tagline: 'Chăn ga gối đệm chính hãng – Giá tại kho',
+  hotline: '0988 367 226',
+  hotline2: '0912 831 034',
+  zalo: '0988367226',
+  email: 'lienhe@khodemhp.vn',
+  address: 'Đang cập nhật địa chỉ kho – showroom',
+  map_embed: '',
+  open_hours: '8:00 – 21:00 tất cả các ngày',
+  facebook: '',
+  free_ship_text: 'Miễn phí giao hàng nội thành bán kính 20km',
+  shipping_fee: '0',
+  free_ship_min: '0',
+  bank_code: '',
+  bank_account: '',
+  bank_holder: '',
+  meta_description:
+    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, đổi trả 30 đêm, bảo hành dài hạn.',
+  ga_id: '',
+  fb_pixel: '',
+  flash_sale_end: '',
+};
+
+let cache = null;
+
+async function all() {
+  if (cache) return cache;
+  const rows = await db.query('SELECT skey, svalue FROM settings');
+  const map = { ...DEFAULTS };
+  for (const r of rows) map[r.skey] = r.svalue ?? '';
+  cache = map;
+  return map;
+}
+
+async function save(obj) {
+  for (const [k, v] of Object.entries(obj)) {
+    if (!(k in DEFAULTS)) continue;
+    const exists = await db.one('SELECT skey FROM settings WHERE skey = ?', [k]);
+    if (exists) await db.run('UPDATE settings SET svalue = ? WHERE skey = ?', [String(v ?? ''), k]);
+    else await db.run('INSERT INTO settings (skey, svalue) VALUES (?, ?)', [k, String(v ?? '')]);
+  }
+  cache = null;
+}
+
+module.exports = { all, save, DEFAULTS };

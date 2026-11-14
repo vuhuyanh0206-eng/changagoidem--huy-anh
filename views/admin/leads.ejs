@@ -1,0 +1,22 @@
+<%- include('_top') %>
+<section class="panel">
+  <p class="muted" style="margin-bottom:12px">Khách để lại số điện thoại từ form “Gọi lại cho tôi”, trang Liên hệ và form báo giá dự án.</p>
+  <% if (!leads.length) { %><p class="muted">Chưa có khách nào để lại thông tin.</p><% } else { %>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Khách</th><th>Điện thoại</th><th>Nội dung</th><th>Nguồn</th><th>Thời gian</th><th>Trạng thái</th></tr></thead>
+    <tbody>
+      <% leads.forEach(l => { %>
+        <tr class="<%= l.handled ? 'is-dim' : '' %>">
+          <td><b><%= l.name || 'Khách' %></b></td>
+          <td><a class="strong" href="tel:<%= l.phone %>"><%= l.phone %></a></td>
+          <td style="max-width:320px"><%= l.message || '—' %></td>
+          <td><span class="pill pill--indigo"><%= l.source %></span></td>
+          <td class="muted"><%= l.created_at %></td>
+          <td><form method="post" action="/admin/leads/<%= l.id %>/toggle"><input type="hidden" name="_csrf" value="<%= csrfToken %>"><button class="b b--sm <%= l.handled ? 'b--ghost' : 'b--primary' %>" type="submit"><%= l.handled ? 'Đã gọi ✓' : 'Đánh dấu đã gọi' %></button></form></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table></div>
+  <% } %>
+</section>
+<%- include('_bottom') %>

@@ -1,0 +1,63 @@
+<%- include('_top') %>
+<form method="post" action="/admin/settings" class="form-layout">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <div class="form-main">
+    <section class="panel">
+      <h2>Thông tin cửa hàng</h2>
+      <div class="row2">
+        <label class="f"><span>Tên cửa hàng</span><input class="in" name="site_name" value="<%= s.site_name %>"></label>
+        <label class="f"><span>Khẩu hiệu</span><input class="in" name="tagline" value="<%= s.tagline %>"></label>
+        <label class="f"><span>Hotline chính</span><input class="in" name="hotline" value="<%= s.hotline %>"></label>
+        <label class="f"><span>Hotline phụ</span><input class="in" name="hotline2" value="<%= s.hotline2 %>"></label>
+        <label class="f"><span>Số Zalo (liền, không dấu cách)</span><input class="in" name="zalo" value="<%= s.zalo %>"></label>
+        <label class="f"><span>Email</span><input class="in" name="email" value="<%= s.email %>"></label>
+      </div>
+      <label class="f"><span>Địa chỉ kho – showroom</span><input class="in" name="address" value="<%= s.address %>"></label>
+      <div class="row2">
+        <label class="f"><span>Giờ mở cửa</span><input class="in" name="open_hours" value="<%= s.open_hours %>"></label>
+        <label class="f"><span>Link Facebook</span><input class="in" name="facebook" value="<%= s.facebook %>" placeholder="https://facebook.com/khodemhp"></label>
+      </div>
+      <label class="f"><span>Link nhúng Google Maps <small>(Google Maps → Chia sẻ → Nhúng bản đồ → copy phần trong src="…")</small></span><input class="in" name="map_embed" value="<%= s.map_embed %>" placeholder="https://www.google.com/maps/embed?pb=..."></label>
+    </section>
+    <section class="panel">
+      <h2>Giao hàng &amp; khuyến mãi</h2>
+      <label class="f"><span>Dòng thông báo trên cùng</span><input class="in" name="free_ship_text" value="<%= s.free_ship_text %>"></label>
+      <div class="row3">
+        <label class="f"><span>Phí giao mặc định (₫, 0 = miễn phí)</span><input class="in" name="shipping_fee" value="<%= s.shipping_fee %>" inputmode="numeric"></label>
+        <label class="f"><span>Miễn phí giao cho đơn từ (₫)</span><input class="in" name="free_ship_min" value="<%= s.free_ship_min %>" inputmode="numeric"></label>
+        <label class="f"><span>Flash sale kết thúc lúc</span><input class="in" type="datetime-local" name="flash_sale_end" value="<%= s.flash_sale_end %>"></label>
+      </div>
+      <p class="muted">Để trống thời gian flash sale thì đồng hồ tự đếm đến 23:59 mỗi ngày.</p>
+    </section>
+    <section class="panel">
+      <h2>Chuyển khoản (VietQR)</h2>
+      <p class="muted">Khi khách chọn chuyển khoản, website tự tạo mã QR có sẵn số tiền và nội dung là mã đơn.</p>
+      <div class="row3">
+        <label class="f"><span>Mã ngân hàng</span><input class="in" name="bank_code" value="<%= s.bank_code %>" placeholder="VCB, MB, TCB, ACB…"></label>
+        <label class="f"><span>Số tài khoản</span><input class="in" name="bank_account" value="<%= s.bank_account %>"></label>
+        <label class="f"><span>Chủ tài khoản (viết hoa không dấu)</span><input class="in" name="bank_holder" value="<%= s.bank_holder %>"></label>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>SEO &amp; theo dõi</h2>
+      <label class="f"><span>Mô tả website (Google)</span><textarea class="in" name="meta_description" rows="3"><%= s.meta_description %></textarea></label>
+      <div class="row2">
+        <label class="f"><span>Google Analytics 4 (G-XXXXXXX)</span><input class="in" name="ga_id" value="<%= s.ga_id %>"></label>
+        <label class="f"><span>Facebook Pixel ID</span><input class="in" name="fb_pixel" value="<%= s.fb_pixel %>"></label>
+      </div>
+    </section>
+  </div>
+  <aside class="form-side">
+    <section class="panel"><h2>Lưu thay đổi</h2><button class="b b--primary b--block" type="submit">Lưu cài đặt</button></section>
+  </aside>
+</form>
+
+<form method="post" action="/admin/password" class="panel" id="password" style="max-width:520px">
+  <h2>Đổi mật khẩu quản trị</h2>
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <label class="f"><span>Mật khẩu hiện tại</span><input class="in" type="password" name="current" autocomplete="current-password" required></label>
+  <label class="f"><span>Mật khẩu mới (tối thiểu 8 ký tự)</span><input class="in" type="password" name="next" autocomplete="new-password" minlength="8" required></label>
+  <label class="f"><span>Nhập lại mật khẩu mới</span><input class="in" type="password" name="confirm" autocomplete="new-password" minlength="8" required></label>
+  <button class="b b--primary" type="submit">Đổi mật khẩu</button>
+</form>
+<%- include('_bottom') %>

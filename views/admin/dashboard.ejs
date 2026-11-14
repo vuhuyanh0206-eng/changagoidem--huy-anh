@@ -1,0 +1,44 @@
+<%- include('_top') %>
+<% const max = Math.max(1, ...days.map(d => d.value)); %>
+<div class="kpis">
+  <div class="kpi"><small>Đơn hôm nay</small><b><%= stats.today.n %></b><span><%= vnd(stats.today.s) %></span></div>
+  <div class="kpi"><small>Doanh thu tháng này</small><b><%= vnd(stats.month.s) %></b><span><%= stats.month.n %> đơn</span></div>
+  <div class="kpi kpi--warn"><small>Đơn mới chờ xử lý</small><b><%= badge.orders %></b><a href="/admin/orders?status=new">Xử lý ngay →</a></div>
+  <div class="kpi"><small>Khách chờ gọi lại</small><b><%= badge.leads %></b><a href="/admin/leads">Xem danh sách →</a></div>
+</div>
+
+<div class="grid2">
+  <section class="panel">
+    <h2>Doanh thu 7 ngày gần nhất</h2>
+    <div class="bars" role="img" aria-label="Biểu đồ doanh thu 7 ngày">
+      <% days.forEach(d => { %>
+        <div class="bars__col" title="<%= d.label %>: <%= vnd(d.value) %>">
+          <span class="bars__val"><%= d.value ? (d.value / 1e6).toFixed(1) + 'tr' : '' %></span>
+          <span class="bars__bar" style="height:<%= Math.max(2, Math.round(d.value / max * 100)) %>%"></span>
+          <small><%= d.label %></small>
+        </div>
+      <% }) %>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>Bán chạy nhất</h2>
+    <ul class="mini-list">
+      <% top.forEach(p => { %><li><img src="<%= p.image %>" alt="" width="44" height="34"><a href="/admin/products/<%= p.id %>"><%= p.name %></a><b><%= p.sold %></b></li><% }) %>
+    </ul>
+  </section>
+</div>
+
+<section class="panel">
+  <div class="panel__head"><h2>Đơn hàng mới nhất</h2><a class="b b--ghost" href="/admin/orders">Tất cả đơn</a></div>
+  <%- include('_orders-table', { orders: recent }) %>
+</section>
+
+<% if (leads.length) { %>
+<section class="panel">
+  <div class="panel__head"><h2>Khách cần gọi lại</h2><a class="b b--ghost" href="/admin/leads">Xem tất cả</a></div>
+  <table class="tbl"><tbody>
+    <% leads.forEach(l => { %><tr><td><b><%= l.name || 'Khách' %></b></td><td><a href="tel:<%= l.phone %>"><%= l.phone %></a></td><td class="muted"><%= l.message %></td><td class="muted"><%= l.created_at %></td></tr><% }) %>
+  </tbody></table>
+</section>
+<% } %>
+<%- include('_bottom') %>

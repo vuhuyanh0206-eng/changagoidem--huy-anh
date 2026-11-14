@@ -1,0 +1,48 @@
+<%- include('_top') %>
+<div class="toolbar"><p class="muted">Banner <b>chính</b> chạy ở slider lớn trang chủ, banner <b>phụ</b> là 3 ô nhỏ bên phải.</p><a class="b b--primary" href="?edit=new"><svg class="i"><use href="#i-plus"/></svg>Thêm banner</a></div>
+<div class="grid2 grid2--wide">
+  <section class="panel">
+    <% ['main', 'side'].forEach(pos => { %>
+      <h2><%= pos === 'main' ? 'Banner chính (slider)' : 'Banner phụ' %></h2>
+      <div class="banner-list">
+        <% banners.filter(b => b.position === pos).forEach(b => { %>
+          <div class="banner-item <%= b.active ? '' : 'is-off' %>">
+            <img src="<%= b.image %>" alt="">
+            <div><b><%= b.title || '(không tiêu đề)' %></b><span class="muted"><%= b.eyebrow %> · thứ tự <%= b.sort %><%= b.active ? '' : ' · đang ẩn' %></span></div>
+            <div class="actions">
+              <a class="b b--ghost b--sm" href="?edit=<%= b.id %>">Sửa</a>
+              <form method="post" action="/admin/banners/<%= b.id %>/delete" data-confirm="Xoá banner này?"><input type="hidden" name="_csrf" value="<%= csrfToken %>"><button class="b b--ghost b--sm red" type="submit">Xoá</button></form>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% }) %>
+  </section>
+  <% if (edit) { const e = edit; %>
+  <form class="panel" method="post" action="/admin/banners/save" enctype="multipart/form-data">
+    <h2><%= e.id ? 'Sửa banner' : 'Thêm banner' %></h2>
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="id" value="<%= e.id || '' %>">
+    <input type="hidden" name="image" value="<%= e.image || '' %>">
+    <div class="row2">
+      <label class="f"><span>Vị trí</span><select class="in" name="position"><option value="main" <%= e.position === 'main' ? 'selected' : '' %>>Slider chính</option><option value="side" <%= e.position === 'side' ? 'selected' : '' %>>Banner phụ</option></select></label>
+      <label class="f"><span>Kiểu chữ</span><select class="in" name="theme"><option value="dark" <%= e.theme === 'dark' ? 'selected' : '' %>>Chữ trắng (ảnh tối)</option><option value="light" <%= e.theme === 'light' ? 'selected' : '' %>>Chữ xanh (ảnh sáng)</option></select></label>
+    </div>
+    <label class="f"><span>Dòng nhỏ phía trên</span><input class="in" name="eyebrow" value="<%= e.eyebrow || '' %>" placeholder="Siêu sale cuối năm"></label>
+    <label class="f"><span>Tiêu đề lớn</span><input class="in" name="title" value="<%= e.title || '' %>"></label>
+    <label class="f"><span>Mô tả</span><input class="in" name="subtitle" value="<%= e.subtitle || '' %>"></label>
+    <div class="row2">
+      <label class="f"><span>Chữ trên nút</span><input class="in" name="cta" value="<%= e.cta || '' %>" placeholder="Mua ngay"></label>
+      <label class="f"><span>Link khi bấm</span><input class="in" name="link" value="<%= e.link || '' %>" placeholder="/khuyen-mai"></label>
+    </div>
+    <div class="row2">
+      <label class="f"><span>Thứ tự</span><input class="in" name="sort" value="<%= e.sort || 0 %>" inputmode="numeric"></label>
+      <label class="chk" style="margin-top:28px"><input type="checkbox" name="active" <%= e.active ? 'checked' : '' %>>Hiển thị</label>
+    </div>
+    <% if (e.image) { %><img src="<%= e.image %>" alt="" class="preview-lg"><% } %>
+    <label class="drop"><input type="file" name="image_file" accept="image/*"><svg class="i"><use href="#i-plus"/></svg><span>Ảnh ngang, tối thiểu 1600×900px</span></label>
+    <div class="side-actions"><button class="b b--primary b--block" type="submit">Lưu banner</button><a class="b b--ghost b--block" href="/admin/banners">Huỷ</a></div>
+  </form>
+  <% } %>
+</div>
+<%- include('_bottom') %>

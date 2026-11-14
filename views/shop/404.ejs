@@ -1,0 +1,9 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<main id="main" class="container notfound">
+  <b><%= typeof error !== 'undefined' ? '500' : '404' %></b>
+  <h1 class="section__title"><%= typeof error !== 'undefined' ? 'Có lỗi xảy ra' : 'Không tìm thấy trang' %></h1>
+  <p>Trang bạn tìm có thể đã được chuyển đi. Hãy thử tìm kiếm hoặc quay về trang chủ.</p>
+  <a class="btn btn--navy btn--lg" href="/">Về trang chủ</a>
+</main>
+<%- include('../partials/footer') %>

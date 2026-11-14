@@ -1,0 +1,63 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<main id="main">
+  <div class="container">
+    <header class="page-hero" style="padding:64px 48px">
+      <img src="/images/stock/s18.jpg" alt="" width="1300" height="866">
+      <span class="eyebrow eyebrow--light">Giải pháp B2B</span>
+      <h1>Dự án khách sạn – homestay – resort</h1>
+      <p>Cung cấp trọn gói đệm, chăn ga gối tiêu chuẩn 5 sao với giá dự án. Sản xuất theo kích thước riêng, giao lắp toàn quốc, xuất hoá đơn VAT.</p>
+      <div style="display:flex;gap:12px;margin-top:22px;flex-wrap:wrap">
+        <a class="btn btn--gold btn--lg" href="#bao-gia">Nhận báo giá trong 2 giờ</a>
+        <a class="btn btn--outline btn--lg" href="tel:<%= s.hotline.replace(/[^\d]/g, '') %>"><svg class="i"><use href="#i-phone"/></svg><%= s.hotline %></a>
+      </div>
+    </header>
+  </div>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="values">
+        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-building"/></svg></span><b>120+ dự án</b><p>Khách sạn, nhà nghỉ, homestay, căn hộ dịch vụ tại Hải Phòng và miền Bắc.</p></div>
+        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-award"/></svg></span><b>Chuẩn 5 sao</b><p>Đệm pillow-top, ga trắng cotton 300TC, bền với tần suất giặt cao.</p></div>
+        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-gift"/></svg></span><b>Hàng mẫu miễn phí</b><p>Gửi mẫu vải, mẫu đệm để chủ đầu tư trải nghiệm trước khi ký hợp đồng.</p></div>
+        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-shield"/></svg></span><b>Bảo hành tại chỗ</b><p>Đội kỹ thuật xử lý trong 48 giờ, đổi mới nếu lỗi sản xuất.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <% if (products.length) { %>
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head"><div><span class="eyebrow">Sản phẩm cho dự án</span><h2 class="section__title">Dòng sản phẩm khách sạn</h2></div></div>
+      <div class="pgrid"><% products.forEach(p => { %><%- include('../partials/product-card', { p }) %><% }) %></div>
+    </div>
+  </section>
+  <% } %>
+
+  <section class="section" id="bao-gia">
+    <div class="container contact-grid" style="padding-bottom:0">
+      <div>
+        <span class="eyebrow">Báo giá dự án</span>
+        <h2 class="section__title">Gửi yêu cầu, nhận báo giá trong 2 giờ</h2>
+        <p style="color:var(--muted);margin-top:12px">Cho chúng tôi biết số phòng, kích thước giường và ngân sách dự kiến. Chuyên viên dự án sẽ liên hệ với phương án tối ưu nhất.</p>
+        <ul class="checks" style="color:var(--ink-2)">
+          <li><svg class="i"><use href="#i-check"/></svg>Chiết khấu theo số lượng</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Thanh toán linh hoạt</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Hỗ trợ thiết kế phòng</li>
+        </ul>
+      </div>
+      <form class="card lead-form" method="post" action="/lien-he">
+        <% if (typeof query !== 'undefined' && query.sent) { %><div class="alert alert--ok">Đã nhận yêu cầu. Chúng tôi sẽ liên hệ sớm!</div><% } %>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <input type="hidden" name="source" value="du-an">
+        <input type="hidden" name="back" value="/du-an-khach-san">
+        <div class="field"><label for="hn">Tên khách sạn / người liên hệ</label><input class="input" id="hn" name="name"></div>
+        <div class="field"><label for="hp">Số điện thoại <em>*</em></label><input class="input" id="hp" name="phone" type="tel" required></div>
+        <div class="field"><label for="hm">Nhu cầu</label><textarea class="input" id="hm" name="message" rows="4" placeholder="VD: 30 phòng, giường 1m6 và 1m8, cần đệm + chăn ga gối"></textarea></div>
+        <button class="btn btn--gold btn--lg" type="submit">Gửi yêu cầu báo giá</button>
+      </form>
+    </div>
+  </section>
+</main>
+<%- include('../partials/footer') %>

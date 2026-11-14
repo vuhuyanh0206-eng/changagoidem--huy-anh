@@ -1,0 +1,29 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); %>
+<main id="main" class="container">
+  <header class="page-hero page-hero--plain" style="padding-top:6px"><span class="eyebrow">Liên hệ</span><h1>Ghé thăm Kho Đệm HP</h1><p>Nằm thử trực tiếp hơn 50 mẫu đệm tại showroom, hoặc liên hệ để được tư vấn từ xa.</p></header>
+  <div class="contact-grid" style="margin-top:20px">
+    <div>
+      <ul class="contact-list card">
+        <li><span class="usp__ico"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Địa chỉ kho – showroom</b><span><%= s.address %></span></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Hotline / Zalo</b><a href="tel:<%= tel(s.hotline) %>"><%= s.hotline %></a> · <a href="tel:<%= tel(s.hotline2) %>"><%= s.hotline2 %></a></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-mail"/></svg></span><div><b>Email</b><a href="mailto:<%= s.email %>"><%= s.email %></a></div></li>
+        <li style="border:0"><span class="usp__ico"><svg class="i"><use href="#i-clock"/></svg></span><div><b>Giờ mở cửa</b><span><%= s.open_hours %></span></div></li>
+      </ul>
+      <div class="map"><% if (s.map_embed) { %><iframe src="<%= s.map_embed %>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ"></iframe><% } else { %><span>Bản đồ sẽ hiển thị khi bạn thêm link Google Maps trong trang quản trị</span><% } %></div>
+    </div>
+    <form class="card lead-form" method="post" action="/lien-he" style="align-self:start">
+      <h2 class="card__h">Gửi tin nhắn cho chúng tôi</h2>
+      <% if (sent) { %><div class="alert alert--ok" role="status"><svg class="i"><use href="#i-check"/></svg>Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm nhất.</div><% } %>
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <input type="hidden" name="source" value="lien-he">
+      <div class="field"><label for="cn">Họ tên</label><input class="input" id="cn" name="name" autocomplete="name"></div>
+      <div class="field"><label for="cp">Số điện thoại <em>*</em></label><input class="input" id="cp" name="phone" type="tel" required autocomplete="tel"></div>
+      <div class="field"><label for="cm">Nội dung</label><textarea class="input" id="cm" name="message" rows="5" placeholder="Bạn cần tư vấn sản phẩm nào?"></textarea></div>
+      <button class="btn btn--gold btn--lg" type="submit">Gửi tin nhắn</button>
+    </form>
+  </div>
+</main>
+<%- include('../partials/footer') %>

@@ -1,0 +1,161 @@
+<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); %>
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__msg"><svg class="i"><use href="#i-truck"/></svg><%= s.free_ship_text %> · Nằm thử 30 đêm · Trả góp 0%</p>
+    <div class="topbar__links">
+      <a href="/chinh-sach/doi-tra">Đổi trả</a>
+      <a href="/chinh-sach/bao-hanh">Bảo hành</a>
+      <a href="/tin-tuc">Cẩm nang giấc ngủ</a>
+      <span class="topbar__hours"><svg class="i"><use href="#i-clock"/></svg><%= s.open_hours %></span>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <button class="icon-btn header__burger" type="button" data-open="drawer-menu" aria-label="Mở menu">
+      <svg class="i"><use href="#i-menu"/></svg>
+    </button>
+    <a href="/" class="logo" aria-label="<%= s.site_name %> – Trang chủ">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="currentColor" stroke-opacity=".35"/>
+        <path d="M30.5 12.5a11 11 0 1 0 5 15.5 8.6 8.6 0 0 1-5-15.5z" fill="var(--gold-400)"/>
+        <path d="M9 33.5c4-2.2 9.6-3.3 15-3.3s11 1.1 15 3.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo__text"><span class="logo__name">Kho Đệm <b>HP</b></span><span class="logo__sub">Sleep &amp; Bedding Store</span></span>
+    </a>
+
+    <button class="cat-toggle" type="button" data-toggle-cat aria-expanded="false" aria-controls="mega-cat">
+      <svg class="i"><use href="#i-grid"/></svg><span>Danh mục</span>
+    </button>
+
+    <form class="search" action="/tim-kiem" method="get" role="search" autocomplete="off">
+      <label for="q" class="sr-only">Tìm kiếm sản phẩm</label>
+      <input id="q" name="q" type="search" placeholder="Bạn cần tìm đệm, chăn ga, gối…" value="<%= typeof query !== 'undefined' && query.q ? query.q : '' %>" data-search>
+      <button type="submit" aria-label="Tìm kiếm"><svg class="i"><use href="#i-search"/></svg></button>
+      <div class="search__suggest" data-suggest hidden></div>
+    </form>
+
+    <nav class="header__actions" aria-label="Liên hệ nhanh">
+      <a class="hact" href="tel:<%= tel(s.hotline) %>">
+        <svg class="i"><use href="#i-phone"/></svg>
+        <span><small>Gọi mua hàng</small><b><%= s.hotline %></b></span>
+      </a>
+      <a class="hact hact--hide-md" href="/lien-he">
+        <svg class="i"><use href="#i-pin"/></svg>
+        <span><small>Showroom</small><b>Gần bạn</b></span>
+      </a>
+      <a class="hact hact--hide-md" href="/tin-tuc">
+        <svg class="i"><use href="#i-news"/></svg>
+        <span><small>Cẩm nang</small><b>Tin tức</b></span>
+      </a>
+      <a class="hact hact--cart" href="/gio-hang" data-open="drawer-cart" aria-label="Giỏ hàng">
+        <span class="cart-ico"><svg class="i"><use href="#i-cart"/></svg><em class="cart-count" data-cart-count>0</em></span>
+        <span class="hact__label"><small>Giỏ hàng</small><b data-cart-total>0₫</b></span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Menu chính">
+  <div class="container nav__inner">
+    <ul class="nav__list">
+      <li><a href="/" class="<%= path === '/' ? 'is-active' : '' %>">Trang chủ</a></li>
+      <li class="has-mega">
+        <a href="/dem" class="<%= path.startsWith('/dem') || /dem-/.test(path) ? 'is-active' : '' %>">Đệm <svg class="i"><use href="#i-chev-d"/></svg></a>
+        <div class="mega">
+          <div class="mega__cols">
+            <% menu.filter(c => c.slug.startsWith('dem-')).forEach(c => { %>
+              <a class="mega__item" href="/danh-muc/<%= c.slug %>">
+                <img src="<%= c.image %>" alt="" loading="lazy" width="96" height="72">
+                <span><b><%= c.name %></b><small>Xem tất cả <svg class="i"><use href="#i-arrow-r"/></svg></small></span>
+              </a>
+            <% }) %>
+          </div>
+          <div class="mega__promo">
+            <span class="eyebrow">Gợi ý chọn đệm</span>
+            <a href="/dem?firm=4&firm=5">Đệm cứng – cho người đau lưng</a>
+            <a href="/dem?firm=2&firm=3">Đệm êm vừa – ngủ sâu</a>
+            <a href="/dem?sort=price_asc">Đệm giá tốt dưới 5 triệu</a>
+            <a href="/khuyen-mai" class="mega__hot"><svg class="i"><use href="#i-flame"/></svg>Đang giảm đến 50%</a>
+          </div>
+        </div>
+      </li>
+      <li class="has-drop">
+        <a href="/danh-muc/chan-ga-goi">Chăn ga gối <svg class="i"><use href="#i-chev-d"/></svg></a>
+        <ul class="drop">
+          <li><a href="/danh-muc/chan-ga-goi">Bộ chăn ga gối</a></li>
+          <li><a href="/danh-muc/chan-long-cuu">Chăn lông cừu</a></li>
+          <li><a href="/danh-muc/goi-ngu">Gối ngủ</a></li>
+        </ul>
+      </li>
+      <li class="has-drop">
+        <a href="/danh-muc/phu-kien">Phụ kiện <svg class="i"><use href="#i-chev-d"/></svg></a>
+        <ul class="drop">
+          <li><a href="/danh-muc/phu-kien">Topper – tấm làm mềm</a></li>
+          <li><a href="/danh-muc/phu-kien">Tấm bảo vệ đệm</a></li>
+        </ul>
+      </li>
+      <li><a href="/du-an-khach-san" class="<%= path === '/du-an-khach-san' ? 'is-active' : '' %>">Dự án – Khách sạn</a></li>
+      <li><a href="/gioi-thieu" class="<%= path === '/gioi-thieu' ? 'is-active' : '' %>">Giới thiệu</a></li>
+      <li><a href="/lien-he" class="<%= path === '/lien-he' ? 'is-active' : '' %>">Liên hệ</a></li>
+      <li><a href="/khuyen-mai" class="nav__hot <%= path === '/khuyen-mai' ? 'is-active' : '' %>"><svg class="i"><use href="#i-flame"/></svg>Khuyến mại hot</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Danh mục thả xuống (nút "Danh mục" ở header, dùng trên các trang không phải trang chủ) -->
+<div class="mega-cat" id="mega-cat" hidden>
+  <div class="container">
+    <ul class="catlist catlist--float">
+      <% menu.forEach(c => { %>
+        <li><a href="/danh-muc/<%= c.slug %>"><img src="<%= c.image %>" alt="" width="28" height="28" loading="lazy"><%= c.name %><svg class="i"><use href="#i-chev-r"/></svg></a></li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
+
+<!-- Drawer menu mobile -->
+<div class="drawer drawer--left" id="drawer-menu" aria-hidden="true" role="dialog" aria-label="Menu">
+  <div class="drawer__panel">
+    <div class="drawer__head">
+      <span class="drawer__title">Danh mục</span>
+      <button class="icon-btn" type="button" data-close aria-label="Đóng"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="drawer__body">
+      <ul class="mnav">
+        <li><a href="/"><svg class="i"><use href="#i-home"/></svg>Trang chủ</a></li>
+        <% menu.forEach(c => { %>
+          <li><a href="/danh-muc/<%= c.slug %>"><img src="<%= c.image %>" alt="" width="32" height="32" loading="lazy"><%= c.name %></a></li>
+        <% }) %>
+        <li><a href="/khuyen-mai" class="text-sale"><svg class="i"><use href="#i-flame"/></svg>Khuyến mại hot</a></li>
+        <li><a href="/tin-tuc"><svg class="i"><use href="#i-news"/></svg>Tin tức</a></li>
+        <li><a href="/gioi-thieu"><svg class="i"><use href="#i-award"/></svg>Giới thiệu</a></li>
+        <li><a href="/lien-he"><svg class="i"><use href="#i-pin"/></svg>Liên hệ</a></li>
+      </ul>
+      <div class="drawer__contact">
+        <a class="btn btn--gold btn--block" href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg><%= s.hotline %></a>
+        <a class="btn btn--outline btn--block" href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener">Chat Zalo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Drawer giỏ hàng -->
+<div class="drawer drawer--right" id="drawer-cart" aria-hidden="true" role="dialog" aria-label="Giỏ hàng">
+  <div class="drawer__panel">
+    <div class="drawer__head">
+      <span class="drawer__title">Giỏ hàng <small data-cart-count-text></small></span>
+      <button class="icon-btn" type="button" data-close aria-label="Đóng"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="drawer__body" data-mini-cart>
+      <div class="skeleton-list"><span></span><span></span></div>
+    </div>
+    <div class="drawer__foot" data-mini-cart-foot hidden>
+      <div class="mini-total"><span>Tạm tính</span><b data-mini-total>0₫</b></div>
+      <a class="btn btn--gold btn--block btn--lg" href="/thanh-toan">Thanh toán ngay</a>
+      <a class="btn btn--ghost btn--block" href="/gio-hang">Xem giỏ hàng</a>
+    </div>
+  </div>
+</div>
+<div class="scrim" data-scrim hidden></div>

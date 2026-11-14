@@ -1,0 +1,33 @@
+<article class="pcard">
+  <a class="pcard__media" href="/san-pham/<%= p.slug %>">
+    <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" width="600" height="450">
+    <% if (p.images[1]) { %><img class="pcard__alt" src="<%= p.images[1] %>" alt="" loading="lazy" width="600" height="450"><% } %>
+    <span class="pcard__tags">
+      <% if (p.discount) { %><span class="tag tag--sale">-<%= p.discount %>%</span><% } %>
+      <% if (p.badge) { %><span class="tag tag--gold"><%= p.badge %></span><% } %>
+    </span>
+  </a>
+  <div class="pcard__body">
+    <div class="pcard__meta">
+      <span class="pcard__brand"><%= p.brand %></span>
+      <span class="pcard__rating" aria-label="Đánh giá <%= p.rating_avg %> trên 5"><svg class="i"><use href="#i-star"/></svg><%= p.rating_avg %> <small>(<%= p.rating_count %>)</small></span>
+    </div>
+    <h3 class="pcard__name"><a href="/san-pham/<%= p.slug %>"><%= p.name %></a></h3>
+    <ul class="pcard__specs">
+      <% if (p.thickness) { %><li><%= p.thickness %></li><% } %>
+      <% if (p.warranty) { %><li>BH <%= p.warranty %></li><% } %>
+      <% if (p.sizes.length > 1) { %><li><%= p.sizes.length %> kích thước</li><% } %>
+    </ul>
+    <div class="pcard__foot">
+      <div class="price">
+        <% if (p.sizes.length > 1) { %><small class="price__from">Từ</small><% } %>
+        <strong class="price__now"><%= vnd(p.finalPrice) %></strong>
+        <% if (p.discount) { %><s class="price__old"><%= vnd(p.price) %></s><% } %>
+      </div>
+      <button class="pcard__add" type="button" data-add-cart data-id="<%= p.id %>" data-size="<%= p.sizes[0] ? (p.sizes.find(x => x.label === '1m6 x 2m') || p.sizes[0]).label : '' %>" aria-label="Thêm <%= p.name %> vào giỏ">
+        <svg class="i"><use href="#i-cart"/></svg>
+      </button>
+    </div>
+    <% if (p.sold) { %><div class="pcard__sold"><span style="width:<%= Math.min(100, Math.round(p.sold / 6)) %>%"></span><em>Đã bán <%= p.sold %></em></div><% } %>
+  </div>
+</article>

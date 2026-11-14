@@ -1,0 +1,43 @@
+<%- include('_top') %>
+<% const st = ORDER_STATUS[order.status] || ORDER_STATUS.new; %>
+<div class="form-layout">
+  <div class="form-main">
+    <section class="panel">
+      <div class="panel__head"><h2>Sản phẩm đặt mua</h2><span class="pill pill--<%= st.tone %>"><%= st.label %></span></div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th style="width:70px"></th><th>Sản phẩm</th><th>Kích thước</th><th>SL</th><th>Đơn giá</th><th>Thành tiền</th></tr></thead>
+        <tbody>
+          <% order.items.forEach(l => { %>
+            <tr><td><img class="thumb" src="<%= l.image %>" alt="" width="60" height="45"></td><td><a class="strong" href="/san-pham/<%= l.slug %>" target="_blank" rel="noopener"><%= l.name %></a></td><td><%= l.size || '—' %></td><td><%= l.qty %></td><td><%= vnd(l.unit) %></td><td class="strong"><%= vnd(l.total) %></td></tr>
+          <% }) %>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="5" class="right">Tạm tính</td><td><%= vnd(order.subtotal) %></td></tr>
+          <tr><td colspan="5" class="right">Phí giao hàng</td><td><%= order.shipping ? vnd(order.shipping) : 'Miễn phí' %></td></tr>
+          <tr><td colspan="5" class="right strong">Tổng cộng</td><td class="strong red"><%= vnd(order.total) %></td></tr>
+        </tfoot>
+      </table></div>
+    </section>
+  </div>
+  <aside class="form-side">
+    <section class="panel">
+      <h2>Khách hàng</h2>
+      <dl class="dl">
+        <dt>Họ tên</dt><dd><%= order.customer_name %></dd>
+        <dt>Điện thoại</dt><dd><a class="strong" href="tel:<%= order.phone %>"><%= order.phone %></a> · <a href="https://zalo.me/<%= order.phone %>" target="_blank" rel="noopener">Zalo</a></dd>
+        <% if (order.email) { %><dt>Email</dt><dd><%= order.email %></dd><% } %>
+        <dt>Địa chỉ</dt><dd><%= order.address %><%= order.province ? ', ' + order.province : '' %></dd>
+        <dt>Thanh toán</dt><dd><%= order.payment_method === 'bank' ? 'Chuyển khoản / VietQR' : 'COD – trả khi nhận hàng' %></dd>
+        <% if (order.note) { %><dt>Ghi chú</dt><dd><%= order.note %></dd><% } %>
+        <dt>Thời gian</dt><dd><%= order.created_at %></dd>
+      </dl>
+    </section>
+    <form class="panel" method="post" action="/admin/orders/<%= order.id %>/status">
+      <h2>Cập nhật trạng thái</h2>
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <% Object.entries(ORDER_STATUS).forEach(([k, v]) => { %><label class="chk"><input type="radio" name="status" value="<%= k %>" <%= order.status === k ? 'checked' : '' %>><span class="pill pill--<%= v.tone %>"><%= v.label %></span></label><% }) %>
+      <div class="side-actions"><button class="b b--primary b--block" type="submit">Lưu trạng thái</button><a class="b b--ghost b--block" href="/admin/orders">← Danh sách đơn</a></div>
+    </form>
+  </aside>
+</div>
+<%- include('_bottom') %>

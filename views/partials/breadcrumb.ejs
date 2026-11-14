@@ -1,0 +1,13 @@
+<% if (typeof breadcrumb !== 'undefined' && breadcrumb.length) { %>
+<nav class="crumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="/">Trang chủ</a></li>
+      <% breadcrumb.forEach((b, i) => { %>
+        <li><% if (b.href) { %><a href="<%= b.href %>"><%= b.name %></a><% } else { %><span aria-current="page"><%= b.name %></span><% } %></li>
+      <% }) %>
+    </ol>
+  </div>
+  <script type="application/ld+json"><%- JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Trang chủ', href: '/' }, ...breadcrumb].map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: b.href ? siteUrl + b.href : undefined })) }) %></script>
+</nav>
+<% } %>

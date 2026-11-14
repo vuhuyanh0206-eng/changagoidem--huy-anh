@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Đăng nhập quản trị · <%= s.site_name %></title>
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css?v=1">
+</head>
+<body class="login-body">
+  <form class="login" method="post" action="/admin/login">
+    <img src="/images/favicon.svg" alt="" width="56" height="56">
+    <h1>Quản trị <%= s.site_name %></h1>
+    <p>Đăng nhập để quản lý sản phẩm, đơn hàng và nội dung.</p>
+    <% if (error) { %><div class="alert alert--err" role="alert"><%= error %></div><% } %>
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="next" value="<%= next %>">
+    <label class="f"><span>Tên đăng nhập</span><input class="in" name="username" autocomplete="username" required autofocus></label>
+    <label class="f"><span>Mật khẩu</span><input class="in" type="password" name="password" autocomplete="current-password" required></label>
+    <button class="b b--primary b--block" type="submit">Đăng nhập</button>
+    <a href="/" class="login__back">← Về trang chủ</a>
+  </form>
+</body>
+</html>

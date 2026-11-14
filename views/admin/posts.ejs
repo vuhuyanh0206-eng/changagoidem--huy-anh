@@ -1,0 +1,19 @@
+<%- include('_top') %>
+<div class="toolbar"><span></span><a class="b b--primary" href="/admin/posts/new"><svg class="i"><use href="#i-plus"/></svg>Viết bài mới</a></div>
+<section class="panel">
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th style="width:80px">Ảnh</th><th>Tiêu đề</th><th>Ngày đăng</th><th>Hiện</th><th></th></tr></thead>
+    <tbody>
+      <% posts.forEach(p => { %>
+        <tr>
+          <td><img class="thumb" src="<%= p.image || '/images/placeholder.svg' %>" alt="" width="70" height="46"></td>
+          <td><a class="strong" href="/admin/posts/<%= p.id %>"><%= p.title %></a></td>
+          <td class="muted"><%= p.created_at %></td>
+          <td><%= p.active ? '✓' : '—' %></td>
+          <td class="actions"><a class="b b--ghost b--sm" href="/admin/posts/<%= p.id %>">Sửa</a><a class="b b--ghost b--sm" href="/tin-tuc/<%= p.slug %>" target="_blank" rel="noopener">Xem</a></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table></div>
+</section>
+<%- include('_bottom') %>

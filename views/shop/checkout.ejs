@@ -1,0 +1,65 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<% const e = errors || {}; const f = form || {}; const fieldCls = (k) => 'field' + (e[k] ? ' has-err' : ''); %>
+<main id="main" class="container">
+  <header class="page-hero page-hero--plain" style="padding-top:6px"><h1>Thông tin đặt hàng</h1><p>Chỉ mất 30 giây – nhân viên sẽ gọi xác nhận trước khi giao.</p></header>
+  <form class="cart-layout" method="post" action="/dat-hang" data-checkout novalidate>
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="items" value="[]">
+    <div style="display:grid;gap:20px">
+      <% if (Object.keys(e).length) { %><div class="alert alert--err" role="alert"><svg class="i"><use href="#i-x"/></svg>Vui lòng kiểm tra lại các thông tin được đánh dấu bên dưới.<%= e.cart ? ' ' + e.cart + '.' : '' %></div><% } %>
+      <section class="card">
+        <h2 class="card__h"><span class="num">1</span>Người nhận hàng</h2>
+        <div class="form-grid">
+          <div class="<%= fieldCls('customer_name') %>">
+            <label for="cn">Họ và tên <em>*</em></label>
+            <input class="input" id="cn" name="customer_name" required autocomplete="name" value="<%= f.customer_name || '' %>" <%= e.customer_name ? 'aria-invalid=true aria-describedby=cn-err' : '' %>>
+            <% if (e.customer_name) { %><span class="field__err" id="cn-err"><%= e.customer_name %></span><% } %>
+          </div>
+          <div class="<%= fieldCls('phone') %>">
+            <label for="ph">Số điện thoại <em>*</em></label>
+            <input class="input" id="ph" name="phone" type="tel" inputmode="tel" required autocomplete="tel" value="<%= f.phone || '' %>" <%= e.phone ? 'aria-invalid=true aria-describedby=ph-err' : '' %>>
+            <% if (e.phone) { %><span class="field__err" id="ph-err"><%= e.phone %></span><% } %>
+          </div>
+          <div class="<%= fieldCls('email') %>">
+            <label for="em">Email <small style="font-weight:400;color:var(--muted)">(không bắt buộc)</small></label>
+            <input class="input" id="em" name="email" type="email" autocomplete="email" value="<%= f.email || '' %>">
+            <% if (e.email) { %><span class="field__err"><%= e.email %></span><% } %>
+          </div>
+          <div class="field">
+            <label for="pv">Tỉnh / Thành phố</label>
+            <input class="input" id="pv" name="province" list="provinces" autocomplete="address-level1" value="<%= f.province || '' %>">
+            <datalist id="provinces"><% ['Hải Phòng', 'Hà Nội', 'Quảng Ninh', 'Hải Dương', 'Thái Bình', 'Hưng Yên', 'Nam Định', 'Bắc Ninh', 'TP. Hồ Chí Minh', 'Đà Nẵng'].forEach(p => { %><option value="<%= p %>"><% }) %></datalist>
+          </div>
+          <div class="<%= fieldCls('address') %> full">
+            <label for="ad">Địa chỉ nhận hàng <em>*</em></label>
+            <input class="input" id="ad" name="address" required autocomplete="street-address" placeholder="Số nhà, đường, phường/xã, quận/huyện" value="<%= f.address || '' %>">
+            <% if (e.address) { %><span class="field__err"><%= e.address %></span><% } %>
+          </div>
+          <div class="field full">
+            <label for="nt">Ghi chú</label>
+            <textarea class="input" id="nt" name="note" rows="3" placeholder="VD: giao giờ hành chính, cần thu đệm cũ…"><%= f.note || '' %></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__h"><span class="num">2</span>Phương thức thanh toán</h2>
+        <div class="pay-opts">
+          <label class="pay-opt"><input type="radio" name="payment_method" value="cod" <%= f.payment_method !== 'bank' ? 'checked' : '' %>><span><b>Thanh toán khi nhận hàng (COD)</b><small>Kiểm tra hàng, hài lòng rồi mới thanh toán.</small></span></label>
+          <label class="pay-opt"><input type="radio" name="payment_method" value="bank" <%= f.payment_method === 'bank' ? 'checked' : '' %>><span><b>Chuyển khoản / quét mã VietQR</b><small>Mã QR kèm số tiền và nội dung sẽ hiện sau khi đặt hàng.</small></span></label>
+        </div>
+      </section>
+    </div>
+    <aside class="card summary" aria-label="Đơn hàng">
+      <h2 class="card__h">Đơn hàng của bạn</h2>
+      <div data-co-lines><div class="skeleton-list"><span></span><span></span></div></div>
+      <div class="summary__row" style="margin-top:10px"><span>Tạm tính</span><span data-sum-sub>—</span></div>
+      <div class="summary__row"><span>Phí giao hàng</span><span data-sum-ship>—</span></div>
+      <div class="summary__row summary__row--total"><span>Tổng cộng</span><b data-sum-total>—</b></div>
+      <button class="btn btn--gold btn--lg btn--block" type="submit" data-co-submit style="margin-top:16px">Xác nhận đặt hàng</button>
+      <p class="summary__note" style="margin-bottom:0">Bằng việc đặt hàng, bạn đồng ý với <a href="/chinh-sach/bao-mat" style="text-decoration:underline">chính sách bảo mật</a> của <%= s.site_name %>.</p>
+    </aside>
+  </form>
+</main>
+<%- include('../partials/footer') %>

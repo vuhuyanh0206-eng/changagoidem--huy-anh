@@ -1,0 +1,24 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<%- include('../partials/breadcrumb') %>
+<main id="main" class="container" style="padding-bottom:64px">
+  <header class="page-hero page-hero--plain" style="padding-top:6px">
+    <span class="eyebrow">Cẩm nang giấc ngủ</span>
+    <h1>Tin tức &amp; tư vấn</h1>
+    <p>Kiến thức chọn đệm, chăm sóc chăn ga gối và bí quyết ngủ ngon từ chuyên gia Kho Đệm HP.</p>
+  </header>
+  <div class="post-grid" style="margin-top:20px">
+    <% posts.forEach(p => { %>
+      <article class="post-card">
+        <a href="/tin-tuc/<%= p.slug %>" class="post-card__media"><img src="<%= p.image %>" alt="" loading="lazy" width="700" height="460"></a>
+        <div class="post-card__body">
+          <time><%= String(p.created_at).slice(0, 10).split('-').reverse().join('/') %></time>
+          <h2 style="font-size:17px;font-weight:600;line-height:1.4;color:var(--navy-900)"><a href="/tin-tuc/<%= p.slug %>"><%= p.title %></a></h2>
+          <p><%= p.excerpt %></p>
+        </div>
+      </article>
+    <% }) %>
+  </div>
+  <% if (!posts.length) { %><div class="card empty"><b>Chưa có bài viết</b></div><% } %>
+</main>
+<%- include('../partials/footer') %>
