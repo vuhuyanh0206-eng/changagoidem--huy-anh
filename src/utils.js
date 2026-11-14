@@ -51,7 +51,22 @@ function hydrateProduct(p) {
     finalPrice: final,
     discount: sale > 0 && sale < price ? Math.round((1 - sale / price) * 100) : 0,
     rating_avg: Number(p.rating_avg) || 5,
+    rating_count: Number(p.rating_count) || 0,
+    defaultSize: pickDefaultSize(sizes),
   };
+}
+
+const finalOf = (s) => (s.sale_price > 0 && s.sale_price < s.price ? s.sale_price : s.price);
+
+/** Kích thước chọn sẵn: ưu tiên 1m6 x 2m (160 x 200), độ dày mỏng nhất; không có thì lấy kích thước đầu tiên. */
+function pickDefaultSize(sizes = []) {
+  if (!sizes.length) return null;
+  return sizes.find((s) => /^(1m6 x 2m|160 x 200)/.test(s.label)) || sizes[0];
+}
+
+/** Biến thể rẻ nhất – dùng làm giá "Từ …" ở danh sách sản phẩm. */
+function cheapestSize(sizes = []) {
+  return sizes.reduce((best, s) => (!best || finalOf(s) < finalOf(best) ? s : best), null);
 }
 
 function orderCode() {
@@ -83,4 +98,4 @@ const ORDER_STATUS = {
   cancelled: { label: 'Đã huỷ', tone: 'red' },
 };
 
-module.exports = { slugify, vnd, now, parseJSON, hydrateProduct, orderCode, escapeHtml, sanitizeHtml, ORDER_STATUS };
+module.exports = { slugify, vnd, now, parseJSON, hydrateProduct, pickDefaultSize, cheapestSize, orderCode, escapeHtml, sanitizeHtml, ORDER_STATUS };

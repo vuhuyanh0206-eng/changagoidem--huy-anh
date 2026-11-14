@@ -4,7 +4,7 @@
  */
 const bcrypt = require('bcryptjs');
 const db = require('./db');
-const { slugify, now } = require('./utils');
+const { slugify, now, cheapestSize } = require('./utils');
 
 const img = (n) => `/images/stock/s${String(n).padStart(2, '0')}.jpg`;
 
@@ -124,7 +124,7 @@ async function seed() {
   let k = 0;
   for (const p of PRODUCTS) {
     const sizes = sizesOf(p);
-    const base = sizes.find((s) => s.label === '1m6 x 2m') || sizes[0];
+    const base = cheapestSize(sizes); // giá "Từ …" = biến thể rẻ nhất
     await db.run(
       `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,1,1,?,?,?,?)`,

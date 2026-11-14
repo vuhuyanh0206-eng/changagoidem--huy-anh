@@ -1,7 +1,13 @@
 <%- include('../partials/head') %>
 <%- include('../partials/header') %>
 <%- include('../partials/breadcrumb') %>
-<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); const defSize = product.sizes.find(x => x.label === '1m6 x 2m') || product.sizes[0]; %>
+<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); const defSize = product.defaultSize;
+  // Biến thể dạng "160 x 200 x 9 cm" → tách thành 2 bước: độ dày + kích thước
+  const RE = /^(\d+) x (\d+) x (\d+) cm$/;
+  const grouped = product.sizes.length > 1 && product.sizes.every(s => RE.test(s.label));
+  const thicks = grouped ? [...new Set(product.sizes.map(s => +s.label.match(RE)[3]))].sort((a, b) => a - b) : [];
+  const defThick = grouped ? +defSize.label.match(RE)[3] : null;
+  const fpOf = (sz) => sz.sale_price > 0 && sz.sale_price < sz.price ? sz.sale_price : sz.price; %>
 <main id="main" class="container">
   <div class="pd" data-product>
     <div class="gallery">
@@ -28,11 +34,15 @@
         <span style="color:var(--ok);font-weight:600"><%= product.in_stock ? '● Còn hàng' : '○ Tạm hết hàng' %></span>
       </div>
       <h1><%= product.name %></h1>
+      <% if (product.rating_count || product.sold) { %>
       <div class="pd__rating">
+        <% if (product.rating_count) { %>
         <span class="stars" aria-hidden="true"><% for (let i = 0; i < 5; i++) { %><svg class="i"><use href="#i-star"/></svg><% } %></span>
         <span><b><%= product.rating_avg %></b> (<%= product.rating_count %> đánh giá)</span>
-        <span>Đã bán <b><%= product.sold %></b></span>
+        <% } %>
+        <% if (product.sold) { %><span>Đã bán <b><%= product.sold %></b></span><% } %>
       </div>
+      <% } %>
 
       <div class="pd__price">
         <strong class="price__now" data-price-now><%= vnd(product.finalPrice) %></strong>
@@ -42,7 +52,24 @@
 
       <p class="pd__short"><%= product.short_desc %></p>
 
-      <% if (product.sizes.length) { %>
+      <% if (grouped) { %>
+      <fieldset class="pd__opt" style="border:0;padding:0;margin-top:22px">
+        <legend class="pd__opt-h" style="width:100%;display:flex">Độ dày&nbsp;<span data-thick-label><%= defThick %> cm</span></legend>
+        <div class="sizes">
+          <% thicks.forEach(t => { const from = Math.min(...product.sizes.filter(s => +s.label.match(RE)[3] === t).map(fpOf)); %>
+            <label class="size"><input type="radio" name="thick" value="<%= t %>" <%= t === defThick ? 'checked' : '' %>><span><%= t %> cm<small>từ <%= vnd(from) %></small></span></label>
+          <% }) %>
+        </div>
+      </fieldset>
+      <fieldset class="pd__opt" style="border:0;padding:0;margin-top:18px">
+        <legend class="pd__opt-h" style="width:100%;display:flex">Kích thước&nbsp;<span data-dim-label></span></legend>
+        <div class="sizes" data-dims>
+          <% product.sizes.forEach(sz => { const m = sz.label.match(RE); %>
+            <label class="size" data-thick="<%= m[3] %>" <%= +m[3] === defThick ? '' : 'hidden' %>><input type="radio" name="size" value="<%= sz.label %>" <%= sz.label === defSize.label ? 'checked' : '' %>><span><%= m[1] %> x <%= m[2] %><small><%= vnd(fpOf(sz)) %></small></span></label>
+          <% }) %>
+        </div>
+      </fieldset>
+      <% } else if (product.sizes.length) { %>
       <fieldset class="pd__opt" style="border:0;padding:0;margin-top:22px">
         <legend class="pd__opt-h" style="width:100%;display:flex">Kích thước&nbsp;<span data-size-label><%= defSize.label %></span></legend>
         <div class="sizes">

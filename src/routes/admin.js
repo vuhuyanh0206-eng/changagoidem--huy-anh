@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 const db = require('../db');
 const settings = require('../settings');
 const { requireAdmin, verifyCsrf, clearMenuCache } = require('../middleware');
-const { slugify, now, parseJSON, hydrateProduct, sanitizeHtml, ORDER_STATUS } = require('../utils');
+const { slugify, now, parseJSON, hydrateProduct, cheapestSize, sanitizeHtml, ORDER_STATUS } = require('../utils');
 
 const router = express.Router();
 const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
@@ -167,8 +167,8 @@ router.post(
     const specK = [].concat(b.spec_key || []);
     const specV = [].concat(b.spec_val || []);
     const specs = specK.map((k, i) => [String(k).trim(), String(specV[i] || '').trim()]).filter((s) => s[0] && s[1]);
-    // Giá hiển thị mặc định = size 1m6 (hoặc size đầu tiên)
-    const base = sizes.find((s) => s.label === '1m6 x 2m') || sizes[0];
+    // Giá hiển thị ở danh sách = biến thể rẻ nhất (“Từ …”)
+    const base = cheapestSize(sizes); // giá "Từ …" = biến thể rẻ nhất
     const price = base ? base.price : int(b.price);
     const sale = base ? base.sale_price : int(b.sale_price);
     const slug = await uniqueSlug('products', b.slug || name, id);

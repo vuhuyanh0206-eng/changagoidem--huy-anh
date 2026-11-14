@@ -359,7 +359,32 @@
       }
       if (sizeLabel) sizeLabel.textContent = currentSize();
     };
-    $$('input[name="size"]', pd).forEach((r) => r.addEventListener('change', renderPrice));
+    // Chọn 2 bước: độ dày → kích thước (chỉ hiện kích thước có ở độ dày đó)
+    const dimLabel = $('[data-dim-label]');
+    const thickLabel = $('[data-thick-label]');
+    const syncDimLabel = () => {
+      const s = currentSize().match(/^(\d+ x \d+)/);
+      if (dimLabel) dimLabel.textContent = s ? s[1] + ' cm' : '';
+    };
+    $$('input[name="thick"]', pd).forEach((r) =>
+      r.addEventListener('change', () => {
+        const t = r.value;
+        const prevDim = (currentSize().match(/^(\d+ x \d+)/) || [])[1];
+        let pick = null;
+        $$('[data-dims] .size', pd).forEach((lab) => {
+          const on = lab.dataset.thick === t;
+          lab.hidden = !on;
+          const inp = $('input', lab);
+          if (on && (!pick || inp.value.startsWith(prevDim + ' x '))) pick = inp;
+        });
+        if (pick) pick.checked = true;
+        if (thickLabel) thickLabel.textContent = t + ' cm';
+        syncDimLabel();
+        renderPrice();
+      })
+    );
+    $$('input[name="size"]', pd).forEach((r) => r.addEventListener('change', () => { syncDimLabel(); renderPrice(); }));
+    syncDimLabel();
     renderPrice();
     pd.addEventListener('click', (e) => {
       const q = e.target.closest('[data-qty-step]');

@@ -9,6 +9,7 @@ const cookieSession = require('cookie-session');
 const db = require('./src/db');
 const { migrate } = require('./src/schema');
 const { seedIfEmpty } = require('./src/seed');
+const { importAll } = require('./src/importer');
 const { locals, csrf } = require('./src/middleware');
 
 const app = express();
@@ -77,6 +78,7 @@ app.use((err, req, res, next) => {
   await db.init();
   await migrate();
   await seedIfEmpty();
+  await importAll();
   app.listen(PORT, () => console.log(`Kho Đệm HP đang chạy tại http://localhost:${PORT} (CSDL: ${db.dialect})`));
 })().catch((e) => {
   console.error('Không khởi động được server:', e);
