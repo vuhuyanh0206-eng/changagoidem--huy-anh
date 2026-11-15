@@ -61,7 +61,8 @@
     "price": 33955000,
     "sale": 27164000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm cao su thiên nhiên nhập khẩu Dunlopillo Herit 10cm",
@@ -134,7 +135,8 @@
     "price": 20777000,
     "sale": 16622000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm cao su cao cấp Dunlopillo Latex World Eco Fresh 25cm",
@@ -196,7 +198,8 @@
     "price": 80341000,
     "sale": 64273000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm cao su cao cấp Dunlopillo Latex World Pure Fresh 20cm",
@@ -265,7 +268,8 @@
     "price": 65479000,
     "sale": 52383000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm cao su cao cấp Dunlopillo Latex World Neo Fresh 15cm",
@@ -334,7 +338,8 @@
     "price": 55307000,
     "sale": 44246000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm cao su cao cấp Dunlopillo Latex World Relax Fresh 10cm",
@@ -401,6 +406,1184 @@
     "t": 10,
     "price": 40598000,
     "sale": 32478000
+   }
+  ],
+  "featured": 1
+ },
+ {
+  "name": "Đệm gấp gọn Mliving Comfort Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-gap-gon-mliving-comfort",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-gap-gon-mliving-comfort-1.jpg",
+   "/images/products/liena/nem-gap-gon-mliving-comfort-2.jpg",
+   "/images/products/liena/nem-gap-gon-mliving-comfort-3.jpg",
+   "/images/products/liena/nem-gap-gon-mliving-comfort-4.jpg",
+   "/images/products/liena/nem-gap-gon-mliving-comfort-5.jpg",
+   "/images/products/liena/nem-gap-gon-mliving-comfort-6.jpg"
+  ],
+  "description_html": "<h3>Đệm gấp gọn Mliving Comfort Liên Á</h3>\n<p><strong>Tiện lợi và êm ái.</strong></p>\n<p>N&acirc;ng đỡ &ecirc;m &aacute;i, ph&ugrave; hợp:</p>\n<ul>\n<li>Tối ưu tư thế nằm thẳng lưng</li>\n<li>Tho&aacute;ng m&aacute;t suốt đ&ecirc;m</li>\n<li>Gấp gọn tiện lợi</li>\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3><p>N&acirc;ng đỡ &ecirc;m &aacute;i<br>Tho&aacute;ng kh&iacute; tối ưu<br>Gấp gọn tiện lợi<br>&Aacute;o nệm ngăn thấm<br>Tối ưu với tư thế nằm thẳng lưng</p><p>Cấu tr&uacute;c pincore cổ điển n&acirc;ng đỡ &ecirc;m &aacute;i<br>Cấu tr&uacute;c bọt hở tho&aacute;ng kh&iacute; tối ưu<br>Cao su dẻo dai c&oacute; độ bền cao<br>Thiết kế gấp gọn dễ d&agrave;ng di chuyển<br>Thiết kế tối ưu với tư thế nằm thẳng lưng<br>Ph&ugrave; hợp với người nhẹ c&acirc;n</p>\n<h3>Áo bọc</h3><p>Tích hợp công nghệ Lotus đẩy lùi vết bẩn & dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm gấp gọn Mliving Comfort Liên Á chính hãng Liên Á – tiện lợi và êm ái. Tối ưu tư thế nằm thẳng lưng, tho&aacute;ng m&aacute;t suốt đ&ecirc;m, gấp gọn tiện lợi.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 120,
+    "l": 200,
+    "t": 5,
+    "price": 7390000,
+    "sale": 6651000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 5,
+    "price": 8290000,
+    "sale": 7461000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 5,
+    "price": 8990000,
+    "sale": 8091000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 5,
+    "price": 10190000,
+    "sale": 9171000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 5,
+    "price": 13290000,
+    "sale": 11961000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su 5ZONE Premium Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-5zone-premium",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-5zone-premium-1.jpg",
+   "/images/products/liena/nem-cao-su-5zone-premium-2.jpg",
+   "/images/products/liena/nem-cao-su-5zone-premium-3.jpg",
+   "/images/products/liena/nem-cao-su-5zone-premium-4.jpg",
+   "/images/products/liena/nem-cao-su-5zone-premium-5.jpg",
+   "/images/products/liena/nem-cao-su-5zone-premium-6.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su 5ZONE Premium Liên Á</h3>\n<p><strong>Nâng đỡ thông minh 5 vùng.</strong></p>\n<p>Nâng đỡ từng vùng, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên công thức độc quyền</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ linh hoạt<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủNâng đỡ 5 vùng linh hoạt theo đường cong cơ thể<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Phù hợp với người cao tuổi hoặc có vấn đề về xương khớp<br>Nâng đỡ tốt người có cân nặng từ 60 kg\n<h3>Áo bọc</h3><p>Áo nệm vải dệt cao cấp xuất xứ châu Âu & dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên công thức độc quyền"
+   ],
+   [
+    "Độ cứng",
+    "Cứng"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su 5ZONE Premium Liên Á chính hãng Liên Á – nâng đỡ thông minh 5 vùng. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 5,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 36790000,
+    "sale": 33111000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 39990000,
+    "sale": 35991000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 52490000,
+    "sale": 47241000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 65190000,
+    "sale": 58671000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Grey Premium Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-ladome-grey-premium",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-1.jpg",
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-2.jpg",
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-3.jpg",
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-4.jpg",
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-5.jpg",
+   "/images/products/liena/nem-cao-su-ladome-grey-premium-6.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Grey Premium Liên Á</h3>\n<p><strong>Kháng khuẩn tối ưu.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Kháng khuẩn, khử mùi</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên <br> Tích hợp than hoạt tính</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Kháng khuẩn khử mùi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Công nghệ C.Fusion Latex™ kháng khuẩn<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt cho người có cân nặng từ 60kg trở lên\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên , Tích hợp than hoạt tính"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Grey Premium Liên Á chính hãng Liên Á – kháng khuẩn tối ưu. Mọi tư thế ngủ, kháng khuẩn, khử mùi, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 120,
+    "l": 200,
+    "t": 15,
+    "price": 20890000,
+    "sale": 18801000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 15,
+    "price": 22690000,
+    "sale": 20421000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 24790000,
+    "sale": 22311000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 28790000,
+    "sale": 25911000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 39690000,
+    "sale": 35721000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 44190000,
+    "sale": 39771000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Cool Premium Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-ladome-cool-premium",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-1.jpg",
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-2.jpg",
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-3.jpg",
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-4.jpg",
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-5.jpg",
+   "/images/products/liena/nem-cao-su-ladome-cool-premium-6.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Cool Premium Liên Á</h3>\n<p><strong>Nệm mát, giấc say.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Làm mát</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Làm mát<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt cho người có cân nặng từ 60kg trở lên\n<h3>Áo bọc</h3><p>Tích hợp công nghệ làm mát CoolAdapt™ & dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Cool Premium Liên Á chính hãng Liên Á – nệm mát, giấc say. Mọi tư thế ngủ, làm mát, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 120,
+    "l": 200,
+    "t": 15,
+    "price": 19890000,
+    "sale": 17901000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 15,
+    "price": 21390000,
+    "sale": 19251000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 23490000,
+    "sale": 21141000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 27290000,
+    "sale": 24561000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 37690000,
+    "sale": 33921000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 43157000,
+    "sale": 38841000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Premium Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-ladome-premium",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-ladome-premium-1.jpg",
+   "/images/products/liena/nem-cao-su-ladome-premium-2.jpg",
+   "/images/products/liena/nem-cao-su-ladome-premium-3.jpg",
+   "/images/products/liena/nem-cao-su-ladome-premium-4.jpg",
+   "/images/products/liena/nem-cao-su-ladome-premium-5.jpg",
+   "/images/products/liena/nem-cao-su-ladome-premium-6.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Premium Liên Á</h3>\n<p><strong>Nâng đỡ vững chãi.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt cho người có cân nặng từ 60kg trở lên\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Premium Liên Á chính hãng Liên Á – nâng đỡ vững chãi. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 120,
+    "l": 200,
+    "t": 15,
+    "price": 18390000,
+    "sale": 16551000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 15,
+    "price": 19890000,
+    "sale": 17901000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 21790000,
+    "sale": 19611000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 25490000,
+    "sale": 22941000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 32490000,
+    "sale": 29241000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 39251000,
+    "sale": 35326000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 20,
+    "price": 32490000,
+    "sale": 29241000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 20,
+    "price": 36990000,
+    "sale": 33291000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 20,
+    "price": 46090000,
+    "sale": 41481000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 20,
+    "price": 52009000,
+    "sale": 46808000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Grey Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-la-dome-grey",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-4.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-5.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-grey-6.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Grey Liên Á</h3>\n<p><strong>Kháng khuẩn tối ưu.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Kháng khuẩn, khử mùi</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên <br> Tích hợp than hoạt tính</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Kháng khuẩn khử mùi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Công nghệ C.Fusion Latex™ kháng khuẩn<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên , Tích hợp than hoạt tính"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Grey Liên Á chính hãng Liên Á – kháng khuẩn tối ưu. Mọi tư thế ngủ, kháng khuẩn, khử mùi, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 10,
+    "price": 12690000,
+    "sale": 11421000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 10,
+    "price": 14490000,
+    "sale": 13041000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 10,
+    "price": 16390000,
+    "sale": 14751000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 18290000,
+    "sale": 16461000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 20790000,
+    "sale": 18711000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 10,
+    "price": 28690000,
+    "sale": 25821000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 32502000,
+    "sale": 29252000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Cool Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-la-dome-cool",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-cool-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-cool-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-cool-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-cool-4.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-cool-5.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Cool Liên Á</h3>\n<p><strong>Nệm mát, giấc say.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Làm mát</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Làm mát<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ\n<h3>Áo bọc</h3><p>Tích hợp công nghệ làm mát CoolAdapt™ & dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Cool Liên Á chính hãng Liên Á – nệm mát, giấc say. Mọi tư thế ngủ, làm mát, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 10,
+    "price": 11790000,
+    "sale": 10611000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 10,
+    "price": 13590000,
+    "sale": 12231000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 10,
+    "price": 15290000,
+    "sale": 13761000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 17190000,
+    "sale": 15471000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 19290000,
+    "sale": 17361000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 10,
+    "price": 26690000,
+    "sale": 24021000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 28949000,
+    "sale": 26054000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su LEGACY Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-legacy",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-legacy-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-legacy-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-legacy-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-legacy-4.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-legacy-5.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su LEGACY Liên Á</h3>\n<p><strong>Lựa chọn nghỉ ngơi đẳng cấp.</strong></p>\n<p>Nâng đỡ êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ thông minh<br>Thoáng khí tối ưu<br>Độ bền cao<br>Phù hợp với mọi tư thế ngủ3 lớp cao su phân tầng nâng đỡ thông minh<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Tối ưu với tư thế nằm nghiêng\n<h3>Áo bọc</h3><p>Vải lụa dệt mượt mà mát da & sang trọng</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Rất êm"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su LEGACY Liên Á chính hãng Liên Á – lựa chọn nghỉ ngơi đẳng cấp. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "10 năm",
+  "firmness": 1,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 120,
+    "l": 200,
+    "t": 15,
+    "price": 28190000,
+    "sale": 25371000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 15,
+    "price": 29590000,
+    "sale": 26631000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 32990000,
+    "sale": 29691000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 38390000,
+    "sale": 34551000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 49490000,
+    "sale": 44541000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 55344000,
+    "sale": 49810000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su 5ZONE Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-5zone",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-5zone-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-5zone-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-5zone-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-5zone-4.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-5zone-5.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su 5ZONE Liên Á</h3>\n<p><strong>Nâng đỡ thông minh 5 vùng.</strong></p>\n<p>Nâng đỡ từng vùng, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên công thức độc quyền</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ linh hoạt<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủNâng đỡ 5 vùng linh hoạt theo đường cong cơ thể<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Phù hợp với người cao tuổi hoặc có vấn đề về xương khớp\n<h3>Áo bọc</h3><p>Vải dệt cao cấp châu Âu & dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên công thức độc quyền"
+   ],
+   [
+    "Độ cứng",
+    "Cứng"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su 5ZONE Liên Á chính hãng Liên Á – nâng đỡ thông minh 5 vùng. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 5,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 25990000,
+    "sale": 23391000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 29690000,
+    "sale": 26721000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 10,
+    "price": 38290000,
+    "sale": 34461000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 46490000,
+    "sale": 41841000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su L'ADOME Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-la-dome",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-la-dome-4.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su L'ADOME Liên Á</h3>\n<p><strong>Nâng đỡ vững chãi.</strong></p>\n<p>Nâng đỡ vững chãi, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền vượt trội<br>Phù hợp với mọi tư thế ngủCấu trúc DOME nâng đỡ vững chãi<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Độ bền vượt trội<br>Thiết kế phù hợp với mọi tư thế ngủ\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "12 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su L'ADOME Liên Á chính hãng Liên Á – nâng đỡ vững chãi. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "12 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 5,
+    "price": 7390000,
+    "sale": 6651000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 5,
+    "price": 8190000,
+    "sale": 7371000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 5,
+    "price": 9090000,
+    "sale": 8181000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 5,
+    "price": 9990000,
+    "sale": 8991000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 5,
+    "price": 11290000,
+    "sale": 10161000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 5,
+    "price": 17290000,
+    "sale": 15561000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 5,
+    "price": 18928000,
+    "sale": 17035000
+   },
+   {
+    "w": 100,
+    "l": 200,
+    "t": 10,
+    "price": 10390000,
+    "sale": 9351000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 10,
+    "price": 11890000,
+    "sale": 10701000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 10,
+    "price": 13490000,
+    "sale": 12141000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 14990000,
+    "sale": 13491000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 17290000,
+    "sale": 15561000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 10,
+    "price": 25090000,
+    "sale": 22581000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 26611000,
+    "sale": 23950000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su Premium Classic Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-premium-classic",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-premium-classic-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-premium-classic-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-premium-classic-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-premium-classic-4.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-premium-classic-5.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su Premium Classic Liên Á</h3>\n<p><strong>Nâng đỡ bền bỉ.</strong></p>\n<p>Nâng đỡ bền bỉ, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền cao<br>Phù hợp với mọi tư thế ngủTăng cường nâng đỡ với cấu trúc thành DOME<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt cho người có cân nặng từ 60 kg trở lên\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su Premium Classic Liên Á chính hãng Liên Á – nâng đỡ bền bỉ. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 21190000,
+    "sale": 19071000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 24790000,
+    "sale": 22311000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 15,
+    "price": 31790000,
+    "sale": 28611000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 32935000,
+    "sale": 29642000
+   }
+  ]
+ },
+ {
+  "name": "Đệm cao su Classic Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-cao-su-lien-a-classic",
+  "kind": "Đệm cao su thiên nhiên",
+  "images": [
+   "/images/products/liena/nem-cao-su-lien-a-classic-1.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-classic-2.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-classic-3.jpg",
+   "/images/products/liena/nem-cao-su-lien-a-classic-4.jpg"
+  ],
+  "description_html": "<h3>Đệm cao su Classic Liên Á</h3>\n<p><strong>Nâng đỡ bền bỉ.</strong></p>\n<p>Nâng đỡ bền bỉ, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Thoáng mát suốt đêm</li>\r\n    <li>Hạn chế đau, mỏi lưng</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Nâng đỡ vững chãi<br>Thoáng khí tối ưu<br>Độ bền cao<br>Phù hợp với mọi tư thế ngủTăng cường nâng đỡ với cấu trúc thành DOME<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế phù hợp với mọi tư thế ngủ\n<h3>Áo bọc</h3><p>Dễ dàng tháo rời vệ sinh</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm cao su thiên nhiên"
+   ],
+   [
+    "Chất liệu",
+    "Cao su 100% thiên nhiên"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm cao su Classic Liên Á chính hãng Liên Á – nâng đỡ bền bỉ. Mọi tư thế ngủ, thoáng mát suốt đêm, hạn chế đau, mỏi lưng.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 5,
+    "price": 6690000,
+    "sale": 6021000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 5,
+    "price": 7790000,
+    "sale": 7011000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 5,
+    "price": 8490000,
+    "sale": 7641000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 5,
+    "price": 9390000,
+    "sale": 8451000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 5,
+    "price": 10690000,
+    "sale": 9621000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 5,
+    "price": 13890000,
+    "sale": 12501000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 5,
+    "price": 16357000,
+    "sale": 14721000
+   },
+   {
+    "w": 100,
+    "l": 200,
+    "t": 10,
+    "price": 9990000,
+    "sale": 8991000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 10,
+    "price": 11190000,
+    "sale": 10071000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 10,
+    "price": 12890000,
+    "sale": 11601000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 14290000,
+    "sale": 12861000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 16390000,
+    "sale": 14751000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 10,
+    "price": 20490000,
+    "sale": 18441000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 24290000,
+    "sale": 21861000
    }
   ]
  }

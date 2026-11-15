@@ -43,8 +43,9 @@ async function init() {
     const { DatabaseSync } = require('node:sqlite');
     const dir = path.join(__dirname, '..', 'data');
     fs.mkdirSync(dir, { recursive: true });
-    const db = new DatabaseSync(path.join(dir, 'khodem.db'));
-    db.exec('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');
+    // timeout: chờ tối đa 10s khi CSDL đang bận (VD: 2 tiến trình cùng mở) thay vì lỗi "database is locked"
+    const db = new DatabaseSync(path.join(dir, 'khodem.db'), { timeout: 10000 });
+    db.exec('PRAGMA busy_timeout = 10000; PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');
     dialect = 'sqlite';
     const norm = (params) => params.map((p) => (p === undefined ? null : typeof p === 'boolean' ? (p ? 1 : 0) : p));
     driver = {

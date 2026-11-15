@@ -59,7 +59,8 @@
    "Dòng lò xo túi cao cấp nhất của Elan, dày 36cm",
    "Lớp gối đệm (pillow top) dày êm như khách sạn 5 sao",
    "Lò xo túi độc lập, không truyền chuyển động"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo túi Elan VIP II 28cm",
@@ -122,7 +123,8 @@
    "Lò xo túi độc lập nâng đỡ từng điểm cơ thể",
    "Mặt pillow top chần nổi êm ái",
    "Dày 28cm, viền đệm chắc chắn chống lún mép"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo túi Elan Alias 29cm cuộn",
@@ -185,7 +187,8 @@
    "Đóng gói cuộn hút chân không, dễ vận chuyển lên nhà cao tầng",
    "Mặt pillow top vải dệt hoa văn sang trọng",
    "Lò xo túi độc lập, dày 29cm"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo túi Elan Alias 27cm",
@@ -245,7 +248,8 @@
    "Lò xo túi độc lập kết hợp foam êm mặt",
    "Lớp pillow top chần trám dày dặn",
    "Dày 27cm, phù hợp giường gia đình và khách sạn"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo túi Elan Vimatt 24cm cuộn",
@@ -305,7 +309,8 @@
    "Đóng gói cuộn gọn, mở ra tự phục hồi form",
    "Lò xo túi độc lập, nằm êm không tiếng ồn",
    "Dày 24cm, giá tốt trong phân khúc lò xo túi"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo túi Elan Vimatt 22cm cuộn",
@@ -365,7 +370,8 @@
    "Lò xo túi độc lập dạng cuộn, giao hàng nhanh gọn",
    "Vỏ dệt kim chần ô thoáng mát",
    "Dày 22cm, phù hợp phòng ngủ, căn hộ cho thuê"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo liên kết Elan See 23cm",
@@ -425,7 +431,8 @@
    "Lò xo liên kết chắc chắn, nằm hơi cứng, bền bỉ",
    "Mặt đệm chần ô trắng, viền xanh đậm",
    "Dày 23cm, giá kinh tế nhất dòng lò xo Elan"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo khách sạn Elan TB54 23cm",
@@ -444,7 +451,8 @@
    "Dòng đệm chuyên cho khách sạn, homestay, resort",
    "Cối xốp 1 mặt, mặt chần ô êm thoáng",
    "Sản xuất theo kích thước dự án, báo giá theo số lượng"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk BLACK Valmont 42cm",
@@ -512,7 +520,8 @@
     "price": 298873750,
     "sale": 239099000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk BLACK Beaumont 38cm",
@@ -580,7 +589,8 @@
     "price": 209998750,
     "sale": 167999000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Windsor 36cm",
@@ -648,7 +658,8 @@
     "price": 115123750,
     "sale": 92099000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Prestige 33cm",
@@ -716,7 +727,8 @@
     "price": 89248750,
     "sale": 71399000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Sovereign Firm 30cm",
@@ -784,7 +796,8 @@
     "price": 85748750,
     "sale": 68599000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Prime 30cm",
@@ -852,7 +865,8 @@
     "price": 36998750,
     "sale": 29599000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Calm 27cm",
@@ -920,7 +934,8 @@
     "price": 33498750,
     "sale": 26799000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Air 25cm",
@@ -988,7 +1003,8 @@
     "price": 30748750,
     "sale": 24599000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Royal Kensington 38cm",
@@ -1049,7 +1065,8 @@
     "price": 107526000,
     "sale": 86021000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Elizabeth 34cm",
@@ -1131,7 +1148,8 @@
     "price": 80271000,
     "sale": 64217000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Evita 28cm",
@@ -1199,7 +1217,8 @@
     "price": 50338000,
     "sale": 40270000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Duchess Extra Firm 29cm",
@@ -1274,7 +1293,8 @@
     "price": 38537000,
     "sale": 30830000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Firmrest Extra 29cm",
@@ -1344,7 +1364,8 @@
     "price": 35721000,
     "sale": 28577000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Marilyn 25cm",
@@ -1413,7 +1434,8 @@
     "price": 25281000,
     "sale": 20225000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Spine O Master 26cm",
@@ -1488,7 +1510,8 @@
     "price": 22378000,
     "sale": 17902000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Audrey Premium 25cm",
@@ -1557,7 +1580,8 @@
     "price": 18657000,
     "sale": 14926000
    }
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm lò xo cao cấp Dunlopillo Venus Supreme 23cm",
@@ -1633,6 +1657,553 @@
     "t": 23,
     "price": 10659000,
     "sale": 8527000
+   }
+  ],
+  "featured": 1
+ },
+ {
+  "name": "Đệm lò xo túi Bello Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-tui-bello",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-tui-bello-1.jpg",
+   "/images/products/liena/nem-lo-xo-tui-bello-2.jpg",
+   "/images/products/liena/nem-lo-xo-tui-bello-3.jpg",
+   "/images/products/liena/nem-lo-xo-tui-bello-4.jpg",
+   "/images/products/liena/nem-lo-xo-tui-bello-5.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi Bello Liên Á</h3>\n<p><strong>Khởi đầu vững chãi.</strong></p>\n<p>N&acirc;ng đỡ chắc chắn:</p>\n<ul>\n<li>Tối ưu tư thế nằm thẳng</li>\n<li>Hạn chế tiếng ồn</li>\n<li>Vải bọc nệm nhập khẩu cao cấp</li>\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Foam cao cấp<br>Vải dệt nhập khẩu cao cấp</p>\n<h3>Đặc điểm nổi bật</h3><p>N&acirc;ng đỡ từng v&ugrave;ng<br>C&aacute;ch ly truyền động<br>Tối ưu với tư thế nằm thẳng lưng</p><p>\n<div>Hệ thống l&ograve; xo t&uacute;i n&acirc;ng đỡ linh hoạt</p>\n<p>Th&eacute;p l&ograve; xo chuẩn Anh Quốc bền bỉ vững ch&atilde;i</p>\n<p>Tối ưu với tư thế nằm thẳng lưng</p>\n<p>N&acirc;ng đỡ tốt người c&oacute; c&acirc;n nặng từ 90kg</p>\n</div>\n<h3>Áo bọc</h3><p>Áo nệm bọc vải cao cấp với thiết kế hiện đại, tinh tế</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Foam cao cấp, Vải dệt nhập khẩu cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi Bello Liên Á chính hãng Liên Á – khởi đầu vững chãi. Tối ưu tư thế nằm thẳng, hạn chế tiếng ồn, vải bọc nệm nhập khẩu cao cấp.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 22,
+    "price": 7790000,
+    "sale": 7011000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 22,
+    "price": 8090000,
+    "sale": 7281000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 22,
+    "price": 8590000,
+    "sale": 7731000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 22,
+    "price": 8900000,
+    "sale": 8010000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 22,
+    "price": 10690000,
+    "sale": 9621000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 22,
+    "price": 12590000,
+    "sale": 11331000
+   }
+  ]
+ },
+ {
+  "name": "Đệm lò xo túi COCOON Grey Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-lien-a-cocoon-grey",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-1.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-2.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-3.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-4.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-5.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-6.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi COCOON Grey Liên Á</h3>\n<p><strong>Chuẩn kháng khuẩn, chuẩn giấc êm.</strong></p>\n<p>Nâng đỡ chắc chắn, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Kháng khuẩn, khử mùi</li>\r\n    <li>Hạn chế tiếng ồn</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Cao su thiên nhiên tích hợp than hoạt tính<br>Foam cao cấp</p>\n<h3>Đặc điểm nổi bật</h3>Làm mát<br>Kháng khuẩn<br>Nâng đỡ từng vùng<br>Cách ly truyền động<br>Phù hợp với mọi tư thế ngủHệ thống lò xo túi nâng đỡ linh hoạt<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Công nghệ C.Fusion Latex™ kháng khuẩn khử mùi<br>Thép lò xo chuẩn Anh Quốc bền bỉ vững chãi<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt người có cân nặng từ 90kg\n<h3>Áo bọc</h3><p>Vải dệt sang trọng & tích hợp công nghệ làm mát CoolAdapt™</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Cao su thiên nhiên tích hợp than hoạt tính, Foam cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi COCOON Grey Liên Á chính hãng Liên Á – chuẩn kháng khuẩn, chuẩn giấc êm. Mọi tư thế ngủ, kháng khuẩn, khử mùi, hạn chế tiếng ồn.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 25,
+    "price": 12190000,
+    "sale": 10971000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 25,
+    "price": 13090000,
+    "sale": 11781000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 25,
+    "price": 14290000,
+    "sale": 12861000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 25,
+    "price": 15690000,
+    "sale": 14121000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 25,
+    "price": 18590000,
+    "sale": 16731000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 25,
+    "price": 20890000,
+    "sale": 18801000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 25,
+    "price": 26390000,
+    "sale": 23751000
+   }
+  ]
+ },
+ {
+  "name": "Đệm lò xo túi COCOON Grey Luxe Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-lien-a-cocoon-grey-luxe",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-1.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-2.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-3.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-4.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-5.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-grey-luxe-6.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi COCOON Grey Luxe Liên Á</h3>\n<p><strong>Trải nghiệm nghỉ ngơi đẳng cấp.</strong></p>\n<p>Nâng đỡ êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Kháng khuẩn, khử mùi</li>\r\n    <li>Hạn chế tiếng ồn</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Cao su thiên nhiên tích hợp than hoạt tính<br>Foam cao cấp</p>\n<h3>Đặc điểm nổi bật</h3>Làm mát<br>Kháng khuẩn<br>Nâng đỡ từng vùng<br>Cách ly truyền động<br>Lớp cao su thiên nhiên bề mặt<br>Tối ưu với tư thế nằm nghiêngHệ thống lò xo túi nâng đỡ linh hoạt<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Công nghệ C.Fusion Latex™ kháng khuẩn khử mùi<br>Pillow Top bồng bềnh kết hợp cao su thiên nhiên bề mặt êm ái<br>Thép lò xo chuẩn Anh Quốc bền bỉ vững chãi<br>Thiết kế phù hợp mọi tư thế ngủ<br>Tối ưu với tư thế nằm nghiêng<br>Nâng đỡ tốt người có cân nặng từ 90kg\n<h3>Áo bọc</h3><p>Vải dệt sang trọng & tích hợp công nghệ làm mát CoolAdapt™</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Cao su thiên nhiên tích hợp than hoạt tính, Foam cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Êm"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi COCOON Grey Luxe Liên Á chính hãng Liên Á – trải nghiệm nghỉ ngơi đẳng cấp. Mọi tư thế ngủ, kháng khuẩn, khử mùi, hạn chế tiếng ồn.",
+  "warranty": "10 năm",
+  "firmness": 2,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 140,
+    "l": 200,
+    "t": 30,
+    "price": 29690000,
+    "sale": 26721000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 30,
+    "price": 31790000,
+    "sale": 28611000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 30,
+    "price": 37490000,
+    "sale": 33741000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 30,
+    "price": 45990000,
+    "sale": 41391000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 30,
+    "price": 50990000,
+    "sale": 45891000
+   }
+  ]
+ },
+ {
+  "name": "Đệm lò xo túi COCOON 2.0 Luxe Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-lien-a-cocoon-20-luxe",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-1.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-2.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-3.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-4.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-5.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-luxe-6.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi COCOON 2.0 Luxe Liên Á</h3>\n<p><strong>Đẳng cấp êm ái thăng hoa.</strong></p>\n<p>Nâng đỡ êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Làm mát</li>\r\n    <li>Hạn chế tiếng ồn</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Cao su thiên nhiên<br>Foam cao cấp</p>\n<h3>Đặc điểm nổi bật</h3>Làm mát<br>Nâng đỡ từng vùng<br>Cách ly truyền động<br>Lớp cao su thiên nhiên bề mặt<br>Tối ưu với tư thế nằm nghiêngHệ thống lò xo túi nâng đỡ linh hoạt<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Pillow Top bồng bềnh kết hợp cao su thiên nhiên bề mặt êm ái<br>Thép lò xo chuẩn Anh Quốc bền bỉ vững chãi<br>Thiết kế phù hợp mọi tư thế ngủ<br>Tối ưu với tư thế nằm nghiêng<br>Nâng đỡ tốt người có cân nặng từ 90kg\n<h3>Áo bọc</h3><p>Vải dệt sang trọng & tích hợp công nghệ làm mát CoolAdapt™</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Cao su thiên nhiên, Foam cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Êm"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi COCOON 2.0 Luxe Liên Á chính hãng Liên Á – đẳng cấp êm ái thăng hoa. Mọi tư thế ngủ, làm mát, hạn chế tiếng ồn.",
+  "warranty": "10 năm",
+  "firmness": 2,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 140,
+    "l": 200,
+    "t": 30,
+    "price": 24890000,
+    "sale": 22401000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 30,
+    "price": 26490000,
+    "sale": 23841000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 30,
+    "price": 31290000,
+    "sale": 28161000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 30,
+    "price": 38990000,
+    "sale": 35091000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 30,
+    "price": 43900000,
+    "sale": 39510000
+   }
+  ]
+ },
+ {
+  "name": "Đệm lò xo túi COCOON 2.0 Premium Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-lien-a-cocoon-20-premium",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-1.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-2.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-3.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-4.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-5.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-20-premium-6.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi COCOON 2.0 Premium Liên Á</h3>\n<p><strong>Đẹp tinh tế, êm say mê.</strong></p>\n<p>Nâng đỡ êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Mọi tư thế ngủ</li>\r\n    <li>Làm mát</li>\r\n    <li>Hạn chế tiếng ồn</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Cao su thiên nhiên<br>Foam cao cấp</p>\n<h3>Đặc điểm nổi bật</h3>Làm mát<br>Nâng đỡ từng vùng<br>Cách ly truyền động<br>Lớp Euro Top êm ái<br>Phù hợp với mọi tư thế ngủHệ thống lò xo túi nâng đỡ linh hoạt<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Euro Top sang trọng và tăng thêm êm ái<br>Thép lò xo chuẩn Anh Quốc bền bỉ vững chãi<br>Thiết kế phù hợp với mọi tư thế ngủ<br>Nâng đỡ tốt người có cân nặng từ 90kg\n<h3>Áo bọc</h3><p>Vải dệt sang trọng & tích hợp công nghệ làm mát CoolAdapt™</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Cao su thiên nhiên, Foam cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi COCOON 2.0 Premium Liên Á chính hãng Liên Á – đẹp tinh tế, êm say mê. Mọi tư thế ngủ, làm mát, hạn chế tiếng ồn.",
+  "warranty": "10 năm",
+  "firmness": 3,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 28,
+    "price": 14290000,
+    "sale": 12861000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 28,
+    "price": 16890000,
+    "sale": 15201000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 28,
+    "price": 18790000,
+    "sale": 16911000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 28,
+    "price": 19990000,
+    "sale": 17991000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 28,
+    "price": 23390000,
+    "sale": 21051000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 28,
+    "price": 30290000,
+    "sale": 27261000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 28,
+    "price": 33590000,
+    "sale": 30231000
+   }
+  ]
+ },
+ {
+  "name": "Đệm lò xo túi COCOON Liên Á",
+  "brand": "Liên Á",
+  "source": "https://www.liena.com.vn/nem-lo-xo-lien-a-cocoon-firm",
+  "kind": "Đệm lò xo túi",
+  "images": [
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-1.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-2.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-3.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-4.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-5.jpg",
+   "/images/products/liena/nem-lo-xo-lien-a-cocoon-firm-6.jpg"
+  ],
+  "description_html": "<h3>Đệm lò xo túi COCOON Liên Á</h3>\n<p><strong>Nệm êm, đêm say giấc.</strong></p>\n<p>Nâng đỡ chắc chắn, phù hợp:</p>\r\n<ul>\r\n    <li>Tối ưu tư thế nằm thẳng lưng</li>\r\n    <li>Làm mát</li>\r\n    <li>Hạn chế tiếng ồn</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Thép tiêu chuẩn Anh Quốc<br>Cao su thiên nhiên<br>Foam cao cấp</p>\n<h3>Đặc điểm nổi bật</h3><p>L&agrave;m m&aacute;t<br>N&acirc;ng đỡ từng v&ugrave;ng<br>C&aacute;ch ly truyền động<br>Tối ưu với tư thế nằm thẳng lưng</p>Hệ thống lò xo túi nâng đỡ linh hoạt<br>Công nghệ làm mát CoolAdapt™ thúc đẩy tản nhiệt<br>Thép lò xo chuẩn Anh Quốc bền bỉ vững chãi<br>Tối ưu với tư thế nằm thẳng lưng<br>Nâng đỡ tốt người có cân nặng từ 90kg\n<h3>Áo bọc</h3><p>Vải dệt sang trọng & tích hợp công nghệ làm mát CoolAdapt™</p>",
+  "specs": [
+   [
+    "Thương hiệu",
+    "Liên Á"
+   ],
+   [
+    "Loại",
+    "Đệm lò xo túi"
+   ],
+   [
+    "Chất liệu",
+    "Thép tiêu chuẩn Anh Quốc, Cao su thiên nhiên, Foam cao cấp"
+   ],
+   [
+    "Độ cứng",
+    "Cứng vừa"
+   ],
+   [
+    "Bảo hành",
+    "10 năm"
+   ],
+   [
+    "Xuất xứ",
+    "Việt Nam"
+   ]
+  ],
+  "short": "Đệm lò xo túi COCOON Liên Á chính hãng Liên Á – nệm êm, đêm say giấc. Tối ưu tư thế nằm thẳng lưng, làm mát, hạn chế tiếng ồn.",
+  "warranty": "10 năm",
+  "firmness": 4,
+  "featured": 1,
+  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
+  "variants": [
+   {
+    "w": 100,
+    "l": 200,
+    "t": 25,
+    "price": 8990000,
+    "sale": 8091000
+   },
+   {
+    "w": 120,
+    "l": 200,
+    "t": 25,
+    "price": 9990000,
+    "sale": 8991000
+   },
+   {
+    "w": 140,
+    "l": 200,
+    "t": 25,
+    "price": 10890000,
+    "sale": 9801000
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 25,
+    "price": 11490000,
+    "sale": 10341000
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 25,
+    "price": 13790000,
+    "sale": 12411000
+   },
+   {
+    "w": 200,
+    "l": 200,
+    "t": 25,
+    "price": 19190000,
+    "sale": 17271000
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 25,
+    "price": 21590000,
+    "sale": 19431000
    }
   ]
  }

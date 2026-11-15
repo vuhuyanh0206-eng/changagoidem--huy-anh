@@ -756,7 +756,8 @@
    "/images/products/elan/fly-6.jpg",
    "/images/products/elan/fly-4.jpg",
    "/images/products/elan/fly-5.jpg"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm bông ép Everon",
@@ -1229,7 +1230,8 @@
    "/images/products/elan/alias-2m-5.jpg",
    "/images/products/elan/alias-2m-1.jpg",
    "/images/products/elan/alias-2m-2.jpg"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm Elan Vimatt 2M chần foam",
@@ -1371,7 +1373,8 @@
    "/images/products/elan/vimatt-2m-6.jpg",
    "/images/products/elan/vimatt-2m-2.jpg",
    "/images/products/elan/vimatt-2m-5.jpg"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm Elan See 2M chần foam",
@@ -1510,7 +1513,8 @@
    "/images/products/elan/see-2m-1.jpg",
    "/images/products/elan/see-2m-3.jpg",
    "/images/products/elan/see-2m-2.jpg"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm bông ép Gold Kim Cương",
@@ -2845,7 +2849,8 @@
    "Gấp 3 mảnh gọn nhẹ, dễ vận chuyển và cất giữ",
    "Vỏ gấm dệt hoa không chần, có khoá kéo tháo giặt",
    "5 độ dày từ 5cm đến 18cm cho mọi nhu cầu"
-  ]
+  ],
+  "featured": 1
  },
  {
   "name": "Đệm bông ép Elan Alias Topper",
@@ -2907,6 +2912,7 @@
    "Dày 12cm, nằm êm mặt mà vẫn giữ lưng thẳng",
    "Gấp gọn được, phù hợp phòng ngủ hiện đại"
   ],
-  "firmness": 4
+  "firmness": 4,
+  "featured": 1
  }
 ]

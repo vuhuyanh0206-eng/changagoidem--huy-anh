@@ -45,6 +45,16 @@ const TYPES = {
     points: ['<strong>Thoáng khí:</strong> lỗ thông hơi xuyên suốt giúp đệm khô thoáng.', '<strong>Bền bỉ:</strong> cao su đàn hồi tốt, giữ form nhiều năm.'],
     firm: 3,
   },
+  'dem-hybrid': {
+    kind: 'Đệm hybrid', sku: 'HY',
+    stock: [['/images/stock/s25.jpg', '/images/stock/s12.jpg']],
+    tagline: 'Kết hợp nhiều lớp vật liệu, êm ái và nâng đỡ tốt.',
+    intro: 'phù hợp người muốn cân bằng giữa độ êm và độ nâng đỡ',
+    points: [], firm: 3,
+  },
+  'phu-kien': { kind: 'Phụ kiện', sku: 'PK', stock: [['/images/stock/s12.jpg', '/images/stock/s03.jpg']], tagline: '', intro: 'tiện dụng cho phòng ngủ', points: [], firm: 0 },
+  'goi-ngu': { kind: 'Gối ngủ', sku: 'GO', stock: [['/images/stock/s06.jpg', '/images/stock/s07.jpg']], tagline: '', intro: 'giúp nâng đỡ cổ vai gáy, ngủ ngon hơn', points: [], firm: 0 },
+  'san-pham-cho-be': { kind: 'Sản phẩm cho bé', sku: 'BB', stock: [['/images/stock/s06.jpg', '/images/stock/s07.jpg']], tagline: '', intro: 'an toàn cho bé', points: [], firm: 0 },
   'dem-lo-xo': {
     kind: 'Đệm lò xo', sku: 'LX',
     stock: [['/images/stock/s05.jpg', '/images/stock/s16.jpg'], ['/images/stock/s16.jpg', '/images/stock/s04.jpg'], ['/images/stock/s04.jpg', '/images/stock/s05.jpg']],
@@ -55,19 +65,25 @@ const TYPES = {
   },
 };
 
-const label = (v) => `${v.w} x ${v.l} x ${v.t} cm`;
+// Danh mục tự tạo nếu CSDL chưa có (khi thêm file import cho danh mục mới)
+const NEW_CATEGORIES = {
+  'dem-hybrid': { name: 'Đệm Hybrid', description: 'Đệm cao su hybrid kết hợp nhiều lớp vật liệu: êm ái, thoáng khí, nâng đỡ tốt.', sort: 2 },
+  'san-pham-cho-be': { name: 'Sản Phẩm Cho Bé', description: 'Đệm, gối cao su thiên nhiên an toàn cho trẻ sơ sinh và trẻ nhỏ.', sort: 6, image: '/images/products/liena/nem-em-be-pompoms-4.jpg' },
+};
+
+const label = (v) => v.label || `${v.w} x ${v.l} x ${v.t} cm`;
 
 function build(p, idx, category) {
   const T = TYPES[category] || TYPES['dem-bong-ep'];
-  const variants = (p.variants || []).filter((v) => v.w && v.l && v.t && v.price > 0);
+  const variants = (p.variants || []).filter((v) => (v.label || (v.w && v.l && v.t)) && v.price > 0);
   const sizes = p.contact ? [] : variants.map((v) => ({ label: label(v), price: v.price, sale_price: v.sale && v.sale < v.price ? v.sale : 0 }));
-  const thick = p.contact && p.thickness ? [p.thickness] : [...new Set(variants.map((v) => v.t))].sort((a, b) => a - b);
-  const dims = [...new Set(variants.map((v) => `${v.w} x ${v.l}`))];
+  const thick = p.contact && p.thickness ? [p.thickness] : [...new Set(variants.filter((v) => v.t).map((v) => v.t))].sort((a, b) => a - b);
+  const dims = [...new Set(variants.filter((v) => v.w).map((v) => `${v.w} x ${v.l}`))];
   const thickText = thick.length > 1 ? `${thick[0]} – ${thick[thick.length - 1]}cm` : thick.length ? `${thick[0]}cm` : '';
-  const firm = p.firmness || (category === 'dem-bong-ep' && thick[thick.length - 1] >= 16 && thick.length === 1 ? 4 : T.firm);
+  const firm = p.firmness ?? (category === 'dem-bong-ep' && thick[thick.length - 1] >= 16 && thick.length === 1 ? 4 : T.firm);
   const firmText = ['', 'Mềm', 'Mềm vừa', 'Vừa', 'Cứng vừa', 'Cứng'][firm];
   const dimText = dims.length ? `${dims.length} kích thước từ ${dims[0]} đến ${dims[dims.length - 1]}cm` : 'kích thước theo yêu cầu';
-  const short = p.contact
+  const short = p.short ? p.short : p.contact
     ? `${p.name} chính hãng ${p.brand}, dày ${thickText}. ${p.features?.[0] ? p.features[0] + "." : T.tagline} Báo giá theo số lượng dự án.`
     : `${p.name} chính hãng ${p.brand}: ${thick.length > 1 ? `${thick.length} độ dày (${thick.join(', ')}cm)` : `dày ${thickText}`}, ${dimText}. ${T.tagline}`;
   const feats = (p.features || []).map((f) => `<li>${f}.</li>`).join('\n');
@@ -80,7 +96,7 @@ ${feats}
 ${T.points.map((x) => `<li>${x}</li>`).join('\n')}
 </ul>
 <p>Liên hệ hotline hoặc Zalo để được tư vấn chọn loại đệm phù hợp và báo giá tốt nhất tại kho.</p>`;
-  const specs = [
+  const specs = p.specs ? [...p.specs] : [
     ['Thương hiệu', p.brand],
     ['Loại đệm', T.kind],
     ['Độ dày', thick.map((t) => t + ' cm').join(', ')],
@@ -88,6 +104,11 @@ ${T.points.map((x) => `<li>${x}</li>`).join('\n')}
     ['Độ cứng', firmText],
     ['Xuất xứ', 'Việt Nam'],
   ];
+  if (p.specs) {
+    const at = Math.max(2, specs.findIndex((r) => r[0] === 'Xuất xứ'));
+    if (thick.length) specs.splice(at, 0, ['Độ dày', thick.map((t) => t + ' cm').join(', ')]);
+    if (dims.length) specs.splice(at + (thick.length ? 1 : 0), 0, ['Kích thước', dims.join(', ') + ' (cm)']);
+  }
   const base = cheapestSize(sizes) || { price: 0, sale_price: 0 };
   const imgs = p.images?.length ? p.images : T.stock[idx % T.stock.length];
   return { sizes, specs, short, description, thickText, firm, base, imgs, sku: T.sku };
@@ -105,7 +126,21 @@ const isStock = (json) => {
 async function importFile(file, { update = false } = {}) {
   const items = JSON.parse(fs.readFileSync(file, 'utf8'));
   const catSlug = path.basename(file, '.json');
-  const cat = await db.one('SELECT id FROM categories WHERE slug = ?', [catSlug]);
+  let cat = await db.one('SELECT id FROM categories WHERE slug = ?', [catSlug]);
+  if (!cat && NEW_CATEGORIES[catSlug]) {
+    const c = NEW_CATEGORIES[catSlug];
+    const first = items.find((x) => x.images?.length);
+    const r = await db.run('INSERT INTO categories (parent_id, name, slug, description, image, sort, active) VALUES (NULL, ?, ?, ?, ?, ?, 1)', [c.name, catSlug, c.description, c.image || (first ? first.images[0] : '/images/stock/s06.jpg'), c.sort]);
+    cat = { id: r.insertId };
+    console.log(`Tạo danh mục mới: ${c.name}`);
+  }
+  // Danh mục còn dùng ảnh minh hoạ -> đổi sang ảnh sản phẩm thật (hãng nhập gần nhất)
+  if (cat) {
+    const row = await db.one('SELECT image FROM categories WHERE id = ?', [cat.id]);
+    const lastBrand = [...items].reverse().find((x) => x.images?.length)?.brand;
+    const pick = items.find((x) => x.brand === lastBrand && x.images?.length);
+    if (pick && (!row?.image || row.image.startsWith('/images/stock/'))) await db.run('UPDATE categories SET image = ? WHERE id = ?', [pick.images[0], cat.id]);
+  }
   let added = 0;
   let updated = 0;
   for (const [i, p] of items.entries()) {
@@ -128,8 +163,8 @@ async function importFile(file, { update = false } = {}) {
     }
     await db.run(
       `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,'',?,?,0,0,1,1,5.0,0,0,?)`,
-      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.badge || '', p.gift || '', now()]
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,1,1,5.0,0,0,?)`,
+      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.warranty || '', p.badge || '', p.gift || '', p.featured ? 1 : 0, now()]
     );
     added++;
   }

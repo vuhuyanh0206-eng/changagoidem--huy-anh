@@ -1,4 +1,4 @@
-<% const contact = !(p.finalPrice > 0); const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x (\d+) cm$/) || [])[1]).filter(Boolean)).size; %>
+<% const contact = !(p.finalPrice > 0); const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x (\d+(?:\.\d+)?) cm$/) || [])[1]).filter(Boolean)).size; %>
 <article class="pcard">
   <a class="pcard__media" href="/san-pham/<%= p.slug %>">
     <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" width="600" height="450">

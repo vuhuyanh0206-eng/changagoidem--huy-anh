@@ -11,13 +11,25 @@ const PER_PAGE = 16;
 router.get(
   '/',
   wrap(async (req, res) => {
-    const [banners, flash, featured, latestPosts, cats] = await Promise.all([
+    const [banners, flash, featuredPool, latestPosts, cats] = await Promise.all([
       db.query('SELECT * FROM banners WHERE active = 1 ORDER BY sort, id'),
       catalog.list({ where: ['p.is_hot = 1', 'p.sale_price > 0'], order: catalog.SORTS.discount, limit: 10 }),
-      catalog.list({ where: ['p.is_featured = 1'], order: 'p.sold DESC', limit: 8 }),
+      catalog.list({ where: ['p.is_featured = 1'], order: 'p.id DESC', limit: 120 }),
       db.query('SELECT id, title, slug, excerpt, image, created_at FROM posts WHERE active = 1 ORDER BY id DESC LIMIT 3'),
       db.query('SELECT * FROM categories WHERE active = 1 AND parent_id IS NULL ORDER BY sort, id'),
     ]);
+    // Sản phẩm nổi bật: mới nhất trước, lấy xen kẽ từng danh mục để trang chủ đa dạng
+    const byCat = new Map();
+    for (const p of featuredPool) (byCat.get(p.category_id) || byCat.set(p.category_id, []).get(p.category_id)).push(p);
+    // Thứ tự danh mục theo sản phẩm mới nhất của từng danh mục
+    const order = [...new Set(featuredPool.map((p) => p.category_id))];
+    const featured = [];
+    while (featured.length < 8 && order.some((id) => byCat.get(id).length)) {
+      for (const id of order) {
+        const q = byCat.get(id);
+        if (q.length && featured.length < 8) featured.push(q.shift());
+      }
+    }
     const counts = await db.query('SELECT category_id, COUNT(*) AS n FROM products WHERE active = 1 GROUP BY category_id');
     const countMap = Object.fromEntries(counts.map((c) => [c.category_id, Number(c.n)]));
     res.render('shop/home', {
@@ -58,7 +70,7 @@ async function renderListing(req, res, { title, description, where, params, cat,
     w.push(`p.firmness IN (${firm.map(() => '?').join(',')})`);
     p.push(...firm);
   }
-  const sort = catalog.SORTS[q.sort] ? q.sort : 'popular';
+  const sort = catalog.SORTS[q.sort] ? q.sort : 'new'; // mặc định: sản phẩm mới thêm lên đầu
   const [products, total, brandRows] = await Promise.all([
     catalog.list({ where: w, params: p, order: catalog.SORTS[sort], limit: PER_PAGE, offset: (page - 1) * PER_PAGE }),
     catalog.count({ where: w, params: p }),
@@ -154,7 +166,7 @@ router.get(
     const product = hydrateProduct(row);
     db.run('UPDATE products SET views = views + 1 WHERE id = ?', [row.id]).catch(() => {});
     const cat = row.category_id ? await db.one('SELECT id, name, slug FROM categories WHERE id = ?', [row.category_id]) : null;
-    const related = await catalog.list({ where: ['p.category_id = ?', 'p.id <> ?'], params: [row.category_id || 0, row.id], order: 'p.sold DESC', limit: 8 });
+    const related = await catalog.list({ where: ['p.category_id = ?', 'p.id <> ?'], params: [row.category_id || 0, row.id], order: 'p.id DESC', limit: 8 });
     res.render('shop/product', {
       meta: {
         title: `${product.name} | ${res.locals.s.site_name}`,
@@ -235,7 +247,7 @@ router.get(
     const post = await db.one('SELECT * FROM posts WHERE slug = ? AND active = 1', [req.params.slug]);
     if (!post) return next();
     const more = await db.query('SELECT id, title, slug, image, created_at FROM posts WHERE active = 1 AND id <> ? ORDER BY id DESC LIMIT 4', [post.id]);
-    const picks = await catalog.list({ where: ['p.is_featured = 1'], order: 'p.sold DESC', limit: 4 });
+    const picks = await catalog.list({ where: ['p.is_featured = 1'], order: 'p.id DESC', limit: 4 });
     res.render('shop/post', { meta: { title: `${post.title} | ${res.locals.s.site_name}`, description: post.excerpt, image: post.image, type: 'article' }, post, more, picks, breadcrumb: [{ name: 'Tin tức', href: '/tin-tuc' }, { name: post.title }] });
   })
 );
