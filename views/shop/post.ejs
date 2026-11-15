@@ -33,7 +33,7 @@
       <% } %>
       <div class="aside-card">
         <h3>Sản phẩm gợi ý</h3>
-        <% picks.forEach(p => { %><a class="aside-post" href="/san-pham/<%= p.slug %>"><img src="<%= p.image %>" alt="" loading="lazy" width="84" height="62"><span><b><%= p.name %></b><br><span class="price__now" style="font-size:14px"><%= vnd(p.finalPrice) %></span></span></a><% }) %>
+        <% picks.forEach(p => { %><a class="aside-post" href="/san-pham/<%= p.slug %>"><img src="<%= p.image %>" alt="" loading="lazy" width="84" height="62"><span><b><%= p.name %></b><br><span class="price__now" style="font-size:14px"><%= p.finalPrice > 0 ? vnd(p.finalPrice) : 'Liên hệ' %></span></span></a><% }) %>
       </div>
     </aside>
   </div>

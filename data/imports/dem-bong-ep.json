@@ -748,6 +748,14 @@
     "price": 4350000,
     "sale": 2600000
    }
+  ],
+  "images": [
+   "/images/products/elan/fly-1.jpg",
+   "/images/products/elan/fly-2.jpg",
+   "/images/products/elan/fly-3.jpg",
+   "/images/products/elan/fly-6.jpg",
+   "/images/products/elan/fly-4.jpg",
+   "/images/products/elan/fly-5.jpg"
   ]
  },
  {
@@ -1213,6 +1221,14 @@
     "price": 11330000,
     "sale": 0
    }
+  ],
+  "images": [
+   "/images/products/elan/alias-2m-6.jpg",
+   "/images/products/elan/alias-2m-4.jpg",
+   "/images/products/elan/alias-2m-3.jpg",
+   "/images/products/elan/alias-2m-5.jpg",
+   "/images/products/elan/alias-2m-1.jpg",
+   "/images/products/elan/alias-2m-2.jpg"
   ]
  },
  {
@@ -1347,6 +1363,14 @@
     "price": 10130000,
     "sale": 0
    }
+  ],
+  "images": [
+   "/images/products/elan/vimatt-2m-1.jpg",
+   "/images/products/elan/vimatt-2m-3.jpg",
+   "/images/products/elan/vimatt-2m-4.jpg",
+   "/images/products/elan/vimatt-2m-6.jpg",
+   "/images/products/elan/vimatt-2m-2.jpg",
+   "/images/products/elan/vimatt-2m-5.jpg"
   ]
  },
  {
@@ -1481,6 +1505,11 @@
     "price": 8880000,
     "sale": 0
    }
+  ],
+  "images": [
+   "/images/products/elan/see-2m-1.jpg",
+   "/images/products/elan/see-2m-3.jpg",
+   "/images/products/elan/see-2m-2.jpg"
   ]
  },
  {
@@ -2591,5 +2620,293 @@
     "sale": 13471000
    }
   ]
+ },
+ {
+  "name": "Đệm bông ép Elan Alias 3M vỏ không chần",
+  "brand": "Elan",
+  "source": "https://elan.vn/products/dem-bong-ep-elan-alias-vo-khong-chan",
+  "images": [
+   "/images/products/elan/alias-3m-2.jpg",
+   "/images/products/elan/alias-3m-1.jpg"
+  ],
+  "variants": [
+   {
+    "w": 100,
+    "l": 190,
+    "t": 5,
+    "price": 2770000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 5,
+    "price": 2900000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 5,
+    "price": 3280000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 5,
+    "price": 3410000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 5,
+    "price": 3950000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 5,
+    "price": 5040000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 7,
+    "price": 3120000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 7,
+    "price": 3290000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 7,
+    "price": 3670000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 7,
+    "price": 3810000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 7,
+    "price": 4330000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 7,
+    "price": 5360000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 9,
+    "price": 3410000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 9,
+    "price": 3530000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 9,
+    "price": 3920000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 9,
+    "price": 4050000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 9,
+    "price": 4570000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 9,
+    "price": 5630000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 14,
+    "price": 5480000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 14,
+    "price": 5660000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 14,
+    "price": 5990000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 14,
+    "price": 6310000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 14,
+    "price": 6820000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 14,
+    "price": 7850000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 18,
+    "price": 6300000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 18,
+    "price": 6440000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 18,
+    "price": 6870000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 18,
+    "price": 7090000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 18,
+    "price": 7670000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 18,
+    "price": 8730000,
+    "sale": 0
+   }
+  ],
+  "features": [
+   "Gấp 3 mảnh gọn nhẹ, dễ vận chuyển và cất giữ",
+   "Vỏ gấm dệt hoa không chần, có khoá kéo tháo giặt",
+   "5 độ dày từ 5cm đến 18cm cho mọi nhu cầu"
+  ]
+ },
+ {
+  "name": "Đệm bông ép Elan Alias Topper",
+  "brand": "Elan",
+  "source": "https://elan.vn/products/dem-bong-ep-alias-topper",
+  "images": [
+   "/images/products/elan/alias-topper-1.jpg",
+   "/images/products/elan/alias-topper-2.jpg",
+   "/images/products/elan/alias-topper-3.jpg",
+   "/images/products/elan/alias-topper-4.jpg",
+   "/images/products/elan/alias-topper-5.jpg"
+  ],
+  "variants": [
+   {
+    "w": 100,
+    "l": 190,
+    "t": 12,
+    "price": 4665000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 12,
+    "price": 4890000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 12,
+    "price": 5390000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 12,
+    "price": 5560000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 12,
+    "price": 6030000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 12,
+    "price": 6995000,
+    "sale": 0
+   }
+  ],
+  "features": [
+   "Lớp topper chần dày êm phủ trên lõi bông ép cứng",
+   "Dày 12cm, nằm êm mặt mà vẫn giữ lưng thẳng",
+   "Gấp gọn được, phù hợp phòng ngủ hiện đại"
+  ],
+  "firmness": 4
  }
 ]

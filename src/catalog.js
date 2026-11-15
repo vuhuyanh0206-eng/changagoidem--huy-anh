@@ -55,6 +55,7 @@ async function priceCart(items) {
       sale = Number(s.sale_price);
     }
     const unit = sale > 0 && sale < price ? sale : price;
+    if (!(unit > 0)) continue; // sản phẩm "Liên hệ báo giá" không đặt qua giỏ
     const images = parseJSON(p.images, []);
     lines.push({ id: p.id, name: p.name, slug: p.slug, image: images[0] || '/images/placeholder.svg', size, qty: it.qty, unit, price, total: unit * it.qty });
   }

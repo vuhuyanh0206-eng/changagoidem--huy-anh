@@ -1,0 +1,439 @@
+[
+ {
+  "name": "Đệm foam tổng hợp Elan vỏ chần",
+  "brand": "Elan",
+  "source": "https://elan.vn/products/dem-foam-tong-hop-vo-chan",
+  "images": [
+   "/images/products/elan/foam-tong-hop-1.jpg",
+   "/images/products/elan/foam-tong-hop-2.jpg",
+   "/images/products/elan/foam-tong-hop-3.jpg",
+   "/images/products/elan/foam-tong-hop-4.jpg",
+   "/images/products/elan/foam-tong-hop-5.jpg"
+  ],
+  "variants": [
+   {
+    "w": 100,
+    "l": 190,
+    "t": 12,
+    "price": 3920000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 12,
+    "price": 4110000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 12,
+    "price": 4520000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 12,
+    "price": 4840000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 12,
+    "price": 5370000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 12,
+    "price": 5980000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 15,
+    "price": 4070000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 15,
+    "price": 4320000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 15,
+    "price": 4830000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 5210000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 5720000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 6430000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 20,
+    "price": 5110000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 20,
+    "price": 5440000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 20,
+    "price": 6340000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 20,
+    "price": 6720000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 20,
+    "price": 7400000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 20,
+    "price": 8420000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 22,
+    "price": 5490000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 22,
+    "price": 5860000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 22,
+    "price": 6900000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 22,
+    "price": 7310000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 22,
+    "price": 8060000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 22,
+    "price": 9220000,
+    "sale": 0
+   }
+  ],
+  "firmness": 3,
+  "features": [
+   "Lõi foam tổng hợp nhiều lớp, đàn hồi tốt, không xẹp lún",
+   "Vỏ chần trần trám êm mặt, thoáng khí",
+   "Gấp gọn được, 4 độ dày từ 12cm đến 22cm"
+  ]
+ },
+ {
+  "name": "Đệm Foam Đa Tầng Elan II",
+  "brand": "Elan",
+  "source": "https://elan.vn/products/dem-foam-da-tang-elan-ii",
+  "images": [
+   "/images/products/elan/foam-da-tang-3.jpg",
+   "/images/products/elan/foam-da-tang-1.jpg",
+   "/images/products/elan/foam-da-tang-4.jpg",
+   "/images/products/elan/foam-da-tang-2.jpg"
+  ],
+  "variants": [
+   {
+    "w": 100,
+    "l": 190,
+    "t": 15,
+    "price": 6940000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 15,
+    "price": 7430000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 15,
+    "price": 8780000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 9220000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 10080000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 11660000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 20,
+    "price": 8180000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 20,
+    "price": 8760000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 20,
+    "price": 10320000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 20,
+    "price": 10820000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 20,
+    "price": 11840000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 20,
+    "price": 13760000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 25,
+    "price": 9790000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 25,
+    "price": 10470000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 25,
+    "price": 12300000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 25,
+    "price": 129000000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 25,
+    "price": 14110000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 25,
+    "price": 16430000,
+    "sale": 0
+   }
+  ],
+  "firmness": 3,
+  "badge": "Cao cấp",
+  "features": [
+   "Kết cấu đa tầng foam với độ cứng khác nhau, nâng đỡ theo vùng",
+   "Lớp foam định hình lượn sóng tăng lưu thông khí",
+   "3 độ dày 15cm, 20cm, 25cm"
+  ]
+ },
+ {
+  "name": "Đệm foam tổng hợp massage Elan",
+  "brand": "Elan",
+  "source": "https://elan.vn/products/dem-foam-elan-tong-hop-massage-khong-chan",
+  "images": [
+   "/images/products/elan/foam-massage-1.jpg",
+   "/images/products/elan/foam-massage-4.jpg",
+   "/images/products/elan/foam-massage-2.jpg",
+   "/images/products/elan/foam-massage-3.jpg"
+  ],
+  "variants": [
+   {
+    "w": 100,
+    "l": 190,
+    "t": 10,
+    "price": 3110000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 10,
+    "price": 3230000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 10,
+    "price": 3530000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 10,
+    "price": 3790000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 10,
+    "price": 4160000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 10,
+    "price": 4600000,
+    "sale": 0
+   },
+   {
+    "w": 100,
+    "l": 190,
+    "t": 15,
+    "price": 3660000,
+    "sale": 0
+   },
+   {
+    "w": 120,
+    "l": 190,
+    "t": 15,
+    "price": 3890000,
+    "sale": 0
+   },
+   {
+    "w": 150,
+    "l": 190,
+    "t": 15,
+    "price": 4350000,
+    "sale": 0
+   },
+   {
+    "w": 160,
+    "l": 200,
+    "t": 15,
+    "price": 4690000,
+    "sale": 0
+   },
+   {
+    "w": 180,
+    "l": 200,
+    "t": 15,
+    "price": 5150000,
+    "sale": 0
+   },
+   {
+    "w": 200,
+    "l": 220,
+    "t": 15,
+    "price": 5790000,
+    "sale": 0
+   }
+  ],
+  "firmness": 3,
+  "features": [
+   "Bề mặt foam gai massage kích thích tuần hoàn máu",
+   "Vỏ vải dệt kim mềm mát, viền đen sang trọng",
+   "2 độ dày 10cm và 15cm, giá dễ tiếp cận"
+  ]
+ }
+]

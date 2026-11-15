@@ -1,4 +1,4 @@
-<% const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x (\d+) cm$/) || [])[1]).filter(Boolean)).size; %>
+<% const contact = !(p.finalPrice > 0); const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x (\d+) cm$/) || [])[1]).filter(Boolean)).size; %>
 <article class="pcard">
   <a class="pcard__media" href="/san-pham/<%= p.slug %>">
     <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" width="600" height="450">
@@ -21,11 +21,14 @@
     </ul>
     <div class="pcard__foot">
       <div class="price">
+        <% if (contact) { %><small class="price__from">Giá dự án</small><strong class="price__now">Liên hệ</strong><% } else { %>
         <% if (multi) { %><small class="price__from">Từ</small><% } %>
-        <strong class="price__now"><%= vnd(p.finalPrice) %></strong>
+        <strong class="price__now"><%= vnd(p.finalPrice) %></strong><% } %>
         <% if (p.discount) { %><s class="price__old"><%= vnd(p.price) %></s><% } %>
       </div>
-      <% if (multi) { %>
+      <% if (contact) { %>
+        <a class="pcard__add" href="/san-pham/<%= p.slug %>" aria-label="Xem và nhận báo giá <%= p.name %>"><svg class="i"><use href="#i-phone"/></svg></a>
+      <% } else if (multi) { %>
         <a class="pcard__add" href="/san-pham/<%= p.slug %>" aria-label="Chọn kích thước <%= p.name %>"><svg class="i"><use href="#i-cart"/></svg></a>
       <% } else { %>
         <button class="pcard__add" type="button" data-add-cart data-id="<%= p.id %>" data-size="<%= p.sizes[0] ? p.sizes[0].label : '' %>" aria-label="Thêm <%= p.name %> vào giỏ"><svg class="i"><use href="#i-cart"/></svg></button>

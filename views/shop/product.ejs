@@ -1,7 +1,7 @@
 <%- include('../partials/head') %>
 <%- include('../partials/header') %>
 <%- include('../partials/breadcrumb') %>
-<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); const defSize = product.defaultSize;
+<% const tel = (x) => String(x || '').replace(/[^\d+]/g, ''); const defSize = product.defaultSize; const contact = !(product.finalPrice > 0);
   // Biến thể dạng "160 x 200 x 9 cm" → tách thành 2 bước: độ dày + kích thước
   const RE = /^(\d+) x (\d+) x (\d+) cm$/;
   const grouped = product.sizes.length > 1 && product.sizes.every(s => RE.test(s.label));
@@ -45,7 +45,7 @@
       <% } %>
 
       <div class="pd__price">
-        <strong class="price__now" data-price-now><%= vnd(product.finalPrice) %></strong>
+        <strong class="price__now" data-price-now><%= contact ? 'Liên hệ báo giá' : vnd(product.finalPrice) %></strong>
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
@@ -87,6 +87,12 @@
       </div>
       <% } %>
 
+      <% if (contact) { %>
+      <div class="pd__buy">
+        <a class="btn btn--gold btn--lg" href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg>Gọi báo giá <%= s.hotline %></a>
+        <a class="btn btn--navy btn--lg" href="/lien-he">Gửi yêu cầu báo giá</a>
+      </div>
+      <% } else { %>
       <div class="pd__buy">
         <div class="qty">
           <button type="button" data-qty-step="-1" aria-label="Giảm số lượng"><svg class="i"><use href="#i-minus"/></svg></button>
@@ -96,6 +102,7 @@
         <button class="btn btn--gold btn--lg" type="button" data-pd-add="buy">Mua ngay</button>
         <button class="btn btn--navy btn--lg" type="button" data-pd-add="cart"><svg class="i"><use href="#i-cart"/></svg>Thêm vào giỏ</button>
       </div>
+      <% } %>
       <div class="pd__consult">
         <a href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg>Gọi <%= s.hotline %></a>
         <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Tư vấn qua Zalo</a>
@@ -142,15 +149,15 @@
 </main>
 
 <div class="sticky-buy" aria-hidden="true">
-  <div><small style="display:block;font-size:12px;color:var(--muted)">Giá</small><strong class="price__now" data-sticky-price><%= vnd(product.finalPrice) %></strong></div>
-  <button class="btn btn--gold" type="button" data-sticky-add tabindex="-1">Mua ngay</button>
+  <div><small style="display:block;font-size:12px;color:var(--muted)">Giá</small><strong class="price__now" data-sticky-price><%= contact ? 'Liên hệ báo giá' : vnd(product.finalPrice) %></strong></div>
+  <% if (contact) { %><a class="btn btn--gold" href="tel:<%= tel(s.hotline) %>" tabindex="-1">Gọi báo giá</a><% } else { %><button class="btn btn--gold" type="button" data-sticky-add tabindex="-1">Mua ngay</button><% } %>
 </div>
 
 <script type="application/json" id="product-data"><%- JSON.stringify({ id: product.id, price: Number(product.price), sale_price: Number(product.sale_price), sizes: product.sizes }).replace(/</g, '\\u003c') %></script>
 <script type="application/ld+json"><%- JSON.stringify({
   '@context': 'https://schema.org', '@type': 'Product', name: product.name, image: product.images.map(i => siteUrl + i), description: product.short_desc, sku: product.sku,
   brand: { '@type': 'Brand', name: product.brand },
-  aggregateRating: { '@type': 'AggregateRating', ratingValue: product.rating_avg, reviewCount: product.rating_count },
-  offers: { '@type': 'Offer', priceCurrency: 'VND', price: product.finalPrice, availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', url: siteUrl + path }
+  aggregateRating: product.rating_count ? { '@type': 'AggregateRating', ratingValue: product.rating_avg, reviewCount: product.rating_count } : undefined,
+  offers: contact ? undefined : { '@type': 'Offer', priceCurrency: 'VND', price: product.finalPrice, availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', url: siteUrl + path }
 }).replace(/</g, '\\u003c') %></script>
 <%- include('../partials/footer') %>

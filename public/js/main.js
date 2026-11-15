@@ -205,7 +205,7 @@
         const items = await r.json();
         sIdx = -1;
         sBox.innerHTML = items.length
-          ? items.map((p) => `<a class="suggest__item" href="/san-pham/${esc(p.slug)}"><img src="${esc(p.image)}" alt=""><div><b>${esc(p.name)}</b><span>${vnd(p.price)}${p.oldPrice ? `<s>${vnd(p.oldPrice)}</s>` : ''}</span></div></a>`).join('') +
+          ? items.map((p) => `<a class="suggest__item" href="/san-pham/${esc(p.slug)}"><img src="${esc(p.image)}" alt=""><div><b>${esc(p.name)}</b><span>${p.price > 0 ? vnd(p.price) : 'Liên hệ'}${p.oldPrice ? `<s>${vnd(p.oldPrice)}</s>` : ''}</span></div></a>`).join('') +
             `<a class="suggest__all" href="/tim-kiem?q=${encodeURIComponent(q)}">Xem tất cả kết quả cho “${esc(q)}”</a>`
           : `<div class="suggest__empty">Không tìm thấy sản phẩm phù hợp. Thử “đệm cao su”, “gối”…</div>`;
         sBox.hidden = false;
@@ -346,8 +346,9 @@
       const s = data.sizes.find((x) => x.label === currentSize());
       if (s) { price = s.price; sale = s.sale_price; }
       const final = sale > 0 && sale < price ? sale : price;
-      priceNow.textContent = vnd(final);
-      if (stickyPrice) stickyPrice.textContent = vnd(final);
+      const txt = final > 0 ? vnd(final) : 'Liên hệ báo giá';
+      priceNow.textContent = txt;
+      if (stickyPrice) stickyPrice.textContent = txt;
       if (sale > 0 && sale < price) {
         priceOld.textContent = vnd(price);
         priceOld.hidden = false;
