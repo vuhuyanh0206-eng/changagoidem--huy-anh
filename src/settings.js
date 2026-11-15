@@ -7,7 +7,7 @@ const DEFAULTS = {
   hotline2: '0912 831 034',
   zalo: '0988367226',
   email: 'lienhe@khodemhp.vn',
-  address: 'Đang cập nhật địa chỉ kho – showroom',
+  address: '191 Tôn Đức Thắng, Lê Chân, Hải Phòng | 172 Đà Nẵng, Ngô Quyền, Hải Phòng',
   map_embed: '',
   open_hours: '8:00 – 21:00 tất cả các ngày',
   facebook: '',
@@ -18,7 +18,7 @@ const DEFAULTS = {
   bank_account: '',
   bank_holder: '',
   meta_description:
-    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, đổi trả 30 đêm, bảo hành dài hạn.',
+    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, đổi size 7 ngày, bảo hành dài hạn.',
   ga_id: '',
   fb_pixel: '',
   flash_sale_end: '',

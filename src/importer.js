@@ -156,6 +156,7 @@ async function importFile(file, { update = false } = {}) {
       }
       if (update) {
         await db.run('UPDATE products SET price = ?, sale_price = ?, sizes = ?, thickness = ?, brand = ? WHERE id = ?', [b.base.price, b.base.sale_price, JSON.stringify(b.sizes), b.thickText, p.brand, exists.id]);
+        if (p.gift) await db.run('UPDATE products SET gift = ? WHERE id = ?', [p.gift, exists.id]);
         changed = true;
       }
       if (changed) updated++;

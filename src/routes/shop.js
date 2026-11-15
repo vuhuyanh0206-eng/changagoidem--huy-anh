@@ -266,7 +266,7 @@ router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title:
 
 const POLICIES = {
   'giao-hang': { title: 'Chính sách giao hàng & lắp đặt', body: '<p>Miễn phí giao hàng và lắp đặt trong bán kính 20km. Các khu vực khác tính phí theo đơn vị vận chuyển, nhân viên sẽ báo trước khi giao.</p><p>Thời gian giao: nội thành 2–24 giờ, tỉnh thành khác 2–5 ngày làm việc.</p>' },
-  'doi-tra': { title: 'Chính sách đổi trả – nằm thử 30 đêm', body: '<p>Bạn được nằm thử 30 đêm với các dòng đệm áp dụng. Nếu chưa hài lòng, Kho Đệm HP hỗ trợ đổi sang sản phẩm khác (bù chênh lệch nếu có).</p><p>Đổi size miễn phí trong 7 ngày nếu sản phẩm còn nguyên tem mác, không bẩn, không hư hỏng.</p>' },
+  'doi-tra': { title: 'Chính sách đổi trả', body: '<p>Đổi size miễn phí trong 7 ngày nếu sản phẩm còn nguyên tem mác, không bẩn, không hư hỏng.</p>' },
   'bao-hanh': { title: 'Chính sách bảo hành', body: '<p>Sản phẩm được bảo hành chính hãng theo thời gian ghi trên phiếu bảo hành (3–20 năm tuỳ dòng). Bảo hành lún, xẹp quá 3cm, bung keo, gãy lò xo do lỗi sản xuất.</p>' },
   'tra-gop': { title: 'Mua trả góp 0%', body: '<p>Hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân hàng, kỳ hạn 3–12 tháng. Liên hệ hotline để được hướng dẫn.</p>' },
   'bao-mat': { title: 'Chính sách bảo mật', body: '<p>Thông tin khách hàng chỉ được dùng để xử lý đơn hàng, giao hàng và chăm sóc sau bán. Kho Đệm HP không chia sẻ thông tin cho bên thứ ba khi chưa có sự đồng ý của khách hàng.</p>' },

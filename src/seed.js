@@ -65,7 +65,7 @@ function descFor(p) {
 <li><strong>Dễ vệ sinh:</strong> vỏ có khoá kéo, tháo giặt dễ dàng.</li>
 </ul>
 <h3>Chính sách khi mua tại Kho Đệm HP</h3>
-<p>Giao hàng – lắp đặt miễn phí nội thành, nằm thử 30 đêm, đổi size miễn phí trong 7 ngày, hỗ trợ trả góp 0% qua thẻ tín dụng.</p>`;
+<p>Giao hàng – lắp đặt miễn phí nội thành, đổi size miễn phí trong 7 ngày, hỗ trợ trả góp 0% qua thẻ tín dụng.</p>`;
 }
 
 function specsFor(p) {
@@ -85,7 +85,7 @@ function sizesOf(p) {
 
 const BANNERS = [
   { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 50% toàn bộ đệm', subtitle: 'Tặng kèm bộ chăn ga Tencel trị giá 2.490.000₫ cho đơn từ 10 triệu', cta: 'Mua ngay', image: img(18), link: '/khuyen-mai', theme: 'dark' },
-  { position: 'main', eyebrow: 'Đệm cao su thiên nhiên', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhõm', subtitle: 'Cao su 100% – bảo hành 15 năm – nằm thử 30 đêm', cta: 'Khám phá', image: img(25), link: '/danh-muc/dem-cao-su', theme: 'light' },
+  { position: 'main', eyebrow: 'Đệm cao su thiên nhiên', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhõm', subtitle: 'Cao su 100% – bảo hành 15 năm – giao lắp miễn phí', cta: 'Khám phá', image: img(25), link: '/danh-muc/dem-cao-su', theme: 'light' },
   { position: 'main', eyebrow: 'Lò xo túi độc lập', title: 'Chuẩn khách sạn 5 sao tại nhà', subtitle: 'Royal Dream – 1.200 lò xo, gel làm mát, viền chống lún', cta: 'Xem bộ sưu tập', image: img(4), link: '/danh-muc/dem-lo-xo', theme: 'dark' },
   { position: 'side', eyebrow: 'Giảm 30%', title: 'Đệm cao su Organic', subtitle: 'Kháng khuẩn – thoáng mát', cta: 'Xem ngay', image: img(19), link: '/danh-muc/dem-cao-su', theme: 'light' },
   { position: 'side', eyebrow: 'Mới về', title: 'Chăn ga Tencel 60s', subtitle: 'Mát lạnh như lụa', cta: 'Xem ngay', image: img(7), link: '/danh-muc/chan-ga-goi', theme: 'light' },
@@ -105,7 +105,7 @@ const postContent = (p) => `<p>${p.excerpt}</p>
 <h2>2. Chú ý chất liệu</h2>
 <p>Cao su thiên nhiên bền và thoáng; lò xo túi độc lập nâng đỡ tốt và không truyền chuyển động; memory foam ôm sát, giảm áp lực. Hãy nằm thử ít nhất 10–15 phút tại showroom trước khi quyết định.</p>
 <h2>3. Đừng bỏ qua chính sách</h2>
-<p>Bảo hành, nằm thử, đổi trả là những yếu tố giúp bạn yên tâm. Tại Kho Đệm HP, bạn được nằm thử 30 đêm và đổi size miễn phí trong 7 ngày.</p>
+<p>Bảo hành, đổi trả là những yếu tố giúp bạn yên tâm. Tại Kho Đệm HP, bạn được đổi size miễn phí trong 7 ngày.</p>
 <blockquote>Cần tư vấn nhanh? Gọi hotline hoặc nhắn Zalo để được chuyên viên hỗ trợ miễn phí.</blockquote>`;
 
 async function wipe() {

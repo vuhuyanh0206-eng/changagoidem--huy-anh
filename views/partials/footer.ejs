@@ -28,7 +28,7 @@
       </a>
       <p class="footer__about"><%= s.tagline %>. Nhập trực tiếp từ nhà máy, cam kết hàng chính hãng, giá tốt nhất khu vực.</p>
       <ul class="footer__contact">
-        <li><svg class="i"><use href="#i-pin"/></svg><span><%= s.address %></span></li>
+        <% String(s.address || '').split('|').map(x => x.trim()).filter(Boolean).forEach(a => { %><li><svg class="i"><use href="#i-pin"/></svg><span><%= a %></span></li><% }) %>
         <li><svg class="i"><use href="#i-phone"/></svg><span><a href="tel:<%= tel2(s.hotline) %>"><%= s.hotline %></a> – <a href="tel:<%= tel2(s.hotline2) %>"><%= s.hotline2 %></a> (Zalo)</span></li>
         <li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:<%= s.email %>"><%= s.email %></a></li>
         <li><svg class="i"><use href="#i-clock"/></svg><span><%= s.open_hours %></span></li>
@@ -44,7 +44,7 @@
       <h3 class="footer__h">Chính sách</h3>
       <ul class="footer__links">
         <li><a href="/chinh-sach/giao-hang">Giao hàng &amp; lắp đặt</a></li>
-        <li><a href="/chinh-sach/doi-tra">Đổi trả – nằm thử 30 đêm</a></li>
+        <li><a href="/chinh-sach/doi-tra">Chính sách đổi trả</a></li>
         <li><a href="/chinh-sach/bao-hanh">Bảo hành</a></li>
         <li><a href="/chinh-sach/tra-gop">Trả góp 0%</a></li>
         <li><a href="/chinh-sach/bao-mat">Bảo mật thông tin</a></li>
