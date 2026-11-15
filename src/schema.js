@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS products (
   firmness INT DEFAULT 3,
   warranty VARCHAR(60),
   badge VARCHAR(60),
+  gift VARCHAR(255) DEFAULT '',
   is_featured INT DEFAULT 0,
   is_hot INT DEFAULT 0,
   in_stock INT DEFAULT 1,
@@ -106,8 +107,18 @@ CREATE TABLE IF NOT EXISTS admins (
 `;
 }
 
+// Cột thêm sau khi đã có CSDL: tự ALTER nếu thiếu (bỏ qua lỗi "đã tồn tại")
+const ADDED_COLUMNS = [['products', 'gift', "VARCHAR(255) DEFAULT ''"]];
+
 async function migrate() {
   await db.exec(ddl(db.dialect));
+  for (const [table, col, type] of ADDED_COLUMNS) {
+    try {
+      await db.exec(`ALTER TABLE ${table} ADD COLUMN ${col} ${type}`);
+    } catch (e) {
+      if (!/duplicate column/i.test(e.message)) throw e;
+    }
+  }
 }
 
 module.exports = { migrate };

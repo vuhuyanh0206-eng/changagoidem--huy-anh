@@ -50,6 +50,17 @@
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
 
+      <% if (product.gift) { %>
+      <div class="pd__gift">
+        <svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>
+        <div>
+          <b>Quà tặng kèm</b>
+          <p><%= product.gift %></p>
+          <p class="pd__gift-more">Liên hệ <a href="tel:<%= tel(s.hotline) %>"><%= s.hotline %></a> hoặc <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener">Zalo</a> để nhận thêm ưu đãi.</p>
+        </div>
+      </div>
+      <% } %>
+
       <p class="pd__short"><%= product.short_desc %></p>
 
       <% if (grouped) { %>

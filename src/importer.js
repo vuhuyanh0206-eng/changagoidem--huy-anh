@@ -7,7 +7,7 @@
  *   và file JSON có ảnh thật thì tự thay bằng ảnh thật.
  * - Cập nhật lại giá/kích thước cho sản phẩm đã có: npm run import -- --update
  *
- * Định dạng: [{ name, brand, images?, features?, firmness?, badge?, contact?, thickness?,
+ * Định dạng: [{ name, brand, images?, features?, firmness?, badge?, contact?, thickness?, gift?, description_html?,
  *               variants: [{ w, l, t, price, sale }] }]
  * (w x l = kích thước cm, t = độ dày cm, price = giá gốc, sale = giá khuyến mãi, 0 nếu không giảm;
  *  contact = true: không niêm yết giá, hiện "Liên hệ báo giá")
@@ -15,7 +15,7 @@
 const fs = require('fs');
 const path = require('path');
 const db = require('./db');
-const { slugify, now, cheapestSize } = require('./utils');
+const { slugify, now, cheapestSize, sanitizeHtml } = require('./utils');
 
 const DIR = path.join(__dirname, '..', 'data', 'imports');
 
@@ -35,6 +35,14 @@ const TYPES = {
     tagline: 'Foam đàn hồi, êm vừa phải, ôm theo đường cong cơ thể.',
     intro: 'phù hợp người thích cảm giác êm vừa, nằm nghiêng nhiều và cần giảm áp lực vai – hông',
     points: ['<strong>Đàn hồi tốt:</strong> foam phục hồi nhanh, không để lại vết lún.', '<strong>Nhẹ, dễ di chuyển:</strong> thuận tiện khi vệ sinh, thay ga.'],
+    firm: 3,
+  },
+  'dem-cao-su': {
+    kind: 'Đệm cao su', sku: 'CS',
+    stock: [['/images/stock/s25.jpg', '/images/stock/s19.jpg'], ['/images/stock/s19.jpg', '/images/stock/s11.jpg']],
+    tagline: 'Cao su thiên nhiên đàn hồi, thoáng khí, kháng khuẩn tự nhiên.',
+    intro: 'phù hợp người cần nâng đỡ êm ái, thoáng mát và độ bền cao',
+    points: ['<strong>Thoáng khí:</strong> lỗ thông hơi xuyên suốt giúp đệm khô thoáng.', '<strong>Bền bỉ:</strong> cao su đàn hồi tốt, giữ form nhiều năm.'],
     firm: 3,
   },
   'dem-lo-xo': {
@@ -63,7 +71,7 @@ function build(p, idx, category) {
     ? `${p.name} chính hãng ${p.brand}, dày ${thickText}. ${p.features?.[0] ? p.features[0] + "." : T.tagline} Báo giá theo số lượng dự án.`
     : `${p.name} chính hãng ${p.brand}: ${thick.length > 1 ? `${thick.length} độ dày (${thick.join(', ')}cm)` : `dày ${thickText}`}, ${dimText}. ${T.tagline}`;
   const feats = (p.features || []).map((f) => `<li>${f}.</li>`).join('\n');
-  const description = `<h3>${p.name}</h3>
+  const description = p.description_html ? sanitizeHtml(p.description_html) : `<h3>${p.name}</h3>
 <p>${p.name} là dòng ${T.kind.toLowerCase()} chính hãng của thương hiệu <strong>${p.brand}</strong>, ${T.intro}.</p>
 <ul>
 ${feats}
@@ -119,9 +127,9 @@ async function importFile(file, { update = false } = {}) {
       continue;
     }
     await db.run(
-      `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,'',?,0,0,1,1,5.0,0,0,?)`,
-      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.badge || '', now()]
+      `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,'',?,?,0,0,1,1,5.0,0,0,?)`,
+      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.badge || '', p.gift || '', now()]
     );
     added++;
   }

@@ -175,10 +175,10 @@ router.post(
     const vals = [
       parseInt(b.category_id, 10) || null, name, slug, String(b.brand || '').trim(), String(b.sku || '').trim(), price, sale,
       String(b.short_desc || '').trim(), sanitizeHtml(b.description || ''), JSON.stringify(specs), JSON.stringify(sizes), JSON.stringify(images),
-      String(b.thickness || '').trim(), Math.min(5, int(b.firmness)), String(b.warranty || '').trim(), String(b.badge || '').trim(),
+      String(b.thickness || '').trim(), Math.min(5, int(b.firmness)), String(b.warranty || '').trim(), String(b.badge || '').trim(), String(b.gift || '').trim().slice(0, 255),
       bool(b.is_featured), bool(b.is_hot), bool(b.in_stock), bool(b.active), int(b.sold),
     ];
-    const cols = 'category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, is_featured, is_hot, in_stock, active, sold';
+    const cols = 'category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, sold';
     if (id) {
       await db.run(`UPDATE products SET ${cols.split(', ').map((c) => c + ' = ?').join(', ')} WHERE id = ?`, [...vals, id]);
       flash(req, 'ok', 'Đã lưu sản phẩm');

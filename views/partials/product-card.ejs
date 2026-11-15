@@ -6,6 +6,7 @@
     <span class="pcard__tags">
       <% if (p.discount) { %><span class="tag tag--sale">-<%= p.discount %>%</span><% } %>
       <% if (p.badge) { %><span class="tag tag--gold"><%= p.badge %></span><% } %>
+      <% if (p.gift) { %><span class="tag tag--gift"><svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>Quà tặng</span><% } %>
     </span>
   </a>
   <div class="pcard__body">

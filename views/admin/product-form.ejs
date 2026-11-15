@@ -67,6 +67,7 @@
       <h2>Phân loại</h2>
       <label class="f"><span>Danh mục</span><select class="in" name="category_id"><option value="">— Chọn —</option><% cats.forEach(c => { %><option value="<%= c.id %>" <%= c.id === p.category_id ? 'selected' : '' %>><%= c.name %></option><% }) %></select></label>
       <label class="f"><span>Nhãn (VD: Bán chạy, Mới)</span><input class="in" name="badge" value="<%= p.badge || '' %>"></label>
+      <label class="f"><span>Quà tặng kèm (để trống nếu không có)</span><input class="in" name="gift" maxlength="255" value="<%= p.gift || '' %>" placeholder="VD: 2 gối + 1 tấm bảo vệ nệm"></label>
       <div class="row2">
         <label class="f"><span>Độ dày</span><input class="in" name="thickness" value="<%= p.thickness || '' %>" placeholder="20cm"></label>
         <label class="f"><span>Bảo hành</span><input class="in" name="warranty" value="<%= p.warranty || '' %>" placeholder="10 năm"></label>
