@@ -84,11 +84,11 @@ function sizesOf(p) {
 }
 
 const BANNERS = [
-  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 50% toàn bộ đệm', subtitle: 'Tặng kèm bộ chăn ga Tencel trị giá 2.490.000₫ cho đơn từ 10 triệu', cta: 'Mua ngay', image: img(18), link: '/khuyen-mai', theme: 'dark' },
+  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 20% đệm chính hãng', subtitle: 'Dunlopillo, Hanvico, Liên Á – kèm quà tặng, liên hệ để nhận thêm ưu đãi', cta: 'Mua ngay', image: img(18), link: '/khuyen-mai', theme: 'dark' },
   { position: 'main', eyebrow: 'Đệm cao su thiên nhiên', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhõm', subtitle: 'Cao su 100% – bảo hành 15 năm – giao lắp miễn phí', cta: 'Khám phá', image: img(25), link: '/danh-muc/dem-cao-su', theme: 'light' },
-  { position: 'main', eyebrow: 'Lò xo túi độc lập', title: 'Chuẩn khách sạn 5 sao tại nhà', subtitle: 'Royal Dream – 1.200 lò xo, gel làm mát, viền chống lún', cta: 'Xem bộ sưu tập', image: img(4), link: '/danh-muc/dem-lo-xo', theme: 'dark' },
-  { position: 'side', eyebrow: 'Giảm 30%', title: 'Đệm cao su Organic', subtitle: 'Kháng khuẩn – thoáng mát', cta: 'Xem ngay', image: img(19), link: '/danh-muc/dem-cao-su', theme: 'light' },
-  { position: 'side', eyebrow: 'Mới về', title: 'Chăn ga Tencel 60s', subtitle: 'Mát lạnh như lụa', cta: 'Xem ngay', image: img(7), link: '/danh-muc/chan-ga-goi', theme: 'light' },
+  { position: 'main', eyebrow: 'Lò xo túi độc lập', title: 'Chuẩn khách sạn 5 sao tại nhà', subtitle: 'Lò xo túi độc lập Dunlopillo, Liên Á, Elan chính hãng', cta: 'Xem bộ sưu tập', image: img(4), link: '/danh-muc/dem-lo-xo', theme: 'dark' },
+  { position: 'side', eyebrow: 'Giảm 10%', title: 'Đệm cao su Liên Á', subtitle: 'Cao su thiên nhiên – thoáng mát', cta: 'Xem ngay', image: img(19), link: '/danh-muc/dem-cao-su', theme: 'light' },
+  { position: 'side', eyebrow: 'Mới về', title: 'Chăn ga gối Pyeoda', subtitle: 'Lụa, tơ tằm, Tencel BST 2026', cta: 'Xem ngay', image: img(7), link: '/danh-muc/bo-chan-ga-goi', theme: 'light' },
   { position: 'side', eyebrow: 'Dự án', title: 'Trọn gói khách sạn', subtitle: 'Báo giá trong 2 giờ', cta: 'Nhận báo giá', image: img(17), link: '/du-an-khach-san', theme: 'dark' },
 ];
 
@@ -119,8 +119,9 @@ async function seed() {
     const r = await db.run('INSERT INTO categories (name, slug, description, image, sort, active) VALUES (?,?,?,?,?,1)', [c.name, slugify(c.name), c.desc, c.image, i++]);
     catIds[c.name] = r.insertId;
   }
+  // Sản phẩm demo (HP…) không còn nạp: sản phẩm thật đến từ data/imports/*.json
   let k = 0;
-  for (const p of PRODUCTS) {
+  for (const p of []) {
     const sizes = sizesOf(p);
     const base = cheapestSize(sizes); // giá "Từ …" = biến thể rẻ nhất
     await db.run(
