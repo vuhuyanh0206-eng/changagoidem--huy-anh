@@ -84,7 +84,9 @@
       <li class="has-drop">
         <a href="/danh-muc/chan-ga-goi">Chăn ga gối <svg class="i"><use href="#i-chev-d"/></svg></a>
         <ul class="drop">
-          <li><a href="/danh-muc/chan-ga-goi">Bộ chăn ga gối</a></li>
+          <li><a href="/danh-muc/bo-chan-ga-goi">Bộ chăn ga gối</a></li>
+          <li><a href="/danh-muc/chan-he">Chăn hè</a></li>
+          <li><a href="/danh-muc/chan-dong">Chăn đông</a></li>
           <li><a href="/danh-muc/chan-long-cuu">Chăn lông cừu</a></li>
           <li><a href="/danh-muc/goi-ngu">Gối ngủ</a></li>
         </ul>
@@ -128,6 +130,7 @@
         <li><a href="/"><svg class="i"><use href="#i-home"/></svg>Trang chủ</a></li>
         <% menu.forEach(c => { %>
           <li><a href="/danh-muc/<%= c.slug %>"><img src="<%= c.image %>" alt="" width="32" height="32" loading="lazy"><%= c.name %></a></li>
+          <% c.children.forEach(k => { %><li><a href="/danh-muc/<%= k.slug %>" style="padding-left:58px;font-size:14px">– <%= k.name %></a></li><% }) %>
         <% }) %>
         <li><a href="/khuyen-mai" class="text-sale"><svg class="i"><use href="#i-flame"/></svg>Khuyến mại hot</a></li>
         <li><a href="/tin-tuc"><svg class="i"><use href="#i-news"/></svg>Tin tức</a></li>

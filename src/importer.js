@@ -54,6 +54,11 @@ const TYPES = {
   },
   'phu-kien': { kind: 'Phụ kiện', sku: 'PK', stock: [['/images/stock/s12.jpg', '/images/stock/s03.jpg']], tagline: '', intro: 'tiện dụng cho phòng ngủ', points: [], firm: 0 },
   'goi-ngu': { kind: 'Gối ngủ', sku: 'GO', stock: [['/images/stock/s06.jpg', '/images/stock/s07.jpg']], tagline: '', intro: 'giúp nâng đỡ cổ vai gáy, ngủ ngon hơn', points: [], firm: 0 },
+  'bo-chan-ga-goi': { kind: 'Bộ chăn ga gối', sku: 'CG', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'cho phòng ngủ thêm sang trọng', points: [], firm: 0 },
+  'chan-he': { kind: 'Chăn hè', sku: 'CH', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'mỏng nhẹ, mát cho mùa hè', points: [], firm: 0 },
+  'chan-dong': { kind: 'Chăn đông', sku: 'CD', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'ấm áp cho mùa đông', points: [], firm: 0 },
+  'chan-long-cuu': { kind: 'Chăn lông', sku: 'LC', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'mềm mại, giữ ấm tốt', points: [], firm: 0 },
+  'dem-tron': { kind: 'Đệm tròn', sku: 'DT', stock: [['/images/stock/s05.jpg', '/images/stock/s16.jpg']], tagline: 'Đệm tròn sản xuất theo kích thước giường.', intro: 'dành cho giường tròn, khách sạn, homestay', points: [], firm: 3 },
   'san-pham-cho-be': { kind: 'Sản phẩm cho bé', sku: 'BB', stock: [['/images/stock/s06.jpg', '/images/stock/s07.jpg']], tagline: '', intro: 'an toàn cho bé', points: [], firm: 0 },
   'dem-lo-xo': {
     kind: 'Đệm lò xo', sku: 'LX',
@@ -68,6 +73,10 @@ const TYPES = {
 // Danh mục tự tạo nếu CSDL chưa có (khi thêm file import cho danh mục mới)
 const NEW_CATEGORIES = {
   'dem-hybrid': { name: 'Đệm Hybrid', description: 'Đệm cao su hybrid kết hợp nhiều lớp vật liệu: êm ái, thoáng khí, nâng đỡ tốt.', sort: 2 },
+  'dem-tron': { name: 'Đệm Tròn', description: 'Đệm tròn bông ép, foam, lò xo cho giường tròn – sản xuất theo kích thước yêu cầu.', sort: 3 },
+  'bo-chan-ga-goi': { parent: 'chan-ga-goi', name: 'Bộ Chăn Ga Gối', description: 'Bộ chăn ga gối lụa, tơ tằm, Tencel, cotton cao cấp chính hãng.', sort: 1 },
+  'chan-he': { parent: 'chan-ga-goi', name: 'Chăn Hè', description: 'Chăn hè mỏng nhẹ, mát lạnh: băng lạnh, thun lạnh, lụa tơ tằm.', sort: 2 },
+  'chan-dong': { parent: 'chan-ga-goi', name: 'Chăn Đông', description: 'Chăn đông, ruột chăn ấm áp cho mùa lạnh.', sort: 3 },
   'san-pham-cho-be': { name: 'Sản Phẩm Cho Bé', description: 'Đệm, gối cao su thiên nhiên an toàn cho trẻ sơ sinh và trẻ nhỏ.', sort: 6, image: '/images/products/liena/nem-em-be-pompoms-4.jpg' },
 };
 
@@ -130,7 +139,8 @@ async function importFile(file, { update = false } = {}) {
   if (!cat && NEW_CATEGORIES[catSlug]) {
     const c = NEW_CATEGORIES[catSlug];
     const first = items.find((x) => x.images?.length);
-    const r = await db.run('INSERT INTO categories (parent_id, name, slug, description, image, sort, active) VALUES (NULL, ?, ?, ?, ?, ?, 1)', [c.name, catSlug, c.description, c.image || (first ? first.images[0] : '/images/stock/s06.jpg'), c.sort]);
+    const parent = c.parent ? await db.one('SELECT id FROM categories WHERE slug = ?', [c.parent]) : null;
+    const r = await db.run('INSERT INTO categories (parent_id, name, slug, description, image, sort, active) VALUES (?, ?, ?, ?, ?, ?, 1)', [parent ? parent.id : null, c.name, catSlug, c.description, c.image || (first ? first.images[0] : '/images/stock/s06.jpg'), c.sort]);
     cat = { id: r.insertId };
     console.log(`Tạo danh mục mới: ${c.name}`);
   }

@@ -13,6 +13,13 @@
   <header class="page-hero page-hero--plain"><h1><%= title %></h1><p><%= total %> sản phẩm phù hợp</p></header>
   <% } %>
 
+  <% if (subcats) { %>
+  <nav class="subcats chips" aria-label="Danh mục con">
+    <a class="chip<%= cat && cat.id === subcats.parent.id ? ' is-on' : '' %>" href="/danh-muc/<%= subcats.parent.slug %>">Tất cả <%= subcats.parent.name.toLowerCase() %></a>
+    <% subcats.items.forEach(k => { %><a class="chip<%= cat && cat.id === k.id ? ' is-on' : '' %>" href="/danh-muc/<%= k.slug %>"><%= k.name %></a><% }) %>
+  </nav>
+  <% } %>
+
   <div class="listing">
     <form class="filters" method="get" aria-label="Bộ lọc sản phẩm">
       <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px">

@@ -22,7 +22,7 @@
     </ul>
     <div class="pcard__foot">
       <div class="price">
-        <% if (contact) { %><small class="price__from">Giá dự án</small><strong class="price__now">Liên hệ</strong><% } else { %>
+        <% if (contact) { %><small class="price__from">Giá</small><strong class="price__now">Liên hệ</strong><% } else { %>
         <% if (multi) { %><small class="price__from">Từ</small><% } %>
         <strong class="price__now"><%= vnd(p.finalPrice) %></strong><% } %>
         <% if (p.discount) { %><s class="price__old"><%= vnd(p.price) %></s><% } %>

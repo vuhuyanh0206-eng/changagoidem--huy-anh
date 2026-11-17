@@ -45,7 +45,7 @@ router.get(
 );
 
 /* ---------- Danh mục + lọc ---------- */
-async function renderListing(req, res, { title, description, where, params, cat, breadcrumb, heroImage }) {
+async function renderListing(req, res, { title, description, where, params, cat, breadcrumb, heroImage, subcats = null }) {
   const q = req.query;
   const page = Math.max(1, parseInt(q.page, 10) || 1);
   const w = [...where];
@@ -79,6 +79,7 @@ async function renderListing(req, res, { title, description, where, params, cat,
   res.render('shop/listing', {
     meta: { title: `${title} | ${res.locals.s.site_name}`, description: description || res.locals.s.meta_description },
     title,
+    subcats,
     description,
     cat,
     heroImage,
@@ -99,8 +100,10 @@ router.get(
   wrap(async (req, res, next) => {
     const cat = await db.one('SELECT * FROM categories WHERE slug = ? AND active = 1', [req.params.slug]);
     if (!cat) return next();
-    const children = await db.query('SELECT id FROM categories WHERE parent_id = ?', [cat.id]);
+    const children = await db.query('SELECT id, name, slug FROM categories WHERE parent_id = ? AND active = 1 ORDER BY sort, id', [cat.id]);
     const ids = [cat.id, ...children.map((c) => c.id)];
+    const parent = cat.parent_id ? await db.one('SELECT id, name, slug FROM categories WHERE id = ?', [cat.parent_id]) : null;
+    const subcats = parent ? { parent, items: await db.query('SELECT id, name, slug FROM categories WHERE parent_id = ? AND active = 1 ORDER BY sort, id', [parent.id]) } : children.length ? { parent: cat, items: children } : null;
     await renderListing(req, res, {
       title: cat.name,
       description: cat.description,
@@ -108,7 +111,8 @@ router.get(
       heroImage: cat.image,
       where: [`p.category_id IN (${ids.map(() => '?').join(',')})`],
       params: ids,
-      breadcrumb: [{ name: cat.name }],
+      subcats,
+      breadcrumb: parent ? [{ name: parent.name, href: '/danh-muc/' + parent.slug }, { name: cat.name }] : [{ name: cat.name }],
     });
   })
 );
