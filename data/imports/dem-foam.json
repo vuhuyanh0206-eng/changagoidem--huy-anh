@@ -1,1142 +1,1248 @@
 [
- {
-  "name": "Đệm foam tổng hợp Elan vỏ chần",
-  "brand": "Elan",
-  "source": "https://elan.vn/products/dem-foam-tong-hop-vo-chan",
-  "images": [
-   "/images/products/elan/foam-tong-hop-1.jpg",
-   "/images/products/elan/foam-tong-hop-2.jpg",
-   "/images/products/elan/foam-tong-hop-3.jpg",
-   "/images/products/elan/foam-tong-hop-4.jpg",
-   "/images/products/elan/foam-tong-hop-5.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 12,
-    "price": 3920000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 12,
-    "price": 4110000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 12,
-    "price": 4520000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 12,
-    "price": 4840000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 12,
-    "price": 5370000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 12,
-    "price": 5980000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 15,
-    "price": 4070000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 4320000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 4830000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 5210000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 5720000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 6430000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 20,
-    "price": 5110000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 20,
-    "price": 5440000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 20,
-    "price": 6340000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 20,
-    "price": 6720000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 20,
-    "price": 7400000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 20,
-    "price": 8420000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 22,
-    "price": 5490000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 22,
-    "price": 5860000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 22,
-    "price": 6900000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 22,
-    "price": 7310000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 22,
-    "price": 8060000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 22,
-    "price": 9220000,
-    "sale": 0
-   }
-  ],
-  "firmness": 3,
-  "features": [
-   "Lõi foam tổng hợp nhiều lớp, đàn hồi tốt, không xẹp lún",
-   "Vỏ chần trần trám êm mặt, thoáng khí",
-   "Gấp gọn được, 4 độ dày từ 12cm đến 22cm"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm Foam Đa Tầng Elan II",
-  "brand": "Elan",
-  "source": "https://elan.vn/products/dem-foam-da-tang-elan-ii",
-  "images": [
-   "/images/products/elan/foam-da-tang-3.jpg",
-   "/images/products/elan/foam-da-tang-1.jpg",
-   "/images/products/elan/foam-da-tang-4.jpg",
-   "/images/products/elan/foam-da-tang-2.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 15,
-    "price": 6940000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 7430000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 8780000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 9220000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 10080000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 11660000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 20,
-    "price": 8180000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 20,
-    "price": 8760000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 20,
-    "price": 10320000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 20,
-    "price": 10820000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 20,
-    "price": 11840000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 20,
-    "price": 13760000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 25,
-    "price": 9790000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 25,
-    "price": 10470000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 25,
-    "price": 12300000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 25,
-    "price": 129000000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 25,
-    "price": 14110000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 25,
-    "price": 16430000,
-    "sale": 0
-   }
-  ],
-  "firmness": 3,
-  "badge": "Cao cấp",
-  "features": [
-   "Kết cấu đa tầng foam với độ cứng khác nhau, nâng đỡ theo vùng",
-   "Lớp foam định hình lượn sóng tăng lưu thông khí",
-   "3 độ dày 15cm, 20cm, 25cm"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm foam tổng hợp massage Elan",
-  "brand": "Elan",
-  "source": "https://elan.vn/products/dem-foam-elan-tong-hop-massage-khong-chan",
-  "images": [
-   "/images/products/elan/foam-massage-1.jpg",
-   "/images/products/elan/foam-massage-4.jpg",
-   "/images/products/elan/foam-massage-2.jpg",
-   "/images/products/elan/foam-massage-3.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 10,
-    "price": 3110000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 3230000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 3530000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 3790000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 4160000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 4600000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 15,
-    "price": 3660000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 3890000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 4350000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 4690000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 5150000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 5790000,
-    "sale": 0
-   }
-  ],
-  "firmness": 3,
-  "features": [
-   "Bề mặt foam gai massage kích thích tuần hoàn máu",
-   "Vỏ vải dệt kim mềm mát, viền đen sang trọng",
-   "2 độ dày 10cm và 15cm, giá dễ tiếp cận"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm Nano Foam Elan",
-  "brand": "Elan",
-  "featured": 1,
-  "images": [
-   "/images/products/elan/nano-foam-1.jpg",
-   "/images/products/elan/nano-foam-2.jpg",
-   "/images/products/elan/nano-foam-3.jpg",
-   "/images/products/elan/nano-foam-4.jpg",
-   "/images/products/elan/nano-foam-5.jpg",
-   "/images/products/elan/nano-foam-6.jpg",
-   "/images/products/elan/nano-foam-7.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 15,
-    "price": 3900000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 4495000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 5020000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 5440000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 6160000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 7025000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 20,
-    "price": 4890000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 20,
-    "price": 5645000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 20,
-    "price": 6315000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 20,
-    "price": 6840000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 20,
-    "price": 7770000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 20,
-    "price": 8890000,
-    "sale": 0
-   }
-  ],
-  "short": "Đệm Nano Foam Elan dày 15cm, 20cm: foam cao cấp, vỏ dệt xám sang trọng, đóng cuộn gọn gàng tiện vận chuyển.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Elan"
-   ],
-   [
-    "Loại sản phẩm",
-    "Đệm nano foam"
-   ],
-   [
-    "Đóng gói",
-    "Cuộn gọn"
-   ],
-   [
-    "Xuất xứ",
-    "Việt Nam"
-   ]
-  ],
-  "description_html": "<h3>Đệm Nano Foam Elan</h3><p>Đệm foam cao cấp của Elan, đàn hồi tốt và êm vừa phải, ôm theo đường cong cơ thể.</p><ul><li><strong>Foam cao cấp:</strong> phục hồi nhanh, nâng đỡ đều.</li><li><strong>Đóng cuộn:</strong> gọn nhẹ, dễ vận chuyển lên nhà cao tầng.</li><li><strong>Độ dày:</strong> 15cm và 20cm, 6 kích thước từ 100x190 đến 200x220cm.</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>"
- },
- {
-  "name": "Đệm Foam Massage Elan",
-  "brand": "Elan",
-  "featured": 1,
-  "warranty": "7 năm",
-  "images": [
-   "/images/products/elan/foam-massage-1.jpg",
-   "/images/products/elan/foam-massage-2.jpg",
-   "/images/products/elan/foam-massage-3.jpg",
-   "/images/products/elan/foam-massage-4.jpg",
-   "/images/products/elan/foam-massage-5.jpg",
-   "/images/products/elan/foam-massage-6.jpg",
-   "/images/products/elan/foam-massage-7.jpg",
-   "/images/products/elan/foam-massage-8.jpg",
-   "/images/products/elan/foam-massage-9.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 5,
-    "price": 1730000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1990000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2260000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2440000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2720000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 3130000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 7,
-    "price": 2070000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2390000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 2700000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 2940000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 3290000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 3820000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 9,
-    "price": 2390000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2780000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3160000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3450000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3850000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 4520000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 14,
-    "price": 3250000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 3810000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 4300000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 4720000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 5290000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 6280000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 18,
-    "price": 3930000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 4620000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 5210000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 5730000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 6440000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 7670000,
-    "sale": 0
-   }
-  ],
-  "short": "Đệm foam massage Elan: foam cao cấp kết hợp lớp foam hình quả trứng giúp tăng tuần hoàn máu, êm ái. Bảo hành 7 năm.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Elan"
-   ],
-   [
-    "Loại sản phẩm",
-    "Đệm foam massage"
-   ],
-   [
-    "Bảo hành",
-    "7 năm"
-   ],
-   [
-    "Xuất xứ",
-    "Việt Nam"
-   ]
-  ],
-  "description_html": "<h3>Đệm Foam Massage Elan</h3><p>Sử dụng foam cao cấp kết hợp lớp foam hình quả trứng có tác dụng massage, giúp gia tăng tuần hoàn máu và cải thiện sức khoẻ.</p><ul><li><strong>Lớp foam quả trứng:</strong> massage nhẹ khi nằm, giảm mỏi lưng vai.</li><li><strong>Phù hợp:</strong> người cần một chiếc đệm êm ái.</li><li><strong>5 độ dày:</strong> 5, 7, 9, 14, 18cm.</li><li><strong>Bảo hành:</strong> 7 năm.</li></ul>"
- },
- {
-  "name": "Đệm Nano Foam Massage Elan",
-  "brand": "Elan",
-  "featured": 1,
-  "warranty": "7 năm",
-  "images": [
-   "/images/products/elan/nano-foam-massage-1.jpg",
-   "/images/products/elan/nano-foam-massage-2.jpg",
-   "/images/products/elan/nano-foam-massage-3.jpg",
-   "/images/products/elan/nano-foam-massage-4.jpg",
-   "/images/products/elan/nano-foam-massage-5.jpg",
-   "/images/products/elan/nano-foam-massage-6.jpg",
-   "/images/products/elan/nano-foam-massage-7.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 10,
-    "price": 3000000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 3420000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 3815000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 4150000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 4650000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 5250000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 15,
-    "price": 3900000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 4495000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 5020000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 5440000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 6160000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 7025000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 20,
-    "price": 4890000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 20,
-    "price": 5645000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 20,
-    "price": 6315000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 20,
-    "price": 6840000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 20,
-    "price": 7770000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 20,
-    "price": 8890000,
-    "sale": 0
-   }
-  ],
-  "short": "Đệm nano foam massage Elan dày 10, 15, 20cm: nano foam cao cấp kết hợp lớp foam quả trứng massage. Bảo hành 7 năm.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Elan"
-   ],
-   [
-    "Loại sản phẩm",
-    "Đệm nano foam massage"
-   ],
-   [
-    "Bảo hành",
-    "7 năm"
-   ],
-   [
-    "Xuất xứ",
-    "Việt Nam"
-   ]
-  ],
-  "description_html": "<h3>Đệm Nano Foam Massage Elan</h3><p>Nano foam cao cấp kết hợp lớp foam hình quả trứng giúp gia tăng tuần hoàn máu, cải thiện sức khoẻ, cho cảm giác nằm êm ái.</p><ul><li><strong>3 độ dày:</strong> 10, 15, 20cm; 6 kích thước từ 100x190 đến 200x220cm.</li><li><strong>Bảo hành:</strong> 7 năm.</li></ul>"
- },
- {
-  "name": "Đệm Everhome Foam Osakawa",
-  "brand": "Everhome",
-  "featured": 1,
-  "warranty": "5 năm",
-  "images": [
-   "/images/products/everhome/foam-osakawa-1.jpg",
-   "/images/products/everhome/foam-osakawa-2.jpg",
-   "/images/products/everhome/foam-osakawa-3.jpg",
-   "/images/products/everhome/foam-osakawa-4.jpg"
-  ],
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 7200000,
-    "sale": 0
-   },
-   {
-    "w": 140,
-    "l": 195,
-    "t": 15,
-    "price": 8200000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 8600000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 8900000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 10200000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 12800000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 20,
-    "price": 9500000,
-    "sale": 0
-   },
-   {
-    "w": 140,
-    "l": 195,
-    "t": 20,
-    "price": 10900000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 20,
-    "price": 11500000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 20,
-    "price": 11900000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 20,
-    "price": 13500000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 20,
-    "price": 16800000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 25,
-    "price": 11600000,
-    "sale": 0
-   },
-   {
-    "w": 140,
-    "l": 195,
-    "t": 25,
-    "price": 13200000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 25,
-    "price": 13900000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 25,
-    "price": 14500000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 25,
-    "price": 16800000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 25,
-    "price": 21800000,
-    "sale": 0
-   }
-  ],
-  "short": "Đệm Foam Osakawa Everhome: lớp cao su thiên nhiên êm mềm trên bề mặt, foam cao cấp nâng đỡ bên dưới, vỏ vải mát lạnh. Bảo hành 5 năm.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Everhome"
-   ],
-   [
-    "Loại sản phẩm",
-    "Đệm foam – cao su"
-   ],
-   [
-    "Cấu tạo",
-    "Cao su thiên nhiên + foam cao cấp"
-   ],
-   [
-    "Vỏ đệm",
-    "Vải thun lạnh thoáng khí"
-   ],
-   [
-    "Bảo hành",
-    "5 năm"
-   ],
-   [
-    "Xuất xứ",
-    "Việt Nam – dây chuyền Nhật Bản"
-   ]
-  ],
-  "description_html": "<h3>Đệm Everhome Foam Osakawa</h3><p>Cảm giác nằm êm nhưng không quá mềm, vững nhưng không cứng – như được nâng niu trên tầng mây mà vẫn có điểm tựa chắc chắn.</p><ul><li><strong>Vỏ áo mát lạnh:</strong> vải cấu trúc thoáng khí, hỗ trợ tản nhiệt.</li><li><strong>Lớp cao su thiên nhiên:</strong> êm ái, ôm nhẹ cơ thể.</li><li><strong>Lớp foam cao cấp:</strong> nâng đỡ, không gây cảm giác lún.</li><li><strong>Độ dày:</strong> 15, 20, 25cm; 6 kích thước từ 120x190 đến 200x220cm.</li><li><strong>Bảo hành:</strong> 5 năm.</li></ul>"
- }
+  {
+    "name": "Đệm foam tổng hợp Elan vỏ chần",
+    "brand": "Elan",
+    "source": "https://elan.vn/products/dem-foam-tong-hop-vo-chan",
+    "images": [
+      "/images/products/elan/foam-tong-hop-1.jpg",
+      "/images/products/elan/foam-tong-hop-2.jpg",
+      "/images/products/elan/foam-tong-hop-3.jpg",
+      "/images/products/elan/foam-tong-hop-4.jpg",
+      "/images/products/elan/foam-tong-hop-5.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 12,
+        "price": 3920000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 12,
+        "price": 4110000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 12,
+        "price": 4520000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 12,
+        "price": 4840000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 12,
+        "price": 5370000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 12,
+        "price": 5980000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 15,
+        "price": 4070000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 4320000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 4830000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 5210000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 5720000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 6430000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 20,
+        "price": 5110000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 5440000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 6340000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 6720000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 7400000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 8420000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 22,
+        "price": 5490000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 5860000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 22,
+        "price": 6900000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 7310000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 8060000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 22,
+        "price": 9220000,
+        "sale": 0
+      }
+    ],
+    "firmness": 3,
+    "features": [
+      "Lõi foam tổng hợp nhiều lớp, đàn hồi tốt, không xẹp lún",
+      "Vỏ chần trần trám êm mặt, thoáng khí",
+      "Gấp gọn được, 4 độ dày từ 12cm đến 22cm"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm Foam Đa Tầng Elan II",
+    "brand": "Elan",
+    "source": "https://elan.vn/products/dem-foam-da-tang-elan-ii",
+    "images": [
+      "/images/products/elan/foam-da-tang-3.jpg",
+      "/images/products/elan/foam-da-tang-1.jpg",
+      "/images/products/elan/foam-da-tang-4.jpg",
+      "/images/products/elan/foam-da-tang-2.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 15,
+        "price": 6940000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 7430000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 8780000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 9220000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 10080000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 11660000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 20,
+        "price": 8180000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 8760000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 10320000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 10820000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 11840000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 13760000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 25,
+        "price": 9790000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 25,
+        "price": 10470000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 25,
+        "price": 12300000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 25,
+        "price": 129000000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 25,
+        "price": 14110000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 25,
+        "price": 16430000,
+        "sale": 0
+      }
+    ],
+    "firmness": 3,
+    "badge": "Cao cấp",
+    "features": [
+      "Kết cấu đa tầng foam với độ cứng khác nhau, nâng đỡ theo vùng",
+      "Lớp foam định hình lượn sóng tăng lưu thông khí",
+      "3 độ dày 15cm, 20cm, 25cm"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm foam tổng hợp massage Elan",
+    "brand": "Elan",
+    "source": "https://elan.vn/products/dem-foam-elan-tong-hop-massage-khong-chan",
+    "images": [
+      "/images/products/elan/foam-massage-1.jpg",
+      "/images/products/elan/foam-massage-4.jpg",
+      "/images/products/elan/foam-massage-2.jpg",
+      "/images/products/elan/foam-massage-3.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 10,
+        "price": 3110000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 3230000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 3530000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 3790000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 4160000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 4600000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 15,
+        "price": 3660000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 3890000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 4350000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 4690000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 5150000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 5790000,
+        "sale": 0
+      }
+    ],
+    "firmness": 3,
+    "features": [
+      "Bề mặt foam gai massage kích thích tuần hoàn máu",
+      "Vỏ vải dệt kim mềm mát, viền đen sang trọng",
+      "2 độ dày 10cm và 15cm, giá dễ tiếp cận"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm Nano Foam Elan",
+    "brand": "Elan",
+    "featured": 1,
+    "images": [
+      "/images/products/elan/nano-foam-1.jpg",
+      "/images/products/elan/nano-foam-2.jpg",
+      "/images/products/elan/nano-foam-3.jpg",
+      "/images/products/elan/nano-foam-4.jpg",
+      "/images/products/elan/nano-foam-5.jpg",
+      "/images/products/elan/nano-foam-6.jpg",
+      "/images/products/elan/nano-foam-7.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 15,
+        "price": 3900000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 4495000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 5020000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 5440000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 6160000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 7025000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 20,
+        "price": 4890000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 5645000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 6315000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 6840000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 7770000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 8890000,
+        "sale": 0
+      }
+    ],
+    "short": "Đệm Nano Foam Elan dày 15cm, 20cm: foam cao cấp, vỏ dệt xám sang trọng, đóng cuộn gọn gàng tiện vận chuyển.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Elan"
+      ],
+      [
+        "Loại sản phẩm",
+        "Đệm nano foam"
+      ],
+      [
+        "Đóng gói",
+        "Cuộn gọn"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm Nano Foam Elan</h3><p>Đệm foam cao cấp của Elan, đàn hồi tốt và êm vừa phải, ôm theo đường cong cơ thể.</p><ul><li><strong>Foam cao cấp:</strong> phục hồi nhanh, nâng đỡ đều.</li><li><strong>Đóng cuộn:</strong> gọn nhẹ, dễ vận chuyển lên nhà cao tầng.</li><li><strong>Độ dày:</strong> 15cm và 20cm, 6 kích thước từ 100x190 đến 200x220cm.</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>"
+  },
+  {
+    "name": "Đệm Foam Massage Elan",
+    "brand": "Elan",
+    "featured": 1,
+    "warranty": "7 năm",
+    "images": [
+      "/images/products/elan/foam-massage-1.jpg",
+      "/images/products/elan/foam-massage-2.jpg",
+      "/images/products/elan/foam-massage-3.jpg",
+      "/images/products/elan/foam-massage-4.jpg",
+      "/images/products/elan/foam-massage-5.jpg",
+      "/images/products/elan/foam-massage-6.jpg",
+      "/images/products/elan/foam-massage-7.jpg",
+      "/images/products/elan/foam-massage-8.jpg",
+      "/images/products/elan/foam-massage-9.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 5,
+        "price": 1730000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1990000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2260000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2440000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2720000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3130000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 7,
+        "price": 2070000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2390000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2700000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 2940000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3290000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 3820000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 9,
+        "price": 2390000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2780000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3160000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3450000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3850000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 4520000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 14,
+        "price": 3250000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 3810000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4300000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4720000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5290000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6280000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 18,
+        "price": 3930000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 4620000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 5210000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 5730000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 6440000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 7670000,
+        "sale": 0
+      }
+    ],
+    "short": "Đệm foam massage Elan: foam cao cấp kết hợp lớp foam hình quả trứng giúp tăng tuần hoàn máu, êm ái. Bảo hành 7 năm.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Elan"
+      ],
+      [
+        "Loại sản phẩm",
+        "Đệm foam massage"
+      ],
+      [
+        "Bảo hành",
+        "7 năm"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm Foam Massage Elan</h3><p>Sử dụng foam cao cấp kết hợp lớp foam hình quả trứng có tác dụng massage, giúp gia tăng tuần hoàn máu và cải thiện sức khoẻ.</p><ul><li><strong>Lớp foam quả trứng:</strong> massage nhẹ khi nằm, giảm mỏi lưng vai.</li><li><strong>Phù hợp:</strong> người cần một chiếc đệm êm ái.</li><li><strong>5 độ dày:</strong> 5, 7, 9, 14, 18cm.</li><li><strong>Bảo hành:</strong> 7 năm.</li></ul>"
+  },
+  {
+    "name": "Đệm Nano Foam Massage Elan",
+    "brand": "Elan",
+    "featured": 1,
+    "warranty": "7 năm",
+    "images": [
+      "/images/products/elan/nano-foam-massage-1.jpg",
+      "/images/products/elan/nano-foam-massage-2.jpg",
+      "/images/products/elan/nano-foam-massage-3.jpg",
+      "/images/products/elan/nano-foam-massage-4.jpg",
+      "/images/products/elan/nano-foam-massage-5.jpg",
+      "/images/products/elan/nano-foam-massage-6.jpg",
+      "/images/products/elan/nano-foam-massage-7.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 10,
+        "price": 3000000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 3420000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 3815000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 4150000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 4650000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 5250000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 15,
+        "price": 3900000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 4495000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 5020000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 5440000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 6160000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 7025000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 20,
+        "price": 4890000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 5645000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 6315000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 6840000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 7770000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 8890000,
+        "sale": 0
+      }
+    ],
+    "short": "Đệm nano foam massage Elan dày 10, 15, 20cm: nano foam cao cấp kết hợp lớp foam quả trứng massage. Bảo hành 7 năm.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Elan"
+      ],
+      [
+        "Loại sản phẩm",
+        "Đệm nano foam massage"
+      ],
+      [
+        "Bảo hành",
+        "7 năm"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm Nano Foam Massage Elan</h3><p>Nano foam cao cấp kết hợp lớp foam hình quả trứng giúp gia tăng tuần hoàn máu, cải thiện sức khoẻ, cho cảm giác nằm êm ái.</p><ul><li><strong>3 độ dày:</strong> 10, 15, 20cm; 6 kích thước từ 100x190 đến 200x220cm.</li><li><strong>Bảo hành:</strong> 7 năm.</li></ul>"
+  },
+  {
+    "name": "Đệm Everhome Foam Osakawa",
+    "brand": "Everhome",
+    "featured": 1,
+    "warranty": "5 năm",
+    "images": [
+      "/images/products/everhome/foam-osakawa-1.jpg",
+      "/images/products/everhome/foam-osakawa-2.jpg",
+      "/images/products/everhome/foam-osakawa-3.jpg",
+      "/images/products/everhome/foam-osakawa-4.jpg"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 7200000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 195,
+        "t": 15,
+        "price": 8200000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 8600000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 8900000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 10200000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 12800000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 9500000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 195,
+        "t": 20,
+        "price": 10900000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 11500000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 11900000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 13500000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 16800000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 25,
+        "price": 11600000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 195,
+        "t": 25,
+        "price": 13200000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 25,
+        "price": 13900000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 25,
+        "price": 14500000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 25,
+        "price": 16800000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 25,
+        "price": 21800000,
+        "sale": 0
+      }
+    ],
+    "short": "Đệm Foam Osakawa Everhome: lớp cao su thiên nhiên êm mềm trên bề mặt, foam cao cấp nâng đỡ bên dưới, vỏ vải mát lạnh. Bảo hành 5 năm.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Everhome"
+      ],
+      [
+        "Loại sản phẩm",
+        "Đệm foam – cao su"
+      ],
+      [
+        "Cấu tạo",
+        "Cao su thiên nhiên + foam cao cấp"
+      ],
+      [
+        "Vỏ đệm",
+        "Vải thun lạnh thoáng khí"
+      ],
+      [
+        "Bảo hành",
+        "5 năm"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam – dây chuyền Nhật Bản"
+      ]
+    ],
+    "description_html": "<h3>Đệm Everhome Foam Osakawa</h3><p>Cảm giác nằm êm nhưng không quá mềm, vững nhưng không cứng – như được nâng niu trên tầng mây mà vẫn có điểm tựa chắc chắn.</p><ul><li><strong>Vỏ áo mát lạnh:</strong> vải cấu trúc thoáng khí, hỗ trợ tản nhiệt.</li><li><strong>Lớp cao su thiên nhiên:</strong> êm ái, ôm nhẹ cơ thể.</li><li><strong>Lớp foam cao cấp:</strong> nâng đỡ, không gây cảm giác lún.</li><li><strong>Độ dày:</strong> 15, 20, 25cm; 6 kích thước từ 120x190 đến 200x220cm.</li><li><strong>Bảo hành:</strong> 5 năm.</li></ul>"
+  },
+  {
+    "name": "Đệm Doll's Foam Pure (massage 7 vùng)",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/fo-pure-1.jpg",
+      "/images/products/dolls/fo-pure-2.jpg",
+      "/images/products/dolls/fo-pure-3.jpg",
+      "/images/products/dolls/fo-pure-4.jpg",
+      "/images/products/dolls/fo-pure-5.jpg",
+      "/images/products/dolls/fo-pure-6.jpg",
+      "/images/products/dolls/fo-pure-7.jpg",
+      "/images/products/dolls/fo-pure-8.jpg"
+    ],
+    "firmness": 3,
+    "features": [
+      "Lõi foam massage 7 vùng, nâng đỡ từng vùng cơ thể",
+      "Vỏ vải dệt cao cấp, viền thêu logo Doll's Foam Pure",
+      "Đàn hồi tốt, giảm áp lực vai – hông"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 7550000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 15,
+        "price": 9100000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 9100000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 9500000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 10500000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 12380000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 20,
+        "price": 9280000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 20,
+        "price": 11150000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 20,
+        "price": 11150000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 20,
+        "price": 11750000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 20,
+        "price": 12900000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 20,
+        "price": 15250000,
+        "sale": 0
+      }
+    ]
+  }
 ]

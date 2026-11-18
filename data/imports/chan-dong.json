@@ -1,54 +1,96 @@
 [
- {
-  "name": "Chăn đông Elan bộ sưu tập SI",
-  "brand": "Elan",
-  "contact": true,
-  "images": [
-   "/images/products/elan/chan-dong-si-1.jpg",
-   "/images/products/elan/chan-dong-si-2.jpg",
-   "/images/products/elan/chan-dong-si-3.jpg",
-   "/images/products/elan/chan-dong-si-4.jpg",
-   "/images/products/elan/chan-dong-si-5.jpg",
-   "/images/products/elan/chan-dong-si-6.jpg",
-   "/images/products/elan/chan-dong-si-7.jpg",
-   "/images/products/elan/chan-dong-si-8.jpg",
-   "/images/products/elan/chan-dong-si-9.jpg"
-  ],
-  "short": "Chăn đông Elan nhiều hoạ tiết hiện đại – 9 mẫu SI 2380 đến SI 2388, ấm áp cho mùa lạnh.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Elan"
-   ],
-   [
-    "Loại sản phẩm",
-    "Chăn đông"
-   ],
-   [
-    "Mẫu",
-    "SI 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388"
-   ]
-  ],
-  "description_html": "<h3>Chăn đông Elan – bộ sưu tập SI</h3><p>Chăn đông chính hãng Elan với hoạ tiết lá, kẻ, hình học và hoạ tiết trẻ em, tông xanh – xám dễ phối phòng ngủ.</p><p><strong>9 mẫu:</strong> SI 2380 – SI 2388 (xem ảnh, mã in góc ảnh). Ghi rõ mã khi đặt hàng.</p><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
- },
- {
-  "name": "Ruột chăn, ruột gối Elan",
-  "brand": "Elan",
-  "contact": true,
-  "images": [
-   "/images/products/elan/ruot-chan-goi-1.jpg"
-  ],
-  "short": "Ruột chăn và ruột gối bông trắng Elan: êm, nhẹ, giữ ấm tốt, dùng lồng vào vỏ chăn, vỏ gối.",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Elan"
-   ],
-   [
-    "Loại sản phẩm",
-    "Ruột chăn, ruột gối"
-   ]
-  ],
-  "description_html": "<h3>Ruột chăn, ruột gối Elan</h3><p>Ruột bông trắng chính hãng Elan, êm nhẹ và giữ ấm, phù hợp lồng vào các bộ chăn ga gối.</p><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
- }
+  {
+    "name": "Chăn đông Elan bộ sưu tập SI",
+    "brand": "Elan",
+    "contact": true,
+    "images": [
+      "/images/products/elan/chan-dong-si-1.jpg",
+      "/images/products/elan/chan-dong-si-2.jpg",
+      "/images/products/elan/chan-dong-si-3.jpg",
+      "/images/products/elan/chan-dong-si-4.jpg",
+      "/images/products/elan/chan-dong-si-5.jpg",
+      "/images/products/elan/chan-dong-si-6.jpg",
+      "/images/products/elan/chan-dong-si-7.jpg",
+      "/images/products/elan/chan-dong-si-8.jpg",
+      "/images/products/elan/chan-dong-si-9.jpg"
+    ],
+    "short": "Chăn đông Elan nhiều hoạ tiết hiện đại – 9 mẫu SI 2380 đến SI 2388, ấm áp cho mùa lạnh.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Elan"
+      ],
+      [
+        "Loại sản phẩm",
+        "Chăn đông"
+      ],
+      [
+        "Mẫu",
+        "SI 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388"
+      ]
+    ],
+    "description_html": "<h3>Chăn đông Elan – bộ sưu tập SI</h3><p>Chăn đông chính hãng Elan với hoạ tiết lá, kẻ, hình học và hoạ tiết trẻ em, tông xanh – xám dễ phối phòng ngủ.</p><p><strong>9 mẫu:</strong> SI 2380 – SI 2388 (xem ảnh, mã in góc ảnh). Ghi rõ mã khi đặt hàng.</p><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
+  },
+  {
+    "name": "Ruột chăn, ruột gối Elan",
+    "brand": "Elan",
+    "contact": true,
+    "images": [
+      "/images/products/elan/ruot-chan-goi-1.jpg"
+    ],
+    "short": "Ruột chăn và ruột gối bông trắng Elan: êm, nhẹ, giữ ấm tốt, dùng lồng vào vỏ chăn, vỏ gối.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Elan"
+      ],
+      [
+        "Loại sản phẩm",
+        "Ruột chăn, ruột gối"
+      ]
+    ],
+    "description_html": "<h3>Ruột chăn, ruột gối Elan</h3><p>Ruột bông trắng chính hãng Elan, êm nhẹ và giữ ấm, phù hợp lồng vào các bộ chăn ga gối.</p><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
+  },
+  {
+    "name": "Chăn đông Doll's Cross",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/cd-cross-1.jpg",
+      "/images/products/dolls/cd-cross-2.jpg",
+      "/images/products/dolls/cd-cross-3.jpg",
+      "/images/products/dolls/cd-cross-4.jpg"
+    ],
+    "variants": [
+      {
+        "label": "200 x 230 cm",
+        "price": 1500000,
+        "sale": 0
+      }
+    ],
+    "short": "Chăn đông Doll's Cross chính hãng Doll's, kích thước 200 x 230 cm: chần ô vuông, bông dày ấm áp, nhiều màu: ghi đậm, be, đỏ, nâu.",
+    "features": [
+      "Chần ô vuông, bông dày giữ ấm",
+      "Nhiều màu: ghi đậm, be, đỏ, nâu",
+      "Kích thước 200 x 230 cm"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Doll's"
+      ],
+      [
+        "Loại",
+        "Chăn đông"
+      ],
+      [
+        "Kích thước",
+        "200 x 230 cm"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Chăn đông Doll's Cross</h3><p>Chăn đông Doll's Cross chính hãng Doll's, kích thước 200 x 230 cm: chần ô vuông, bông dày ấm áp, nhiều màu: ghi đậm, be, đỏ, nâu.</p><ul><li>Chần ô vuông, bông dày giữ ấm.</li><li>Nhiều màu: ghi đậm, be, đỏ, nâu.</li><li>Kích thước 200 x 230 cm.</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn.</p>"
+  }
 ]

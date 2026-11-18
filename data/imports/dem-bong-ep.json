@@ -1,3267 +1,3903 @@
 [
- {
-  "name": "Đệm bông PE HQ",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-pe-hq",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2120000,
-    "sale": 1696000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2620000,
-    "sale": 2096000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2930000,
-    "sale": 2344000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3320000,
-    "sale": 2656000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2670000,
-    "sale": 2136000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 3350000,
-    "sale": 2680000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 3680000,
-    "sale": 2944000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 4060000,
-    "sale": 3248000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3090000,
-    "sale": 2472000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3930000,
-    "sale": 3144000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4180000,
-    "sale": 3344000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4530000,
-    "sale": 3624000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 4660000,
-    "sale": 3728000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 5820000,
-    "sale": 4656000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 6500000,
-    "sale": 5200000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 7380000,
-    "sale": 5904000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 5800000,
-    "sale": 4640000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 7380000,
-    "sale": 5904000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 8010000,
-    "sale": 6408000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 8750000,
-    "sale": 7000000
-   }
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
- },
- {
-  "name": "Đệm bông Blue Nano Silver flexible",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://dongahome.vn/dem-bong-blue-nano-silver-flexible",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 14690000,
-    "sale": 11752000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 17550000,
-    "sale": 14040000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 18570000,
-    "sale": 14856000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 20390000,
-    "sale": 16312000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 24270000,
-    "sale": 19416000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/blue-nano-silver-flexible-1.jpg",
-   "/images/products/hanvico/blue-nano-silver-flexible-2.jpg",
-   "/images/products/hanvico/blue-nano-silver-flexible-3.jpg",
-   "/images/products/hanvico/blue-nano-silver-flexible-4.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông Blue Nano Silver Comfort",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-blue-nano-silver-comfort",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 16,
-    "price": 15120000,
-    "sale": 12096000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 16,
-    "price": 18060000,
-    "sale": 14448000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 16,
-    "price": 19105000,
-    "sale": 15284000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 16,
-    "price": 20990000,
-    "sale": 16792000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 16,
-    "price": 22880000,
-    "sale": 18304000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 16,
-    "price": 24980000,
-    "sale": 19984000
-   }
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
- },
- {
-  "name": "Đệm bông ANTIMICROBIAL COOLING",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-antimicrobial-cooling",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 6310000,
-    "sale": 5048000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 7550000,
-    "sale": 6040000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 7980000,
-    "sale": 6384000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 8750000,
-    "sale": 7000000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 10,
-    "price": 9550000,
-    "sale": 7640000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 10450000,
-    "sale": 8360000
-   }
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
- },
- {
-  "name": "Đệm bông Nano U.eros Topper Cool",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://dongahome.vn/dem-bong-nano-u-eros-topper",
-  "variants": [
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 12350000,
-    "sale": 9880000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 13190000,
-    "sale": 10552000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 16070000,
-    "sale": 12856000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/nano-u-eros-topper-1.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm Nano U.Eros Plus",
-  "brand": "Hanvico",
-  "brand_inferred": true,
-  "source": "https://dongahome.vn/dem-bong-nano-u-eros-plus",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 7880000,
-    "sale": 6304000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 9340000,
-    "sale": 7472000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 9950000,
-    "sale": 7960000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 10940000,
-    "sale": 8752000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 12900000,
-    "sale": 10320000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 10860000,
-    "sale": 8688000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 12820000,
-    "sale": 10256000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 13720000,
-    "sale": 10976000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 15080000,
-    "sale": 12064000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 17790000,
-    "sale": 14232000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 19,
-    "price": 14310000,
-    "sale": 11448000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 19,
-    "price": 16890000,
-    "sale": 13512000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 19,
-    "price": 18090000,
-    "sale": 14472000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 19,
-    "price": 19860000,
-    "sale": 15888000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 19,
-    "price": 23440000,
-    "sale": 18752000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/nano-u-eros-plus-1.jpg",
-   "/images/products/hanvico/nano-u-eros-plus-2.jpg",
-   "/images/products/hanvico/nano-u-eros-plus-3.jpg",
-   "/images/products/hanvico/nano-u-eros-plus-4.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông gấm chống khuẩn Hanvico",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-ep-hanvico-gam-chong-khuan",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3330000,
-    "sale": 2664000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 4240000,
-    "sale": 3392000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 9,
-    "price": 4450000,
-    "sale": 3560000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4530000,
-    "sale": 3624000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 5040000,
-    "sale": 4032000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 9,
-    "price": 5630000,
-    "sale": 4504000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 6620000,
-    "sale": 5296000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 5390000,
-    "sale": 4312000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 6570000,
-    "sale": 5256000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 14,
-    "price": 7080000,
-    "sale": 5664000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 7260000,
-    "sale": 5808000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 8070000,
-    "sale": 6456000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 14,
-    "price": 8860000,
-    "sale": 7088000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 9650000,
-    "sale": 7720000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 6260000,
-    "sale": 5008000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 8130000,
-    "sale": 6504000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 8700000,
-    "sale": 6960000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 9480000,
-    "sale": 7584000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 18,
-    "price": 10260000,
-    "sale": 8208000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 11030000,
-    "sale": 8824000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/gam-chong-khuan-1.jpg",
-   "/images/products/hanvico/gam-chong-khuan-2.jpg",
-   "/images/products/hanvico/gam-chong-khuan-3.jpg",
-   "/images/products/hanvico/gam-chong-khuan-4.jpg",
-   "/images/products/hanvico/gam-chong-khuan-5.jpg",
-   "/images/products/hanvico/gam-chong-khuan-6.jpg",
-   "/images/products/hanvico/gam-chong-khuan-7.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép cao su Kim Cương Titanium",
-  "brand": "Kim Cương",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-cao-su-kim-cuong-titanium",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 4040000,
-    "sale": 3030000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 4250000,
-    "sale": 3188000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4470000,
-    "sale": 3352000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4750000,
-    "sale": 3563000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 5290000,
-    "sale": 3967000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 5410000,
-    "sale": 4057000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 5730000,
-    "sale": 4297000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 6040000,
-    "sale": 4530000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 6790000,
-    "sale": 5092000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 8270000,
-    "sale": 6202000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 6460000,
-    "sale": 4845000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 6850000,
-    "sale": 5137000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 7240000,
-    "sale": 5430000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 8050000,
-    "sale": 6037000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 9670000,
-    "sale": 7252000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép Elan Fly",
-  "brand": "Elan",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-elan-fly",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1850000,
-    "sale": 1050000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2250000,
-    "sale": 1250000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2350000,
-    "sale": 1350000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 2850000,
-    "sale": 1600000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2320000,
-    "sale": 1200000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 2860000,
-    "sale": 1600000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 2960000,
-    "sale": 1900000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 3350000,
-    "sale": 2200000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 4050000,
-    "sale": 2400000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 4350000,
-    "sale": 2600000
-   }
-  ],
-  "images": [
-   "/images/products/elan/fly-1.jpg",
-   "/images/products/elan/fly-2.jpg",
-   "/images/products/elan/fly-3.jpg",
-   "/images/products/elan/fly-6.jpg",
-   "/images/products/elan/fly-4.jpg",
-   "/images/products/elan/fly-5.jpg"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Everon",
-  "brand": "Everon",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-everon",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2590000,
-    "sale": 2020000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2990000,
-    "sale": 2332000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 3390000,
-    "sale": 2644000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3590000,
-    "sale": 2800000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 4890000,
-    "sale": 3814000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3190000,
-    "sale": 2488000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3790000,
-    "sale": 2956000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4290000,
-    "sale": 3346000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4690000,
-    "sale": 3658000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 6490000,
-    "sale": 5062000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 4790000,
-    "sale": 3736000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 5890000,
-    "sale": 4594000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 6590000,
-    "sale": 5140000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 7190000,
-    "sale": 5608000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 8990000,
-    "sale": 7012000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 5490000,
-    "sale": 4282000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 6690000,
-    "sale": 5218000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 7490000,
-    "sale": 5842000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 8190000,
-    "sale": 6388000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 9990000,
-    "sale": 7792000
-   }
-  ]
- },
- {
-  "name": "Đệm bông chống khuẩn Hanvico",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-ep-hanvico-tc-chong-khuan",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2190000,
-    "sale": 1752000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2740000,
-    "sale": 2192000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 5,
-    "price": 2980000,
-    "sale": 2384000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 3050000,
-    "sale": 2440000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3450000,
-    "sale": 2760000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 5,
-    "price": 3770000,
-    "sale": 3016000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 4100000,
-    "sale": 3280000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2790000,
-    "sale": 2232000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 3520000,
-    "sale": 2816000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 7,
-    "price": 3730000,
-    "sale": 2984000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 3830000,
-    "sale": 3064000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 4230000,
-    "sale": 3384000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 7,
-    "price": 4610000,
-    "sale": 3688000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 5140000,
-    "sale": 4112000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3200000,
-    "sale": 2560000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 4100000,
-    "sale": 3280000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 9,
-    "price": 4250000,
-    "sale": 3400000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4340000,
-    "sale": 3472000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4740000,
-    "sale": 3792000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 9,
-    "price": 5440000,
-    "sale": 4352000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 6090000,
-    "sale": 4872000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 4890000,
-    "sale": 3912000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 6100000,
-    "sale": 4880000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 14,
-    "price": 6560000,
-    "sale": 5248000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 6770000,
-    "sale": 5416000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 7670000,
-    "sale": 6136000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 14,
-    "price": 8520000,
-    "sale": 6816000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 9380000,
-    "sale": 7504000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 6030000,
-    "sale": 4824000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 7800000,
-    "sale": 6240000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 8270000,
-    "sale": 6616000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 9100000,
-    "sale": 7280000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 18,
-    "price": 9920000,
-    "sale": 7936000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 10730000,
-    "sale": 8584000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/chong-khuan-tc-1.jpg",
-   "/images/products/hanvico/chong-khuan-tc-2.jpg",
-   "/images/products/hanvico/chong-khuan-tc-3.jpg",
-   "/images/products/hanvico/chong-khuan-tc-4.jpg",
-   "/images/products/hanvico/chong-khuan-tc-5.jpg",
-   "/images/products/hanvico/chong-khuan-tc-6.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm Elan Alias 2M chần foam",
-  "brand": "Elan",
-  "brand_inferred": false,
-  "source": "https://elan.vn/products/dem-bong-ep-alias-vo-chan",
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 14,
-    "price": 5600000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 5870000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 6470000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 6670000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 7240000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 8390000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 18,
-    "price": 7150000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 7500000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 8100000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 8330000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 8900000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 10210000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 22,
-    "price": 8070000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 22,
-    "price": 8330000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 22,
-    "price": 8950000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 22,
-    "price": 9140000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 22,
-    "price": 9830000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 22,
-    "price": 11330000,
-    "sale": 0
-   }
-  ],
-  "images": [
-   "/images/products/elan/alias-2m-6.jpg",
-   "/images/products/elan/alias-2m-4.jpg",
-   "/images/products/elan/alias-2m-3.jpg",
-   "/images/products/elan/alias-2m-5.jpg",
-   "/images/products/elan/alias-2m-1.jpg",
-   "/images/products/elan/alias-2m-2.jpg"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm Elan Vimatt 2M chần foam",
-  "brand": "Elan",
-  "brand_inferred": false,
-  "source": "https://elan.vn/products/dem-bong-ep-vo-chan-vimatt-vm04",
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 14,
-    "price": 4550000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 4830000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 5200000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 5350000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 5960000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 7150000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 18,
-    "price": 6310000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 6580000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 6920000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 7060000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 7750000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 9260000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 22,
-    "price": 7020000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 22,
-    "price": 7430000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 22,
-    "price": 7770000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 22,
-    "price": 8090000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 22,
-    "price": 8780000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 22,
-    "price": 10130000,
-    "sale": 0
-   }
-  ],
-  "images": [
-   "/images/products/elan/vimatt-2m-1.jpg",
-   "/images/products/elan/vimatt-2m-3.jpg",
-   "/images/products/elan/vimatt-2m-4.jpg",
-   "/images/products/elan/vimatt-2m-6.jpg",
-   "/images/products/elan/vimatt-2m-2.jpg",
-   "/images/products/elan/vimatt-2m-5.jpg"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm Elan See 2M chần foam",
-  "brand": "Elan",
-  "brand_inferred": false,
-  "source": "https://elan.vn/products/dem-bong-ep-see-vo-chan",
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 14,
-    "price": 4030000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 4280000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 4610000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 4740000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 5280000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 6330000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 18,
-    "price": 5470000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 5700000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 5990000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 6120000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 6710000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 8030000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 22,
-    "price": 6140000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 22,
-    "price": 6520000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 22,
-    "price": 6800000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 22,
-    "price": 7090000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 22,
-    "price": 7690000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 22,
-    "price": 8880000,
-    "sale": 0
-   }
-  ],
-  "images": [
-   "/images/products/elan/see-2m-1.jpg",
-   "/images/products/elan/see-2m-3.jpg",
-   "/images/products/elan/see-2m-2.jpg"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Gold Kim Cương",
-  "brand": "Kim Cương",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-gold-kim-cuong",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1940000,
-    "sale": 1261000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2200000,
-    "sale": 1430000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2330000,
-    "sale": 1515000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2610000,
-    "sale": 1696000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 3160000,
-    "sale": 2054000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2260000,
-    "sale": 1695000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 2560000,
-    "sale": 1664000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 2710000,
-    "sale": 1761000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 3050000,
-    "sale": 1982000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 3720000,
-    "sale": 2418000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2590000,
-    "sale": 1683000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 2930000,
-    "sale": 1905000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3100000,
-    "sale": 2015000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3470000,
-    "sale": 2255000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 4200000,
-    "sale": 2730000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 3870000,
-    "sale": 2515000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 4399000,
-    "sale": 2859000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 4650000,
-    "sale": 3022000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 5190000,
-    "sale": 3373000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 6270000,
-    "sale": 4075000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 4490000,
-    "sale": 2918000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 5090000,
-    "sale": 3308000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 5390000,
-    "sale": 3503000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 6030000,
-    "sale": 3919000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 7300000,
-    "sale": 4745000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép Kim Cương Gấm Titanium",
-  "brand": "Kim Cương",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-kim-cuong-gam-titanium",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2320000,
-    "sale": 1508000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2630000,
-    "sale": 1710000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2780000,
-    "sale": 1807000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3100000,
-    "sale": 2015000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 3730000,
-    "sale": 2425000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2670000,
-    "sale": 1736000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 3030000,
-    "sale": 1970000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 3200000,
-    "sale": 2080000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 3590000,
-    "sale": 2334000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 4350000,
-    "sale": 2828000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3070000,
-    "sale": 1996000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3470000,
-    "sale": 2256000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3900000,
-    "sale": 2535000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3660000,
-    "sale": 2379000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 4950000,
-    "sale": 3218000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 4440000,
-    "sale": 2886000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 5040000,
-    "sale": 3276000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 5340000,
-    "sale": 3471000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 5960000,
-    "sale": 3874000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 7220000,
-    "sale": 4693000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 5260000,
-    "sale": 3419000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 5960000,
-    "sale": 3874000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 6310000,
-    "sale": 4102000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 7070000,
-    "sale": 4596000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 8570000,
-    "sale": 5571000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép tinh khiết Cozin",
-  "brand": "Cozin",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-tinh-khiet-cozin",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1690000,
-    "sale": 1183000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 1980000,
-    "sale": 1386000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2050000,
-    "sale": 1435000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2250000,
-    "sale": 1575000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 2700000,
-    "sale": 1890000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 1850000,
-    "sale": 1295000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 2180000,
-    "sale": 1526000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 2250000,
-    "sale": 1575000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 2550000,
-    "sale": 1785000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 2900000,
-    "sale": 2030000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2050000,
-    "sale": 1435000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 2490000,
-    "sale": 1743000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 2590000,
-    "sale": 1813000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 2900000,
-    "sale": 2030000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 3450000,
-    "sale": 2415000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 3150000,
-    "sale": 2205000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 3750000,
-    "sale": 2625000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 3950000,
-    "sale": 2765000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 4450000,
-    "sale": 3115000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 5350000,
-    "sale": 3745000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 4050000,
-    "sale": 2835000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 4650000,
-    "sale": 3255000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 4850000,
-    "sale": 3395000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 5450000,
-    "sale": 3815000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 6650000,
-    "sale": 4655000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép tinh khiết vỏ gấm Sông Hồng",
-  "brand": "Sông Hồng",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-tinh-khiet-vo-gam-song-hong",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1890000,
-    "sale": 1323000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2350000,
-    "sale": 1645000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2610000,
-    "sale": 1827000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2860000,
-    "sale": 2002000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 3640000,
-    "sale": 2548000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 2400000,
-    "sale": 1680000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 2840000,
-    "sale": 1988000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 3130000,
-    "sale": 2191000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 3490000,
-    "sale": 2443000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 4490000,
-    "sale": 3143000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2680000,
-    "sale": 1876000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3200000,
-    "sale": 2240000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3490000,
-    "sale": 2443000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3940000,
-    "sale": 2758000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 3650000,
-    "sale": 2555000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 4470000,
-    "sale": 3129000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 4800000,
-    "sale": 3360000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 5500000,
-    "sale": 3850000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 6500000,
-    "sale": 4550000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 5022000,
-    "sale": 3515000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 5346000,
-    "sale": 3742000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 5720000,
-    "sale": 4004000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 7330000,
-    "sale": 5131000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 8350000,
-    "sale": 5845000
-   }
-  ]
- },
- {
-  "name": "Đệm bông Nano chống khuẩn Hanvico",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-ep-hanvico-nano-chong-khuan",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 4650000,
-    "sale": 3720000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 5970000,
-    "sale": 4776000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 10,
-    "price": 6110000,
-    "sale": 4888000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 6170000,
-    "sale": 4936000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 6810000,
-    "sale": 5448000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 10,
-    "price": 7880000,
-    "sale": 6304000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 8560000,
-    "sale": 6848000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 6690000,
-    "sale": 5352000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 8100000,
-    "sale": 6480000
-   },
-   {
-    "w": 160,
-    "l": 195,
-    "t": 15,
-    "price": 8560000,
-    "sale": 6848000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 8700000,
-    "sale": 6960000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 9640000,
-    "sale": 7712000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 15,
-    "price": 11120000,
-    "sale": 8896000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 12400000,
-    "sale": 9920000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 19,
-    "price": 8760000,
-    "sale": 7008000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 19,
-    "price": 11310000,
-    "sale": 9048000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 19,
-    "price": 11790000,
-    "sale": 9432000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 19,
-    "price": 13080000,
-    "sale": 10464000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 19,
-    "price": 14570000,
-    "sale": 11656000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 19,
-    "price": 15870000,
-    "sale": 12696000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/nano-chong-khuan-1.jpg",
-   "/images/products/hanvico/nano-chong-khuan-2.jpg",
-   "/images/products/hanvico/nano-chong-khuan-3.jpg",
-   "/images/products/hanvico/nano-chong-khuan-4.jpg",
-   "/images/products/hanvico/nano-chong-khuan-5.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Hanvico Nano U.Eros",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-hanvico-nano-u-eros",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 10,
-    "price": 5620000,
-    "sale": 4496000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 10,
-    "price": 6630000,
-    "sale": 5304000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 10,
-    "price": 7100000,
-    "sale": 5680000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 10,
-    "price": 7790000,
-    "sale": 6232000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 10,
-    "price": 8470000,
-    "sale": 6776000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 10,
-    "price": 9210000,
-    "sale": 7368000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 15,
-    "price": 7600000,
-    "sale": 6080000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 15,
-    "price": 8980000,
-    "sale": 7184000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 15,
-    "price": 9620000,
-    "sale": 7696000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 15,
-    "price": 10580000,
-    "sale": 8464000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 15,
-    "price": 11520000,
-    "sale": 9216000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 15,
-    "price": 12450000,
-    "sale": 9960000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 19,
-    "price": 10100000,
-    "sale": 8080000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 19,
-    "price": 11920000,
-    "sale": 9536000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 19,
-    "price": 12760000,
-    "sale": 10208000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 19,
-    "price": 14020000,
-    "sale": 11216000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 19,
-    "price": 15280000,
-    "sale": 12224000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 19,
-    "price": 16540000,
-    "sale": 13232000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/nano-u-eros-1.jpg",
-   "/images/products/hanvico/nano-u-eros-2.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Kim Cương Bonus",
-  "brand": "Kim Cương",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-kim-cuong-bonus",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2290000,
-    "sale": 1305000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 2630000,
-    "sale": 1500000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 2800000,
-    "sale": 1600000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3170000,
-    "sale": 1807000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 3900000,
-    "sale": 2223000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép Everon than hoạt tính",
-  "brand": "Everon",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-everon-than-hoat-tinh",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 11,
-    "price": 5170000,
-    "sale": 4033000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 11,
-    "price": 6010000,
-    "sale": 4688000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 11,
-    "price": 6740000,
-    "sale": 5257000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 11,
-    "price": 7450000,
-    "sale": 5811000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 11,
-    "price": 10090000,
-    "sale": 7870000
-   }
-  ]
- },
- {
-  "name": "Đệm bông ép Hanvico Nano Victoria",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-hanvico-nano-victoria",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 22,
-    "price": 10050000,
-    "sale": 8040000
-   },
-   {
-    "w": 140,
-    "l": 200,
-    "t": 22,
-    "price": 11990000,
-    "sale": 9592000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 22,
-    "price": 12760000,
-    "sale": 10208000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 22,
-    "price": 13970000,
-    "sale": 11176000
-   }
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
- },
- {
-  "name": "Đệm bông Hanvico cao cấp Raymond",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://sieuthidem.vn/san-pham/dem-bong-hanvico-cao-cap-raymond",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 27,
-    "price": 12430000,
-    "sale": 9944000
-   },
-   {
-    "w": 140,
-    "l": 200,
-    "t": 27,
-    "price": 14830000,
-    "sale": 11864000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 27,
-    "price": 15950000,
-    "sale": 12760000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 27,
-    "price": 17270000,
-    "sale": 13816000
-   }
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
- },
- {
-  "name": "Đệm bông ép Elan Alias 3M vỏ không chần",
-  "brand": "Elan",
-  "source": "https://elan.vn/products/dem-bong-ep-elan-alias-vo-khong-chan",
-  "images": [
-   "/images/products/elan/alias-3m-2.jpg",
-   "/images/products/elan/alias-3m-1.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 5,
-    "price": 2770000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2900000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 3280000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 3410000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3950000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 5,
-    "price": 5040000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 7,
-    "price": 3120000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 7,
-    "price": 3290000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 7,
-    "price": 3670000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 7,
-    "price": 3810000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 7,
-    "price": 4330000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 7,
-    "price": 5360000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 9,
-    "price": 3410000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 3530000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3920000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 4050000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4570000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 9,
-    "price": 5630000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 14,
-    "price": 5480000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 14,
-    "price": 5660000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 14,
-    "price": 5990000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 14,
-    "price": 6310000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 14,
-    "price": 6820000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 14,
-    "price": 7850000,
-    "sale": 0
-   },
-   {
-    "w": 100,
-    "l": 190,
-    "t": 18,
-    "price": 6300000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 18,
-    "price": 6440000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 18,
-    "price": 6870000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 18,
-    "price": 7090000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 18,
-    "price": 7670000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 18,
-    "price": 8730000,
-    "sale": 0
-   }
-  ],
-  "features": [
-   "Gấp 3 mảnh gọn nhẹ, dễ vận chuyển và cất giữ",
-   "Vỏ gấm dệt hoa không chần, có khoá kéo tháo giặt",
-   "5 độ dày từ 5cm đến 18cm cho mọi nhu cầu"
-  ],
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Elan Alias Topper",
-  "brand": "Elan",
-  "source": "https://elan.vn/products/dem-bong-ep-alias-topper",
-  "images": [
-   "/images/products/elan/alias-topper-1.jpg",
-   "/images/products/elan/alias-topper-2.jpg",
-   "/images/products/elan/alias-topper-3.jpg",
-   "/images/products/elan/alias-topper-4.jpg",
-   "/images/products/elan/alias-topper-5.jpg"
-  ],
-  "variants": [
-   {
-    "w": 100,
-    "l": 190,
-    "t": 12,
-    "price": 4665000,
-    "sale": 0
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 12,
-    "price": 4890000,
-    "sale": 0
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 12,
-    "price": 5390000,
-    "sale": 0
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 12,
-    "price": 5560000,
-    "sale": 0
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 12,
-    "price": 6030000,
-    "sale": 0
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 12,
-    "price": 6995000,
-    "sale": 0
-   }
-  ],
-  "features": [
-   "Lớp topper chần dày êm phủ trên lõi bông ép cứng",
-   "Dày 12cm, nằm êm mặt mà vẫn giữ lưng thẳng",
-   "Gấp gọn được, phù hợp phòng ngủ hiện đại"
-  ],
-  "firmness": 4,
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Hanvico Golden Dream vỏ TC",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-ep-hanvico-golden-dream",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 1680000,
-    "sale": 1344000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2080000,
-    "sale": 1664000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2320000,
-    "sale": 1856000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 2630000,
-    "sale": 2104000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2500000,
-    "sale": 2000000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3140000,
-    "sale": 2512000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3400000,
-    "sale": 2720000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 3620000,
-    "sale": 2896000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/golden-dream-tc-1.jpg",
-   "/images/products/hanvico/golden-dream-tc-2.jpg",
-   "/images/products/hanvico/golden-dream-tc-3.jpg",
-   "/images/products/hanvico/golden-dream-tc-4.jpg",
-   "/images/products/hanvico/golden-dream-tc-5.jpg",
-   "/images/products/hanvico/golden-dream-tc-6.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- },
- {
-  "name": "Đệm bông ép Hanvico Golden Dream vỏ gấm",
-  "brand": "Hanvico",
-  "brand_inferred": false,
-  "source": "https://dongahome.vn/dem-bong-hanvico-golden-dream-vo-gam",
-  "variants": [
-   {
-    "w": 120,
-    "l": 190,
-    "t": 5,
-    "price": 2420000,
-    "sale": 1936000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 5,
-    "price": 2800000,
-    "sale": 2240000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 5,
-    "price": 2940000,
-    "sale": 2352000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 5,
-    "price": 3380000,
-    "sale": 2704000
-   },
-   {
-    "w": 120,
-    "l": 190,
-    "t": 9,
-    "price": 2930000,
-    "sale": 2344000
-   },
-   {
-    "w": 150,
-    "l": 190,
-    "t": 9,
-    "price": 3570000,
-    "sale": 2856000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 9,
-    "price": 3700000,
-    "sale": 2960000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 9,
-    "price": 4260000,
-    "sale": 3408000
-   }
-  ],
-  "images": [
-   "/images/products/hanvico/golden-dream-gam-1.jpg",
-   "/images/products/hanvico/golden-dream-gam-2.jpg",
-   "/images/products/hanvico/golden-dream-gam-3.jpg",
-   "/images/products/hanvico/golden-dream-gam-4.jpg",
-   "/images/products/hanvico/golden-dream-gam-5.jpg"
-  ],
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-  "featured": 1
- }
+  {
+    "name": "Đệm bông PE HQ",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-pe-hq",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2120000,
+        "sale": 1696000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2620000,
+        "sale": 2096000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2930000,
+        "sale": 2344000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3320000,
+        "sale": 2656000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2670000,
+        "sale": 2136000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 3350000,
+        "sale": 2680000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 3680000,
+        "sale": 2944000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 4060000,
+        "sale": 3248000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3090000,
+        "sale": 2472000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3930000,
+        "sale": 3144000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4180000,
+        "sale": 3344000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4530000,
+        "sale": 3624000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4660000,
+        "sale": 3728000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 5820000,
+        "sale": 4656000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 6500000,
+        "sale": 5200000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 7380000,
+        "sale": 5904000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 5800000,
+        "sale": 4640000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 7380000,
+        "sale": 5904000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 8010000,
+        "sale": 6408000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 8750000,
+        "sale": 7000000
+      }
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+  },
+  {
+    "name": "Đệm bông Blue Nano Silver flexible",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://dongahome.vn/dem-bong-blue-nano-silver-flexible",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 14690000,
+        "sale": 11752000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 17550000,
+        "sale": 14040000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 18570000,
+        "sale": 14856000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 20390000,
+        "sale": 16312000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 24270000,
+        "sale": 19416000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/blue-nano-silver-flexible-1.jpg",
+      "/images/products/hanvico/blue-nano-silver-flexible-2.jpg",
+      "/images/products/hanvico/blue-nano-silver-flexible-3.jpg",
+      "/images/products/hanvico/blue-nano-silver-flexible-4.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông Blue Nano Silver Comfort",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-blue-nano-silver-comfort",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 16,
+        "price": 15120000,
+        "sale": 12096000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 16,
+        "price": 18060000,
+        "sale": 14448000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 16,
+        "price": 19105000,
+        "sale": 15284000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 16,
+        "price": 20990000,
+        "sale": 16792000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 16,
+        "price": 22880000,
+        "sale": 18304000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 16,
+        "price": 24980000,
+        "sale": 19984000
+      }
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+  },
+  {
+    "name": "Đệm bông ANTIMICROBIAL COOLING",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-antimicrobial-cooling",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 6310000,
+        "sale": 5048000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 7550000,
+        "sale": 6040000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 7980000,
+        "sale": 6384000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 8750000,
+        "sale": 7000000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 10,
+        "price": 9550000,
+        "sale": 7640000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 10450000,
+        "sale": 8360000
+      }
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+  },
+  {
+    "name": "Đệm bông Nano U.eros Topper Cool",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://dongahome.vn/dem-bong-nano-u-eros-topper",
+    "variants": [
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 12350000,
+        "sale": 9880000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 13190000,
+        "sale": 10552000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 16070000,
+        "sale": 12856000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/nano-u-eros-topper-1.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm Nano U.Eros Plus",
+    "brand": "Hanvico",
+    "brand_inferred": true,
+    "source": "https://dongahome.vn/dem-bong-nano-u-eros-plus",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 7880000,
+        "sale": 6304000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 9340000,
+        "sale": 7472000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 9950000,
+        "sale": 7960000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 10940000,
+        "sale": 8752000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 12900000,
+        "sale": 10320000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 10860000,
+        "sale": 8688000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 12820000,
+        "sale": 10256000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 13720000,
+        "sale": 10976000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 15080000,
+        "sale": 12064000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 17790000,
+        "sale": 14232000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 19,
+        "price": 14310000,
+        "sale": 11448000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 19,
+        "price": 16890000,
+        "sale": 13512000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 19,
+        "price": 18090000,
+        "sale": 14472000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 19,
+        "price": 19860000,
+        "sale": 15888000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 19,
+        "price": 23440000,
+        "sale": 18752000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/nano-u-eros-plus-1.jpg",
+      "/images/products/hanvico/nano-u-eros-plus-2.jpg",
+      "/images/products/hanvico/nano-u-eros-plus-3.jpg",
+      "/images/products/hanvico/nano-u-eros-plus-4.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông gấm chống khuẩn Hanvico",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-ep-hanvico-gam-chong-khuan",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3330000,
+        "sale": 2664000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 4240000,
+        "sale": 3392000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 9,
+        "price": 4450000,
+        "sale": 3560000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4530000,
+        "sale": 3624000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 5040000,
+        "sale": 4032000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 9,
+        "price": 5630000,
+        "sale": 4504000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 6620000,
+        "sale": 5296000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 5390000,
+        "sale": 4312000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 6570000,
+        "sale": 5256000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 14,
+        "price": 7080000,
+        "sale": 5664000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 7260000,
+        "sale": 5808000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 8070000,
+        "sale": 6456000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 14,
+        "price": 8860000,
+        "sale": 7088000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 9650000,
+        "sale": 7720000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 6260000,
+        "sale": 5008000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 8130000,
+        "sale": 6504000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 8700000,
+        "sale": 6960000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 9480000,
+        "sale": 7584000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 18,
+        "price": 10260000,
+        "sale": 8208000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 11030000,
+        "sale": 8824000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/gam-chong-khuan-1.jpg",
+      "/images/products/hanvico/gam-chong-khuan-2.jpg",
+      "/images/products/hanvico/gam-chong-khuan-3.jpg",
+      "/images/products/hanvico/gam-chong-khuan-4.jpg",
+      "/images/products/hanvico/gam-chong-khuan-5.jpg",
+      "/images/products/hanvico/gam-chong-khuan-6.jpg",
+      "/images/products/hanvico/gam-chong-khuan-7.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép cao su Kim Cương Titanium",
+    "brand": "Kim Cương",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-cao-su-kim-cuong-titanium",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 4040000,
+        "sale": 3030000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 4250000,
+        "sale": 3188000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4470000,
+        "sale": 3352000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4750000,
+        "sale": 3563000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 5290000,
+        "sale": 3967000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 5410000,
+        "sale": 4057000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 5730000,
+        "sale": 4297000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 6040000,
+        "sale": 4530000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 6790000,
+        "sale": 5092000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 8270000,
+        "sale": 6202000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 6460000,
+        "sale": 4845000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 6850000,
+        "sale": 5137000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 7240000,
+        "sale": 5430000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 8050000,
+        "sale": 6037000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 9670000,
+        "sale": 7252000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Elan Fly",
+    "brand": "Elan",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-elan-fly",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1850000,
+        "sale": 1050000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2250000,
+        "sale": 1250000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2350000,
+        "sale": 1350000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 2850000,
+        "sale": 1600000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2320000,
+        "sale": 1200000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 2860000,
+        "sale": 1600000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 2960000,
+        "sale": 1900000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 3350000,
+        "sale": 2200000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4050000,
+        "sale": 2400000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 4350000,
+        "sale": 2600000
+      }
+    ],
+    "images": [
+      "/images/products/elan/fly-1.jpg",
+      "/images/products/elan/fly-2.jpg",
+      "/images/products/elan/fly-3.jpg",
+      "/images/products/elan/fly-6.jpg",
+      "/images/products/elan/fly-4.jpg",
+      "/images/products/elan/fly-5.jpg"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Everon",
+    "brand": "Everon",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-everon",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2590000,
+        "sale": 2020000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2990000,
+        "sale": 2332000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 3390000,
+        "sale": 2644000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3590000,
+        "sale": 2800000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 4890000,
+        "sale": 3814000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3190000,
+        "sale": 2488000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3790000,
+        "sale": 2956000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4290000,
+        "sale": 3346000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4690000,
+        "sale": 3658000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 6490000,
+        "sale": 5062000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 4790000,
+        "sale": 3736000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 5890000,
+        "sale": 4594000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 6590000,
+        "sale": 5140000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 7190000,
+        "sale": 5608000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 8990000,
+        "sale": 7012000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 5490000,
+        "sale": 4282000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 6690000,
+        "sale": 5218000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 7490000,
+        "sale": 5842000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 8190000,
+        "sale": 6388000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 9990000,
+        "sale": 7792000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông chống khuẩn Hanvico",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-ep-hanvico-tc-chong-khuan",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2190000,
+        "sale": 1752000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2740000,
+        "sale": 2192000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 5,
+        "price": 2980000,
+        "sale": 2384000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 3050000,
+        "sale": 2440000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3450000,
+        "sale": 2760000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 5,
+        "price": 3770000,
+        "sale": 3016000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 4100000,
+        "sale": 3280000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2790000,
+        "sale": 2232000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 3520000,
+        "sale": 2816000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 7,
+        "price": 3730000,
+        "sale": 2984000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 3830000,
+        "sale": 3064000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 4230000,
+        "sale": 3384000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 7,
+        "price": 4610000,
+        "sale": 3688000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 5140000,
+        "sale": 4112000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3200000,
+        "sale": 2560000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 4100000,
+        "sale": 3280000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 9,
+        "price": 4250000,
+        "sale": 3400000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4340000,
+        "sale": 3472000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4740000,
+        "sale": 3792000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 9,
+        "price": 5440000,
+        "sale": 4352000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 6090000,
+        "sale": 4872000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4890000,
+        "sale": 3912000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 6100000,
+        "sale": 4880000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 14,
+        "price": 6560000,
+        "sale": 5248000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 6770000,
+        "sale": 5416000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 7670000,
+        "sale": 6136000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 14,
+        "price": 8520000,
+        "sale": 6816000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 9380000,
+        "sale": 7504000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 6030000,
+        "sale": 4824000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 7800000,
+        "sale": 6240000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 8270000,
+        "sale": 6616000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 9100000,
+        "sale": 7280000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 18,
+        "price": 9920000,
+        "sale": 7936000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 10730000,
+        "sale": 8584000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/chong-khuan-tc-1.jpg",
+      "/images/products/hanvico/chong-khuan-tc-2.jpg",
+      "/images/products/hanvico/chong-khuan-tc-3.jpg",
+      "/images/products/hanvico/chong-khuan-tc-4.jpg",
+      "/images/products/hanvico/chong-khuan-tc-5.jpg",
+      "/images/products/hanvico/chong-khuan-tc-6.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm Elan Alias 2M chần foam",
+    "brand": "Elan",
+    "brand_inferred": false,
+    "source": "https://elan.vn/products/dem-bong-ep-alias-vo-chan",
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 14,
+        "price": 5600000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 5870000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 6470000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 6670000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 7240000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 8390000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 18,
+        "price": 7150000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 7500000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 8100000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 8330000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 8900000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 10210000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 22,
+        "price": 8070000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 8330000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 22,
+        "price": 8950000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 9140000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 9830000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 22,
+        "price": 11330000,
+        "sale": 0
+      }
+    ],
+    "images": [
+      "/images/products/elan/alias-2m-6.jpg",
+      "/images/products/elan/alias-2m-4.jpg",
+      "/images/products/elan/alias-2m-3.jpg",
+      "/images/products/elan/alias-2m-5.jpg",
+      "/images/products/elan/alias-2m-1.jpg",
+      "/images/products/elan/alias-2m-2.jpg"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm Elan Vimatt 2M chần foam",
+    "brand": "Elan",
+    "brand_inferred": false,
+    "source": "https://elan.vn/products/dem-bong-ep-vo-chan-vimatt-vm04",
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 14,
+        "price": 4550000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4830000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 5200000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 5350000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5960000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 7150000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 18,
+        "price": 6310000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 6580000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 6920000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 7060000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 7750000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 9260000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 22,
+        "price": 7020000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 7430000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 22,
+        "price": 7770000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 8090000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 8780000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 22,
+        "price": 10130000,
+        "sale": 0
+      }
+    ],
+    "images": [
+      "/images/products/elan/vimatt-2m-1.jpg",
+      "/images/products/elan/vimatt-2m-3.jpg",
+      "/images/products/elan/vimatt-2m-4.jpg",
+      "/images/products/elan/vimatt-2m-6.jpg",
+      "/images/products/elan/vimatt-2m-2.jpg",
+      "/images/products/elan/vimatt-2m-5.jpg"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm Elan See 2M chần foam",
+    "brand": "Elan",
+    "brand_inferred": false,
+    "source": "https://elan.vn/products/dem-bong-ep-see-vo-chan",
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 14,
+        "price": 4030000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4280000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4610000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4740000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5280000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6330000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 18,
+        "price": 5470000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 5700000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 5990000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 6120000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 6710000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 8030000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 22,
+        "price": 6140000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 6520000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 22,
+        "price": 6800000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 7090000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 7690000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 22,
+        "price": 8880000,
+        "sale": 0
+      }
+    ],
+    "images": [
+      "/images/products/elan/see-2m-1.jpg",
+      "/images/products/elan/see-2m-3.jpg",
+      "/images/products/elan/see-2m-2.jpg"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Gold Kim Cương",
+    "brand": "Kim Cương",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-gold-kim-cuong",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1940000,
+        "sale": 1261000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2200000,
+        "sale": 1430000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2330000,
+        "sale": 1515000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2610000,
+        "sale": 1696000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3160000,
+        "sale": 2054000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2260000,
+        "sale": 1695000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2560000,
+        "sale": 1664000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 2710000,
+        "sale": 1761000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3050000,
+        "sale": 1982000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 3720000,
+        "sale": 2418000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2590000,
+        "sale": 1683000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 2930000,
+        "sale": 1905000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3100000,
+        "sale": 2015000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3470000,
+        "sale": 2255000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 4200000,
+        "sale": 2730000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 3870000,
+        "sale": 2515000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4399000,
+        "sale": 2859000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4650000,
+        "sale": 3022000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5190000,
+        "sale": 3373000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6270000,
+        "sale": 4075000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 4490000,
+        "sale": 2918000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 5090000,
+        "sale": 3308000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 5390000,
+        "sale": 3503000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 6030000,
+        "sale": 3919000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 7300000,
+        "sale": 4745000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Kim Cương Gấm Titanium",
+    "brand": "Kim Cương",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-kim-cuong-gam-titanium",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2320000,
+        "sale": 1508000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2630000,
+        "sale": 1710000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2780000,
+        "sale": 1807000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3100000,
+        "sale": 2015000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3730000,
+        "sale": 2425000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2670000,
+        "sale": 1736000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 3030000,
+        "sale": 1970000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 3200000,
+        "sale": 2080000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3590000,
+        "sale": 2334000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 4350000,
+        "sale": 2828000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3070000,
+        "sale": 1996000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3470000,
+        "sale": 2256000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3900000,
+        "sale": 2535000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3660000,
+        "sale": 2379000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 4950000,
+        "sale": 3218000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4440000,
+        "sale": 2886000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 5040000,
+        "sale": 3276000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 5340000,
+        "sale": 3471000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5960000,
+        "sale": 3874000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 7220000,
+        "sale": 4693000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 5260000,
+        "sale": 3419000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 5960000,
+        "sale": 3874000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 6310000,
+        "sale": 4102000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 7070000,
+        "sale": 4596000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 8570000,
+        "sale": 5571000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép tinh khiết Cozin",
+    "brand": "Cozin",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-tinh-khiet-cozin",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1690000,
+        "sale": 1183000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 1980000,
+        "sale": 1386000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2050000,
+        "sale": 1435000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2250000,
+        "sale": 1575000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 2700000,
+        "sale": 1890000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 1850000,
+        "sale": 1295000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2180000,
+        "sale": 1526000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 2250000,
+        "sale": 1575000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 2550000,
+        "sale": 1785000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 2900000,
+        "sale": 2030000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2050000,
+        "sale": 1435000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 2490000,
+        "sale": 1743000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 2590000,
+        "sale": 1813000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 2900000,
+        "sale": 2030000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 3450000,
+        "sale": 2415000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 3150000,
+        "sale": 2205000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 3750000,
+        "sale": 2625000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 3950000,
+        "sale": 2765000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 4450000,
+        "sale": 3115000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 5350000,
+        "sale": 3745000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 4050000,
+        "sale": 2835000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 4650000,
+        "sale": 3255000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 4850000,
+        "sale": 3395000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 5450000,
+        "sale": 3815000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 6650000,
+        "sale": 4655000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép tinh khiết vỏ gấm Sông Hồng",
+    "brand": "Sông Hồng",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-tinh-khiet-vo-gam-song-hong",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1890000,
+        "sale": 1323000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2350000,
+        "sale": 1645000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2610000,
+        "sale": 1827000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2860000,
+        "sale": 2002000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3640000,
+        "sale": 2548000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2400000,
+        "sale": 1680000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2840000,
+        "sale": 1988000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 3130000,
+        "sale": 2191000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3490000,
+        "sale": 2443000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 4490000,
+        "sale": 3143000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2680000,
+        "sale": 1876000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3200000,
+        "sale": 2240000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3490000,
+        "sale": 2443000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3940000,
+        "sale": 2758000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 3650000,
+        "sale": 2555000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 4470000,
+        "sale": 3129000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 4800000,
+        "sale": 3360000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 5500000,
+        "sale": 3850000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 6500000,
+        "sale": 4550000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 5022000,
+        "sale": 3515000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 5346000,
+        "sale": 3742000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 5720000,
+        "sale": 4004000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 7330000,
+        "sale": 5131000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 8350000,
+        "sale": 5845000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông Nano chống khuẩn Hanvico",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-ep-hanvico-nano-chong-khuan",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 4650000,
+        "sale": 3720000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 5970000,
+        "sale": 4776000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 10,
+        "price": 6110000,
+        "sale": 4888000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 6170000,
+        "sale": 4936000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 6810000,
+        "sale": 5448000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 10,
+        "price": 7880000,
+        "sale": 6304000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 8560000,
+        "sale": 6848000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 6690000,
+        "sale": 5352000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 8100000,
+        "sale": 6480000
+      },
+      {
+        "w": 160,
+        "l": 195,
+        "t": 15,
+        "price": 8560000,
+        "sale": 6848000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 8700000,
+        "sale": 6960000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 9640000,
+        "sale": 7712000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 15,
+        "price": 11120000,
+        "sale": 8896000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 12400000,
+        "sale": 9920000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 19,
+        "price": 8760000,
+        "sale": 7008000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 19,
+        "price": 11310000,
+        "sale": 9048000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 19,
+        "price": 11790000,
+        "sale": 9432000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 19,
+        "price": 13080000,
+        "sale": 10464000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 19,
+        "price": 14570000,
+        "sale": 11656000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 19,
+        "price": 15870000,
+        "sale": 12696000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/nano-chong-khuan-1.jpg",
+      "/images/products/hanvico/nano-chong-khuan-2.jpg",
+      "/images/products/hanvico/nano-chong-khuan-3.jpg",
+      "/images/products/hanvico/nano-chong-khuan-4.jpg",
+      "/images/products/hanvico/nano-chong-khuan-5.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Hanvico Nano U.Eros",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-hanvico-nano-u-eros",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 5620000,
+        "sale": 4496000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 6630000,
+        "sale": 5304000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 7100000,
+        "sale": 5680000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 7790000,
+        "sale": 6232000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 10,
+        "price": 8470000,
+        "sale": 6776000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 9210000,
+        "sale": 7368000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 7600000,
+        "sale": 6080000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 8980000,
+        "sale": 7184000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 9620000,
+        "sale": 7696000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 10580000,
+        "sale": 8464000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 15,
+        "price": 11520000,
+        "sale": 9216000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 12450000,
+        "sale": 9960000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 19,
+        "price": 10100000,
+        "sale": 8080000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 19,
+        "price": 11920000,
+        "sale": 9536000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 19,
+        "price": 12760000,
+        "sale": 10208000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 19,
+        "price": 14020000,
+        "sale": 11216000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 19,
+        "price": 15280000,
+        "sale": 12224000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 19,
+        "price": 16540000,
+        "sale": 13232000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/nano-u-eros-1.jpg",
+      "/images/products/hanvico/nano-u-eros-2.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Kim Cương Bonus",
+    "brand": "Kim Cương",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-kim-cuong-bonus",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2290000,
+        "sale": 1305000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 2630000,
+        "sale": 1500000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 2800000,
+        "sale": 1600000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3170000,
+        "sale": 1807000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 3900000,
+        "sale": 2223000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Everon than hoạt tính",
+    "brand": "Everon",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-everon-than-hoat-tinh",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 11,
+        "price": 5170000,
+        "sale": 4033000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 11,
+        "price": 6010000,
+        "sale": 4688000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 11,
+        "price": 6740000,
+        "sale": 5257000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 11,
+        "price": 7450000,
+        "sale": 5811000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 11,
+        "price": 10090000,
+        "sale": 7870000
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Hanvico Nano Victoria",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-ep-hanvico-nano-victoria",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 10050000,
+        "sale": 8040000
+      },
+      {
+        "w": 140,
+        "l": 200,
+        "t": 22,
+        "price": 11990000,
+        "sale": 9592000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 12760000,
+        "sale": 10208000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 13970000,
+        "sale": 11176000
+      }
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+  },
+  {
+    "name": "Đệm bông Hanvico cao cấp Raymond",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://sieuthidem.vn/san-pham/dem-bong-hanvico-cao-cap-raymond",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 27,
+        "price": 12430000,
+        "sale": 9944000
+      },
+      {
+        "w": 140,
+        "l": 200,
+        "t": 27,
+        "price": 14830000,
+        "sale": 11864000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 27,
+        "price": 15950000,
+        "sale": 12760000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 27,
+        "price": 17270000,
+        "sale": 13816000
+      }
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+  },
+  {
+    "name": "Đệm bông ép Elan Alias 3M vỏ không chần",
+    "brand": "Elan",
+    "source": "https://elan.vn/products/dem-bong-ep-elan-alias-vo-khong-chan",
+    "images": [
+      "/images/products/elan/alias-3m-2.jpg",
+      "/images/products/elan/alias-3m-1.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 5,
+        "price": 2770000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2900000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 3280000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 3410000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3950000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 5040000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 7,
+        "price": 3120000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 3290000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 3670000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 3810000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 4330000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 5360000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 9,
+        "price": 3410000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 3530000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3920000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 4050000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4570000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 5630000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 14,
+        "price": 5480000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 5660000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 5990000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 6310000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 6820000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 7850000,
+        "sale": 0
+      },
+      {
+        "w": 100,
+        "l": 190,
+        "t": 18,
+        "price": 6300000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 18,
+        "price": 6440000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 18,
+        "price": 6870000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 18,
+        "price": 7090000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 18,
+        "price": 7670000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 18,
+        "price": 8730000,
+        "sale": 0
+      }
+    ],
+    "features": [
+      "Gấp 3 mảnh gọn nhẹ, dễ vận chuyển và cất giữ",
+      "Vỏ gấm dệt hoa không chần, có khoá kéo tháo giặt",
+      "5 độ dày từ 5cm đến 18cm cho mọi nhu cầu"
+    ],
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Elan Alias Topper",
+    "brand": "Elan",
+    "source": "https://elan.vn/products/dem-bong-ep-alias-topper",
+    "images": [
+      "/images/products/elan/alias-topper-1.jpg",
+      "/images/products/elan/alias-topper-2.jpg",
+      "/images/products/elan/alias-topper-3.jpg",
+      "/images/products/elan/alias-topper-4.jpg",
+      "/images/products/elan/alias-topper-5.jpg"
+    ],
+    "variants": [
+      {
+        "w": 100,
+        "l": 190,
+        "t": 12,
+        "price": 4665000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 12,
+        "price": 4890000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 12,
+        "price": 5390000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 12,
+        "price": 5560000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 12,
+        "price": 6030000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 12,
+        "price": 6995000,
+        "sale": 0
+      }
+    ],
+    "features": [
+      "Lớp topper chần dày êm phủ trên lõi bông ép cứng",
+      "Dày 12cm, nằm êm mặt mà vẫn giữ lưng thẳng",
+      "Gấp gọn được, phù hợp phòng ngủ hiện đại"
+    ],
+    "firmness": 4,
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Hanvico Golden Dream vỏ TC",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-ep-hanvico-golden-dream",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1680000,
+        "sale": 1344000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2080000,
+        "sale": 1664000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2320000,
+        "sale": 1856000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2630000,
+        "sale": 2104000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2500000,
+        "sale": 2000000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3140000,
+        "sale": 2512000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3400000,
+        "sale": 2720000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3620000,
+        "sale": 2896000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/golden-dream-tc-1.jpg",
+      "/images/products/hanvico/golden-dream-tc-2.jpg",
+      "/images/products/hanvico/golden-dream-tc-3.jpg",
+      "/images/products/hanvico/golden-dream-tc-4.jpg",
+      "/images/products/hanvico/golden-dream-tc-5.jpg",
+      "/images/products/hanvico/golden-dream-tc-6.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Hanvico Golden Dream vỏ gấm",
+    "brand": "Hanvico",
+    "brand_inferred": false,
+    "source": "https://dongahome.vn/dem-bong-hanvico-golden-dream-vo-gam",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 2420000,
+        "sale": 1936000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2800000,
+        "sale": 2240000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2940000,
+        "sale": 2352000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 3380000,
+        "sale": 2704000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2930000,
+        "sale": 2344000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3570000,
+        "sale": 2856000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3700000,
+        "sale": 2960000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 4260000,
+        "sale": 3408000
+      }
+    ],
+    "images": [
+      "/images/products/hanvico/golden-dream-gam-1.jpg",
+      "/images/products/hanvico/golden-dream-gam-2.jpg",
+      "/images/products/hanvico/golden-dream-gam-3.jpg",
+      "/images/products/hanvico/golden-dream-gam-4.jpg",
+      "/images/products/hanvico/golden-dream-gam-5.jpg"
+    ],
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "featured": 1
+  },
+  {
+    "name": "Đệm bông ép Doll's Cross Cel 2M (vải TC – chần mút)",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/be-crosscel-2m-1.jpg",
+      "/images/products/dolls/be-crosscel-2m-2.jpg",
+      "/images/products/dolls/be-crosscel-2m-3.jpg",
+      "/images/products/dolls/be-crosscel-2m-4.jpg",
+      "/images/products/dolls/be-crosscel-2m-5.jpg",
+      "/images/products/dolls/be-crosscel-2m-6.jpg",
+      "/images/products/dolls/be-crosscel-2m-7.jpg",
+      "/images/products/dolls/be-crosscel-2m-8.jpg"
+    ],
+    "firmness": 5,
+    "features": [
+      "Bông ép 2 mảnh (2M), gấp gọn dễ di chuyển",
+      "Vỏ vải TC chần mút, nhiều màu: tím, xanh rêu, nâu, ghi",
+      "Độ dày 12 – 21cm, cứng phẳng, nâng đỡ cột sống"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 12,
+        "price": 3480000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 12,
+        "price": 4100000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 12,
+        "price": 4100000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 12,
+        "price": 4350000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 12,
+        "price": 4820000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 12,
+        "price": 5710000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 4100000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 14,
+        "price": 4560000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4560000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4850000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5360000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6340000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 17,
+        "price": 4630000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 17,
+        "price": 5500000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 17,
+        "price": 5500000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 17,
+        "price": 5840000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 17,
+        "price": 6440000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 17,
+        "price": 7630000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 21,
+        "price": 5420000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 21,
+        "price": 6460000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 21,
+        "price": 6460000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 21,
+        "price": 6870000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 21,
+        "price": 7590000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 21,
+        "price": 9010000,
+        "sale": 0
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Doll's Coton 2M (vải cotton – chần mút)",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/be-coton-2m-1.jpg",
+      "/images/products/dolls/be-coton-2m-2.jpg",
+      "/images/products/dolls/be-coton-2m-3.jpg",
+      "/images/products/dolls/be-coton-2m-4.jpg",
+      "/images/products/dolls/be-coton-2m-5.jpg",
+      "/images/products/dolls/be-coton-2m-6.jpg",
+      "/images/products/dolls/be-coton-2m-7.jpg",
+      "/images/products/dolls/be-coton-2m-8.jpg"
+    ],
+    "firmness": 5,
+    "features": [
+      "Bông ép 2 mảnh (2M), gấp gọn dễ di chuyển",
+      "Vỏ vải cotton chần mút mềm mát, thấm hút tốt",
+      "Cứng phẳng, phù hợp người đau lưng và người lớn tuổi"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 12,
+        "price": 3470000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 12,
+        "price": 3950000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 12,
+        "price": 3950000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 12,
+        "price": 4150000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 12,
+        "price": 4680000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 12,
+        "price": 5650000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 3800000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 14,
+        "price": 4380000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4380000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4600000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5140000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6150000,
+        "sale": 0
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Doll's Cross Cel 3M (vải TC)",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/be-crosscel-3m-1.jpg",
+      "/images/products/dolls/be-crosscel-3m-2.jpg",
+      "/images/products/dolls/be-crosscel-3m-3.jpg",
+      "/images/products/dolls/be-crosscel-3m-4.jpg",
+      "/images/products/dolls/be-crosscel-3m-5.jpg",
+      "/images/products/dolls/be-crosscel-3m-6.jpg",
+      "/images/products/dolls/be-crosscel-3m-7.jpg",
+      "/images/products/dolls/be-crosscel-3m-8.jpg",
+      "/images/products/dolls/be-crosscel-3m-9.jpg",
+      "/images/products/dolls/be-crosscel-3m-10.jpg"
+    ],
+    "firmness": 5,
+    "features": [
+      "Bông ép 3 mảnh (3M), gấp gọn tiện cho phòng nhỏ, ký túc xá",
+      "Vỏ vải TC bền màu, nhiều màu: xanh, ghi, xanh rêu, nâu",
+      "Mỏng nhẹ 5 – 9cm, giá tốt"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1990000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 5,
+        "price": 2250000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2250000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2280000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2690000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3110000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2250000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 7,
+        "price": 2640000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2640000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 2730000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3110000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 3730000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2580000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 9,
+        "price": 3050000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 3050000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3160000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3530000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 4230000,
+        "sale": 0
+      }
+    ]
+  },
+  {
+    "name": "Đệm bông ép Doll's Coton 3M (vải cotton)",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/be-coton-3m-1.jpg",
+      "/images/products/dolls/be-coton-3m-2.jpg",
+      "/images/products/dolls/be-coton-3m-3.jpg",
+      "/images/products/dolls/be-coton-3m-4.jpg",
+      "/images/products/dolls/be-coton-3m-5.jpg",
+      "/images/products/dolls/be-coton-3m-6.jpg",
+      "/images/products/dolls/be-coton-3m-7.jpg",
+      "/images/products/dolls/be-coton-3m-8.jpg"
+    ],
+    "firmness": 5,
+    "features": [
+      "Bông ép 3 mảnh (3M), gấp gọn dễ cất và vận chuyển",
+      "Vỏ vải cotton mềm mát, có khoá kéo tháo giặt",
+      "Độ dày 5 – 14cm, cứng phẳng nâng đỡ tốt"
+    ],
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 5,
+        "price": 1950000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 5,
+        "price": 2200000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 5,
+        "price": 2200000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 5,
+        "price": 2330000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 5,
+        "price": 2600000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 5,
+        "price": 3140000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 7,
+        "price": 2240000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 7,
+        "price": 2560000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 7,
+        "price": 2560000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 7,
+        "price": 2710000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 7,
+        "price": 3040000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 7,
+        "price": 3700000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 9,
+        "price": 2580000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 9,
+        "price": 2930000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 9,
+        "price": 2930000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 9,
+        "price": 3100000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 9,
+        "price": 3460000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 9,
+        "price": 4180000,
+        "sale": 0
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 14,
+        "price": 3910000,
+        "sale": 0
+      },
+      {
+        "w": 140,
+        "l": 190,
+        "t": 14,
+        "price": 4430000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 14,
+        "price": 4430000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 14,
+        "price": 4690000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 14,
+        "price": 5230000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 14,
+        "price": 6310000,
+        "sale": 0
+      }
+    ]
+  }
 ]
