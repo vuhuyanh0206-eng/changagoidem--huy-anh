@@ -95,6 +95,15 @@ async function renderListing(req, res, { title, description, where, params, cat,
   });
 }
 
+// Mục cũ đã gộp vào mục khác -> chuyển hướng vĩnh viễn để giữ link và SEO
+const MERGED_CATEGORIES = { 'chan-long-cuu': 'chan-dong' };
+router.get('/danh-muc/:slug', (req, res, next) => {
+  const to = MERGED_CATEGORIES[req.params.slug];
+  if (!to) return next();
+  const qs = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+  res.redirect(301, `/danh-muc/${to}${qs}`);
+});
+
 router.get(
   '/danh-muc/:slug',
   wrap(async (req, res, next) => {

@@ -57,7 +57,6 @@ const TYPES = {
   'bo-chan-ga-goi': { kind: 'Bộ chăn ga gối', sku: 'CG', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'cho phòng ngủ thêm sang trọng', points: [], firm: 0 },
   'chan-he': { kind: 'Chăn hè', sku: 'CH', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'mỏng nhẹ, mát cho mùa hè', points: [], firm: 0 },
   'chan-dong': { kind: 'Chăn đông', sku: 'CD', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'ấm áp cho mùa đông', points: [], firm: 0 },
-  'chan-long-cuu': { kind: 'Chăn lông', sku: 'LC', stock: [['/images/stock/s07.jpg', '/images/stock/s06.jpg']], tagline: '', intro: 'mềm mại, giữ ấm tốt', points: [], firm: 0 },
   'dem-tron': { kind: 'Đệm tròn', sku: 'DT', stock: [['/images/stock/s05.jpg', '/images/stock/s16.jpg']], tagline: 'Đệm tròn sản xuất theo kích thước giường.', intro: 'dành cho giường tròn, khách sạn, homestay', points: [], firm: 3 },
   'san-pham-cho-be': { kind: 'Sản phẩm cho bé', sku: 'BB', stock: [['/images/stock/s06.jpg', '/images/stock/s07.jpg']], tagline: '', intro: 'an toàn cho bé', points: [], firm: 0 },
   'dem-lo-xo': {
@@ -76,7 +75,7 @@ const NEW_CATEGORIES = {
   'dem-tron': { name: 'Đệm Tròn', description: 'Đệm tròn bông ép, foam, lò xo cho giường tròn – sản xuất theo kích thước yêu cầu.', sort: 3 },
   'bo-chan-ga-goi': { parent: 'chan-ga-goi', name: 'Bộ Chăn Ga Gối', description: 'Bộ chăn ga gối lụa, tơ tằm, Tencel, cotton cao cấp chính hãng.', sort: 1 },
   'chan-he': { parent: 'chan-ga-goi', name: 'Chăn Hè', description: 'Chăn hè mỏng nhẹ, mát lạnh: băng lạnh, thun lạnh, lụa tơ tằm.', sort: 2 },
-  'chan-dong': { parent: 'chan-ga-goi', name: 'Chăn Đông', description: 'Chăn đông, ruột chăn ấm áp cho mùa lạnh.', sort: 3 },
+  'chan-dong': { parent: 'chan-ga-goi', name: 'Chăn Đông', description: 'Chăn đông, chăn lông cừu, ruột chăn ấm áp cho mùa lạnh.', sort: 3 },
   'san-pham-cho-be': { name: 'Sản Phẩm Cho Bé', description: 'Đệm, gối cao su thiên nhiên an toàn cho trẻ sơ sinh và trẻ nhỏ.', sort: 6, image: '/images/products/liena/nem-em-be-pompoms-4.jpg' },
 };
 

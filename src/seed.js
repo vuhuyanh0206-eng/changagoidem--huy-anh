@@ -14,7 +14,6 @@ const CATEGORIES = [
   { name: 'Đệm Lò Xo', image: img(5), desc: 'Lò xo túi độc lập, nâng đỡ chuẩn cột sống, không truyền chuyển động.' },
   { name: 'Đệm Bông Ép', image: img(2), desc: 'Bông ép cứng chắc, nhẹ, giá tốt – phù hợp người thích nằm cứng.' },
   { name: 'Chăn Ga Gối', image: img(1), desc: 'Bộ chăn ga gối Tencel, cotton lụa cao cấp, mềm mát, không xù.' },
-  { name: 'Chăn Lông Cừu', image: img(8), desc: 'Chăn lông cừu ấm áp, nhẹ, giữ nhiệt tốt cho mùa đông.' },
   { name: 'Gối Ngủ', image: img(6), desc: 'Gối cao su non, gối lông vũ, gối công thái học chống đau cổ.' },
   { name: 'Dự Án Khách Sạn', image: img(17), desc: 'Cung cấp đệm – chăn ga trọn gói cho khách sạn, homestay, resort.' },
   { name: 'Phụ Kiện', image: img(7), desc: 'Topper, tấm bảo vệ đệm, ruột chăn, ruột gối.' },

@@ -92,5 +92,144 @@
       ]
     ],
     "description_html": "<h3>Chăn đông Doll's Cross</h3><p>Chăn đông Doll's Cross chính hãng Doll's, kích thước 200 x 230 cm: chần ô vuông, bông dày ấm áp, nhiều màu: ghi đậm, be, đỏ, nâu.</p><ul><li>Chần ô vuông, bông dày giữ ấm.</li><li>Nhiều màu: ghi đậm, be, đỏ, nâu.</li><li>Kích thước 200 x 230 cm.</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn.</p>"
+  },
+  {
+    "name": "Chăn lông cừu Nhật Candy Life Pyeoda",
+    "brand": "Pyeoda",
+    "contact": true,
+    "images": [
+      "/images/products/pyeoda/chan-long-cuu-candy-life-1.jpg",
+      "/images/products/pyeoda/chan-long-cuu-candy-life-2.jpg",
+      "/images/products/pyeoda/chan-long-cuu-candy-life-3.jpg",
+      "/images/products/pyeoda/chan-long-cuu-candy-life-4.jpg",
+      "/images/products/pyeoda/chan-long-cuu-candy-life-5.jpg"
+    ],
+    "short": "Chăn lông cừu Candy Life hai mặt: một mặt vải chần nổi hoạ tiết, một mặt lông mềm ấm. Tông đỏ – hồng sang trọng.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Pyeoda"
+      ],
+      [
+        "Loại sản phẩm",
+        "Chăn lông cừu"
+      ],
+      [
+        "Thiết kế",
+        "Hai mặt: vải chần nổi / lông mềm"
+      ],
+      [
+        "Màu sắc",
+        "Đỏ, hồng (theo ảnh)"
+      ]
+    ],
+    "description_html": "<h3>Chăn lông cừu Nhật Candy Life</h3><p>Mẫu chăn lông cừu của Pyeoda với gam màu ấm, đường chần nổi tinh tế, vừa giữ ấm vừa làm điểm nhấn cho phòng ngủ.</p><ul><li><strong>Hai mặt tiện dụng:</strong> mặt vải mềm chần nổi hoạ tiết và mặt lông êm, ấm.</li><li><strong>Đường chần tỉ mỉ:</strong> hoạ tiết nổi bật, giữ form đẹp sau nhiều lần giặt.</li><li><strong>Màu sang trọng:</strong> đỏ, hồng – hợp phòng ngủ cổ điển và hiện đại.</li></ul><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
+  },
+  {
+    "name": "Chăn lông rái cá Fiza Premium Pyeoda",
+    "brand": "Pyeoda",
+    "contact": true,
+    "images": [
+      "/images/products/pyeoda/chan-rai-ca-fiza-1.jpg",
+      "/images/products/pyeoda/chan-rai-ca-fiza-2.jpg",
+      "/images/products/pyeoda/chan-rai-ca-fiza-3.jpg",
+      "/images/products/pyeoda/chan-rai-ca-fiza-4.jpg",
+      "/images/products/pyeoda/chan-rai-ca-fiza-5.jpg"
+    ],
+    "short": "Chăn lông Fiza Premium Blanket vân sọc rái cá, lông mềm mịn, không bông – 5 mẫu màu 01 đến 05.",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Pyeoda"
+      ],
+      [
+        "Loại sản phẩm",
+        "Chăn lông (không bông)"
+      ],
+      [
+        "Mẫu",
+        "Fiza 01, 02, 03, 04, 05"
+      ],
+      [
+        "Bề mặt",
+        "Lông mịn, vân sọc rái cá"
+      ]
+    ],
+    "description_html": "<h3>Chăn rái cá Fiza Premium Blanket</h3><p>Chăn lông với vân sọc rái cá tự nhiên, sang trọng và dễ phối nội thất, đặc biệt hợp không gian tân cổ điển.</p><ul><li><strong>Bề mặt lông mềm mịn:</strong> êm ái khi chạm, giữ ấm tốt.</li><li><strong>Không bông chần:</strong> gọn nhẹ, dễ gấp cất và vệ sinh.</li><li><strong>5 mẫu màu:</strong> Fiza 01 – 05 (xem ảnh), ghi rõ mã khi đặt hàng.</li></ul><p>Giá bán và màu còn hàng thay đổi theo từng thời điểm. Liên hệ hotline/Zalo <strong>0988 367 226</strong> để được báo giá và tư vấn mẫu phù hợp.</p>"
+  },
+  {
+    "name": "Chăn lông cừu Doll's Wool",
+    "brand": "Doll's",
+    "images": [
+      "/images/products/dolls/cl-wool-1.jpg",
+      "/images/products/dolls/cl-wool-2.jpg",
+      "/images/products/dolls/cl-wool-3.jpg",
+      "/images/products/dolls/cl-wool-4.jpg",
+      "/images/products/dolls/cl-wool-5.jpg",
+      "/images/products/dolls/cl-wool-6.jpg",
+      "/images/products/dolls/cl-wool-7.jpg",
+      "/images/products/dolls/cl-wool-8.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Mã 401 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      },
+      {
+        "label": "Mã 402 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      },
+      {
+        "label": "Mã 403 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      },
+      {
+        "label": "Mã 404 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      },
+      {
+        "label": "Mã 405 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      },
+      {
+        "label": "Mã 406 · 200 x 230 cm",
+        "price": 1660000,
+        "sale": 0
+      }
+    ],
+    "short": "Chăn lông cừu Doll's Wool chính hãng Doll's, kích thước 200 x 230 cm, 6 mã màu 401 – 406: lông dày mềm mịn, giữ ấm tốt cho mùa đông.",
+    "features": [
+      "Lông dày mềm mịn, giữ ấm tốt",
+      "6 mã màu: 401, 402, 403, 404, 405, 406",
+      "Kích thước 200 x 230 cm, kèm túi đựng chính hãng"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Doll's"
+      ],
+      [
+        "Loại",
+        "Chăn lông cừu"
+      ],
+      [
+        "Kích thước",
+        "200 x 230 cm"
+      ],
+      [
+        "Mã màu",
+        "401, 402, 403, 404, 405, 406"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Chăn lông cừu Doll's Wool</h3><p>Chăn lông cừu Doll's Wool chính hãng Doll's, kích thước 200 x 230 cm, 6 mã màu 401 – 406: lông dày mềm mịn, giữ ấm tốt cho mùa đông.</p><ul><li>Lông dày mềm mịn, giữ ấm tốt.</li><li>6 mã màu: 401, 402, 403, 404, 405, 406.</li><li>Kích thước 200 x 230 cm, kèm túi đựng chính hãng.</li></ul><p>Liên hệ hotline hoặc Zalo để chọn mã màu và được tư vấn.</p>"
   }
 ]
