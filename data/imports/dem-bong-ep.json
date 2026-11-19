@@ -458,7 +458,8 @@
       "/images/products/hanvico/nano-u-eros-plus-4.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông gấm chống khuẩn Hanvico",
@@ -617,7 +618,8 @@
       "/images/products/hanvico/gam-chong-khuan-7.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép cao su Kim Cương Titanium",
@@ -2530,7 +2532,8 @@
       "/images/products/hanvico/nano-chong-khuan-5.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Hanvico Nano U.Eros",
