@@ -1,8 +1,9 @@
-<% const contact = !(p.finalPrice > 0); const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x (\d+(?:\.\d+)?) cm$/) || [])[1]).filter(Boolean)).size; %>
+<% const contact = !(p.finalPrice > 0); const multi = p.sizes.length > 1; const thickCount = new Set(p.sizes.map(s => (s.label.match(/x \d+ x (\d+(?:\.\d+)?) cm$/) || [])[1]).filter(Boolean)).size; %>
 <article class="pcard">
   <a class="pcard__media" href="/san-pham/<%= p.slug %>">
     <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" width="600" height="450">
     <% if (p.images[1]) { %><img class="pcard__alt" src="<%= p.images[1] %>" alt="" loading="lazy" width="600" height="450"><% } %>
+    <%- include('img-label', { L: p.imgLabel, big: false }) %>
     <span class="pcard__tags">
       <% if (p.discount) { %><span class="tag tag--sale">-<%= p.discount %>%</span><% } %>
       <% if (p.badge) { %><span class="tag tag--gold"><%= p.badge %></span><% } %>
@@ -35,6 +36,7 @@
         <button class="pcard__add" type="button" data-add-cart data-id="<%= p.id %>" data-size="<%= p.sizes[0] ? p.sizes[0].label : '' %>" aria-label="Thêm <%= p.name %> vào giỏ"><svg class="i"><use href="#i-cart"/></svg></button>
       <% } %>
     </div>
+    <p class="pcard__deal"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Liên hệ để có thêm ưu đãi</p>
     <% if (p.sold) { %><div class="pcard__sold"><span style="width:<%= Math.min(100, Math.round(p.sold / 6)) %>%"></span><em>Đã bán <%= p.sold %></em></div><% } %>
   </div>
 </article>

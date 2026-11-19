@@ -13,6 +13,7 @@
     <div class="gallery">
       <div class="gallery__main" data-gallery-main>
         <img src="<%= product.image %>" alt="<%= product.name %>" width="1300" height="975" fetchpriority="high">
+        <%- include('../partials/img-label', { L: product.imgLabel, big: true }) %>
         <span class="pcard__tags">
           <% if (product.discount) { %><span class="tag tag--sale">-<%= product.discount %>%</span><% } %>
           <% if (product.badge) { %><span class="tag tag--gold"><%= product.badge %></span><% } %>
@@ -49,6 +50,7 @@
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
+      <p class="pd__deal"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span>Liên hệ <a href="tel:<%= tel(s.hotline) %>"><%= s.hotline %></a> hoặc <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener">Zalo</a> để có thêm ưu đãi</span></p>
 
       <% if (product.gift) { %>
       <div class="pd__gift">
@@ -56,7 +58,6 @@
         <div>
           <b>Quà tặng kèm</b>
           <p><%= product.gift %></p>
-          <p class="pd__gift-more">Liên hệ <a href="tel:<%= tel(s.hotline) %>"><%= s.hotline %></a> hoặc <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener">Zalo</a> để nhận thêm ưu đãi.</p>
         </div>
       </div>
       <% } %>

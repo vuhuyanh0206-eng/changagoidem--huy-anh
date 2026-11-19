@@ -1,0 +1,12 @@
+<% if (L) { %>
+<span class="imglabel<%= typeof big !== 'undefined' && big ? ' imglabel--lg' : '' %>" aria-hidden="true">
+  <span class="imglabel__top">
+    <span class="imglabel__type"><%= L.type %></span>
+    <span class="imglabel__model"><%= L.model %></span>
+  </span>
+  <span class="imglabel__chips">
+    <span class="imglabel__chip">Bảo hành: <%= L.warranty %></span>
+    <% if (L.thickness) { %><span class="imglabel__chip">Độ dày: <%= L.thickness %></span><% } %>
+  </span>
+</span>
+<% } %>

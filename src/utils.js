@@ -53,7 +53,28 @@ function hydrateProduct(p) {
     rating_avg: Number(p.rating_avg) || 5,
     rating_count: Number(p.rating_count) || 0,
     defaultSize: pickDefaultSize(sizes),
+    imgLabel: imageLabel(p),
   };
+}
+
+/** Nhãn nhỏ phủ lên ảnh đệm: loại đệm, tên dòng, bảo hành, độ dày. Chỉ áp dụng cho danh mục đệm (slug bắt đầu bằng dem-). */
+function imageLabel(p) {
+  const slug = String(p.cat_slug || '');
+  if (!slug.startsWith('dem-')) return null;
+  const name = String(p.name || '');
+  let type = p.cat_name || 'Đệm';
+  if (slug === 'dem-lo-xo') {
+    if (/túi/i.test(name)) type = 'Đệm Lò Xo Túi Độc Lập';
+    else if (/cuộn/i.test(name)) type = 'Đệm Lò Xo Cuộn';
+    else if (/liên kết/i.test(name)) type = 'Đệm Lò Xo Liên Kết';
+  }
+  const model = name
+    .replace(/^(đệm|nệm)\s+/i, '')
+    .replace(/^(lò xo|bông ép|bông|cao su thiên nhiên|cao su|foam|hybrid|tròn)\s+/i, '')
+    .replace(/^((túi|cuộn|liên kết|cao cấp|khách sạn|thiên nhiên|tinh khiết)\s+)+/i, '')
+    .replace(/\s*\(.*\)\s*$/, '')
+    .trim();
+  return { type, model: model || name, warranty: p.warranty || 'Chính hãng', thickness: String(p.thickness || '').replace(/\s*cm$/i, 'cm') };
 }
 
 const finalOf = (s) => (s.sale_price > 0 && s.sale_price < s.price ? s.sale_price : s.price);

@@ -176,9 +176,9 @@ router.get(
   wrap(async (req, res, next) => {
     const row = await db.one('SELECT * FROM products WHERE slug = ? AND active = 1', [req.params.slug]);
     if (!row) return next();
-    const product = hydrateProduct(row);
-    db.run('UPDATE products SET views = views + 1 WHERE id = ?', [row.id]).catch(() => {});
     const cat = row.category_id ? await db.one('SELECT id, name, slug FROM categories WHERE id = ?', [row.category_id]) : null;
+    const product = hydrateProduct({ ...row, cat_slug: cat ? cat.slug : '', cat_name: cat ? cat.name : '' });
+    db.run('UPDATE products SET views = views + 1 WHERE id = ?', [row.id]).catch(() => {});
     const related = await catalog.list({ where: ['p.category_id = ?', 'p.id <> ?'], params: [row.category_id || 0, row.id], order: 'p.id DESC', limit: 8 });
     res.render('shop/product', {
       meta: {
