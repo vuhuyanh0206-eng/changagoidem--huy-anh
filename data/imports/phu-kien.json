@@ -98,5 +98,37 @@
     "best": 0,
     "is_hot": 0,
     "pin": 0
+  },
+  {
+    "name": "Topper khách sạn Vikosan 01",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-topper-khach-san-01-1.jpg",
+      "/images/products/vikosan/vk-topper-khach-san-01-2.jpg",
+      "/images/products/vikosan/vk-topper-khach-san-01-3.jpg"
+    ],
+    "contact": 1,
+    "thickness": "",
+    "warranty": "",
+    "gift": "",
+    "short": "Topper khách sạn Vikosan 01 chính hãng Vikosan. Topper tiêu chuẩn khách sạn. Liên hệ để nhận báo giá tốt nhất.",
+    "features": [
+      "Topper tiêu chuẩn khách sạn"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Topper"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Topper khách sạn Vikosan 01</h3><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
   }
 ]

@@ -1276,5 +1276,196 @@
     "is_hot": 1,
     "pin": 0,
     "gift": "Bộ quà tặng cao cấp"
+  },
+  {
+    "name": "Đệm foam Vikosan Layer Foam",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-layer-1.jpg",
+      "/images/products/vikosan/vk-layer-2.jpg",
+      "/images/products/vikosan/vk-layer-3.jpg"
+    ],
+    "contact": 1,
+    "thickness": "",
+    "warranty": "",
+    "gift": "Bộ quà tặng cao cấp",
+    "short": "Đệm foam Vikosan Layer Foam chính hãng Vikosan. VIKOSAN LAYER FOAM được phát triển với cấu trúc Foam đa tầng hiện đại, mang đến sự cân bằng hoàn hảo giữa độ êm ái và khả năng nâng đỡ cơ thể. Giá tham khảo 5.200.000đ – 7.950.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "features": [
+      "Cấu trúc foam đa tầng cân bằng êm – nâng đỡ"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Đệm foam"
+      ],
+      [
+        "Giá tham khảo",
+        "5.200.000đ – 7.950.000đ"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm foam Vikosan Layer Foam</h3><p>VIKOSAN LAYER FOAM được phát triển với cấu trúc Foam đa tầng hiện đại, mang đến sự cân bằng hoàn hảo giữa độ êm ái và khả năng nâng đỡ cơ thể. Thiết kế giúp phân tán áp lực hiệu quả, hỗ trợ giảm cảm giác đau mỏi lưng và vai gáy sau thời gian dài nghỉ ngơi. Bề mặt vải điều hòa cao cấp tạo cảm giác thoáng mát, dễ chịu trong suốt quá trình sử dụng. Các chi tiết logo thêu tinh tế cùng thiết kế sang trọng giúp sản phẩm không chỉ nâng tầm trải nghiệm giấc ngủ mà còn hài hòa với không gian sống hiện đại.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+  },
+  {
+    "name": "Đệm foam Vikosan Duo Foam",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-duo-foam-1.jpg",
+      "/images/products/vikosan/vk-duo-foam-2.jpg",
+      "/images/products/vikosan/vk-duo-foam-3.jpg",
+      "/images/products/vikosan/vk-duo-foam-4.jpg"
+    ],
+    "contact": 1,
+    "thickness": "",
+    "warranty": "",
+    "gift": "Bộ quà tặng cao cấp",
+    "short": "Đệm foam Vikosan Duo Foam chính hãng Vikosan. DUO FOAM sở hữu thiết kế hiện đại mang tinh thần tối giản châu Âu, phù hợp với những không gian sống trẻ trung và thời thượng. Giá tham khảo 2.888.000đ – 16.650.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "features": [
+      "Thiết kế tối giản châu Âu"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Đệm foam"
+      ],
+      [
+        "Giá tham khảo",
+        "2.888.000đ – 16.650.000đ"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm foam Vikosan Duo Foam</h3><p>DUO FOAM sở hữu thiết kế hiện đại mang tinh thần tối giản châu Âu, phù hợp với những không gian sống trẻ trung và thời thượng. Cấu trúc 2 mặt linh hoạt với một mặt cứng nâng đỡ vững chắc và một mặt mềm êm ái giúp người dùng dễ dàng lựa chọn theo nhu cầu nghỉ ngơi riêng biệt. Thiết kế tối ưu mang đến trải nghiệm cân bằng giữa sự thoải mái và hỗ trợ cơ thể, đồng thời tạo điểm nhấn sang trọng, tinh tế cho phòng ngủ hiện đại.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+  },
+  {
+    "name": "Đệm foam Vikosan Wavetouch",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-wavetouch-1.jpg",
+      "/images/products/vikosan/vk-wavetouch-2.jpg",
+      "/images/products/vikosan/vk-wavetouch-3.jpg",
+      "/images/products/vikosan/vk-wavetouch-4.jpg"
+    ],
+    "contact": 1,
+    "thickness": "18",
+    "warranty": "",
+    "gift": "Bộ quà tặng cao cấp",
+    "short": "Đệm foam Vikosan Wavetouch chính hãng Vikosan. WAVE TOUCH là dòng đệm cao cấp nổi bật với thiết kế hiện đại cùng cấu trúc Foam massage bề mặt, giúp nâng đỡ cơ thể êm ái và tăng cảm giác thư giãn trong suốt quá trình nghỉ ngơi. Giá tham khảo 8.750.000đ – 11.350.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "features": [
+      "Foam massage bề mặt lượn sóng"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Đệm foam"
+      ],
+      [
+        "Độ dày",
+        "18 cm"
+      ],
+      [
+        "Giá tham khảo",
+        "8.750.000đ – 11.350.000đ"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm foam Vikosan Wavetouch</h3><p>WAVE TOUCH là dòng đệm cao cấp nổi bật với thiết kế hiện đại cùng cấu trúc Foam massage bề mặt, giúp nâng đỡ cơ thể êm ái và tăng cảm giác thư giãn trong suốt quá trình nghỉ ngơi. Thiết kế dày 18cm mang đến vẻ ngoài sang trọng, bề thế và chuẩn phong cách phòng ngủ đương đại. Vỏ đệm sử dụng chất liệu sợi lạnh cao cấp với bề mặt mềm mượt, thoáng mát và dễ chịu khi tiếp xúc, mang lại trải nghiệm nghỉ ngơi thư thái và trọn vẹn hơn mỗi ngày.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+  },
+  {
+    "name": "Đệm foam Vikosan Smartsleep",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-smartsleep-1.jpg",
+      "/images/products/vikosan/vk-smartsleep-2.jpg",
+      "/images/products/vikosan/vk-smartsleep-3.jpg"
+    ],
+    "contact": 1,
+    "thickness": "18",
+    "warranty": "",
+    "gift": "Bộ quà tặng cao cấp",
+    "short": "Đệm foam Vikosan Smartsleep chính hãng Vikosan. SMARTSLEEP được thiết kế với lõi Foam ép hiện đại có khả năng cuộn gọn linh hoạt, tối ưu cho việc vận chuyển, di chuyển và sử dụng trong nhiều không gian sống khác nhau. Giá tham khảo 7.950.000đ – 9.950.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "features": [
+      "Lõi foam ép cuộn gọn linh hoạt"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Đệm foam"
+      ],
+      [
+        "Độ dày",
+        "18 cm"
+      ],
+      [
+        "Giá tham khảo",
+        "7.950.000đ – 9.950.000đ"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm foam Vikosan Smartsleep</h3><p>SMARTSLEEP được thiết kế với lõi Foam ép hiện đại có khả năng cuộn gọn linh hoạt, tối ưu cho việc vận chuyển, di chuyển và sử dụng trong nhiều không gian sống khác nhau. Cấu trúc Foam đàn hồi ổn định giúp nâng đỡ cơ thể cân bằng, mang lại cảm giác êm ái và dễ chịu trong suốt quá trình nghỉ ngơi. Thiết kế dày 18cm cùng kiểu dáng hiện đại tạo nên vẻ ngoài gọn gàng, tinh tế nhưng vẫn đảm bảo sự thoải mái cho giấc ngủ hằng ngày.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+  },
+  {
+    "name": "Đệm foam Vikosan Aerofoam Pro",
+    "brand": "Vikosan",
+    "images": [
+      "/images/products/vikosan/vk-aerofoam-pro-1.jpg",
+      "/images/products/vikosan/vk-aerofoam-pro-2.jpg",
+      "/images/products/vikosan/vk-aerofoam-pro-3.jpg",
+      "/images/products/vikosan/vk-aerofoam-pro-4.jpg"
+    ],
+    "contact": 1,
+    "thickness": "",
+    "warranty": "",
+    "gift": "Bộ quà tặng cao cấp",
+    "short": "Đệm foam Vikosan Aerofoam Pro chính hãng Vikosan. AEROFOAM PRO là dòng đệm Foam công nghệ cao cấp được phát triển nhằm tối ưu trải nghiệm nghỉ ngơi và nâng đỡ cơ thể chuyên sâu. Giá tham khảo 22.500.000đ – 27.750.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "features": [
+      "Foam công nghệ cao cấp"
+    ],
+    "specs": [
+      [
+        "Thương hiệu",
+        "Vikosan"
+      ],
+      [
+        "Loại",
+        "Đệm foam"
+      ],
+      [
+        "Giá tham khảo",
+        "22.500.000đ – 27.750.000đ"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "description_html": "<h3>Đệm foam Vikosan Aerofoam Pro</h3><p>AEROFOAM PRO là dòng đệm Foam công nghệ cao cấp được phát triển nhằm tối ưu trải nghiệm nghỉ ngơi và nâng đỡ cơ thể chuyên sâu. Cấu trúc mút nhớ cao cấp được cắt CNC massage theo từng vùng tiếp xúc, giúp phân tán áp lực hiệu quả và mang lại cảm giác thư giãn êm ái trong suốt quá trình sử dụng. Sự kết hợp cùng lớp Foam than hoạt tính hỗ trợ tăng độ thông thoáng, hạn chế tích nhiệt và tạo cảm giác dễ chịu khi nằm lâu. Thiết kế vỏ đệm hiện đại với các đường nét mạnh mẽ, đậm tinh thần công nghệ tạo nên vẻ ngoài sang trọng và khác biệt.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
   }
 ]

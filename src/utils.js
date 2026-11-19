@@ -69,7 +69,7 @@ function imageLabel(p) {
     else if (/liên kết/i.test(name)) type = 'Đệm Lò Xo Liên Kết';
   }
   const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const brands = [p.brand, 'Liên Á', 'Dunlopillo', 'Dunlop', 'Hanvico', 'Elan', "Doll's", 'Everhome', 'Everon'].filter(Boolean);
+  const brands = [p.brand, 'Liên Á', 'Dunlopillo', 'Dunlop', 'Hanvico', 'Elan', "Doll's", 'Everhome', 'Everon', 'Vikosan'].filter(Boolean);
   const model = brands
     .reduce((t, b) => t.replace(new RegExp(`(^|\\s)${esc(b)}(?=\\s|$)`, 'gi'), ' '), name)
     .replace(/\s+/g, ' ').trim()

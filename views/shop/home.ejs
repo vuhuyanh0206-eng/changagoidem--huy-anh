@@ -61,27 +61,6 @@
     </div>
   </section>
 
-  <!-- Danh mục nổi bật -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <div>
-          <span class="eyebrow">Mua sắm theo danh mục</span>
-          <h2 class="section__title">Mọi thứ cho một giấc ngủ trọn vẹn</h2>
-        </div>
-        <a class="link-arrow" href="/dem">Xem tất cả đệm <svg class="i"><use href="#i-arrow-r"/></svg></a>
-      </div>
-      <div class="cat-grid">
-        <% cats.slice(0, 9).forEach((c, i) => { %>
-          <a class="cat-tile <%= i === 0 ? 'cat-tile--lg' : '' %>" href="/danh-muc/<%= c.slug %>">
-            <img src="<%= c.image %>" alt="" loading="lazy" width="600" height="600">
-            <span class="cat-tile__body"><b><%= c.name %></b><small><%= c.count %> sản phẩm</small></span>
-          </a>
-        <% }) %>
-      </div>
-    </div>
-  </section>
-
   <!-- Siêu sale cuối năm – Black Friday -->
   <% if (flash.length) { %>
   <section class="section bf" id="sieu-sale" aria-labelledby="bf-title">
@@ -115,6 +94,28 @@
     </div>
   </section>
   <% } %>
+
+  <!-- Danh mục nổi bật -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Mua sắm theo danh mục</span>
+          <h2 class="section__title">Mọi thứ cho một giấc ngủ trọn vẹn</h2>
+        </div>
+        <a class="link-arrow" href="/dem">Xem tất cả đệm <svg class="i"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <div class="cat-grid">
+        <% cats.slice(0, 9).forEach((c, i) => { %>
+          <a class="cat-tile <%= i === 0 ? 'cat-tile--lg' : '' %>" href="/danh-muc/<%= c.slug %>">
+            <img src="<%= c.image %>" alt="" loading="lazy" width="600" height="600">
+            <span class="cat-tile__body"><b><%= c.name %></b><small><%= c.count %> sản phẩm</small></span>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Sản phẩm nổi bật có tab -->
   <section class="section">
