@@ -14,9 +14,12 @@ async function init() {
   if (driver) return;
   if (process.env.DB_HOST) {
     const mysql = require('mysql2/promise');
+    // DB_HOST=localhost: ưu tiên kết nối qua socket (MySQL coi đó là user@localhost); có thể chỉ định DB_SOCKET
+    const SOCKETS = ['/var/lib/mysql/mysql.sock', '/run/mysqld/mysqld.sock', '/var/run/mysqld/mysqld.sock', '/tmp/mysql.sock'];
+    const socketPath = process.env.DB_SOCKET || (process.env.DB_HOST === 'localhost' ? SOCKETS.find((s) => fs.existsSync(s)) : undefined);
+    console.log(`MySQL: kết nối qua ${socketPath ? `socket ${socketPath}` : `TCP ${process.env.DB_HOST}`}`);
     const pool = mysql.createPool({
-      host: process.env.DB_HOST,
-      port: Number(process.env.DB_PORT || 3306),
+      ...(socketPath ? { socketPath } : { host: process.env.DB_HOST, port: Number(process.env.DB_PORT || 3306) }),
       user: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
@@ -26,6 +29,7 @@ async function init() {
       dateStrings: true,
     });
     dialect = 'mysql';
+    module.exports.via = socketPath ? `socket ${socketPath}` : `TCP ${process.env.DB_HOST}`;
     driver = {
       async query(sql, params = []) {
         const [rows] = await pool.query(sql, params);
