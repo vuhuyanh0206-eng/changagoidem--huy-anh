@@ -340,7 +340,7 @@
     "images": [
       "/images/products/hanvico/nano-u-eros-topper-1.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "",
     "featured": 1,
     "warranty": "5 năm"
   },
@@ -3158,7 +3158,8 @@
     ],
     "firmness": 4,
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "gift": ""
   },
   {
     "name": "Đệm bông ép Hanvico Golden Dream vỏ TC",

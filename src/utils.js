@@ -68,10 +68,15 @@ function imageLabel(p) {
     else if (/cuộn/i.test(name)) type = 'Đệm Lò Xo Cuộn';
     else if (/liên kết/i.test(name)) type = 'Đệm Lò Xo Liên Kết';
   }
-  const model = name
+  const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const brands = [p.brand, 'Liên Á', 'Dunlopillo', 'Dunlop', 'Hanvico', 'Elan', "Doll's", 'Everhome', 'Everon'].filter(Boolean);
+  const model = brands
+    .reduce((t, b) => t.replace(new RegExp(`(^|\\s)${esc(b)}(?=\\s|$)`, 'gi'), ' '), name)
+    .replace(/\s+/g, ' ').trim()
     .replace(/^(đệm|nệm)\s+/i, '')
-    .replace(/^(lò xo|bông ép|bông|cao su thiên nhiên|cao su|foam|hybrid|tròn)\s+/i, '')
-    .replace(/^((túi|cuộn|liên kết|cao cấp|khách sạn|thiên nhiên|tinh khiết)\s+)+/i, '')
+    .replace(/^(lò xo|bông ép|bông|cao su thiên nhiên|cao su|hybrid|tròn)\s+/i, '')
+    .replace(/^((túi|cuộn|liên kết|cao cấp|khách sạn|thiên nhiên|tinh khiết|nhập khẩu|gấp gọn|hybrid)\s+)+/i, '')
+    .replace(/\s*\d+(?:[.,]\d+)?\s?cm\b/gi, '')
     .replace(/\s*\(.*\)\s*$/, '')
     .trim();
   return { type, model: model || name, warranty: p.warranty || 'Chính hãng', thickness: String(p.thickness || '').replace(/\s*cm$/i, 'cm') };

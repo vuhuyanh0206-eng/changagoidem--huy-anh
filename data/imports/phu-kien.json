@@ -1,99 +1,99 @@
 [
- {
-  "name": "Topper cao su Liên Á",
-  "brand": "Liên Á",
-  "source": "https://www.liena.com.vn/topper-cao-su-lien-a",
-  "kind": "Topper cao su",
-  "images": [
-   "/images/products/liena/topper-cao-su-lien-a-1.jpg",
-   "/images/products/liena/topper-cao-su-lien-a-2.jpg",
-   "/images/products/liena/topper-cao-su-lien-a-3.jpg",
-   "/images/products/liena/topper-cao-su-lien-a-4.jpg",
-   "/images/products/liena/topper-cao-su-lien-a-5.jpg",
-   "/images/products/liena/topper-cao-su-lien-a-6.jpg"
-  ],
-  "description_html": "<h3>Topper cao su Liên Á</h3>\n<p><strong>Tăng cường êm ái.</strong></p>\n<p>Mỏng nhẹ, êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Tăng độ êm cho nệm</li>\r\n    <li>Thoáng khí khi nằm</li>\r\n    <li>Nệm trải sàn êm ái</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Gấp gọn tiện dụng<br>Êm ái khi nằm<br>Thoáng khí tối ưuCấu trúc pincore cổ điển nâng đỡ êm ái<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế dễ dàng di chuyển và vệ sinh",
-  "specs": [
-   [
-    "Thương hiệu",
-    "Liên Á"
-   ],
-   [
-    "Loại",
-    "Topper cao su"
-   ],
-   [
-    "Chất liệu",
-    "Cao su 100% thiên nhiên"
-   ],
-   [
-    "Độ cứng",
-    "Vừa"
-   ],
-   [
-    "Bảo hành",
-    "5 năm"
-   ],
-   [
-    "Xuất xứ",
-    "Việt Nam"
-   ]
-  ],
-  "short": "Topper cao su Liên Á chính hãng Liên Á – tăng cường êm ái. Tăng độ êm cho nệm, thoáng khí khi nằm, nệm trải sàn êm ái.",
-  "warranty": "5 năm",
-  "firmness": 3,
-  "featured": 1,
-  "gift": "Gối và tấm bảo vệ nệm chính hãng Liên Á (tuỳ theo mẫu)",
-  "variants": [
-   {
-    "w": 100,
-    "l": 200,
-    "t": 2.5,
-    "price": 3350000,
-    "sale": 3015000
-   },
-   {
-    "w": 120,
-    "l": 200,
-    "t": 2.5,
-    "price": 3490000,
-    "sale": 3141000
-   },
-   {
-    "w": 140,
-    "l": 200,
-    "t": 2.5,
-    "price": 3590000,
-    "sale": 3231000
-   },
-   {
-    "w": 160,
-    "l": 200,
-    "t": 2.5,
-    "price": 3900000,
-    "sale": 3510000
-   },
-   {
-    "w": 180,
-    "l": 200,
-    "t": 2.5,
-    "price": 4590000,
-    "sale": 4131000
-   },
-   {
-    "w": 200,
-    "l": 200,
-    "t": 2.5,
-    "price": 5200000,
-    "sale": 4680000
-   },
-   {
-    "w": 200,
-    "l": 220,
-    "t": 2.5,
-    "price": 5690000,
-    "sale": 5121000
-   }
-  ]
- }
+  {
+    "name": "Topper cao su Liên Á",
+    "brand": "Liên Á",
+    "source": "https://www.liena.com.vn/topper-cao-su-lien-a",
+    "kind": "Topper cao su",
+    "images": [
+      "/images/products/liena/topper-cao-su-lien-a-1.jpg",
+      "/images/products/liena/topper-cao-su-lien-a-2.jpg",
+      "/images/products/liena/topper-cao-su-lien-a-3.jpg",
+      "/images/products/liena/topper-cao-su-lien-a-4.jpg",
+      "/images/products/liena/topper-cao-su-lien-a-5.jpg",
+      "/images/products/liena/topper-cao-su-lien-a-6.jpg"
+    ],
+    "description_html": "<h3>Topper cao su Liên Á</h3>\n<p><strong>Tăng cường êm ái.</strong></p>\n<p>Mỏng nhẹ, êm ái, phù hợp:</p>\r\n<ul>\r\n    <li>Tăng độ êm cho nệm</li>\r\n    <li>Thoáng khí khi nằm</li>\r\n    <li>Nệm trải sàn êm ái</li>\r\n</ul>\n<h3>Chất liệu</h3><p>Cao su 100% thiên nhiên</p>\n<h3>Đặc điểm nổi bật</h3>Gấp gọn tiện dụng<br>Êm ái khi nằm<br>Thoáng khí tối ưuCấu trúc pincore cổ điển nâng đỡ êm ái<br>Cấu trúc bọt hở thoáng khí tối ưu<br>Cao su dẻo dai có độ bền cao<br>Thiết kế dễ dàng di chuyển và vệ sinh",
+    "specs": [
+      [
+        "Thương hiệu",
+        "Liên Á"
+      ],
+      [
+        "Loại",
+        "Topper cao su"
+      ],
+      [
+        "Chất liệu",
+        "Cao su 100% thiên nhiên"
+      ],
+      [
+        "Độ cứng",
+        "Vừa"
+      ],
+      [
+        "Bảo hành",
+        "5 năm"
+      ],
+      [
+        "Xuất xứ",
+        "Việt Nam"
+      ]
+    ],
+    "short": "Topper cao su Liên Á chính hãng Liên Á – tăng cường êm ái. Tăng độ êm cho nệm, thoáng khí khi nằm, nệm trải sàn êm ái.",
+    "warranty": "5 năm",
+    "firmness": 3,
+    "featured": 1,
+    "gift": "",
+    "variants": [
+      {
+        "w": 100,
+        "l": 200,
+        "t": 2.5,
+        "price": 3350000,
+        "sale": 3015000
+      },
+      {
+        "w": 120,
+        "l": 200,
+        "t": 2.5,
+        "price": 3490000,
+        "sale": 3141000
+      },
+      {
+        "w": 140,
+        "l": 200,
+        "t": 2.5,
+        "price": 3590000,
+        "sale": 3231000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 2.5,
+        "price": 3900000,
+        "sale": 3510000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 2.5,
+        "price": 4590000,
+        "sale": 4131000
+      },
+      {
+        "w": 200,
+        "l": 200,
+        "t": 2.5,
+        "price": 5200000,
+        "sale": 4680000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 2.5,
+        "price": 5690000,
+        "sale": 5121000
+      }
+    ]
+  }
 ]

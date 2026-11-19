@@ -50,7 +50,17 @@
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
-      <p class="pd__deal"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span>Liên hệ <a href="tel:<%= tel(s.hotline) %>"><%= s.hotline %></a> hoặc <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener">Zalo</a> để có thêm ưu đãi</span></p>
+      <div class="pd__deal">
+        <div class="pd__deal-head">
+          <span class="pd__deal-ico"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <div><b>Liên hệ để có thêm ưu đãi</b><small>Tư vấn miễn phí · Báo giá tốt nhất tại kho</small></div>
+        </div>
+        <div class="pd__deal-btns">
+          <a class="pd__deal-call" href="tel:<%= tel(s.hotline) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline %></a>
+          <% if (s.hotline2) { %><a class="pd__deal-call" href="tel:<%= tel(s.hotline2) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline2 %></a><% } %>
+          <a class="pd__deal-zalo" href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Chat Zalo</a>
+        </div>
+      </div>
 
       <% if (product.gift) { %>
       <div class="pd__gift">
@@ -122,7 +132,7 @@
 
       <ul class="perks">
         <li><svg class="i"><use href="#i-truck"/></svg><span><b>Giao &amp; lắp miễn phí</b><small>Nội thành trong ngày</small></span></li>
-        <li><svg class="i"><use href="#i-shield"/></svg><span><b>Bảo hành <%= product.warranty || 'chính hãng' %></b><small>1 đổi 1 nếu lỗi NSX</small></span></li>
+        <li><svg class="i"><use href="#i-shield"/></svg><span><b>Bảo hành <%= product.warranty || 'chính hãng' %></b><small>Chính hãng nhà sản xuất</small></span></li>
         <li><svg class="i"><use href="#i-refresh"/></svg><span><b>Đổi size miễn phí</b><small>Trong 7 ngày, còn tem mác</small></span></li>
         <li><svg class="i"><use href="#i-card"/></svg><span><b>Trả góp 0%</b><small>Duyệt nhanh qua thẻ</small></span></li>
       </ul>
