@@ -1708,13 +1708,16 @@
     "name": "Đệm cao su thiên nhiên Vikosan D'luxe",
     "brand": "Vikosan",
     "images": [
-      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-1.jpg"
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-2.jpg",
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-1.jpg",
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-3.jpg",
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-4.jpg",
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-5.jpg",
+      "/images/products/vikosan/vk-cao-su-thien-nhien-d-luxe-6.jpg"
     ],
-    "contact": 1,
-    "thickness": "",
     "warranty": "12 năm",
     "gift": "Bộ quà tặng cao cấp",
-    "short": "Đệm cao su thiên nhiên Vikosan D'luxe chính hãng Vikosan. Đệm cao su, được chế tác từ chất liệu cao su tự nhiên, mang đến sự đàn hồi tuyệt vời và khả năng nâng đỡ hoàn hảo cho cơ thể. Giá tham khảo 11.330.000đ – 28.740.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "short": "Đệm cao su thiên nhiên Vikosan D'luxe chính hãng Vikosan: 100% cao su thiên nhiên, lỗ thoáng khí hai mặt, đàn hồi nâng đỡ theo đường cong cột sống. Dày 10cm hoặc 15cm, 7 kích thước – liên hệ để có thêm ưu đãi.",
     "features": [
       "Cao su thiên nhiên đàn hồi, thoáng khí"
     ],
@@ -1728,10 +1731,6 @@
         "Đệm cao su"
       ],
       [
-        "Giá tham khảo",
-        "11.330.000đ – 28.740.000đ"
-      ],
-      [
         "Bảo hành",
         "12 năm"
       ],
@@ -1740,6 +1739,106 @@
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm cao su thiên nhiên Vikosan D'luxe</h3><p>Đệm cao su, được chế tác từ chất liệu cao su tự nhiên, mang đến sự đàn hồi tuyệt vời và khả năng nâng đỡ hoàn hảo cho cơ thể. Với độ bền vượt trội, đệm giảm thiểu áp lực lên các điểm nhạy cảm, hỗ trợ giấc ngủ sâu và trọn vẹn. Bên cạnh đó, tính năng thoáng khí của đệm giúp duy trì sự thoải mái và điều hòa nhiệt độ, mang lại trải nghiệm ngủ sang trọng và thư giãn.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm cao su thiên nhiên Vikosan D'luxe</h3><p>Đệm cao su, được chế tác từ chất liệu cao su tự nhiên, mang đến sự đàn hồi tuyệt vời và khả năng nâng đỡ hoàn hảo cho cơ thể. Với độ bền vượt trội, đệm giảm thiểu áp lực lên các điểm nhạy cảm, hỗ trợ giấc ngủ sâu và trọn vẹn. Bên cạnh đó, tính năng thoáng khí của đệm giúp duy trì sự thoải mái và điều hòa nhiệt độ, mang lại trải nghiệm ngủ sang trọng và thư giãn.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 10,
+        "price": 11330000,
+        "sale": 7931000
+      },
+      {
+        "w": 120,
+        "l": 190,
+        "t": 15,
+        "price": 16050000,
+        "sale": 11235000
+      },
+      {
+        "w": 120,
+        "l": 200,
+        "t": 10,
+        "price": 12135000,
+        "sale": 8495000
+      },
+      {
+        "w": 120,
+        "l": 200,
+        "t": 15,
+        "price": 17370000,
+        "sale": 12159000
+      },
+      {
+        "w": 140,
+        "l": 200,
+        "t": 10,
+        "price": 12940000,
+        "sale": 9058000
+      },
+      {
+        "w": 140,
+        "l": 200,
+        "t": 15,
+        "price": 18690000,
+        "sale": 13083000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 10,
+        "price": 12940000,
+        "sale": 9058000
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 15,
+        "price": 18690000,
+        "sale": 13083000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 10,
+        "price": 16050000,
+        "sale": 11235000
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 15,
+        "price": 20190000,
+        "sale": 14133000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 10,
+        "price": 16780000,
+        "sale": 11746000
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 15,
+        "price": 22880000,
+        "sale": 16016000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 10,
+        "price": 19500000,
+        "sale": 13650000
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 15,
+        "price": 28740000,
+        "sale": 20118000
+      }
+    ]
   }
 ]
