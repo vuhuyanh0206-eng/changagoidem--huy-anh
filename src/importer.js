@@ -196,11 +196,20 @@ async function importFile(file, { update = false } = {}) {
   return { file: path.basename(file), added, updated };
 }
 
+// Ảnh bìa danh mục do chủ shop chọn (luôn áp dụng khi nhập dữ liệu)
+const CATEGORY_COVERS = {
+  'dem-foam': '/images/products/vikosan/vk-smartsleep-1.jpg',
+  'dem-cao-su': '/images/products/liena/nem-cao-su-lien-a-classic-1.jpg',
+  'dem-tron': '/images/products/elan/dem-tron-lo-xo-1.jpg',
+  'chan-ga-goi': '/images/products/vikosan/vk-cg-dl7-1.jpg',
+};
+
 async function importAll(opts = {}) {
   if (!fs.existsSync(DIR)) return [];
   const files = fs.readdirSync(DIR).filter((f) => f.endsWith('.json'));
   const res = [];
   for (const f of files) res.push(await importFile(path.join(DIR, f), opts));
+  for (const [slug, image] of Object.entries(CATEGORY_COVERS)) await db.run('UPDATE categories SET image = ? WHERE slug = ?', [image, slug]);
   for (const r of res) if (r.added || r.updated) console.log(`Nhập ${r.file}: thêm ${r.added}, cập nhật ${r.updated} sản phẩm.`);
   return res;
 }
