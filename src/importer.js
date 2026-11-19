@@ -7,7 +7,7 @@
  *   và file JSON có ảnh thật thì tự thay bằng ảnh thật.
  * - Cập nhật lại giá/kích thước cho sản phẩm đã có: npm run import -- --update
  *
- * Định dạng: [{ name, brand, images?, features?, firmness?, badge?, contact?, thickness?, gift?, description_html?,
+ * Định dạng: [{ name, brand, hidden?, images?, features?, firmness?, badge?, contact?, thickness?, gift?, description_html?,
  *               variants: [{ w, l, t, price, sale }] }]
  * (w x l = kích thước cm, t = độ dày cm, price = giá gốc, sale = giá khuyến mãi, 0 nếu không giảm;
  *  contact = true: không niêm yết giá, hiện "Liên hệ báo giá")
@@ -159,6 +159,11 @@ async function importFile(file, { update = false } = {}) {
     const exists = await db.one('SELECT id, images FROM products WHERE slug = ?', [slug]);
     if (exists) {
       let changed = false;
+      // hidden: 1 -> ẩn khỏi web (không xoá, có thể bật lại trong admin)
+      if (p.hidden) {
+        const r = await db.run('UPDATE products SET active = 0 WHERE id = ? AND active = 1', [exists.id]);
+        if (r.changes) changed = true;
+      }
       if (p.images?.length && isStock(exists.images)) {
         await db.run('UPDATE products SET images = ? WHERE id = ?', [JSON.stringify(p.images), exists.id]);
         changed = true;
@@ -173,8 +178,8 @@ async function importFile(file, { update = false } = {}) {
     }
     await db.run(
       `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,1,1,5.0,0,0,?)`,
-      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.warranty || '', p.badge || '', p.gift || '', p.featured ? 1 : 0, now()]
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,1,?,5.0,0,0,?)`,
+      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.warranty || '', p.badge || '', p.gift || '', p.featured ? 1 : 0, p.hidden ? 0 : 1, now()]
     );
     added++;
   }

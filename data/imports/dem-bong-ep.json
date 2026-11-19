@@ -146,7 +146,8 @@
         "sale": 7000000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "hidden": 1
   },
   {
     "name": "Đệm bông Blue Nano Silver flexible",
@@ -197,7 +198,8 @@
       "/images/products/hanvico/blue-nano-silver-flexible-4.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông Blue Nano Silver Comfort",
@@ -248,7 +250,8 @@
         "sale": 19984000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "hidden": 1
   },
   {
     "name": "Đệm bông ANTIMICROBIAL COOLING",
@@ -961,7 +964,8 @@
         "price": 9990000,
         "sale": 7792000
       }
-    ]
+    ],
+    "hidden": 1
   },
   {
     "name": "Đệm bông chống khuẩn Hanvico",
@@ -2751,7 +2755,8 @@
         "price": 10090000,
         "sale": 7870000
       }
-    ]
+    ],
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Hanvico Nano Victoria",
@@ -2788,7 +2793,8 @@
         "sale": 11176000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "hidden": 1
   },
   {
     "name": "Đệm bông Hanvico cao cấp Raymond",
@@ -2825,7 +2831,8 @@
         "sale": 13816000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)"
+    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Elan Alias 3M vỏ không chần",
@@ -3189,7 +3196,8 @@
       "/images/products/hanvico/golden-dream-tc-6.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Hanvico Golden Dream vỏ gấm",
@@ -3262,7 +3270,8 @@
       "/images/products/hanvico/golden-dream-gam-5.jpg"
     ],
     "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
-    "featured": 1
+    "featured": 1,
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Doll's Cross Cel 2M (vải TC – chần mút)",
