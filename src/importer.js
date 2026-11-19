@@ -179,6 +179,8 @@ async function importFile(file, { update = false } = {}) {
         await db.run('UPDATE products SET price = ?, sale_price = ?, sizes = ?, thickness = ?, brand = ? WHERE id = ?', [b.base.price, b.base.sale_price, JSON.stringify(b.sizes), b.thickText, p.brand, exists.id]);
         if ('gift' in p) await db.run('UPDATE products SET gift = ? WHERE id = ?', [p.gift || '', exists.id]);
         if (p.warranty) await db.run('UPDATE products SET warranty = ? WHERE id = ?', [p.warranty, exists.id]);
+        if (p.short) await db.run('UPDATE products SET short_desc = ? WHERE id = ?', [b.short, exists.id]);
+        if (p.specs) await db.run('UPDATE products SET specs = ? WHERE id = ?', [JSON.stringify(b.specs), exists.id]);
         changed = true;
       }
       if (changed) updated++;

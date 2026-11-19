@@ -2596,11 +2596,9 @@
       "/images/products/vikosan/vk-maison-premium-2.jpg",
       "/images/products/vikosan/vk-maison-premium-3.jpg"
     ],
-    "contact": 1,
-    "thickness": "",
     "warranty": "",
     "gift": "Bộ quà tặng cao cấp",
-    "short": "Đệm lò xo Vikosan Maison Premium chính hãng Vikosan. Bộ sưu tập Maison 2026. Giá tham khảo 13.850.000đ – 16.950.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "short": "Đệm lò xo Vikosan Maison Premium chính hãng Vikosan. Bộ sưu tập Maison 2026. Giá niêm yết từ 13.850.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
       "Bộ sưu tập Maison 2026"
     ],
@@ -2614,15 +2612,34 @@
         "Đệm lò xo"
       ],
       [
-        "Giá tham khảo",
-        "13.850.000đ – 16.950.000đ"
-      ],
-      [
         "Xuất xứ",
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo Vikosan Maison Premium</h3><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo Vikosan Maison Premium</h3><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>",
+    "variants": [
+      {
+        "w": 160,
+        "l": 200,
+        "t": 30,
+        "price": 13850000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 30,
+        "price": 14950000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 30,
+        "price": 16950000,
+        "sale": 0
+      }
+    ]
   },
   {
     "name": "Đệm lò xo Vikosan Amora Classic",
@@ -2632,11 +2649,9 @@
       "/images/products/vikosan/vk-amora-classic-2.jpg",
       "/images/products/vikosan/vk-amora-classic-3.jpg"
     ],
-    "contact": 1,
-    "thickness": "",
     "warranty": "",
     "gift": "Bộ quà tặng cao cấp",
-    "short": "Đệm lò xo Vikosan Amora Classic chính hãng Vikosan. Thiết kế cổ điển, nâng đỡ vững chắc. Giá tham khảo 10.950.000đ – 12.950.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "short": "Đệm lò xo Vikosan Amora Classic chính hãng Vikosan. Thiết kế cổ điển, nâng đỡ vững chắc. Giá niêm yết từ 10.950.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
       "Thiết kế cổ điển, nâng đỡ vững chắc"
     ],
@@ -2650,15 +2665,34 @@
         "Đệm lò xo"
       ],
       [
-        "Giá tham khảo",
-        "10.950.000đ – 12.950.000đ"
-      ],
-      [
         "Xuất xứ",
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo Vikosan Amora Classic</h3><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo Vikosan Amora Classic</h3><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>",
+    "variants": [
+      {
+        "w": 160,
+        "l": 200,
+        "t": 25,
+        "price": 10950000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 25,
+        "price": 11650000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 25,
+        "price": 12950000,
+        "sale": 0
+      }
+    ]
   },
   {
     "name": "Đệm lò xo Vikosan Standard 3***",
@@ -2668,11 +2702,9 @@
       "/images/products/vikosan/vk-lo-xo-standard-3-2.jpg",
       "/images/products/vikosan/vk-lo-xo-standard-3-3.jpg"
     ],
-    "contact": 1,
-    "thickness": "22",
     "warranty": "",
     "gift": "Bộ quà tặng cao cấp",
-    "short": "Đệm lò xo Vikosan Standard 3*** chính hãng Vikosan. Đệm lò xo Standard 3* có độ dày 22cm, thích hợp sử dụng cho nhà nghỉ, khách sạn và resort nhờ chất lượng ổn định, độ cao vừa phải và độ bền vượt trội. Giá tham khảo từ 5.730.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
+    "short": "Đệm lò xo Vikosan Standard 3*** chính hãng Vikosan. Đệm lò xo Standard 3* có độ dày 22cm, thích hợp sử dụng cho nhà nghỉ, khách sạn và resort nhờ chất lượng ổn định, độ cao vừa phải và độ bền vượt trội. Giá niêm yết từ 5.730.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
       "Dày 22cm, phù hợp gia đình, nhà nghỉ, khách sạn"
     ],
@@ -2686,18 +2718,47 @@
         "Đệm lò xo"
       ],
       [
-        "Độ dày",
-        "22 cm"
-      ],
-      [
-        "Giá tham khảo",
-        "từ 5.730.000đ"
-      ],
-      [
         "Xuất xứ",
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo Vikosan Standard 3***</h3><p>Đệm lò xo Standard 3* có độ dày 22cm, thích hợp sử dụng cho nhà nghỉ, khách sạn và resort nhờ chất lượng ổn định, độ cao vừa phải và độ bền vượt trội. Đệm có bề mặt chần dày tạo độ thoáng khí tốt, mang lại cảm giác thoải mái cho người nằm. Thiết kế viền trang nhã, phối hợp hài hoà trên lớp áo đệm, phù hợp với mọi nội thất phòng ngủ.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo Vikosan Standard 3***</h3><p>Đệm lò xo Standard 3* có độ dày 22cm, thích hợp sử dụng cho nhà nghỉ, khách sạn và resort nhờ chất lượng ổn định, độ cao vừa phải và độ bền vượt trội. Đệm có bề mặt chần dày tạo độ thoáng khí tốt, mang lại cảm giác thoải mái cho người nằm. Thiết kế viền trang nhã, phối hợp hài hoà trên lớp áo đệm, phù hợp với mọi nội thất phòng ngủ.</p><p>Liên hệ hotline hoặc Zalo để được tư vấn chọn kích thước và báo giá tốt nhất tại kho.</p>",
+    "variants": [
+      {
+        "w": 120,
+        "l": 190,
+        "t": 22,
+        "price": 5730000,
+        "sale": 0
+      },
+      {
+        "w": 150,
+        "l": 190,
+        "t": 22,
+        "price": 6660000,
+        "sale": 0
+      },
+      {
+        "w": 160,
+        "l": 200,
+        "t": 22,
+        "price": 7350000,
+        "sale": 0
+      },
+      {
+        "w": 180,
+        "l": 200,
+        "t": 22,
+        "price": 8040000,
+        "sale": 0
+      },
+      {
+        "w": 200,
+        "l": 220,
+        "t": 22,
+        "price": 8850000,
+        "sale": 0
+      }
+    ]
   }
 ]
