@@ -54,7 +54,7 @@
     <div class="container">
       <ul class="usp__list">
         <li><span class="usp__ico"><svg class="i"><use href="#i-truck"/></svg></span><div><b>Giao &amp; lắp miễn phí</b><small>Bán kính 20km, nhận trong ngày</small></div></li>
-        <li><span class="usp__ico"><svg class="i"><use href="#i-refresh"/></svg></span><div><b>Đổi size miễn phí</b><small>Trong 7 ngày nếu còn tem mác</small></div></li>
+        <li><span class="usp__ico"><svg class="i"><use href="#i-gift"/></svg></span><div><b>Bộ quà tặng cao cấp</b><small>Kèm theo mọi đệm</small></div></li>
         <li><span class="usp__ico"><svg class="i"><use href="#i-card"/></svg></span><div><b>Trả góp lãi suất 0%</b><small>100% hàng chính hãng</small></div></li>
         <li><span class="usp__ico"><svg class="i"><use href="#i-headset"/></svg></span><div><b>Hỗ trợ 24/7</b><small>Hotline: <%= s.hotline %></small></div></li>
       </ul>
@@ -82,28 +82,35 @@
     </div>
   </section>
 
-  <!-- Flash sale -->
+  <!-- Siêu sale cuối năm – Black Friday -->
   <% if (flash.length) { %>
-  <section class="section flash">
+  <section class="section bf" id="sieu-sale" aria-labelledby="bf-title">
     <div class="container">
-      <div class="flash__head">
-        <div class="flash__title">
-          <svg class="i"><use href="#i-flame"/></svg>
-          <h2>Flash Sale</h2>
-          <span class="flash__sub">Giá sốc – số lượng có hạn</span>
+      <div class="bf__wrap">
+        <div class="bf__head">
+          <div class="bf__title">
+            <svg class="i bf__bolt" aria-hidden="true"><use href="#i-flame"/></svg>
+            <div>
+              <span class="bf__eyebrow">Siêu sale cuối năm</span>
+              <h2 id="bf-title"><span>Flash sale</span> <em>Black Friday</em></h2>
+            </div>
+          </div>
+          <div class="bf__count" data-countdown="<%= s.flash_sale_end %>" aria-label="Thời gian còn lại">
+            <span class="bf__count-l">Kết thúc sau</span>
+            <span class="bf__box"><b data-d>00</b><small>Ngày</small></span>
+            <span class="bf__box"><b data-h>00</b><small>Giờ</small></span>
+            <span class="bf__box"><b data-m>00</b><small>Phút</small></span>
+            <span class="bf__box"><b data-s>00</b><small>Giây</small></span>
+          </div>
+          <a class="bf__all" href="/khuyen-mai">Xem tất cả ưu đãi <svg class="i"><use href="#i-chev-r"/></svg></a>
         </div>
-        <div class="countdown" data-countdown="<%= s.flash_sale_end %>" aria-label="Thời gian còn lại">
-          <span>Kết thúc sau</span>
-          <b data-h>00</b><i>:</i><b data-m>00</b><i>:</i><b data-s>00</b>
+        <div class="rail" data-rail>
+          <button class="rail__nav rail__nav--prev" type="button" data-rail-prev aria-label="Trước"><svg class="i"><use href="#i-chev-l"/></svg></button>
+          <div class="rail__track bf__track">
+            <% flash.forEach(p => { %><%- include('../partials/bf-card', { p }) %><% }) %>
+          </div>
+          <button class="rail__nav rail__nav--next" type="button" data-rail-next aria-label="Sau"><svg class="i"><use href="#i-chev-r"/></svg></button>
         </div>
-        <a class="link-arrow link-arrow--light" href="/khuyen-mai">Xem tất cả <svg class="i"><use href="#i-arrow-r"/></svg></a>
-      </div>
-      <div class="rail" data-rail>
-        <button class="rail__nav rail__nav--prev" type="button" data-rail-prev aria-label="Trước"><svg class="i"><use href="#i-chev-l"/></svg></button>
-        <div class="rail__track">
-          <% flash.forEach(p => { %><%- include('../partials/product-card', { p }) %><% }) %>
-        </div>
-        <button class="rail__nav rail__nav--next" type="button" data-rail-next aria-label="Sau"><svg class="i"><use href="#i-chev-r"/></svg></button>
       </div>
     </div>
   </section>

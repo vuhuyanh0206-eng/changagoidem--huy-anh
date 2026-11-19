@@ -92,7 +92,10 @@
         "price": 9990000,
         "sale": 8991000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su hybrid IKI Flip Liên Á",
@@ -152,7 +155,10 @@
         "price": 7590000,
         "sale": 6831000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su hybrid IKI Luxe Liên Á",
@@ -207,7 +213,10 @@
         "price": 20490000,
         "sale": 18441000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su hybrid IKI Premium Liên Á",
@@ -304,7 +313,10 @@
         "price": 19890000,
         "sale": 17901000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su hybrid IKI Comfort Liên Á",
@@ -399,7 +411,10 @@
         "price": 15490000,
         "sale": 13941000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su hybrid IKI Liên Á",
@@ -494,6 +509,9 @@
         "price": 13290000,
         "sale": 11961000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   }
 ]

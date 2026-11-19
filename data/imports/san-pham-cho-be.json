@@ -40,7 +40,10 @@
         "price": 4280000,
         "sale": 3852000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm trẻ em PomPoms Liên Á",
@@ -207,7 +210,10 @@
         "price": 4179000,
         "sale": 3761000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối sơ sinh Liên Á",
@@ -255,7 +261,10 @@
         "price": 159000,
         "sale": 143000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối sơ sinh Oval Liên Á",
@@ -304,7 +313,10 @@
         "price": 289000,
         "sale": 260000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối sơ sinh Contour Liên Á",
@@ -352,7 +364,10 @@
         "price": 289000,
         "sale": 260000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối ôm sơ sinh Bolster Liên Á",
@@ -400,7 +415,10 @@
         "price": 429000,
         "sale": 386000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Bộ gối trẻ em PomPoms Bé Ngủ Ngoan Liên Á",
@@ -444,7 +462,10 @@
         "price": 529000,
         "sale": 476000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Bộ gối trẻ em PomPoms Bé Say Giấc Liên Á",
@@ -488,7 +509,10 @@
         "price": 779000,
         "sale": 701000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Bộ gối trẻ em PomPoms Bé Mơ Đẹp Liên Á",
@@ -532,6 +556,9 @@
         "price": 779000,
         "sale": 701000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   }
 ]

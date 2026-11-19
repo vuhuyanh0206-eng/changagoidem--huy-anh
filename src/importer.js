@@ -164,6 +164,13 @@ async function importFile(file, { update = false } = {}) {
         const r = await db.run('UPDATE products SET active = 0 WHERE id = ? AND active = 1', [exists.id]);
         if (r.changes) changed = true;
       }
+      // Thứ tự ưu tiên / bán chạy / flash sale: luôn đồng bộ theo file
+      for (const col of ['pin', 'best', 'is_hot']) {
+        if (col in p) {
+          const r = await db.run(`UPDATE products SET ${col} = ? WHERE id = ? AND ${col} <> ?`, [Number(p[col]) || 0, exists.id, Number(p[col]) || 0]);
+          if (r.changes) changed = true;
+        }
+      }
       if (p.images?.length && isStock(exists.images)) {
         await db.run('UPDATE products SET images = ? WHERE id = ?', [JSON.stringify(p.images), exists.id]);
         changed = true;
@@ -178,9 +185,9 @@ async function importFile(file, { update = false } = {}) {
       continue;
     }
     await db.run(
-      `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, created_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,1,?,5.0,0,0,?)`,
-      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.warranty || '', p.badge || '', p.gift || '', p.featured ? 1 : 0, p.hidden ? 0 : 1, now()]
+      `INSERT INTO products (category_id, name, slug, brand, sku, price, sale_price, short_desc, description, specs, sizes, images, thickness, firmness, warranty, badge, gift, is_featured, is_hot, in_stock, active, rating_avg, rating_count, sold, pin, best, created_at)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,1,?,5.0,0,0,?,?,?)`,
+      [cat ? cat.id : null, p.name, slug, p.brand, b.sku + String(i + 1).padStart(3, '0'), b.base.price, b.base.sale_price, b.short, b.description, JSON.stringify(b.specs), JSON.stringify(b.sizes), JSON.stringify(b.imgs), b.thickText, b.firm, p.warranty || '', p.badge || '', p.gift || '', p.featured ? 1 : 0, p.is_hot ? 1 : 0, p.hidden ? 0 : 1, Number(p.pin) || 0, Number(p.best) || 0, now()]
     );
     added++;
   }

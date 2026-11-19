@@ -3,7 +3,7 @@ const db = require('./db');
 const { hydrateProduct, parseJSON } = require('./utils');
 
 const LIST_COLS = `p.id, p.category_id, p.name, p.slug, p.brand, p.price, p.sale_price, p.short_desc, p.images, p.sizes, p.thickness,
-  p.firmness, p.warranty, p.badge, p.gift, p.is_featured, p.is_hot, p.in_stock, p.rating_avg, p.rating_count, p.sold,
+  p.firmness, p.warranty, p.badge, p.gift, p.is_featured, p.is_hot, p.in_stock, p.rating_avg, p.rating_count, p.sold, p.pin, p.best,
   (SELECT c.slug FROM categories c WHERE c.id = p.category_id) AS cat_slug, (SELECT c.name FROM categories c WHERE c.id = p.category_id) AS cat_name`;
 
 async function list({ where = [], params = [], order = 'p.id DESC', limit = 12, offset = 0 } = {}) {
@@ -21,8 +21,8 @@ async function count({ where = [], params = [] } = {}) {
 const finalPriceSql = 'CASE WHEN p.sale_price > 0 AND p.sale_price < p.price THEN p.sale_price ELSE p.price END';
 
 const SORTS = {
-  new: 'p.id DESC',
-  popular: 'p.sold DESC',
+  new: 'p.pin DESC, p.id DESC',
+  popular: 'p.best DESC, p.sold DESC',
   price_asc: `${finalPriceSql} ASC`,
   price_desc: `${finalPriceSql} DESC`,
   discount: '(p.price - p.sale_price) DESC',

@@ -61,7 +61,11 @@
       "Lò xo túi độc lập, không truyền chuyển động"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo túi Elan VIP II 28cm",
@@ -126,7 +130,11 @@
       "Dày 28cm, viền đệm chắc chắn chống lún mép"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo túi Elan Alias 29cm cuộn",
@@ -191,7 +199,11 @@
       "Lò xo túi độc lập, dày 29cm"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo túi Elan Alias 27cm",
@@ -253,7 +265,11 @@
       "Dày 27cm, phù hợp giường gia đình và khách sạn"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo túi Elan Vimatt 24cm cuộn",
@@ -315,7 +331,11 @@
       "Dày 24cm, giá tốt trong phân khúc lò xo túi"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo túi Elan Vimatt 22cm cuộn",
@@ -377,7 +397,11 @@
       "Dày 22cm, phù hợp phòng ngủ, căn hộ cho thuê"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo liên kết Elan See 23cm",
@@ -439,7 +463,11 @@
       "Dày 23cm, giá kinh tế nhất dòng lò xo Elan"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo khách sạn Elan TB54 23cm",
@@ -460,7 +488,11 @@
       "Sản xuất theo kích thước dự án, báo giá theo số lượng"
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk BLACK Valmont 42cm",
@@ -530,7 +562,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk BLACK Beaumont 38cm",
@@ -600,7 +635,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Windsor 36cm",
@@ -670,7 +708,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Prestige 33cm",
@@ -740,7 +781,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ROYALE Sovereign Firm 30cm",
@@ -810,7 +854,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Prime 30cm",
@@ -880,7 +927,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Calm 27cm",
@@ -950,7 +1000,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo CoolSilk ZEN Air 25cm",
@@ -1020,7 +1073,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Royal Kensington 38cm",
@@ -1083,7 +1139,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Elizabeth 34cm",
@@ -1167,7 +1226,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Evita 28cm",
@@ -1237,7 +1299,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Duchess Extra Firm 29cm",
@@ -1314,7 +1379,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Firmrest Extra 29cm",
@@ -1386,7 +1454,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Marilyn 25cm",
@@ -1457,7 +1528,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 3,
+    "is_hot": 1,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Spine O Master 26cm",
@@ -1534,7 +1608,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Audrey Premium 25cm",
@@ -1605,7 +1682,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 4,
+    "is_hot": 1,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo cao cấp Dunlopillo Venus Supreme 23cm",
@@ -1684,7 +1764,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "10 năm"
+    "warranty": "10 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi Bello Liên Á",
@@ -1773,7 +1856,10 @@
         "price": 12590000,
         "sale": 11331000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi COCOON Grey Liên Á",
@@ -1870,7 +1956,10 @@
         "price": 26390000,
         "sale": 23751000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi COCOON Grey Luxe Liên Á",
@@ -1953,7 +2042,10 @@
         "price": 50990000,
         "sale": 45891000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi COCOON 2.0 Luxe Liên Á",
@@ -2036,7 +2128,10 @@
         "price": 43900000,
         "sale": 39510000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi COCOON 2.0 Premium Liên Á",
@@ -2133,7 +2228,10 @@
         "price": 33590000,
         "sale": 30231000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo túi COCOON Liên Á",
@@ -2230,7 +2328,10 @@
         "price": 21590000,
         "sale": 19431000
       }
-    ]
+    ],
+    "best": 1,
+    "is_hot": 1,
+    "pin": 0
   },
   {
     "name": "Đệm lò xo Doll's Valize",
@@ -2299,7 +2400,11 @@
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo Doll's Valize</h3><p>Đệm lò xo Doll's Valize chính hãng Doll's: mặt vải trắng sang trọng, lò xo nâng đỡ êm ái, giá dễ tiếp cận.</p><ul><li>Mặt đệm vải trắng chần trám êm mịn.</li><li>Khung lò xo chắc chắn, độ nảy vừa phải.</li><li>Giá tốt, phù hợp phòng ngủ gia đình và nhà nghỉ.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo Doll's Valize</h3><p>Đệm lò xo Doll's Valize chính hãng Doll's: mặt vải trắng sang trọng, lò xo nâng đỡ êm ái, giá dễ tiếp cận.</p><ul><li>Mặt đệm vải trắng chần trám êm mịn.</li><li>Khung lò xo chắc chắn, độ nảy vừa phải.</li><li>Giá tốt, phù hợp phòng ngủ gia đình và nhà nghỉ.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo Doll's Link",
@@ -2369,7 +2474,11 @@
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo Doll's Link</h3><p>Đệm lò xo Doll's Link chính hãng Doll's: lò xo liên kết bền chắc, mặt đệm chần bông êm, thiết kế hiện đại.</p><ul><li>Lò xo liên kết bền bỉ, chống lún mép.</li><li>Mặt đệm trắng chần bông, viền xanh navy hiện đại.</li><li>Độ êm vừa, nâng đỡ tốt cho cột sống.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo Doll's Link</h3><p>Đệm lò xo Doll's Link chính hãng Doll's: lò xo liên kết bền chắc, mặt đệm chần bông êm, thiết kế hiện đại.</p><ul><li>Lò xo liên kết bền bỉ, chống lún mép.</li><li>Mặt đệm trắng chần bông, viền xanh navy hiện đại.</li><li>Độ êm vừa, nâng đỡ tốt cho cột sống.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm lò xo cuộn Doll's Royal",
@@ -2439,6 +2548,10 @@
         "Việt Nam"
       ]
     ],
-    "description_html": "<h3>Đệm lò xo cuộn Doll's Royal</h3><p>Đệm lò xo cuộn Doll's Royal chính hãng Doll's: lò xo túi độc lập, đóng cuộn tiện lợi, nằm êm và yên tĩnh.</p><ul><li>Lò xo túi độc lập, không truyền chuyển động khi trở mình.</li><li>Đóng gói hút chân không dạng cuộn, dễ vận chuyển.</li><li>Mặt vải chần sóng êm ái, thoáng khí.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>"
+    "description_html": "<h3>Đệm lò xo cuộn Doll's Royal</h3><p>Đệm lò xo cuộn Doll's Royal chính hãng Doll's: lò xo túi độc lập, đóng cuộn tiện lợi, nằm êm và yên tĩnh.</p><ul><li>Lò xo túi độc lập, không truyền chuyển động khi trở mình.</li><li>Đóng gói hút chân không dạng cuộn, dễ vận chuyển.</li><li>Mặt vải chần sóng êm ái, thoáng khí.</li><li><strong>Kích thước:</strong> 120x190, 140x190, 150x190, 160x200, 180x200, 200x220 (cm).</li></ul><p>Liên hệ hotline hoặc Zalo để được tư vấn và báo giá tốt nhất tại kho.</p>",
+    "best": 2,
+    "is_hot": 1,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   }
 ]

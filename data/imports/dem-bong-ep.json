@@ -146,9 +146,12 @@
         "sale": 7000000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông Blue Nano Silver flexible",
@@ -198,10 +201,13 @@
       "/images/products/hanvico/blue-nano-silver-flexible-3.jpg",
       "/images/products/hanvico/blue-nano-silver-flexible-4.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông Blue Nano Silver Comfort",
@@ -252,9 +258,12 @@
         "sale": 19984000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ANTIMICROBIAL COOLING",
@@ -305,9 +314,12 @@
         "sale": 8360000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông Nano U.eros Topper Cool",
@@ -342,7 +354,10 @@
     ],
     "gift": "",
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 95
   },
   {
     "name": "Đệm Nano U.Eros Plus",
@@ -462,10 +477,13 @@
       "/images/products/hanvico/nano-u-eros-plus-3.jpg",
       "/images/products/hanvico/nano-u-eros-plus-4.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông gấm chống khuẩn Hanvico",
@@ -623,10 +641,13 @@
       "/images/products/hanvico/gam-chong-khuan-6.jpg",
       "/images/products/hanvico/gam-chong-khuan-7.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép cao su Kim Cương Titanium",
@@ -741,7 +762,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Elan Fly",
@@ -829,7 +854,11 @@
       "/images/products/elan/fly-5.jpg"
     ],
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Everon",
@@ -979,7 +1008,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông chống khuẩn Hanvico",
@@ -1234,9 +1267,12 @@
       "/images/products/hanvico/chong-khuan-tc-5.jpg",
       "/images/products/hanvico/chong-khuan-tc-6.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm Elan Alias 2M chần foam",
@@ -1380,7 +1416,11 @@
       "/images/products/elan/alias-2m-2.jpg"
     ],
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 1,
+    "pin": 100,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm Elan Vimatt 2M chần foam",
@@ -1524,7 +1564,11 @@
       "/images/products/elan/vimatt-2m-5.jpg"
     ],
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm Elan See 2M chần foam",
@@ -1665,7 +1709,11 @@
       "/images/products/elan/see-2m-2.jpg"
     ],
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Gold Kim Cương",
@@ -1850,7 +1898,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Kim Cương Gấm Titanium",
@@ -2035,7 +2087,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép tinh khiết Cozin",
@@ -2220,7 +2276,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép tinh khiết vỏ gấm Sông Hồng",
@@ -2398,7 +2458,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông Nano chống khuẩn Hanvico",
@@ -2554,10 +2618,13 @@
       "/images/products/hanvico/nano-chong-khuan-4.jpg",
       "/images/products/hanvico/nano-chong-khuan-5.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép Hanvico Nano U.Eros",
@@ -2696,9 +2763,12 @@
       "/images/products/hanvico/nano-u-eros-1.jpg",
       "/images/products/hanvico/nano-u-eros-2.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép Kim Cương Bonus",
@@ -2743,7 +2813,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Everon than hoạt tính",
@@ -2788,7 +2862,11 @@
       }
     ],
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Hanvico Nano Victoria",
@@ -2825,9 +2903,12 @@
         "sale": 11176000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông Hanvico cao cấp Raymond",
@@ -2864,9 +2945,12 @@
         "sale": 13816000
       }
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép Elan Alias 3M vỏ không chần",
@@ -3094,7 +3178,11 @@
       "5 độ dày từ 5cm đến 18cm cho mọi nhu cầu"
     ],
     "featured": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 99,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Elan Alias Topper",
@@ -3159,7 +3247,10 @@
     "firmness": 4,
     "featured": 1,
     "warranty": "5 năm",
-    "gift": ""
+    "gift": "",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 96
   },
   {
     "name": "Đệm bông ép Hanvico Golden Dream vỏ TC",
@@ -3232,10 +3323,13 @@
       "/images/products/hanvico/golden-dream-tc-5.jpg",
       "/images/products/hanvico/golden-dream-tc-6.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép Hanvico Golden Dream vỏ gấm",
@@ -3307,10 +3401,13 @@
       "/images/products/hanvico/golden-dream-gam-4.jpg",
       "/images/products/hanvico/golden-dream-gam-5.jpg"
     ],
-    "gift": "Gối và tấm bảo vệ nệm chính hãng Hanvico (tuỳ theo mẫu)",
+    "gift": "Bộ quà tặng cao cấp",
     "featured": 1,
     "hidden": 1,
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm bông ép Doll's Cross Cel 2M (vải TC – chần mút)",
@@ -3501,7 +3598,11 @@
         "sale": 6307000
       }
     ],
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 1,
+    "pin": 98,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Doll's Coton 2M (vải cotton – chần mút)",
@@ -3608,7 +3709,11 @@
         "sale": 4305000
       }
     ],
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 1,
+    "pin": 97,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Doll's Cross Cel 3M (vải TC)",
@@ -3759,7 +3864,11 @@
         "sale": 2961000
       }
     ],
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   },
   {
     "name": "Đệm bông ép Doll's Coton 3M (vải cotton)",
@@ -3950,6 +4059,10 @@
         "sale": 4417000
       }
     ],
-    "warranty": "5 năm"
+    "warranty": "5 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0,
+    "gift": "Bộ quà tặng cao cấp"
   }
 ]

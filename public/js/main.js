@@ -302,11 +302,12 @@
       d.setHours(23, 59, 59, 999);
       end = d.getTime();
     }
-    const h = $('[data-h]', el), m = $('[data-m]', el), s = $('[data-s]', el);
+    const d = $('[data-d]', el), h = $('[data-h]', el), m = $('[data-m]', el), s = $('[data-s]', el);
     const pad = (n) => String(n).padStart(2, '0');
     const tick = () => {
       const left = Math.max(0, end - Date.now());
-      h.textContent = pad(Math.floor(left / 3.6e6));
+      if (d) d.textContent = pad(Math.floor(left / 8.64e7));
+      h.textContent = pad(Math.floor((d ? left % 8.64e7 : left) / 3.6e6));
       m.textContent = pad(Math.floor((left % 3.6e6) / 6e4));
       s.textContent = pad(Math.floor((left % 6e4) / 1000));
     };

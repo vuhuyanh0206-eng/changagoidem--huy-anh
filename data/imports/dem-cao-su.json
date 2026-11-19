@@ -63,7 +63,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 89
   },
   {
     "name": "Đệm cao su thiên nhiên nhập khẩu Dunlopillo Herit 10cm",
@@ -138,7 +141,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 92
   },
   {
     "name": "Đệm cao su cao cấp Dunlopillo Latex World Eco Fresh 25cm",
@@ -202,7 +208,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su cao cấp Dunlopillo Latex World Pure Fresh 20cm",
@@ -273,7 +282,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su cao cấp Dunlopillo Latex World Neo Fresh 15cm",
@@ -344,7 +356,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 88
   },
   {
     "name": "Đệm cao su cao cấp Dunlopillo Latex World Relax Fresh 10cm",
@@ -414,7 +429,10 @@
       }
     ],
     "featured": 1,
-    "warranty": "12 năm"
+    "warranty": "12 năm",
+    "best": 0,
+    "is_hot": 0,
+    "pin": 90
   },
   {
     "name": "Đệm gấp gọn Mliving Comfort Liên Á",
@@ -497,7 +515,10 @@
         "price": 13290000,
         "sale": 11961000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su 5ZONE Premium Liên Á",
@@ -573,7 +594,10 @@
         "price": 65190000,
         "sale": 58671000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su L'ADOME Grey Premium Liên Á",
@@ -663,7 +687,10 @@
         "price": 44190000,
         "sale": 39771000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 93
   },
   {
     "name": "Đệm cao su L'ADOME Cool Premium Liên Á",
@@ -753,7 +780,10 @@
         "price": 43157000,
         "sale": 38841000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 94
   },
   {
     "name": "Đệm cao su L'ADOME Premium Liên Á",
@@ -871,7 +901,10 @@
         "price": 52009000,
         "sale": 46808000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 95
   },
   {
     "name": "Đệm cao su L'ADOME Grey Liên Á",
@@ -968,7 +1001,10 @@
         "price": 32502000,
         "sale": 29252000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 96
   },
   {
     "name": "Đệm cao su L'ADOME Cool Liên Á",
@@ -1064,7 +1100,10 @@
         "price": 28949000,
         "sale": 26054000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 97
   },
   {
     "name": "Đệm cao su LEGACY Liên Á",
@@ -1153,7 +1192,10 @@
         "price": 55344000,
         "sale": 49810000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su 5ZONE Liên Á",
@@ -1228,7 +1270,10 @@
         "price": 46490000,
         "sale": 41841000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Đệm cao su L'ADOME Liên Á",
@@ -1372,7 +1417,10 @@
         "price": 26611000,
         "sale": 23950000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 98
   },
   {
     "name": "Đệm cao su Premium Classic Liên Á",
@@ -1447,7 +1495,10 @@
         "price": 32935000,
         "sale": 29642000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 99
   },
   {
     "name": "Đệm cao su Classic Liên Á",
@@ -1591,6 +1642,9 @@
         "price": 24290000,
         "sale": 21861000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 100
   }
 ]

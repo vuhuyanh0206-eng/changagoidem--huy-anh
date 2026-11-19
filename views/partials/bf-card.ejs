@@ -1,0 +1,20 @@
+<article class="bfcard">
+  <a class="bfcard__media" href="/san-pham/<%= p.slug %>">
+    <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" width="600" height="450">
+    <%- include('img-label', { L: p.imgLabel, big: false }) %>
+    <% if (p.discount) { %><span class="bfcard__off">-<%= p.discount %>%</span><% } %>
+    <span class="bfcard__ribbon"><b>BLACK<br>FRIDAY</b><small>Siêu sale cuối năm</small></span>
+  </a>
+  <div class="bfcard__strip">Giảm <%= p.discount %>% · Tặng quà</div>
+  <div class="bfcard__body">
+    <h3 class="bfcard__name"><a href="/san-pham/<%= p.slug %>"><%= p.name %></a></h3>
+    <s class="bfcard__old"><%= vnd(p.price) %></s>
+    <p class="bfcard__price"><small>từ</small> <%= vnd(p.finalPrice) %></p>
+    <p class="bfcard__note">Liên hệ để có thêm ưu đãi</p>
+    <div class="bfcard__pills">
+      <span><svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>Bộ quà tặng cao cấp</span>
+      <% if (p.best) { %><span><svg class="i" aria-hidden="true"><use href="#i-flame"/></svg>Bán chạy</span><% } %>
+    </div>
+    <a class="bfcard__buy" href="/san-pham/<%= p.slug %>">Mua ngay</a>
+  </div>
+</article>

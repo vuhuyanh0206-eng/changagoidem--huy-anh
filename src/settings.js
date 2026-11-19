@@ -18,10 +18,10 @@ const DEFAULTS = {
   bank_account: '',
   bank_holder: '',
   meta_description:
-    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, đổi size 7 ngày, bảo hành dài hạn.',
+    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, quà tặng cao cấp, bảo hành chính hãng.',
   ga_id: '',
   fb_pixel: '',
-  flash_sale_end: '',
+  flash_sale_end: '2026-12-31T23:59',
 };
 
 let cache = null;

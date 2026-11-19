@@ -26,7 +26,7 @@
     <input type="hidden" name="image" value="<%= e.image || '' %>">
     <div class="row2">
       <label class="f"><span>Vị trí</span><select class="in" name="position"><option value="main" <%= e.position === 'main' ? 'selected' : '' %>>Slider chính</option><option value="side" <%= e.position === 'side' ? 'selected' : '' %>>Banner phụ</option></select></label>
-      <label class="f"><span>Kiểu chữ</span><select class="in" name="theme"><option value="dark" <%= e.theme === 'dark' ? 'selected' : '' %>>Chữ trắng (ảnh tối)</option><option value="light" <%= e.theme === 'light' ? 'selected' : '' %>>Chữ xanh (ảnh sáng)</option></select></label>
+      <label class="f"><span>Kiểu chữ</span><select class="in" name="theme"><option value="dark" <%= e.theme === 'dark' ? 'selected' : '' %>>Chữ trắng (ảnh tối)</option><option value="light" <%= e.theme === 'light' ? 'selected' : '' %>>Chữ xanh (ảnh sáng)</option><option value="bf" <%= e.theme === 'bf' ? 'selected' : '' %>>Black Friday (đỏ đen)</option></select></label>
     </div>
     <label class="f"><span>Dòng nhỏ phía trên</span><input class="in" name="eyebrow" value="<%= e.eyebrow || '' %>" placeholder="Siêu sale cuối năm"></label>
     <label class="f"><span>Tiêu đề lớn</span><input class="in" name="title" value="<%= e.title || '' %>"></label>

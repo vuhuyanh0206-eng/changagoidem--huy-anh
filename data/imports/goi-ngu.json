@@ -41,7 +41,10 @@
         "price": 1169000,
         "sale": 1052000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Oval Liên Á",
@@ -112,7 +115,10 @@
         "price": 1799000,
         "sale": 1619000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Bolster Liên Á",
@@ -167,7 +173,10 @@
         "price": 1399000,
         "sale": 1259000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Contour Liên Á",
@@ -232,7 +241,10 @@
         "price": 899000,
         "sale": 809000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Travelmate Liên Á",
@@ -277,7 +289,10 @@
         "price": 409000,
         "sale": 368000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Convoluted Liên Á",
@@ -321,7 +336,10 @@
         "price": 899000,
         "sale": 809000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Peanut Liên Á",
@@ -371,7 +389,10 @@
         "price": 899000,
         "sale": 809000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Convoluted Peanut Liên Á",
@@ -414,7 +435,10 @@
         "price": 809000,
         "sale": 728000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   },
   {
     "name": "Gối cao su Travelmate Lux Liên Á",
@@ -459,6 +483,9 @@
         "price": 489000,
         "sale": 440000
       }
-    ]
+    ],
+    "best": 0,
+    "is_hot": 0,
+    "pin": 0
   }
 ]

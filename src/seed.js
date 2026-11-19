@@ -64,7 +64,7 @@ function descFor(p) {
 <li><strong>Dễ vệ sinh:</strong> vỏ có khoá kéo, tháo giặt dễ dàng.</li>
 </ul>
 <h3>Chính sách khi mua tại Kho Đệm HP</h3>
-<p>Giao hàng – lắp đặt miễn phí nội thành, đổi size miễn phí trong 7 ngày, hỗ trợ trả góp 0% qua thẻ tín dụng.</p>`;
+<p>Giao hàng – lắp đặt miễn phí nội thành, tặng bộ quà tặng cao cấp, hỗ trợ trả góp 0% qua thẻ tín dụng.</p>`;
 }
 
 function specsFor(p) {
@@ -83,7 +83,7 @@ function sizesOf(p) {
 }
 
 const BANNERS = [
-  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 20% đệm chính hãng', subtitle: 'Dunlopillo, Hanvico, Liên Á – kèm quà tặng, liên hệ để nhận thêm ưu đãi', cta: 'Mua ngay', image: img(18), link: '/khuyen-mai', theme: 'dark' },
+  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 30% đệm chính hãng', subtitle: "Doll's, Elan giảm 30% · Dunlopillo 20% · kèm bộ quà tặng cao cấp", cta: 'Săn sale ngay', image: '/images/products/dolls/lx-royal-1.jpg', link: '/#sieu-sale', theme: 'bf' },
   { position: 'main', eyebrow: 'Đệm cao su thiên nhiên', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhõm', subtitle: 'Cao su 100% – bảo hành 15 năm – giao lắp miễn phí', cta: 'Khám phá', image: img(25), link: '/danh-muc/dem-cao-su', theme: 'light' },
   { position: 'main', eyebrow: 'Lò xo túi độc lập', title: 'Chuẩn khách sạn 5 sao tại nhà', subtitle: 'Lò xo túi độc lập Dunlopillo, Liên Á, Elan chính hãng', cta: 'Xem bộ sưu tập', image: img(4), link: '/danh-muc/dem-lo-xo', theme: 'dark' },
   { position: 'side', eyebrow: 'Giảm 10%', title: 'Đệm cao su Liên Á', subtitle: 'Cao su thiên nhiên – thoáng mát', cta: 'Xem ngay', image: img(19), link: '/danh-muc/dem-cao-su', theme: 'light' },
@@ -104,7 +104,7 @@ const postContent = (p) => `<p>${p.excerpt}</p>
 <h2>2. Chú ý chất liệu</h2>
 <p>Cao su thiên nhiên bền và thoáng; lò xo túi độc lập nâng đỡ tốt và không truyền chuyển động; memory foam ôm sát, giảm áp lực. Hãy nằm thử ít nhất 10–15 phút tại showroom trước khi quyết định.</p>
 <h2>3. Đừng bỏ qua chính sách</h2>
-<p>Bảo hành, đổi trả là những yếu tố giúp bạn yên tâm. Tại Kho Đệm HP, bạn được đổi size miễn phí trong 7 ngày.</p>
+<p>Bảo hành, đổi trả là những yếu tố giúp bạn yên tâm. Tại Kho Đệm HP, mọi đệm đều được bảo hành chính hãng.</p>
 <blockquote>Cần tư vấn nhanh? Gọi hotline hoặc nhắn Zalo để được chuyên viên hỗ trợ miễn phí.</blockquote>`;
 
 async function wipe() {

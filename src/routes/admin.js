@@ -270,7 +270,7 @@ router.post(
       flash(req, 'err', 'Vui lòng chọn ảnh banner');
       return res.redirect('/admin/banners?edit=' + (id || 'new'));
     }
-    const vals = [b.position === 'side' ? 'side' : 'main', b.eyebrow || '', b.title || '', b.subtitle || '', b.cta || '', image, b.link || '', b.theme === 'light' ? 'light' : 'dark', int(b.sort), bool(b.active)];
+    const vals = [b.position === 'side' ? 'side' : 'main', b.eyebrow || '', b.title || '', b.subtitle || '', b.cta || '', image, b.link || '', ['light', 'bf'].includes(b.theme) ? b.theme : 'dark', int(b.sort), bool(b.active)];
     if (id) await db.run('UPDATE banners SET position=?, eyebrow=?, title=?, subtitle=?, cta=?, image=?, link=?, theme=?, sort=?, active=? WHERE id=?', [...vals, id]);
     else await db.run('INSERT INTO banners (position, eyebrow, title, subtitle, cta, image, link, theme, sort, active) VALUES (?,?,?,?,?,?,?,?,?,?)', vals);
     flash(req, 'ok', 'Đã lưu banner');

@@ -108,7 +108,11 @@ CREATE TABLE IF NOT EXISTS admins (
 }
 
 // Cột thêm sau khi đã có CSDL: tự ALTER nếu thiếu (bỏ qua lỗi "đã tồn tại")
-const ADDED_COLUMNS = [['products', 'gift', "VARCHAR(255) DEFAULT ''"]];
+const ADDED_COLUMNS = [
+  ['products', 'gift', "VARCHAR(255) DEFAULT ''"],
+  ['products', 'pin', 'INT DEFAULT 0'], // ưu tiên hiển thị trong danh mục (lớn hơn lên trước)
+  ['products', 'best', 'INT DEFAULT 0'], // thứ hạng bán chạy (lớn hơn lên trước)
+];
 
 async function migrate() {
   await db.exec(ddl(db.dialect));

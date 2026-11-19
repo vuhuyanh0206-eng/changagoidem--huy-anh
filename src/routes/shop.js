@@ -13,7 +13,7 @@ router.get(
   wrap(async (req, res) => {
     const [banners, flash, featuredPool, latestPosts, cats] = await Promise.all([
       db.query('SELECT * FROM banners WHERE active = 1 ORDER BY sort, id'),
-      catalog.list({ where: ['p.is_hot = 1', 'p.sale_price > 0'], order: catalog.SORTS.discount, limit: 10 }),
+      catalog.list({ where: ['p.is_hot = 1', 'p.sale_price > 0'], order: `p.best DESC, ${catalog.SORTS.discount}`, limit: 10 }),
       catalog.list({ where: ['p.is_featured = 1'], order: 'p.id DESC', limit: 120 }),
       db.query('SELECT id, title, slug, excerpt, image, created_at FROM posts WHERE active = 1 ORDER BY id DESC LIMIT 3'),
       db.query('SELECT * FROM categories WHERE active = 1 AND parent_id IS NULL ORDER BY sort, id'),
@@ -32,6 +32,7 @@ router.get(
     }
     const counts = await db.query('SELECT category_id, COUNT(*) AS n FROM products WHERE active = 1 GROUP BY category_id');
     const countMap = Object.fromEntries(counts.map((c) => [c.category_id, Number(c.n)]));
+    const childCats = await db.query('SELECT id, parent_id FROM categories WHERE active = 1 AND parent_id IS NOT NULL');
     res.render('shop/home', {
       meta: { title: `${res.locals.s.site_name} – ${res.locals.s.tagline}`, description: res.locals.s.meta_description },
       mainBanners: banners.filter((b) => b.position === 'main'),
@@ -39,7 +40,7 @@ router.get(
       flash,
       featured,
       latestPosts,
-      cats: cats.map((c) => ({ ...c, count: countMap[c.id] || 0 })),
+      cats: cats.map((c) => ({ ...c, count: (countMap[c.id] || 0) + childCats.filter((k) => k.parent_id === c.id).reduce((a, k) => a + (countMap[k.id] || 0), 0) })),
     });
   })
 );
@@ -279,7 +280,7 @@ router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title:
 
 const POLICIES = {
   'giao-hang': { title: 'Chính sách giao hàng & lắp đặt', body: '<p>Miễn phí giao hàng và lắp đặt trong bán kính 20km. Các khu vực khác tính phí theo đơn vị vận chuyển, nhân viên sẽ báo trước khi giao.</p><p>Thời gian giao: nội thành 2–24 giờ, tỉnh thành khác 2–5 ngày làm việc.</p>' },
-  'doi-tra': { title: 'Chính sách đổi trả', body: '<p>Đổi size miễn phí trong 7 ngày nếu sản phẩm còn nguyên tem mác, không bẩn, không hư hỏng.</p>' },
+  'doi-tra': { title: 'Chính sách đổi trả', body: '<p>Đổi trả theo chính sách bảo hành, đổi trả của từng hãng. Sản phẩm lỗi do nhà sản xuất được hỗ trợ bảo hành chính hãng.</p><p>Vui lòng liên hệ hotline hoặc Zalo để được hỗ trợ nhanh nhất.</p>' },
   'bao-hanh': { title: 'Chính sách bảo hành', body: '<p>Sản phẩm được bảo hành chính hãng theo thời gian ghi trên phiếu bảo hành (3–20 năm tuỳ dòng). Bảo hành lún, xẹp quá 3cm, bung keo, gãy lò xo do lỗi sản xuất.</p>' },
   'tra-gop': { title: 'Mua trả góp 0%', body: '<p>Hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân hàng, kỳ hạn 3–12 tháng. Liên hệ hotline để được hướng dẫn.</p>' },
   'bao-mat': { title: 'Chính sách bảo mật', body: '<p>Thông tin khách hàng chỉ được dùng để xử lý đơn hàng, giao hàng và chăm sóc sau bán. Kho Đệm HP không chia sẻ thông tin cho bên thứ ba khi chưa có sự đồng ý của khách hàng.</p>' },
