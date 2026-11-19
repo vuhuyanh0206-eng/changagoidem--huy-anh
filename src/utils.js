@@ -79,7 +79,11 @@ function imageLabel(p) {
     .replace(/\s*\d+(?:[.,]\d+)?\s?cm\b/gi, '')
     .replace(/\s*\(.*\)\s*$/, '')
     .trim();
-  return { type, model: model || name, warranty: p.warranty || 'Chính hãng', thickness: String(p.thickness || '').replace(/\s*cm$/i, 'cm') };
+  // Đệm bông ép: chỉ để dạng tên gọi (bỏ tên dòng Alias, Vimatt, See...), "vỏ không chần" gọi là "gấm"
+  const plain = slug === 'dem-bong-ep'
+    ? model.replace(/\b(Alias|Vimatt|See)\b/gi, '').replace(/vỏ không chần/i, 'gấm').replace(/\s+/g, ' ').trim()
+    : model;
+  return { type, model: plain || model || name, warranty: p.warranty || 'Chính hãng', thickness: String(p.thickness || '').replace(/\s*cm$/i, 'cm') };
 }
 
 const finalOf = (s) => (s.sale_price > 0 && s.sale_price < s.price ? s.sale_price : s.price);
