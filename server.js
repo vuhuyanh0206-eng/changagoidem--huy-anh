@@ -14,6 +14,14 @@ const { locals, csrf } = require('./src/middleware');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Mở cổng ngay khi chạy; trong lúc khởi tạo CSDL (hoặc nếu khởi tạo lỗi) trả 503 kèm lý do ngắn gọn
+let boot = { state: 'starting', error: null };
+app.use((req, res, next) => {
+  if (boot.state === 'ready') return next();
+  res.status(503).type('text/plain; charset=utf-8').set('Retry-After', '30');
+  res.send(boot.state === 'starting' ? 'Website đang khởi động, vui lòng tải lại sau ít phút.' : `Lỗi khởi động website: ${boot.error}`);
+});
 const isProd = process.env.NODE_ENV === 'production';
 if (isProd && (!process.env.SESSION_SECRET || process.env.SESSION_SECRET.length < 24)) console.warn('CẢNH BÁO: hãy đặt SESSION_SECRET dài ít nhất 24 ký tự trong biến môi trường!');
 
@@ -74,13 +82,15 @@ app.use((err, req, res, next) => {
   res.status(500).render('shop/404', { meta: { title: 'Có lỗi xảy ra' }, error: true });
 });
 
+app.listen(PORT, () => console.log(`Kho Đệm HP đang chạy tại http://localhost:${PORT}`));
 (async () => {
   await db.init();
   await migrate();
   await seedIfEmpty();
   await importAll();
-  app.listen(PORT, () => console.log(`Kho Đệm HP đang chạy tại http://localhost:${PORT} (CSDL: ${db.dialect})`));
+  boot = { state: 'ready', error: null };
+  console.log(`Khởi tạo xong (CSDL: ${db.dialect})`);
 })().catch((e) => {
   console.error('Không khởi động được server:', e);
-  process.exit(1);
+  boot = { state: 'failed', error: `${e.code || e.name || 'Error'} – ${String(e.message || e).slice(0, 160)}` };
 });
