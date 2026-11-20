@@ -205,12 +205,12 @@ const CATEGORY_COVERS = {
 };
 
 // Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
-const DATA_VERSION = '2026-11-20';
+const DATA_VERSION = '2026-11-20b';
 
 // Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
 const MAIN_BANNERS = [
   { link: '/#sieu-sale', image: '/images/products/dunlopillo/nem-lo-xo-cao-cap-coolsilk-royale-windsor-36-cm-2.jpg' },
-  { link: '/danh-muc/dem-cao-su', image: '/images/products/liena/banner-ruot-cao-su-lien-a.jpg', eyebrow: 'Ruột cao su Liên Á', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhàng', subtitle: 'Đệm Liên Á giảm 10% – kèm bộ quà tặng cao cấp – bảo hành 12 năm' },
+  { link: '/danh-muc/dem-cao-su', image: '/images/products/vikosan/banner-cao-su-vikosan.jpg', eyebrow: 'Đệm cao su Vikosan', title: 'Giấc ngủ sâu, thức dậy nhẹ nhàng', subtitle: 'Đệm cao su Vikosan giảm 10% – liên hệ để có giá tốt nhất' },
 ];
 
 async function importAll(opts = {}) {
