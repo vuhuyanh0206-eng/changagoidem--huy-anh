@@ -83,7 +83,7 @@ function sizesOf(p) {
 }
 
 const BANNERS = [
-  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 30% đệm chính hãng', subtitle: "Doll's, Elan giảm 30% · Dunlopillo 20% · kèm bộ quà tặng cao cấp", cta: 'Săn sale ngay', image: '/images/products/dolls/lx-royal-1.jpg', link: '/#sieu-sale', theme: 'bf' },
+  { position: 'main', eyebrow: 'Siêu sale cuối năm', title: 'Giảm đến 30% đệm chính hãng', subtitle: 'Ưu đãi lớn cho nhiều dòng đệm chính hãng · kèm bộ quà tặng cao cấp', cta: 'Săn sale ngay', image: '/images/products/dolls/lx-royal-1.jpg', link: '/#sieu-sale', theme: 'bf' },
   { position: 'main', eyebrow: 'Đệm cao su thiên nhiên', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhõm', subtitle: 'Cao su 100% – bảo hành 15 năm – giao lắp miễn phí', cta: 'Khám phá', image: img(25), link: '/danh-muc/dem-cao-su', theme: 'light' },
   { position: 'main', eyebrow: 'Lò xo túi độc lập', title: 'Chuẩn khách sạn 5 sao tại nhà', subtitle: 'Lò xo túi độc lập Dunlopillo, Liên Á, Elan chính hãng', cta: 'Xem bộ sưu tập', image: img(4), link: '/danh-muc/dem-lo-xo', theme: 'dark' },
   { position: 'side', eyebrow: 'Giảm 10%', title: 'Đệm cao su Liên Á', subtitle: 'Cao su thiên nhiên – thoáng mát', cta: 'Xem ngay', image: img(19), link: '/danh-muc/dem-cao-su', theme: 'light' },
