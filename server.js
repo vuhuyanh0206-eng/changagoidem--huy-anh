@@ -65,6 +65,19 @@ app.use(
   })
 );
 
+// Ảnh WebP: trình duyệt hỗ trợ WebP nhận bản .webp nhẹ hơn (cùng đường dẫn .jpg/.png), trình duyệt cũ vẫn nhận ảnh gốc
+const webpExists = new Map();
+app.use('/images', (req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  if (!/\.(jpe?g|png)$/i.test(req.path)) return next();
+  res.vary('Accept');
+  if (!/image\/webp/.test(req.headers.accept || '')) return next();
+  const rel = decodeURIComponent(req.path).replace(/\.(jpe?g|png)$/i, '.webp');
+  if (rel.includes('..')) return next();
+  if (!webpExists.has(rel)) webpExists.set(rel, fs.existsSync(path.join(__dirname, 'public', 'images', rel)));
+  if (webpExists.get(rel)) req.url = rel + (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '');
+  next();
+});
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: isProd ? '7d' : 0 }));
 if (process.env.UPLOAD_DIR) app.use('/uploads', express.static(UPLOAD_DIR, { maxAge: isProd ? '30d' : 0 }));
 
