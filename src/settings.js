@@ -21,7 +21,7 @@ const DEFAULTS = {
     'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, quà tặng cao cấp, bảo hành chính hãng.',
   ga_id: '',
   fb_pixel: '',
-  flash_sale_end: '2026-12-31T23:59',
+  flash_sale_end: '2026-12-05T23:59',
 };
 
 let cache = null;
