@@ -1,6 +1,6 @@
 /* =========================================================
    KHO ĐỆM HP – Storefront stylesheet
-   Navy sâu + vàng đồng · Be Vietnam Pro + Cormorant Garamond
+   Navy sâu + vàng đồng · Inter (giống vuanem.com)
    ========================================================= */
 :root {
   --navy-950: #071528;
@@ -27,8 +27,8 @@
   --sale-bg: #fdecef;
   --ok: #157347;
 
-  --font: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   --r-sm: 8px;
   --r: 12px;
@@ -1040,4 +1040,24 @@ textarea.input { height: auto; padding: 12px; resize: vertical; min-height: 90px
   .slide--bf .slide__title { font-size: 31px; }
   .slide--bf .slide__sub { font-size: 15px; }
   .slide--bf::before { background: linear-gradient(0deg, #1c0508 0%, #2a060b 40%, rgba(110, 10, 20, .55) 52%, rgba(110, 10, 20, 0) 66%); }
+}
+
+/* ===== Font Inter (giống vuanem.com): tinh chỉnh cỡ tiêu đề ===== */
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.logo__name { font-size: 22px; font-weight: 800; letter-spacing: -.01em; }
+.slide__title { font-weight: 800; font-size: clamp(26px, 3vw, 42px); line-height: 1.12; letter-spacing: -.02em; }
+.sbanner__title { font-size: 18px; font-weight: 800; letter-spacing: -.01em; }
+.section__title { font-size: clamp(22px, 2.4vw, 30px); font-weight: 800; letter-spacing: -.02em; }
+.cat-tile__body b { font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+.flash__title h2 { font-size: 30px; font-weight: 800; font-style: normal; letter-spacing: -.01em; }
+.stats b { font-size: 30px; font-weight: 800; letter-spacing: -.02em; }
+.hotel-band h2 { font-size: clamp(24px, 2.6vw, 34px); font-weight: 800; letter-spacing: -.02em; }
+.newsletter__title { font-size: clamp(21px, 2.2vw, 28px); font-weight: 800; letter-spacing: -.01em; }
+.page-hero h1 { font-size: clamp(26px, 3.2vw, 38px); font-weight: 800; letter-spacing: -.02em; }
+.pd h1 { font-size: clamp(22px, 2.4vw, 30px); font-weight: 800; letter-spacing: -.015em; line-height: 1.25; }
+@media (max-width: 560px) {
+  .slide__title { font-size: 30px; }
+  .slide--bf .slide__title { font-size: 28px; }
+  .section__title { font-size: 22px; }
+  .pd h1 { font-size: 21px; }
 }

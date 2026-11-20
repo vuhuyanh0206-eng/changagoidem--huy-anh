@@ -1,7 +1,7 @@
 :root {
   --navy: #0f2a4d; --navy-2: #173a66; --navy-50: #f1f5fa; --gold: #c08a2c; --gold-l: #d9a848;
   --bg: #f5f6f8; --card: #fff; --ink: #111827; --muted: #6b7280; --line: #e5e7eb; --red: #c8102e; --green: #157347;
-  --r: 12px; --font: 'Be Vietnam Pro', system-ui, sans-serif;
+  --r: 12px; --font: 'Inter', system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: var(--font); font-size: 14px; color: var(--ink); background: var(--bg); line-height: 1.5; }
