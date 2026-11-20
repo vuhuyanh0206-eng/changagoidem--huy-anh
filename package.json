@@ -1,7 +1,7 @@
 {
   "name": "kho-dem-hp",
   "version": "1.0.0",
-  "description": "Website bán chăn ga gối đệm Kho Đệm HP: Node.js + Express + EJS, MySQL (production) / SQLite (local)",
+  "description": "Website bán chăn ga gối đệm Đệm 191: Node.js + Express + EJS, MySQL (production) / SQLite (local)",
   "main": "server.js",
   "private": true,
   "scripts": {

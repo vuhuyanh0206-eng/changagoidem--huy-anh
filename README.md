@@ -1,6 +1,6 @@
-# Kho Đệm HP – Website bán chăn ga gối đệm
+# Đệm 191 – Website bán chăn ga gối đệm
 
-Website bán hàng cho **Kho Đệm HP**, viết bằng **Node.js + Express + EJS**. Khi chạy trên Hostinger, dữ liệu lưu trong MySQL. Khi chạy thử trên máy, website tự dùng SQLite nên không cần cài thêm gì.
+Website bán hàng cho **Đệm 191**, viết bằng **Node.js + Express + EJS**. Khi chạy trên Hostinger, dữ liệu lưu trong MySQL. Khi chạy thử trên máy, website tự dùng SQLite nên không cần cài thêm gì.
 
 ## Tính năng
 
@@ -59,7 +59,7 @@ Muốn xoá hết và nạp lại dữ liệu mẫu: `npm run seed`.
 ```bash
 git init
 git add .
-git commit -m "Kho Đệm HP website"
+git commit -m "Đệm 191 website"
 git branch -M main
 git remote add origin https://github.com/<tai-khoan>/kho-dem-hp.git
 git push -u origin main

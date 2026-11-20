@@ -149,7 +149,7 @@ router.get(
     if (!req.query.sort) req.query.sort = 'discount';
     await renderListing(req, res, {
       title: 'Khuyến mại hot',
-      description: 'Tổng hợp sản phẩm đang giảm giá sâu nhất tại Kho Đệm HP.',
+      description: 'Tổng hợp sản phẩm đang giảm giá sâu nhất tại Đệm 191.',
       heroImage: '/images/stock/s18.jpg',
       where: ['p.sale_price > 0', 'p.sale_price < p.price'],
       params: [],
@@ -252,7 +252,7 @@ router.get(
   '/tin-tuc',
   wrap(async (req, res) => {
     const posts = await db.query('SELECT id, title, slug, excerpt, image, created_at FROM posts WHERE active = 1 ORDER BY id DESC LIMIT 30');
-    res.render('shop/blog', { meta: { title: `Tin tức & tư vấn | ${res.locals.s.site_name}`, description: 'Kinh nghiệm chọn đệm, so sánh đệm cao su – lò xo – foam, kích thước đệm chuẩn và mẹo vệ sinh, bảo quản chăn ga gối đệm từ Kho Đệm HP.' }, posts, breadcrumb: [{ name: 'Tin tức' }] });
+    res.render('shop/blog', { meta: { title: `Tin tức & tư vấn | ${res.locals.s.site_name}`, description: 'Kinh nghiệm chọn đệm, so sánh đệm cao su – lò xo – foam, kích thước đệm chuẩn và mẹo vệ sinh, bảo quản chăn ga gối đệm từ Đệm 191.' }, posts, breadcrumb: [{ name: 'Tin tức' }] });
   })
 );
 router.get(
@@ -275,15 +275,15 @@ router.get(
     res.render('shop/hotel', { meta: { title: `Dự án khách sạn | ${res.locals.s.site_name}`, description: 'Cung cấp đệm, chăn ga gối trọn gói cho khách sạn, homestay, resort với giá dự án.' }, products, breadcrumb: [{ name: 'Dự án khách sạn' }] });
   })
 );
-router.get('/gioi-thieu', (req, res) => res.render('shop/about', { meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Kho Đệm HP – hệ thống kho chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… giá tại kho, giao nhanh, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] }));
-router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Kho Đệm HP: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1' }));
+router.get('/gioi-thieu', (req, res) => res.render('shop/about', { meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Đệm 191 – hệ thống kho chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… giá tại kho, giao nhanh, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] }));
+router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Đệm 191: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1' }));
 
 const POLICIES = {
   'giao-hang': { title: 'Chính sách giao hàng & lắp đặt', body: '<p>Miễn phí giao hàng và lắp đặt trong bán kính 20km. Các khu vực khác tính phí theo đơn vị vận chuyển, nhân viên sẽ báo trước khi giao.</p><p>Thời gian giao: nội thành 2–24 giờ, tỉnh thành khác 2–5 ngày làm việc.</p>' },
   'doi-tra': { title: 'Chính sách đổi trả', body: '<p>Đổi trả theo chính sách bảo hành, đổi trả của từng hãng. Sản phẩm lỗi do nhà sản xuất được hỗ trợ bảo hành chính hãng.</p><p>Vui lòng liên hệ hotline hoặc Zalo để được hỗ trợ nhanh nhất.</p>' },
   'bao-hanh': { title: 'Chính sách bảo hành', body: '<p>Sản phẩm được bảo hành chính hãng theo thời gian ghi trên phiếu bảo hành (3–20 năm tuỳ dòng). Bảo hành lún, xẹp quá 3cm, bung keo, gãy lò xo do lỗi sản xuất.</p>' },
   'tra-gop': { title: 'Mua trả góp 0%', body: '<p>Hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân hàng, kỳ hạn 3–12 tháng. Liên hệ hotline để được hướng dẫn.</p>' },
-  'bao-mat': { title: 'Chính sách bảo mật', body: '<p>Thông tin khách hàng chỉ được dùng để xử lý đơn hàng, giao hàng và chăm sóc sau bán. Kho Đệm HP không chia sẻ thông tin cho bên thứ ba khi chưa có sự đồng ý của khách hàng.</p>' },
+  'bao-mat': { title: 'Chính sách bảo mật', body: '<p>Thông tin khách hàng chỉ được dùng để xử lý đơn hàng, giao hàng và chăm sóc sau bán. Đệm 191 không chia sẻ thông tin cho bên thứ ba khi chưa có sự đồng ý của khách hàng.</p>' },
 };
 router.get('/chinh-sach/:slug', (req, res, next) => {
   const p = POLICIES[req.params.slug];

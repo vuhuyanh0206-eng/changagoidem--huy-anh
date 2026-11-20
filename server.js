@@ -95,7 +95,7 @@ app.use((err, req, res, next) => {
   res.status(500).render('shop/404', { meta: { title: 'Có lỗi xảy ra' }, error: true });
 });
 
-app.listen(PORT, () => console.log(`Kho Đệm HP đang chạy tại http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Đệm 191 đang chạy tại http://localhost:${PORT}`));
 (async () => {
   await db.init();
   await migrate();

@@ -1,4 +1,4 @@
-/* Kho Đệm HP – storefront interactions (vanilla JS, không phụ thuộc thư viện) */
+/* Đệm 191 – storefront interactions (vanilla JS, không phụ thuộc thư viện) */
 (() => {
   'use strict';
   const $ = (s, el = document) => el.querySelector(s);

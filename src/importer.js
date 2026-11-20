@@ -205,7 +205,7 @@ const CATEGORY_COVERS = {
 };
 
 // Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
-const DATA_VERSION = '2026-11-20e';
+const DATA_VERSION = '2026-11-20f';
 
 // Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
 const MAIN_BANNERS = [
@@ -226,6 +226,14 @@ async function importAll(opts = {}) {
     for (const b of MAIN_BANNERS) {
       const sets = Object.keys(b).filter((k) => k !== 'link');
       await db.run(`UPDATE banners SET ${sets.map((k) => `${k} = ?`).join(', ')} WHERE position = 'main' AND link = ?`, [...sets.map((k) => b[k]), b.link]);
+    }
+    // Đổi tên shop "Kho Đệm HP" -> "Đệm 191" trong dữ liệu đã lưu (cài đặt, bài viết, sản phẩm, banner, danh mục)
+    const RENAME = [['Kho Đệm HP', 'Đệm 191'], ['Kho đệm HP', 'Đệm 191'], ['KHO ĐỆM HP', 'ĐỆM 191']];
+    const TEXT_COLS = { settings: ['svalue'], posts: ['title', 'excerpt', 'content'], products: ['short_desc', 'description'], banners: ['eyebrow', 'title', 'subtitle'], categories: ['description'] };
+    for (const [from, to] of RENAME) {
+      for (const [table, cols] of Object.entries(TEXT_COLS)) {
+        await db.run(`UPDATE ${table} SET ${cols.map((c) => `${c} = REPLACE(${c}, ?, ?)`).join(', ')}`, cols.flatMap(() => [from, to]));
+      }
     }
     // Ngày kết thúc đếm ngược Black Friday: bỏ giá trị cũ đã lưu để dùng mặc định trong settings.js
     await db.run("DELETE FROM settings WHERE skey = 'flash_sale_end'");

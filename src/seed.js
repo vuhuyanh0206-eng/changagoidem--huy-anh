@@ -56,14 +56,14 @@ const PRODUCTS = [
 
 function descFor(p) {
   return `<h3>Vì sao nên chọn ${p.name}?</h3>
-<p>${p.short} Sản phẩm được Kho Đệm HP nhập trực tiếp từ nhà máy nên giá luôn tốt hơn thị trường, kèm đầy đủ phiếu bảo hành chính hãng.</p>
+<p>${p.short} Sản phẩm được Đệm 191 nhập trực tiếp từ nhà máy nên giá luôn tốt hơn thị trường, kèm đầy đủ phiếu bảo hành chính hãng.</p>
 <ul>
 <li><strong>Nâng đỡ chuẩn:</strong> phân bổ đều trọng lượng, giữ cột sống ở tư thế tự nhiên.</li>
 <li><strong>Thoáng mát:</strong> cấu trúc thoáng khí, phù hợp khí hậu nóng ẩm Việt Nam.</li>
 <li><strong>An toàn:</strong> vật liệu đạt chứng nhận, không mùi hoá chất, an toàn cho trẻ nhỏ.</li>
 <li><strong>Dễ vệ sinh:</strong> vỏ có khoá kéo, tháo giặt dễ dàng.</li>
 </ul>
-<h3>Chính sách khi mua tại Kho Đệm HP</h3>
+<h3>Chính sách khi mua tại Đệm 191</h3>
 <p>Giao hàng – lắp đặt miễn phí nội thành, tặng bộ quà tặng cao cấp, hỗ trợ trả góp 0% qua thẻ tín dụng.</p>`;
 }
 
@@ -92,7 +92,7 @@ const BANNERS = [
 ];
 
 const POSTS = [
-  { title: 'Cách chọn đệm phù hợp cho người đau lưng', image: img(3), excerpt: 'Người đau lưng nên nằm đệm cứng hay mềm? Chuyên gia của Kho Đệm HP giải đáp chi tiết và gợi ý 3 dòng đệm phù hợp nhất.' },
+  { title: 'Cách chọn đệm phù hợp cho người đau lưng', image: img(3), excerpt: 'Người đau lưng nên nằm đệm cứng hay mềm? Chuyên gia của Đệm 191 giải đáp chi tiết và gợi ý 3 dòng đệm phù hợp nhất.' },
   { title: 'Đệm cao su hay đệm lò xo: nên mua loại nào?', image: img(25), excerpt: 'So sánh độ bền, độ thoáng, giá thành và cảm giác nằm giữa đệm cao su thiên nhiên và đệm lò xo túi độc lập.' },
   { title: '5 mẹo vệ sinh đệm tại nhà đúng cách', image: img(11), excerpt: 'Giữ đệm luôn sạch, thơm và bền lâu với 5 mẹo đơn giản ai cũng làm được, không cần dịch vụ.' },
   { title: 'Kích thước đệm tiêu chuẩn tại Việt Nam', image: img(12), excerpt: 'Bảng kích thước đệm 1m2, 1m4, 1m6, 1m8, 2m2 và cách chọn size phù hợp với giường và số người nằm.' },
@@ -104,7 +104,7 @@ const postContent = (p) => `<p>${p.excerpt}</p>
 <h2>2. Chú ý chất liệu</h2>
 <p>Cao su thiên nhiên bền và thoáng; lò xo túi độc lập nâng đỡ tốt và không truyền chuyển động; memory foam ôm sát, giảm áp lực. Hãy nằm thử ít nhất 10–15 phút tại showroom trước khi quyết định.</p>
 <h2>3. Đừng bỏ qua chính sách</h2>
-<p>Bảo hành, đổi trả là những yếu tố giúp bạn yên tâm. Tại Kho Đệm HP, mọi đệm đều được bảo hành chính hãng.</p>
+<p>Bảo hành, đổi trả là những yếu tố giúp bạn yên tâm. Tại Đệm 191, mọi đệm đều được bảo hành chính hãng.</p>
 <blockquote>Cần tư vấn nhanh? Gọi hotline hoặc nhắn Zalo để được chuyên viên hỗ trợ miễn phí.</blockquote>`;
 
 async function wipe() {

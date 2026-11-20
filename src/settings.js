@@ -1,7 +1,7 @@
 const db = require('./db');
 
 const DEFAULTS = {
-  site_name: 'Kho Đệm HP',
+  site_name: 'Đệm 191',
   tagline: 'Chăn ga gối đệm chính hãng – Giá tại kho',
   hotline: '0988 367 226',
   hotline2: '0912 831 034',
@@ -18,7 +18,7 @@ const DEFAULTS = {
   bank_account: '',
   bank_holder: '',
   meta_description:
-    'Kho Đệm HP – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, quà tặng cao cấp, bảo hành chính hãng.',
+    'Đệm 191 – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, quà tặng cao cấp, bảo hành chính hãng.',
   ga_id: '',
   fb_pixel: '',
   flash_sale_end: '2026-12-05T23:59',
