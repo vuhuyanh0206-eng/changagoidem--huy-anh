@@ -204,12 +204,33 @@ const CATEGORY_COVERS = {
   'chan-ga-goi': '/images/products/vikosan/vk-cg-dl7-1.jpg',
 };
 
+// Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
+const DATA_VERSION = '2026-11-20';
+
+// Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
+const MAIN_BANNERS = [
+  { link: '/#sieu-sale', image: '/images/products/dunlopillo/nem-lo-xo-cao-cap-coolsilk-royale-windsor-36-cm-2.jpg' },
+  { link: '/danh-muc/dem-cao-su', image: '/images/products/liena/banner-ruot-cao-su-lien-a.jpg', eyebrow: 'Ruột cao su Liên Á', title: 'Giấc ngủ sâu, tỉnh dậy nhẹ nhàng', subtitle: 'Đệm Liên Á giảm 10% – kèm bộ quà tặng cao cấp – bảo hành 12 năm' },
+];
+
 async function importAll(opts = {}) {
   if (!fs.existsSync(DIR)) return [];
   const files = fs.readdirSync(DIR).filter((f) => f.endsWith('.json'));
+  const ver = await db.one("SELECT svalue FROM settings WHERE skey = 'data_version'").catch(() => null);
+  const sync = ver?.svalue !== DATA_VERSION;
+  const o = sync ? { ...opts, update: true } : opts;
   const res = [];
-  for (const f of files) res.push(await importFile(path.join(DIR, f), opts));
+  for (const f of files) res.push(await importFile(path.join(DIR, f), o));
   for (const [slug, image] of Object.entries(CATEGORY_COVERS)) await db.run('UPDATE categories SET image = ? WHERE slug = ?', [image, slug]);
+  if (sync) {
+    for (const b of MAIN_BANNERS) {
+      const sets = Object.keys(b).filter((k) => k !== 'link');
+      await db.run(`UPDATE banners SET ${sets.map((k) => `${k} = ?`).join(', ')} WHERE position = 'main' AND link = ?`, [...sets.map((k) => b[k]), b.link]);
+    }
+    if (ver) await db.run("UPDATE settings SET svalue = ? WHERE skey = 'data_version'", [DATA_VERSION]);
+    else await db.run("INSERT INTO settings (skey, svalue) VALUES ('data_version', ?)", [DATA_VERSION]);
+    console.log(`Đồng bộ dữ liệu sản phẩm theo phiên bản ${DATA_VERSION}`);
+  }
   for (const r of res) if (r.added || r.updated) console.log(`Nhập ${r.file}: thêm ${r.added}, cập nhật ${r.updated} sản phẩm.`);
   return res;
 }

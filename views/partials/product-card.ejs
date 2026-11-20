@@ -36,7 +36,7 @@
         <button class="pcard__add" type="button" data-add-cart data-id="<%= p.id %>" data-size="<%= p.sizes[0] ? p.sizes[0].label : '' %>" aria-label="Thêm <%= p.name %> vào giỏ"><svg class="i"><use href="#i-cart"/></svg></button>
       <% } %>
     </div>
-    <p class="pcard__deal"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Liên hệ để có thêm ưu đãi</p>
+    <p class="pcard__deal"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= p.discount ? 'Liên hệ để có thêm ưu đãi' : 'Liên hệ để có giá tốt nhất' %></p>
     <% if (p.sold) { %><div class="pcard__sold"><span style="width:<%= Math.min(100, Math.round(p.sold / 6)) %>%"></span><em>Đã bán <%= p.sold %></em></div><% } %>
   </div>
 </article>

@@ -34,12 +34,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "45 x 65 cm · cao 14 cm",
         "price": 1169000,
-        "sale": 1052000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -83,37 +83,37 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "24 x 37 cm · cao 6.5 cm",
         "price": 279000,
-        "sale": 251000
+        "sale": 0
       },
       {
         "label": "35 x 50 cm · cao 10 cm",
         "price": 529000,
-        "sale": 476000
+        "sale": 0
       },
       {
         "label": "45 x 65 cm · cao 9 cm",
         "price": 789000,
-        "sale": 710000
+        "sale": 0
       },
       {
         "label": "45 x 65 cm · cao 12 cm",
         "price": 899000,
-        "sale": 809000
+        "sale": 0
       },
       {
         "label": "48 x 76 cm · cao 13 cm",
         "price": 979000,
-        "sale": 881000
+        "sale": 0
       },
       {
         "label": "45 x 130 cm · cao 13 cm",
         "price": 1799000,
-        "sale": 1619000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -156,22 +156,22 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "28 x 70 cm · cao 13 cm",
         "price": 869000,
-        "sale": 782000
+        "sale": 0
       },
       {
         "label": "32 x 90 cm · cao 15 cm",
         "price": 1099000,
-        "sale": 989000
+        "sale": 0
       },
       {
         "label": "35 x 100 cm · cao 18 cm",
         "price": 1399000,
-        "sale": 1259000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -214,32 +214,32 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "26 x 50 cm · cao 7 cm",
         "price": 299000,
-        "sale": 269000
+        "sale": 0
       },
       {
         "label": "30 x 50 cm · cao 8 cm",
         "price": 529000,
-        "sale": 476000
+        "sale": 0
       },
       {
         "label": "38 x 51 cm · cao 10 cm",
         "price": 729000,
-        "sale": 656000
+        "sale": 0
       },
       {
         "label": "38 x 60 cm · cao 10 cm",
         "price": 829000,
-        "sale": 746000
+        "sale": 0
       },
       {
         "label": "44 x 63 cm · cao 11 cm",
         "price": 899000,
-        "sale": 809000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -277,17 +277,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "26 x 32 cm · cao 8 cm",
         "price": 369000,
-        "sale": 332000
+        "sale": 0
       },
       {
         "label": "28 x 28 cm · cao 7 cm",
         "price": 409000,
-        "sale": 368000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -329,12 +329,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "38 x 60 cm · cao 12 cm",
         "price": 899000,
-        "sale": 809000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -377,17 +377,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "24 x 32 cm · cao 7 cm",
         "price": 249000,
-        "sale": 224000
+        "sale": 0
       },
       {
         "label": "40 x 56 cm · cao 12 cm",
         "price": 899000,
-        "sale": 809000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -428,12 +428,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "35 x 55 cm · cao 11 cm",
         "price": 809000,
-        "sale": 728000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -476,12 +476,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "26 x 28 cm",
         "price": 489000,
-        "sale": 440000
+        "sale": 0
       }
     ],
     "best": 0,

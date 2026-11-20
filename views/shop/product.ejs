@@ -50,18 +50,6 @@
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
-      <div class="pd__deal">
-        <div class="pd__deal-head">
-          <span class="pd__deal-ico"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
-          <b>Liên hệ để có thêm ưu đãi</b>
-        </div>
-        <div class="pd__deal-btns">
-          <a class="pd__deal-call" href="tel:<%= tel(s.hotline) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline %></a>
-          <% if (s.hotline2) { %><a class="pd__deal-call" href="tel:<%= tel(s.hotline2) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline2 %></a><% } %>
-          <a class="pd__deal-zalo" href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Chat Zalo</a>
-        </div>
-      </div>
-
       <% if (product.gift) { %>
       <div class="pd__gift">
         <svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>
@@ -71,6 +59,18 @@
         </div>
       </div>
       <% } %>
+
+      <div class="pd__deal">
+        <div class="pd__deal-head">
+          <span class="pd__deal-ico"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <b><%= product.discount ? 'Liên hệ để có thêm ưu đãi' : 'Liên hệ để có giá tốt nhất' %></b>
+        </div>
+        <div class="pd__deal-btns">
+          <a class="pd__deal-call" href="tel:<%= tel(s.hotline) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline %></a>
+          <% if (s.hotline2) { %><a class="pd__deal-call" href="tel:<%= tel(s.hotline2) %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= s.hotline2 %></a><% } %>
+          <a class="pd__deal-zalo" href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Zalo</a>
+        </div>
+      </div>
 
 
       <% if (grouped) { %>

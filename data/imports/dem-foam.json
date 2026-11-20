@@ -1275,7 +1275,8 @@
     "best": 0,
     "is_hot": 1,
     "pin": 0,
-    "gift": "Bộ quà tặng cao cấp"
+    "gift": "Bộ quà tặng cao cấp",
+    "warranty": "5 năm"
   },
   {
     "name": "Đệm foam Vikosan Layer Foam",
@@ -1285,7 +1286,7 @@
       "/images/products/vikosan/vk-layer-2.jpg",
       "/images/products/vikosan/vk-layer-3.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm foam Vikosan Layer Foam chính hãng Vikosan. VIKOSAN LAYER FOAM được phát triển với cấu trúc Foam đa tầng hiện đại, mang đến sự cân bằng hoàn hảo giữa độ êm ái và khả năng nâng đỡ cơ thể. Giá niêm yết từ 5.200.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -1353,7 +1354,7 @@
       "/images/products/vikosan/vk-duo-foam-3.jpg",
       "/images/products/vikosan/vk-duo-foam-4.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm foam Vikosan Duo Foam chính hãng Vikosan. DUO FOAM sở hữu thiết kế hiện đại mang tinh thần tối giản châu Âu, phù hợp với những không gian sống trẻ trung và thời thượng. Giá niêm yết từ 12.650.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -1407,7 +1408,7 @@
       "/images/products/vikosan/vk-wavetouch-3.jpg",
       "/images/products/vikosan/vk-wavetouch-4.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm foam Vikosan Wavetouch chính hãng Vikosan. WAVE TOUCH là dòng đệm cao cấp nổi bật với thiết kế hiện đại cùng cấu trúc Foam massage bề mặt, giúp nâng đỡ cơ thể êm ái và tăng cảm giác thư giãn trong suốt quá trình nghỉ ngơi. Giá niêm yết từ 8.750.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -1460,7 +1461,7 @@
       "/images/products/vikosan/vk-smartsleep-2.jpg",
       "/images/products/vikosan/vk-smartsleep-3.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm foam Vikosan Smartsleep chính hãng Vikosan. SMARTSLEEP được thiết kế với lõi Foam ép hiện đại có khả năng cuộn gọn linh hoạt, tối ưu cho việc vận chuyển, di chuyển và sử dụng trong nhiều không gian sống khác nhau. Giá niêm yết từ 7.950.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -1514,7 +1515,7 @@
       "/images/products/vikosan/vk-aerofoam-pro-3.jpg",
       "/images/products/vikosan/vk-aerofoam-pro-4.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm foam Vikosan Aerofoam Pro chính hãng Vikosan. AEROFOAM PRO là dòng đệm Foam công nghệ cao cấp được phát triển nhằm tối ưu trải nghiệm nghỉ ngơi và nâng đỡ cơ thể chuyên sâu. Giá niêm yết từ 22.500.000đ – liên hệ để có thêm ưu đãi.",
     "features": [

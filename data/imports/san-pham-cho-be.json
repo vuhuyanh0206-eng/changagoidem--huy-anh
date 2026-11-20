@@ -31,14 +31,14 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "w": 120,
         "l": 200,
         "t": 24,
         "price": 4280000,
-        "sale": 3852000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -82,133 +82,133 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "w": 60,
         "l": 100,
         "t": 2,
         "price": 929000,
-        "sale": 836000
+        "sale": 0
       },
       {
         "w": 60,
         "l": 120,
         "t": 2,
         "price": 1029000,
-        "sale": 926000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 120,
         "t": 2,
         "price": 1129000,
-        "sale": 1016000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 130,
         "t": 2,
         "price": 1249000,
-        "sale": 1124000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 140,
         "t": 2,
         "price": 1409000,
-        "sale": 1268000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 120,
         "t": 2,
         "price": 1329000,
-        "sale": 1196000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 130,
         "t": 2,
         "price": 1439000,
-        "sale": 1295000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 140,
         "t": 2,
         "price": 1519000,
-        "sale": 1367000
+        "sale": 0
       },
       {
         "w": 100,
         "l": 130,
         "t": 2,
         "price": 1809000,
-        "sale": 1628000
+        "sale": 0
       },
       {
         "w": 60,
         "l": 100,
         "t": 5,
         "price": 2029000,
-        "sale": 1826000
+        "sale": 0
       },
       {
         "w": 60,
         "l": 120,
         "t": 5,
         "price": 2459000,
-        "sale": 2213000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 120,
         "t": 5,
         "price": 2859000,
-        "sale": 2573000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 130,
         "t": 5,
         "price": 2979000,
-        "sale": 2681000
+        "sale": 0
       },
       {
         "w": 70,
         "l": 140,
         "t": 5,
         "price": 3149000,
-        "sale": 2834000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 120,
         "t": 5,
         "price": 3099000,
-        "sale": 2789000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 130,
         "t": 5,
         "price": 3369000,
-        "sale": 3032000
+        "sale": 0
       },
       {
         "w": 80,
         "l": 140,
         "t": 5,
         "price": 3599000,
-        "sale": 3239000
+        "sale": 0
       },
       {
         "w": 100,
         "l": 130,
         "t": 5,
         "price": 4179000,
-        "sale": 3761000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -249,17 +249,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "24 x 24 cm · cao 4 cm",
         "price": 159000,
-        "sale": 143000
+        "sale": 0
       },
       {
         "label": "22 x 26.5 cm · cao 4 cm",
         "price": 159000,
-        "sale": 143000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -301,17 +301,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "17 x 35 cm · cao 2 cm",
         "price": 199000,
-        "sale": 179000
+        "sale": 0
       },
       {
         "label": "22 x 40 cm · cao 4 cm",
         "price": 289000,
-        "sale": 260000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -352,17 +352,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "17 x 35 cm · cao 3 cm",
         "price": 199000,
-        "sale": 179000
+        "sale": 0
       },
       {
         "label": "22 x 40 cm · cao 5 cm",
         "price": 289000,
-        "sale": 260000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -403,17 +403,17 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "10 x 52 cm · cao 10 cm",
         "price": 299000,
-        "sale": 269000
+        "sale": 0
       },
       {
         "label": "22 x 46 cm · cao 12 cm",
         "price": 429000,
-        "sale": 386000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -455,12 +455,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "10 x 25 cm · cao 30 cm",
         "price": 529000,
-        "sale": 476000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -502,12 +502,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "17 x 35 cm · cao 2 cm",
         "price": 779000,
-        "sale": 701000
+        "sale": 0
       }
     ],
     "best": 0,
@@ -549,12 +549,12 @@
     "warranty": "",
     "firmness": 0,
     "featured": 1,
-    "gift": "Bộ quà tặng cao cấp",
+    "gift": "",
     "variants": [
       {
         "label": "17 x 35 cm · cao 2 cm",
         "price": 779000,
-        "sale": 701000
+        "sale": 0
       }
     ],
     "best": 0,

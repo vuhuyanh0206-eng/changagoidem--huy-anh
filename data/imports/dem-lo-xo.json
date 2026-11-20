@@ -2404,7 +2404,8 @@
     "best": 0,
     "is_hot": 0,
     "pin": 0,
-    "gift": "Bộ quà tặng cao cấp"
+    "gift": "Bộ quà tặng cao cấp",
+    "warranty": "5 năm"
   },
   {
     "name": "Đệm lò xo Doll's Link",
@@ -2478,7 +2479,8 @@
     "best": 0,
     "is_hot": 0,
     "pin": 0,
-    "gift": "Bộ quà tặng cao cấp"
+    "gift": "Bộ quà tặng cao cấp",
+    "warranty": "5 năm"
   },
   {
     "name": "Đệm lò xo cuộn Doll's Royal",
@@ -2552,7 +2554,8 @@
     "best": 2,
     "is_hot": 1,
     "pin": 0,
-    "gift": "Bộ quà tặng cao cấp"
+    "gift": "Bộ quà tặng cao cấp",
+    "warranty": "5 năm"
   },
   {
     "name": "Đệm lò xo Vikosan ORLANO GRAND",
@@ -2562,7 +2565,7 @@
     ],
     "contact": 1,
     "thickness": "",
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm lò xo Vikosan ORLANO GRAND chính hãng Vikosan. Dòng lò xo cao cấp nhất của Vikosan. Giá tham khảo 61.450.000đ – 81.450.000đ tùy kích thước – liên hệ để có giá tốt nhất.",
     "features": [
@@ -2596,7 +2599,7 @@
       "/images/products/vikosan/vk-maison-premium-2.jpg",
       "/images/products/vikosan/vk-maison-premium-3.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm lò xo Vikosan Maison Premium chính hãng Vikosan. Bộ sưu tập Maison 2026. Giá niêm yết từ 13.850.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -2649,7 +2652,7 @@
       "/images/products/vikosan/vk-amora-classic-2.jpg",
       "/images/products/vikosan/vk-amora-classic-3.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm lò xo Vikosan Amora Classic chính hãng Vikosan. Thiết kế cổ điển, nâng đỡ vững chắc. Giá niêm yết từ 10.950.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
@@ -2702,7 +2705,7 @@
       "/images/products/vikosan/vk-lo-xo-standard-3-2.jpg",
       "/images/products/vikosan/vk-lo-xo-standard-3-3.jpg"
     ],
-    "warranty": "",
+    "warranty": "5 năm",
     "gift": "Bộ quà tặng cao cấp",
     "short": "Đệm lò xo Vikosan Standard 3*** chính hãng Vikosan. Đệm lò xo Standard 3* có độ dày 22cm, thích hợp sử dụng cho nhà nghỉ, khách sạn và resort nhờ chất lượng ổn định, độ cao vừa phải và độ bền vượt trội. Giá niêm yết từ 5.730.000đ – liên hệ để có thêm ưu đãi.",
     "features": [
