@@ -92,5 +92,5 @@ app.listen(PORT, () => console.log(`Kho Đệm HP đang chạy tại http://loca
   console.log(`Khởi tạo xong (CSDL: ${db.dialect})`);
 })().catch((e) => {
   console.error('Không khởi động được server:', e);
-  boot = { state: 'failed', error: `${e.code || e.name || 'Error'} – ${String(e.message || e).slice(0, 160)}${db.via ? ` [${db.via}]` : ''}` };
+  boot = { state: 'failed', error: `${e.code || e.name || 'Error'} – ${String(e.message || e).slice(0, 160)}${db.via ? ` [${db.via}]` : ''}${e.code === 'ER_ACCESS_DENIED_ERROR' ? ` [mật khẩu nhận được dài ${String(process.env.DB_PASSWORD || '').length} ký tự]` : ''}` };
 });
