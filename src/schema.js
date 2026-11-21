@@ -98,6 +98,16 @@ CREATE TABLE IF NOT EXISTS settings (
   skey VARCHAR(80) PRIMARY KEY,
   svalue TEXT
 )${tail};
+CREATE TABLE IF NOT EXISTS reviews (
+  id ${id},
+  product_id INT,
+  name VARCHAR(160),
+  phone VARCHAR(30),
+  rating INT DEFAULT 5,
+  content TEXT,
+  approved INT DEFAULT 0,
+  created_at VARCHAR(30)
+)${tail};
 CREATE TABLE IF NOT EXISTS admins (
   id ${id},
   username VARCHAR(80) NOT NULL UNIQUE,

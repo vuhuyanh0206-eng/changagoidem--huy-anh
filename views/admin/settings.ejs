@@ -30,6 +30,16 @@
       <p class="muted">Để trống thời gian flash sale thì đồng hồ tự đếm đến 23:59 mỗi ngày.</p>
     </section>
     <section class="panel">
+      <h2>Popup nhận voucher</h2>
+      <p class="muted">Popup tự hiện sau vài giây với khách mới (mỗi khách tối đa 1 lần trong 3 ngày). Thông tin khách để lại nằm ở mục <b>Khách cần tư vấn</b>, nguồn “voucher”.</p>
+      <div class="row3">
+        <label class="f"><span>Trạng thái</span><select class="in" name="voucher_on"><option value="1"<%= s.voucher_on === '1' ? ' selected' : '' %>>Bật</option><option value="0"<%= s.voucher_on !== '1' ? ' selected' : '' %>>Tắt</option></select></label>
+        <label class="f"><span>Giá trị voucher (chữ to)</span><input class="in" name="voucher_value" value="<%= s.voucher_value %>" placeholder="200.000đ"></label>
+        <label class="f"><span>Tiêu đề</span><input class="in" name="voucher_title" value="<%= s.voucher_title %>"></label>
+      </div>
+      <label class="f"><span>Dòng mô tả</span><input class="in" name="voucher_sub" value="<%= s.voucher_sub %>"></label>
+    </section>
+    <section class="panel">
       <h2>Chuyển khoản (VietQR)</h2>
       <p class="muted">Khi khách chọn chuyển khoản, website tự tạo mã QR có sẵn số tiền và nội dung là mã đơn.</p>
       <div class="row3">

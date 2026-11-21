@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('../db');
 const catalog = require('../catalog');
+const reviews = require('../reviews');
 const { hydrateProduct, orderCode, now, parseJSON } = require('../utils');
 
 const router = express.Router();
@@ -40,6 +41,7 @@ router.get(
       flash,
       featured,
       latestPosts,
+      reviews: await reviews.latest(6),
       cats: cats.map((c) => ({ ...c, count: (countMap[c.id] || 0) + childCats.filter((k) => k.parent_id === c.id).reduce((a, k) => a + (countMap[k.id] || 0), 0) })),
     });
   })
@@ -184,6 +186,7 @@ router.get(
     const product = hydrateProduct({ ...row, cat_slug: cat ? cat.slug : '', cat_name: cat ? cat.name : '' });
     db.run('UPDATE products SET views = views + 1 WHERE id = ?', [row.id]).catch(() => {});
     const related = await catalog.list({ where: ['p.category_id = ?', 'p.id <> ?'], params: [row.category_id || 0, row.id], order: 'p.id DESC', limit: 8 });
+    const productReviews = await reviews.forProduct(row.id);
     res.render('shop/product', {
       meta: {
         title: `${product.name} | ${res.locals.s.site_name}`.length > 65 ? product.name : `${product.name} | ${res.locals.s.site_name}`,
@@ -194,6 +197,8 @@ router.get(
       product,
       cat,
       related,
+      productReviews,
+      reviewed: req.query.reviewed === '1',
       breadcrumb: [...(cat ? [{ name: cat.name, href: `/danh-muc/${cat.slug}` }] : []), { name: product.name }],
     });
   })
@@ -299,11 +304,29 @@ router.post(
   wrap(async (req, res) => {
     const name = String(req.body.name || '').trim().slice(0, 160);
     const phone = String(req.body.phone || '').replace(/[^\d+]/g, '').slice(0, 15);
-    const message = String(req.body.message || '').trim().slice(0, 2000);
+    const email = String(req.body.email || '').trim().slice(0, 120);
+    const message = [String(req.body.message || '').trim().slice(0, 2000), email ? `Email: ${email}` : ''].filter(Boolean).join(' · ');
     const source = String(req.body.source || 'lien-he').slice(0, 60);
     if (phone.length >= 9) await db.run('INSERT INTO leads (name, phone, message, source, handled, created_at) VALUES (?,?,?,?,0,?)', [name, phone, message, source, now()]);
+    if (req.get('accept')?.includes('application/json')) return res.json({ ok: phone.length >= 9 });
     const back = String(req.body.back || '/lien-he');
     res.redirect((back.startsWith('/') && !back.startsWith('//') ? back : '/lien-he') + (back.includes('?') ? '&' : '?') + 'sent=1');
+  })
+);
+
+/* ---------- Khách gửi đánh giá sản phẩm (chờ duyệt) ---------- */
+router.post(
+  '/danh-gia',
+  wrap(async (req, res) => {
+    const product = await db.one('SELECT id, slug FROM products WHERE id = ? AND active = 1', [parseInt(req.body.product_id, 10) || 0]);
+    if (!product) return res.redirect('/');
+    const name = String(req.body.name || '').trim().slice(0, 80);
+    const phone = String(req.body.phone || '').replace(/[^\d+]/g, '').slice(0, 15);
+    const rating = Math.min(5, Math.max(1, parseInt(req.body.rating, 10) || 5));
+    const content = String(req.body.content || '').trim().slice(0, 1500);
+    // Trường ẩn "website" để chặn bot tự điền form
+    if (name && content.length >= 5 && !req.body.website) await reviews.create({ productId: product.id, name, phone, rating, content });
+    res.redirect(`/san-pham/${product.slug}?reviewed=1#danh-gia`);
   })
 );
 

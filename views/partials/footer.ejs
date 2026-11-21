@@ -85,8 +85,44 @@
   <a href="/gio-hang" data-open="drawer-cart"><span class="cart-ico"><svg class="i"><use href="#i-cart"/></svg><em class="cart-count" data-cart-count>0</em></span><span>Giỏ hàng</span></a>
 </nav>
 
+<% if (s.voucher_on === '1' && !/^\/(gio-hang|thanh-toan|dat-hang)/.test(path)) { %>
+<div class="vpop" data-vpop hidden>
+  <div class="vpop__backdrop" data-vpop-close></div>
+  <div class="vpop__box" role="dialog" aria-modal="true" aria-labelledby="vpop-title">
+    <button class="vpop__x" type="button" data-vpop-close aria-label="Đóng"><svg class="i"><use href="#i-x"/></svg></button>
+    <div class="vpop__visual">
+      <span class="vpop__tag"><svg class="i"><use href="#i-gift"/></svg>Voucher online</span>
+      <strong class="vpop__value"><%= s.voucher_value %></strong>
+      <span class="vpop__brand"><%= s.site_name %> · Chăn ga gối đệm chính hãng</span>
+      <img src="/images/products/liena/banner-ruot-cao-su-lien-a.jpg" alt="" width="1200" height="530" loading="lazy">
+    </div>
+    <form class="vpop__form" method="post" action="/lien-he" data-vpop-form>
+      <h2 id="vpop-title"><%= s.voucher_title %></h2>
+      <p><%= s.voucher_sub %></p>
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <input type="hidden" name="source" value="voucher">
+      <input type="hidden" name="message" value="Nhận voucher <%= s.voucher_value %>">
+      <input type="hidden" name="back" value="<%= path %>">
+      <label class="sr-only" for="vp-name">Họ tên</label>
+      <input id="vp-name" name="name" placeholder="Họ tên *" required maxlength="80" autocomplete="name">
+      <label class="sr-only" for="vp-phone">Số điện thoại</label>
+      <input id="vp-phone" name="phone" placeholder="Số điện thoại *" required inputmode="tel" pattern="[0-9 +.]{9,15}" maxlength="15" autocomplete="tel">
+      <label class="sr-only" for="vp-email">Email</label>
+      <input id="vp-email" name="email" type="email" placeholder="Email (nếu có)" maxlength="120" autocomplete="email">
+      <button class="btn btn--gold" type="submit">Nhận ngay</button>
+      <small>Thông tin chỉ dùng để gửi voucher và tư vấn, không chia sẻ cho bên thứ ba.</small>
+    </form>
+    <div class="vpop__done" data-vpop-done hidden>
+      <svg class="i"><use href="#i-check"/></svg>
+      <h2>Đăng ký thành công!</h2>
+      <p><%= s.site_name %> sẽ liên hệ gửi voucher cho bạn trong thời gian sớm nhất. Cần gấp, gọi <a href="tel:<%= tel2(s.hotline) %>"><%= s.hotline %></a>.</p>
+    </div>
+  </div>
+</div>
+<% } %>
+
 <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
 <script>window.KHP = { csrf: '<%= csrfToken %>' };</script>
-<script src="/js/main.js?v=1" defer></script>
+<script src="/js/main.js?v=2" defer></script>
 </body>
 </html>

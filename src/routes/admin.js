@@ -73,7 +73,8 @@ router.use(
   wrap(async (req, res, next) => {
     const r = await db.one("SELECT COUNT(*) AS n FROM orders WHERE status = 'new'");
     const l = await db.one('SELECT COUNT(*) AS n FROM leads WHERE handled = 0');
-    res.locals.badge = { orders: Number(r.n), leads: Number(l.n) };
+    const rv = await db.one('SELECT COUNT(*) AS n FROM reviews WHERE approved = 0').catch(() => ({ n: 0 }));
+    res.locals.badge = { orders: Number(r.n), leads: Number(l.n), reviews: Number(rv.n) };
     res.locals.ORDER_STATUS = ORDER_STATUS;
     next();
   })
@@ -337,6 +338,29 @@ router.post(
   wrap(async (req, res) => {
     await db.run('UPDATE leads SET handled = 1 - handled WHERE id = ?', [req.params.id]);
     res.redirect('/admin/leads');
+  })
+);
+
+/* ---------- Đánh giá của khách ---------- */
+const reviews = require('../reviews');
+router.get(
+  '/reviews',
+  wrap(async (req, res) => {
+    const list = await db.query('SELECT r.*, p.name AS product_name, p.slug AS product_slug FROM reviews r LEFT JOIN products p ON p.id = r.product_id ORDER BY r.approved, r.id DESC LIMIT 300');
+    res.render('admin/reviews', { title: 'Đánh giá của khách', list });
+  })
+);
+router.post(
+  '/reviews/:id/:action',
+  wrap(async (req, res) => {
+    const r = await db.one('SELECT id, product_id FROM reviews WHERE id = ?', [req.params.id]);
+    if (r) {
+      if (req.params.action === 'approve') await db.run('UPDATE reviews SET approved = 1 WHERE id = ?', [r.id]);
+      else if (req.params.action === 'hide') await db.run('UPDATE reviews SET approved = 0 WHERE id = ?', [r.id]);
+      else if (req.params.action === 'delete') await db.run('DELETE FROM reviews WHERE id = ?', [r.id]);
+      if (r.product_id) await reviews.refreshRating(r.product_id);
+    }
+    res.redirect('/admin/reviews');
   })
 );
 

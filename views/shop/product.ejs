@@ -159,6 +159,47 @@
     </div>
   </section>
 
+  <section class="rv" id="danh-gia" aria-labelledby="rv-title">
+    <div class="rv__head">
+      <div>
+        <span class="eyebrow">Đánh giá sản phẩm</span>
+        <h2 class="section__title" id="rv-title">Khách hàng nói gì về sản phẩm này</h2>
+      </div>
+      <% if (product.rating_count) { %>
+        <div class="rv__score"><b><%= product.rating_avg %></b><span class="rv__stars" aria-label="<%= product.rating_avg %> trên 5 sao"><% for (let i = 1; i <= 5; i++) { %><svg class="i<%= i <= Math.round(product.rating_avg) ? ' on' : '' %>"><use href="#i-star"/></svg><% } %></span><small><%= product.rating_count %> đánh giá</small></div>
+      <% } %>
+    </div>
+    <div class="rv__grid">
+      <div class="rv__list">
+        <% if (!productReviews.length) { %><p class="rv__empty">Chưa có đánh giá nào. Hãy là người đầu tiên chia sẻ trải nghiệm về sản phẩm này!</p><% } %>
+        <% productReviews.forEach(r => { %>
+          <article class="rv__item">
+            <div class="rv__who"><span class="avatar"><%= (r.name.trim().split(' ').pop() || 'K')[0].toUpperCase() %></span><b><%= r.name %></b><small><%= String(r.created_at).slice(0, 10).split('-').reverse().join('/') %></small></div>
+            <span class="rv__stars" aria-label="<%= r.rating %> sao"><% for (let i = 1; i <= 5; i++) { %><svg class="i<%= i <= r.rating ? ' on' : '' %>"><use href="#i-star"/></svg><% } %></span>
+            <p><%= r.content %></p>
+          </article>
+        <% }) %>
+      </div>
+      <form class="rv__form card" method="post" action="/danh-gia">
+        <h3>Viết đánh giá của bạn</h3>
+        <% if (reviewed) { %><p class="rv__ok" role="status"><svg class="i"><use href="#i-check"/></svg>Cảm ơn bạn! Đánh giá sẽ hiển thị sau khi cửa hàng duyệt.</p><% } %>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <input type="hidden" name="product_id" value="<%= product.id %>">
+        <div class="rv__pick" role="radiogroup" aria-label="Số sao">
+          <% for (let i = 5; i >= 1; i--) { %><input type="radio" id="rv-s<%= i %>" name="rating" value="<%= i %>"<%= i === 5 ? ' checked' : '' %>><label for="rv-s<%= i %>" title="<%= i %> sao"><svg class="i"><use href="#i-star"/></svg></label><% } %>
+        </div>
+        <label class="sr-only" for="rv-name">Họ tên</label>
+        <input class="rv__in" id="rv-name" name="name" placeholder="Họ tên *" required maxlength="80" autocomplete="name">
+        <label class="sr-only" for="rv-phone">Số điện thoại</label>
+        <input class="rv__in" id="rv-phone" name="phone" placeholder="Số điện thoại (không hiển thị công khai)" inputmode="tel" maxlength="15" autocomplete="tel">
+        <label class="sr-only" for="rv-content">Nội dung</label>
+        <textarea class="rv__in" id="rv-content" name="content" rows="4" placeholder="Cảm nhận của bạn về sản phẩm *" required minlength="5" maxlength="1500"></textarea>
+        <input class="sr-only" tabindex="-1" autocomplete="off" name="website" aria-hidden="true">
+        <button class="btn btn--gold" type="submit">Gửi đánh giá</button>
+      </form>
+    </div>
+  </section>
+
   <% if (related.length) { %>
   <section style="padding-bottom:64px">
     <div class="section__head"><div><span class="eyebrow">Có thể bạn thích</span><h2 class="section__title">Sản phẩm tương tự</h2></div></div>

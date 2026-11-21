@@ -1,0 +1,25 @@
+<%- include('_top') %>
+<section class="panel">
+  <p class="muted" style="margin-bottom:12px">Khách gửi đánh giá ở trang sản phẩm. Đánh giá chỉ hiện trên website sau khi bạn bấm <b>Duyệt</b>; số sao trung bình của sản phẩm tự tính lại.</p>
+  <% if (!list.length) { %><p class="muted">Chưa có đánh giá nào.</p><% } else { %>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Khách</th><th>Sao</th><th>Nội dung</th><th>Sản phẩm</th><th>Thời gian</th><th>Thao tác</th></tr></thead>
+    <tbody>
+      <% list.forEach(r => { const act = (a, label, cls) => `<form method="post" action="/admin/reviews/${r.id}/${a}" style="display:inline"${a === 'delete' ? ' onsubmit="return confirm(\'Xoá hẳn đánh giá này?\')"' : ''}><input type="hidden" name="_csrf" value="${csrfToken}"><button class="b b--sm ${cls}" type="submit">${label}</button></form>`; %>
+        <tr class="<%= r.approved ? '' : 'is-dim' %>">
+          <td><b><%= r.name || 'Khách' %></b><% if (r.phone) { %><br><a class="muted" href="tel:<%= r.phone %>"><%= r.phone %></a><% } %></td>
+          <td style="white-space:nowrap;color:#e0a100"><%= '★'.repeat(r.rating) %><span class="muted"><%= '★'.repeat(5 - r.rating) %></span></td>
+          <td style="max-width:360px"><%= r.content %></td>
+          <td><% if (r.product_slug) { %><a href="/san-pham/<%= r.product_slug %>" target="_blank"><%= r.product_name %></a><% } else { %>—<% } %></td>
+          <td class="muted"><%= r.created_at %></td>
+          <td style="white-space:nowrap">
+            <% if (r.approved) { %><span class="pill pill--indigo">Đang hiện</span> <%- act('hide', 'Ẩn', 'b--ghost') %><% } else { %><%- act('approve', 'Duyệt', 'b--primary') %><% } %>
+            <%- act('delete', 'Xoá', 'b--ghost') %>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table></div>
+  <% } %>
+</section>
+<%- include('_bottom') %>

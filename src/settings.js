@@ -22,6 +22,11 @@ const DEFAULTS = {
   ga_id: '',
   fb_pixel: '',
   flash_sale_end: '2026-12-05T23:59',
+  // Popup nhận voucher (bật = '1', tắt = '0')
+  voucher_on: '1',
+  voucher_value: '200.000đ',
+  voucher_title: 'Nhận voucher ưu đãi khi mua đệm',
+  voucher_sub: 'Để lại thông tin, Đệm 191 gửi voucher và tư vấn chọn đệm miễn phí cho bạn.',
 };
 
 let cache = null;

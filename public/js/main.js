@@ -525,5 +525,59 @@
   }
   if ($('[data-order-done]')) Cart.clear();
 
+  /* ---------- Popup nhận voucher: hiện 1 lần / 3 ngày ---------- */
+  const vpop = $('[data-vpop]');
+  if (vpop) {
+    const KEY = 'vpop_until';
+    const store = {
+      get: () => { try { return Number(localStorage.getItem(KEY)) || 0; } catch (e) { return 0; } },
+      set: (days) => { try { localStorage.setItem(KEY, String(Date.now() + days * 864e5)); } catch (e) {} },
+    };
+    let lastFocus = null;
+    const open = () => {
+      if (!vpop.hidden || document.querySelector('.drawer.is-open, [aria-modal="true"]:not([data-vpop] *)')) return;
+      lastFocus = document.activeElement;
+      vpop.hidden = false;
+      requestAnimationFrame(() => vpop.classList.add('is-open'));
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => $('#vp-name') && $('#vp-name').focus({ preventScroll: true }), 250);
+    };
+    const close = () => {
+      vpop.classList.remove('is-open');
+      document.body.style.overflow = '';
+      setTimeout(() => { vpop.hidden = true; }, 250);
+      if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+    };
+    vpop.querySelectorAll('[data-vpop-close]').forEach((b) => b.addEventListener('click', () => { store.set(3); close(); }));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !vpop.hidden) { store.set(3); close(); } });
+    const form = $('[data-vpop-form]');
+    form.addEventListener('submit', async (e) => {
+      if (!form.checkValidity()) return;
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Đang gửi…';
+      try {
+        const r = await fetch(form.action, { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)) });
+        const data = await r.json();
+        if (!data.ok) throw new Error('invalid');
+        form.hidden = true;
+        $('[data-vpop-done]').hidden = false;
+        store.set(30);
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'Nhận ngay';
+        alert('Chưa gửi được, bạn kiểm tra lại số điện thoại hoặc gọi hotline giúp Đệm 191 nhé.');
+      }
+    });
+    if (store.get() < Date.now()) {
+      let fired = false;
+      const fire = () => { if (fired) return; fired = true; window.removeEventListener('scroll', onScroll); open(); };
+      const onScroll = () => { if (window.scrollY > document.documentElement.scrollHeight * 0.35) fire(); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      setTimeout(fire, 12000);
+    }
+  }
+
   Cart.sync();
 })();
