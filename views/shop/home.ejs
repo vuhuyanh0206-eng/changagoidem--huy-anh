@@ -96,28 +96,34 @@
   </section>
   <% } %>
 
-  <!-- Trả góp 0% + ảnh cửa hàng -->
-  <section class="section installment-wrap" aria-labelledby="ins-title">
+  <!-- Trả góp 0% – banner poster với ảnh mặt tiền cửa hàng -->
+  <section class="section ins-wrap" aria-labelledby="ins-title">
     <div class="container">
-      <div class="installment">
-        <figure class="installment__media">
-          <img src="/images/store/cua-hang-dem-191.jpg" alt="Cửa hàng <%= s.site_name %> – 172 Đà Nẵng, Hải Phòng" width="1024" height="768" loading="lazy">
-          <figcaption><svg class="i"><use href="#i-pin"/></svg>Showroom thật – nằm thử trước khi mua</figcaption>
-        </figure>
-        <div class="installment__body">
-          <span class="installment__eyebrow">Mua trước · Trả sau</span>
-          <h2 id="ins-title" class="installment__title">Trả góp <em>0%</em> lãi suất</h2>
-          <p class="installment__lead">Sở hữu ngay chiếc đệm chính hãng, chia nhỏ chi phí theo tháng – không phát sinh lãi.</p>
-          <ul class="installment__list">
-            <li><svg class="i"><use href="#i-card"/></svg>Qua thẻ tín dụng của hơn 25 ngân hàng</li>
-            <li><svg class="i"><use href="#i-clock"/></svg>Kỳ hạn linh hoạt 3 – 12 tháng</li>
-            <li><svg class="i"><use href="#i-pin"/></svg>Showroom: 191 Tôn Đức Thắng &amp; 172 Đà Nẵng, Hải Phòng</li>
-          </ul>
-          <div class="installment__cta">
-            <a class="btn btn--gold" href="tel:<%= String(s.hotline).replace(/[^\d+]/g, '') %>"><svg class="i"><use href="#i-phone"/></svg>Gọi tư vấn <%= s.hotline %></a>
-            <a class="btn installment__ghost" href="/chinh-sach/tra-gop">Xem điều kiện trả góp</a>
+      <div class="ins">
+        <span class="ins__rays" aria-hidden="true"></span>
+        <div class="ins__copy">
+          <span class="ins__kicker"><svg class="i"><use href="#i-card"/></svg>Mua trước · Trả sau</span>
+          <h2 id="ins-title" class="ins__title">
+            <span class="ins__l1">Mua đệm</span>
+            <span class="ins__l2">Trả góp</span>
+            <span class="ins__big"><b>0</b><i>%</i><small>Lãi<br>suất</small></span>
+          </h2>
+          <div class="ins__deals">
+            <span class="ins__deal"><small>Kỳ hạn</small><b>3–12 <em>tháng</em></b></span>
+            <span class="ins__deal ins__deal--gold"><small>Thẻ tín dụng</small><b>25+ <em>ngân hàng</em></b></span>
+          </div>
+          <div class="ins__cta">
+            <a class="ins__btn" href="tel:<%= String(s.hotline).replace(/[^\d+]/g, '') %>"><svg class="i"><use href="#i-phone"/></svg>Gọi <%= s.hotline %></a>
+            <a class="ins__link" href="/chinh-sach/tra-gop">Điều kiện trả góp <svg class="i"><use href="#i-arrow-r"/></svg></a>
           </div>
         </div>
+        <img class="ins__stack" src="/images/promo/chong-dem.png" alt="" width="600" height="403" loading="lazy">
+        <figure class="ins__shop">
+          <img src="/images/store/mat-tien-dem-191.jpg" alt="Mặt tiền cửa hàng <%= s.site_name %> tại Hải Phòng" width="528" height="840" loading="lazy">
+          <figcaption class="ins__pin"><svg class="i"><use href="#i-pin"/></svg><span><b>Showroom <%= s.site_name %></b>191 Tôn Đức Thắng · 172 Đà Nẵng</span></figcaption>
+          <span class="ins__sticker" aria-hidden="true"><b>0%</b>lãi suất</span>
+        </figure>
+        <span class="ins__stamp" aria-hidden="true">Nằm thử<br>trước khi mua</span>
       </div>
     </div>
   </section>
