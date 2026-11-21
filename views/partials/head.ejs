@@ -1,7 +1,9 @@
 <%
   const m = typeof meta !== 'undefined' ? meta : {};
   const pageTitle = m.title || s.site_name;
-  const pageDesc = m.description || s.meta_description;
+  const rawDesc = String(m.description || s.meta_description || '').replace(/\s+/g, ' ').trim();
+  // Google hiển thị khoảng 155–160 ký tự: cắt ở cuối một từ
+  const pageDesc = rawDesc.length > 160 ? rawDesc.slice(0, 157).replace(/[\s,.;:–-]+\S*$/, '') + '…' : rawDesc;
   const ogImg = m.image ? (m.image.startsWith('http') ? m.image : siteUrl + m.image) : siteUrl + '/images/og-cover.jpg';
 %><!doctype html>
 <html lang="vi">

@@ -205,7 +205,7 @@ const CATEGORY_COVERS = {
 };
 
 // Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
-const DATA_VERSION = '2026-11-20f';
+const DATA_VERSION = '2026-11-21a';
 
 // Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
 const MAIN_BANNERS = [

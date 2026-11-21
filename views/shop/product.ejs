@@ -177,10 +177,10 @@
 </div>
 
 <script type="application/json" id="product-data"><%- JSON.stringify({ id: product.id, price: Number(product.price), sale_price: Number(product.sale_price), sizes: product.sizes }).replace(/</g, '\\u003c') %></script>
-<script type="application/ld+json"><%- JSON.stringify({
+<% if (!contact || product.rating_count) { %><script type="application/ld+json"><%- JSON.stringify({
   '@context': 'https://schema.org', '@type': 'Product', name: product.name, image: product.images.map(i => siteUrl + i), description: product.short_desc, sku: product.sku,
   brand: { '@type': 'Brand', name: product.brand },
   aggregateRating: product.rating_count ? { '@type': 'AggregateRating', ratingValue: product.rating_avg, reviewCount: product.rating_count } : undefined,
   offers: contact ? undefined : { '@type': 'Offer', priceCurrency: 'VND', price: product.finalPrice, availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', url: siteUrl + path }
-}).replace(/</g, '\\u003c') %></script>
+}).replace(/</g, '\\u003c') %></script><% } %>
 <%- include('../partials/footer') %>

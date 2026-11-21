@@ -78,7 +78,10 @@ async function renderListing(req, res, { title, description, where, params, cat,
     db.query(`SELECT DISTINCT p.brand FROM products p WHERE ${['p.active = 1', ...where].join(' AND ')} AND p.brand IS NOT NULL AND p.brand <> '' ORDER BY p.brand`, params),
   ]);
   res.render('shop/listing', {
-    meta: { title: `${title} | ${res.locals.s.site_name}`, description: description || res.locals.s.meta_description },
+    meta: {
+      title: `${title} | ${res.locals.s.site_name}`,
+      description: description && description.length >= 110 ? description : `${title} chính hãng giá tại kho ${res.locals.s.site_name}. ${description || ''} Giao nhanh, quà tặng kèm, bảo hành chính hãng.`.replace(/\s+/g, ' '),
+    },
     title,
     subcats,
     description,
@@ -134,7 +137,7 @@ router.get(
     const ids = cats.map((c) => c.id);
     await renderListing(req, res, {
       title: 'Tất cả đệm',
-      description: 'Đệm cao su, đệm lò xo, đệm foam, đệm bông ép chính hãng giá tại kho.',
+      description: 'Đệm cao su, đệm lò xo, đệm foam, đệm bông ép chính hãng Liên Á, Dunlopillo, Vikosan, Elan… giá tại kho, giao nhanh, quà tặng kèm, bảo hành chính hãng.',
       heroImage: '/images/stock/s05.jpg',
       where: ids.length ? [`p.category_id IN (${ids.map(() => '?').join(',')})`] : ['1=0'],
       params: ids,
@@ -149,7 +152,7 @@ router.get(
     if (!req.query.sort) req.query.sort = 'discount';
     await renderListing(req, res, {
       title: 'Khuyến mại hot',
-      description: 'Tổng hợp sản phẩm đang giảm giá sâu nhất tại Đệm 191.',
+      description: 'Tổng hợp chăn ga gối đệm đang giảm giá sâu nhất tại Đệm 191: đệm cao su, lò xo, foam chính hãng giảm đến 30%, kèm quà tặng cao cấp và giao nhanh.',
       heroImage: '/images/stock/s18.jpg',
       where: ['p.sale_price > 0', 'p.sale_price < p.price'],
       params: [],
@@ -183,7 +186,7 @@ router.get(
     const related = await catalog.list({ where: ['p.category_id = ?', 'p.id <> ?'], params: [row.category_id || 0, row.id], order: 'p.id DESC', limit: 8 });
     res.render('shop/product', {
       meta: {
-        title: `${product.name} | ${res.locals.s.site_name}`,
+        title: `${product.name} | ${res.locals.s.site_name}`.length > 65 ? product.name : `${product.name} | ${res.locals.s.site_name}`,
         description: product.short_desc,
         image: product.image,
         type: 'product',
