@@ -1061,3 +1061,26 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   .section__title { font-size: 22px; }
   .pd h1 { font-size: 21px; }
 }
+
+/* ===== Gọn khoảng trống giữa các mục + banner chính cao bằng cột banner phụ ===== */
+.hero { padding: 16px 0 4px; }
+.usp { padding: 10px 0 4px; }
+.section { padding: 36px 0; }
+.story { padding: 44px 0; }
+.section__head { margin-bottom: 18px; }
+.newsletter { padding: 32px 0; }
+.footer { padding-top: 40px; }
+@media (min-width: 1025px) {
+  /* Banner chính kéo giãn theo chiều cao hàng (bằng danh mục bên trái và 3 banner bên phải) */
+  .hero__grid { align-items: stretch; }
+  .slider { aspect-ratio: auto; height: 100%; min-height: 380px; }
+  .hero__cats .catlist a { min-height: 38px; }
+}
+@media (max-width: 768px) {
+  .hero { padding-top: 8px; }
+  .section { padding: 22px 0; }
+  .story { padding: 26px 0; }
+  .section__head { margin-bottom: 12px; }
+  .newsletter { padding: 24px 0; }
+  .footer { padding-top: 28px; }
+}
