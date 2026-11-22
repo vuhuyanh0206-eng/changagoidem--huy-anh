@@ -1202,3 +1202,15 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 @keyframes dealTextBlink { 0%, 100% { color: var(--gold-400); text-shadow: 0 0 0 rgba(255, 210, 90, 0); } 50% { color: #fff; text-shadow: 0 0 10px rgba(255, 220, 120, .85); } }
 @media (max-width: 760px) { .pd__deal-head b { font-size: 16.5px; } }
 @media (prefers-reduced-motion: reduce) { .pd__deal-head b { animation: none; } }
+/* Nút Gọi / Zalo dưới nút mua: to và nổi bật, cân với "Mua ngay" */
+.pd__consult a { min-height: 54px; font-size: 16px; font-weight: 700; border: 0; box-shadow: 0 8px 18px -8px rgba(15, 42, 77, .45); transition: transform .15s, filter .15s; }
+.pd__consult a:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.pd__consult a.pd__consult-call { background: linear-gradient(135deg, #ef2b2b, #c4121a); color: #fff; }
+.pd__consult .pd__consult-call .i { width: 22px; height: 22px; color: #fff; }
+.pd__consult-call b { font-size: 19px; font-weight: 800; letter-spacing: .01em; }
+.pd__consult a.pd__consult-zalo { background: #0068ff; color: #fff; }
+.pd__consult-zalo .zalo-dot { background: #fff; color: #0068ff; width: 24px; height: 24px; font-size: 8.5px; }
+@media (max-width: 760px) { .pd__consult a { min-height: 50px; font-size: 14px; gap: 6px; } .pd__consult-call b { font-size: 16.5px; } .pd__consult .pd__consult-call .i { width: 19px; height: 19px; } }
+.pd__consult a { white-space: nowrap; }
+.pd__consult-call em { font-style: normal; }
+@media (max-width: 760px) { .pd__consult-call em { display: none; } .pd__consult-call b { font-size: 17px; } }

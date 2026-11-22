@@ -127,8 +127,8 @@
       </div>
       <% } %>
       <div class="pd__consult">
-        <a href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg>Gọi <%= s.hotline %></a>
-        <a href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Tư vấn qua Zalo</a>
+        <a class="pd__consult-call" href="tel:<%= tel(s.hotline) %>"><svg class="i"><use href="#i-phone"/></svg><span><em>Gọi </em><b><%= s.hotline %></b></span></a>
+        <a class="pd__consult-zalo" href="https://zalo.me/<%= tel(s.zalo) %>" target="_blank" rel="noopener"><span class="zalo-dot">Zalo</span>Tư vấn qua Zalo</a>
       </div>
 
       <ul class="perks">
