@@ -886,12 +886,8 @@ textarea.input { height: auto; padding: 12px; resize: vertical; min-height: 90px
 .imglabel--lg .imglabel__model { font-size: 24px; }
 .imglabel--lg .imglabel__chip { font-size: 13px; padding: 7px 11px; }
 .gallery__main.is-zoom .imglabel { opacity: 0; }
-.pcard__deal { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 10px 0 0; padding: 7px 10px; border-radius: 999px; background: #fff1f0; border: 1px solid #ffc9c5; color: #e01a22; font-size: 14.5px; font-weight: 800; line-height: 1.25; text-align: center; animation: deal-blink 1.2s ease-in-out infinite; }
-.pcard__deal .i { width: 16px; height: 16px; flex: none; animation: deal-ring 1.2s ease-in-out infinite; }
-@keyframes deal-blink { 0%, 100% { color: #e01a22; background: #fff1f0; box-shadow: 0 0 0 0 rgba(224, 26, 34, 0); } 50% { color: #fff; background: #e01a22; box-shadow: 0 0 0 4px rgba(224, 26, 34, .18); } }
-@keyframes deal-ring { 0%, 50%, 100% { transform: rotate(0); } 10%, 30% { transform: rotate(-14deg); } 20%, 40% { transform: rotate(14deg); } }
-@media (max-width: 560px) { .pcard__deal { font-size: 12.5px; padding: 6px 8px; gap: 4px; border-radius: 12px; } .pcard__deal .i { width: 14px; height: 14px; } }
-@media (prefers-reduced-motion: reduce) { .pcard__deal, .pcard__deal .i { animation: none; } }
+.pcard__deal { display: flex; align-items: center; gap: 5px; margin: 8px 0 0; font-size: 12px; font-weight: 600; color: var(--gold-700, #9a7420); }
+.pcard__deal .i { width: 13px; height: 13px; }
 .pd__deal { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; margin: -8px 0 14px; padding: 10px 12px; border-radius: var(--r); background: linear-gradient(135deg, var(--navy-800), #1b3d6b); color: #fff; box-shadow: 0 6px 16px rgba(15, 42, 77, .18); }
 .pd__deal-head { display: flex; align-items: center; gap: 8px; flex: 1 1 auto; }
 .pd__deal-ico { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--gold-400); color: var(--navy-800); animation: dealPulse 2s ease-in-out infinite; }
