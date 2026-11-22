@@ -1197,3 +1197,8 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 @media (max-height: 820px) and (min-width: 561px) { .vpop__lines { top: 178px; } .vpop__seal { top: 182px; } }
 @media (max-width: 560px) { .vpop__lines { top: 158px; } .vpop__seal { top: 150px; } }
 @media (max-width: 560px) { .vpop__lines { top: 196px; } .vpop__seal { top: 186px; } }
+/* Chữ "Liên hệ để có giá tốt nhất" ở trang sản phẩm: to hơn, nhấp nháy chữ (không nền) */
+.pd__deal-head b { font-size: 20px; font-weight: 800; letter-spacing: -.01em; animation: dealTextBlink 1.1s ease-in-out infinite; }
+@keyframes dealTextBlink { 0%, 100% { color: var(--gold-400); text-shadow: 0 0 0 rgba(255, 210, 90, 0); } 50% { color: #fff; text-shadow: 0 0 10px rgba(255, 220, 120, .85); } }
+@media (max-width: 760px) { .pd__deal-head b { font-size: 16.5px; } }
+@media (prefers-reduced-motion: reduce) { .pd__deal-head b { animation: none; } }
