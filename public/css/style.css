@@ -1280,3 +1280,4 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   .about-policies { grid-template-columns: 1fr; }
   .about-letter { text-align: left; }
 }
+.about-intro { grid-template-columns: 1fr; max-width: 900px; }
