@@ -57,7 +57,7 @@
       <div class="summary__row" style="margin-top:10px"><span>Tạm tính</span><span data-sum-sub>—</span></div>
       <div class="summary__row"><span>Phí giao hàng</span><span data-sum-ship>—</span></div>
       <div class="summary__row summary__row--total"><span>Tổng cộng</span><b data-sum-total>—</b></div>
-      <p class="price-note"><%= s.price_note %></p>
+      <p class="summary__note" style="margin:6px 0 0">Đơn giao từ 20km trở lên: nhân viên báo phí vận chuyển và xác nhận với bạn trước khi giao. <a href="/chinh-sach/giao-hang" target="_blank" style="text-decoration:underline">Chính sách giao hàng</a></p>
       <label class="agree" style="margin-top:12px"><input type="checkbox" name="agree" value="1" required><span>Tôi đã kiểm tra lại đơn hàng, đọc và đồng ý với <a href="/chinh-sach/dieu-khoan" target="_blank">Điều khoản giao dịch</a>, <a href="/chinh-sach/doi-tra" target="_blank">Chính sách đổi trả</a> và <a href="/chinh-sach/bao-mat" target="_blank">Chính sách bảo mật</a> của <%= s.site_name %>.</span></label>
       <% if (e.agree) { %><span class="field__err" style="display:block;margin-top:6px"><%= e.agree %></span><% } %>
       <button class="btn btn--gold btn--lg btn--block" type="submit" data-co-submit style="margin-top:14px">Xác nhận đặt hàng</button>

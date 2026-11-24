@@ -29,7 +29,7 @@ function build(s) {
 <h2>2. Thông tin sản phẩm và giá</h2>
 <ul>
 <li>Hình ảnh, thông số (kích thước, độ dày, chất liệu, thời gian bảo hành) được cung cấp theo thông tin của nhà sản xuất. Màu sắc thực tế có thể chênh lệch nhẹ do màn hình hiển thị.</li>
-<li>Giá hiển thị bằng Việt Nam đồng. ${esc(s.price_note)}</li>
+<li>Giá hiển thị bằng Việt Nam đồng. Phí vận chuyển (nếu có) được thông báo và xác nhận với khách hàng trước khi giao.</li>
 <li>Sản phẩm hiển thị “Liên hệ” chưa niêm yết giá: nhân viên báo giá cụ thể trước khi khách hàng quyết định mua.</li>
 <li>Trường hợp giá hoặc thông tin bị sai do lỗi hệ thống, ${name} sẽ liên hệ khách hàng để xác nhận lại trước khi giao; khách hàng có quyền huỷ đơn mà không mất phí.</li>
 </ul>
@@ -65,20 +65,20 @@ function build(s) {
       title: 'Chính sách giao hàng & lắp đặt',
       body: `
 <h2>1. Phạm vi giao hàng</h2>
-<p>${name} giao hàng toàn quốc. Khu vực Hải Phòng do nhân viên của cửa hàng trực tiếp giao và lắp đặt; các tỉnh thành khác giao qua đơn vị vận chuyển (nhà xe, công ty chuyển phát).</p>
+<p>${name} vận chuyển toàn quốc. Đơn hàng có địa chỉ giao trong bán kính dưới 20km tính từ cửa hàng do nhân viên ${name} trực tiếp giao và lắp đặt; các khu vực khác giao qua đơn vị vận chuyển (nhà xe, công ty chuyển phát).</p>
 <h2>2. Phí giao hàng</h2>
 <ul>
-<li>${esc(s.free_ship_text)}, đã bao gồm công lắp đặt.</li>
-<li>Ngoài khu vực miễn phí: ${fee ? `phí giao mặc định ${vnd(fee)}/đơn` : 'phí tính theo bảng giá của đơn vị vận chuyển'}${freeMin ? `; miễn phí cho đơn từ ${vnd(freeMin)}` : ''}. Phí được nhân viên thông báo và được khách hàng đồng ý trước khi giao; không phát sinh thêm chi phí nào khác.</li>
+<li><b>Miễn phí vận chuyển</b> cho đơn hàng có địa chỉ giao trong bán kính dưới 20km tính từ cửa hàng (${addrs.map(esc).join(' hoặc ')}), đã bao gồm công lắp đặt.</li>
+<li>Đơn hàng từ 20km trở lên và các tỉnh thành khác: ${fee ? `phí giao mặc định ${vnd(fee)}/đơn` : 'phí tính theo bảng giá của đơn vị vận chuyển'}${freeMin ? `; miễn phí cho đơn từ ${vnd(freeMin)}` : ''}. Phí được nhân viên thông báo và được khách hàng đồng ý trước khi giao; không phát sinh thêm chi phí nào khác.</li>
 </ul>
 <h2>3. Thời gian giao hàng</h2>
 <ul>
-<li>Nội thành Hải Phòng: 2–24 giờ kể từ khi xác nhận đơn (hàng có sẵn).</li>
+<li>Trong bán kính 20km: 2–24 giờ kể từ khi xác nhận đơn (hàng có sẵn).</li>
 <li>Tỉnh thành khác: 2–5 ngày làm việc.</li>
 <li>Hàng đặt theo kích thước riêng hoặc tạm hết: nhân viên thông báo thời gian cụ thể khi xác nhận đơn.</li>
 </ul>
 <h2>4. Chứng từ kèm theo</h2>
-<p>Mỗi đơn hàng có phiếu giao hàng ghi rõ sản phẩm, số lượng, số tiền; kèm phiếu/thẻ bảo hành của hãng. Hoá đơn VAT được xuất theo yêu cầu của khách hàng.</p>
+<p>Mỗi đơn hàng có phiếu giao hàng ghi rõ sản phẩm, số lượng, số tiền; kèm phiếu/thẻ bảo hành của hãng. Hoá đơn, chứng từ khác được cung cấp theo quy định khi khách hàng yêu cầu.</p>
 <h2>5. Trách nhiệm với hàng hoá trong quá trình vận chuyển</h2>
 <p>${name} chịu trách nhiệm về hàng hoá cho đến khi giao cho khách hàng. Trường hợp hàng bị hư hỏng, móp méo, ướt, sai mẫu hoặc thất lạc trong quá trình vận chuyển, khách hàng có quyền từ chối nhận và ${name} sẽ giao lại hàng mới hoặc hoàn tiền 100% đã thanh toán.</p>
 <h2>6. Liên hệ</h2>
@@ -115,7 +115,7 @@ ${bank}
 <h2>5. Đặt cọc</h2>
 <p>Với hàng đặt riêng theo kích thước, ${name} có thể đề nghị đặt cọc; số tiền cọc được trừ vào giá trị đơn hàng và được hoàn lại nếu ${name} không giao được hàng đúng hẹn.</p>
 <h2>6. Hoá đơn, chứng từ</h2>
-<p>Khách hàng nhận phiếu giao hàng/biên nhận cho mọi giao dịch; hoá đơn VAT được xuất khi có yêu cầu.</p>`,
+<p>Khách hàng nhận phiếu giao hàng/biên nhận cho mọi giao dịch; hoá đơn, chứng từ khác được cung cấp theo quy định khi khách hàng yêu cầu.</p>`,
     },
     'doi-tra': {
       title: 'Chính sách đổi trả & hoàn tiền',

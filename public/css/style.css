@@ -1226,7 +1226,6 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 .agree { display: flex; align-items: flex-start; gap: 8px; margin: 4px 0 0; font-size: 13px; line-height: 1.45; text-align: left; cursor: pointer; }
 .agree input { flex: none; width: 17px; height: 17px; margin: 1px 0 0; accent-color: var(--navy-800); }
 .agree a { text-decoration: underline; text-underline-offset: 2px; }
-.price-note { margin: 8px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--muted, #667085); }
 .policy .prose h2 { font-size: 19px; margin: 1.3em 0 .4em; }
 .policy .prose ul, .policy .prose ol { padding-left: 1.3em; }
 .policy .prose li { margin: .25em 0; }
@@ -1236,5 +1235,3 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 .newsletter__agree { grid-column: 1 / -1; font-size: 12.5px; }
 .vpop__form .agree { font-size: 12.5px; margin: 0; }
 .vpop__form .agree input { width: 17px; height: 17px; padding: 0; }
-.pd__price-note { margin: -4px 0 14px; }
-.pd__price-note a { text-decoration: underline; text-underline-offset: 2px; }

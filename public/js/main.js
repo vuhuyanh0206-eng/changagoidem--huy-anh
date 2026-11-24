@@ -476,7 +476,7 @@
         )
         .join('');
       $('[data-sum-sub]').textContent = vnd(data.subtotal);
-      $('[data-sum-ship]').textContent = data.shipping ? vnd(data.shipping) : 'Miễn phí';
+      $('[data-sum-ship]').textContent = data.shipping ? vnd(data.shipping) : 'Miễn phí dưới 20km';
       $('[data-sum-total]').textContent = vnd(data.total);
       const saved = data.lines.reduce((a, l) => a + (l.price - l.unit) * l.qty, 0);
       const sv = $('[data-sum-save]');

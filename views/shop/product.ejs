@@ -50,7 +50,6 @@
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
-      <% if (s.price_note) { %><p class="price-note pd__price-note"><%= s.price_note %> <a href="/chinh-sach/giao-hang">Phí giao hàng</a></p><% } %>
       <% if (product.gift) { %>
       <div class="pd__gift">
         <svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>
@@ -133,7 +132,7 @@
       </div>
 
       <ul class="perks">
-        <li><svg class="i"><use href="#i-truck"/></svg><span><b>Giao &amp; lắp miễn phí</b><small>Nội thành trong ngày</small></span></li>
+        <li><svg class="i"><use href="#i-truck"/></svg><span><b>Vận chuyển toàn quốc</b><small>Miễn phí dưới 20km từ shop</small></span></li>
         <li><svg class="i"><use href="#i-shield"/></svg><span><b>Bảo hành <%= product.warranty || 'chính hãng' %></b><small>Chính hãng nhà sản xuất</small></span></li>
         <li><svg class="i"><use href="#i-gift"/></svg><span><b>Bộ quà tặng cao cấp</b><small>Kèm theo đệm</small></span></li>
         <li><svg class="i"><use href="#i-card"/></svg><span><b>Trả góp 0%</b><small>Duyệt nhanh qua thẻ</small></span></li>
@@ -155,7 +154,7 @@
       </tbody></table>
     </div>
     <div class="pd-tabs__panel prose" data-pd-panel="policy" hidden>
-      <h3>Giao hàng</h3><p>Miễn phí giao và lắp đặt trong bán kính 20km. Đơn đặt trước 15h được giao ngay trong ngày.</p>
+      <h3>Giao hàng</h3><p>Vận chuyển toàn quốc. Miễn phí giao và lắp đặt cho đơn hàng có bán kính dưới 20km tính từ shop. Xem chi tiết tại <a href="/chinh-sach/giao-hang">Chính sách giao hàng</a>.</p>
       <h3>Đổi trả</h3><p>Đổi trả theo chính sách của hãng. Liên hệ hotline để được hỗ trợ. <a href="/chinh-sach/doi-tra">Xem chi tiết</a></p>
     </div>
   </section>

@@ -11,7 +11,7 @@ const DEFAULTS = {
   map_embed: '',
   open_hours: '8:00 – 21:00 tất cả các ngày',
   facebook: '',
-  free_ship_text: 'Miễn phí giao hàng nội thành bán kính 20km',
+  free_ship_text: 'Vận chuyển toàn quốc, miễn phí cho đơn hàng có bán kính dưới 20km tính từ shop',
   shipping_fee: '0',
   free_ship_min: '0',
   bank_code: '',
@@ -36,7 +36,6 @@ const DEFAULTS = {
   biz_rep: '',         // Người đại diện / chủ hộ
   biz_address: '',     // Địa chỉ trụ sở (để trống = địa chỉ đầu tiên của cửa hàng)
   bct_url: '',         // Link xác thực "Đã thông báo Bộ Công Thương" (dán sau khi được duyệt)
-  price_note: 'Giá niêm yết trên website là giá bán lẻ. Đơn cần xuất hóa đơn VAT vui lòng báo trước để được báo giá kèm VAT. Phí vận chuyển (nếu có) được thông báo và xác nhận trước khi giao.',
   return_days: '7',    // Số ngày đổi trả
 };
 

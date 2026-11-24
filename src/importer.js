@@ -239,6 +239,8 @@ async function importAll(opts = {}) {
     if (!ver || String(ver.svalue) < '2026-11-21a') await db.run("DELETE FROM settings WHERE skey = 'flash_sale_end'");
     // Email theo tên miền cũ khodemhp.vn không dùng được: xoá để chủ shop nhập email thật trong Cài đặt
     await db.run("DELETE FROM settings WHERE skey = 'email' AND svalue LIKE '%khodemhp.vn%'");
+    // Dòng giao hàng mới: vận chuyển toàn quốc, miễn phí dưới 20km từ shop
+    await db.run("DELETE FROM settings WHERE skey = 'free_ship_text' AND svalue LIKE '%nội thành%'");
     if (ver) await db.run("UPDATE settings SET svalue = ? WHERE skey = 'data_version'", [DATA_VERSION]);
     else await db.run("INSERT INTO settings (skey, svalue) VALUES ('data_version', ?)", [DATA_VERSION]);
     console.log(`Đồng bộ dữ liệu sản phẩm theo phiên bản ${DATA_VERSION}`);
