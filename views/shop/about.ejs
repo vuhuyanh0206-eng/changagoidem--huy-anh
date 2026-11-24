@@ -1,28 +1,90 @@
 <%- include('../partials/head') %>
 <%- include('../partials/header') %>
 <%- include('../partials/breadcrumb') %>
-<main id="main">
-  <div class="container about-hero">
-    <div>
-      <span class="eyebrow">Về chúng tôi</span>
-      <h1>Đệm 191 – nơi giấc ngủ ngon bắt đầu</h1>
-      <p>Khởi đầu từ một kho đệm nhỏ, Đệm 191 đã trở thành địa chỉ quen thuộc của hàng chục nghìn gia đình và hàng trăm khách sạn. Chúng tôi tin rằng ai cũng xứng đáng có một chiếc đệm tốt mà không phải trả giá quá cao.</p>
-      <p>Bằng cách nhập trực tiếp từ nhà máy và vận hành theo mô hình kho, chúng tôi cắt giảm chi phí trung gian để mang đến giá tốt nhất, trong khi vẫn giữ trải nghiệm mua sắm, giao lắp và bảo hành như showroom cao cấp.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
-        <a class="btn btn--navy btn--lg" href="/dem">Khám phá sản phẩm</a>
-        <a class="btn btn--outline-navy btn--lg" href="/lien-he">Ghé showroom</a>
-      </div>
+<% const telx = (x) => String(x || '').replace(/[^\d+]/g, ''); const shops = String(s.address || '').split('|').map(x => x.trim()).filter(Boolean); const host = siteUrl.replace(/^https?:\/\//, ''); %>
+<main id="main" class="about">
+  <!-- Giới thiệu chung -->
+  <section class="container about-intro">
+    <div class="about-intro__txt">
+      <span class="eyebrow">Giới thiệu</span>
+      <h1>Về <%= s.site_name %></h1>
+      <p class="about-intro__lead"><b><%= s.site_name %></b> là cửa hàng chuyên chăn, ga, gối, đệm chính hãng tại Hải Phòng, với <%= shops.length %> showroom trưng bày để khách hàng xem tận mắt, nằm thử và được tư vấn trực tiếp trước khi mua.</p>
+      <% if (brands.length) { %>
+      <p>Chúng tôi là đại lý phân phối các thương hiệu được nhiều gia đình Việt tin dùng:
+        <% brands.forEach((b, i) => { %><b><%= b %></b><%= i < brands.length - 1 ? ', ' : '.' %><% }) %>
+        Mỗi sản phẩm đều có nguồn gốc rõ ràng, tem nhãn và phiếu bảo hành của nhà sản xuất.</p>
+      <% } %>
+      <p>Bên cạnh khách hàng gia đình, <%= s.site_name %> nhận cung cấp đệm, chăn ga gối theo số lượng cho khách sạn, nhà nghỉ, homestay với giá dự án.</p>
     </div>
-    <img src="/images/stock/s20.jpg" alt="Không gian phòng ngủ trưng bày tại Đệm 191" width="1300" height="975">
-  </div>
+    <figure class="about-intro__img">
+      <img src="/images/store/mat-tien-dem-191.jpg" alt="Mặt tiền showroom <%= s.site_name %>" width="528" height="840">
+      <figcaption><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= shops[0] || '' %></figcaption>
+    </figure>
+  </section>
+
+  <!-- Lý do khách hàng lựa chọn -->
   <section class="section section--tint">
     <div class="container">
-      <div class="section__head section__head--center"><span class="eyebrow">Giá trị cốt lõi</span><h2 class="section__title">Điều làm nên Đệm 191</h2></div>
-      <div class="values">
-        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-shield"/></svg></span><b>Chính hãng 100%</b><p>Mọi sản phẩm có nguồn gốc rõ ràng, phiếu bảo hành điện tử.</p></div>
-        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-award"/></svg></span><b>Giá tại kho</b><p>Không qua trung gian – rẻ hơn showroom từ 15–30%.</p></div>
-        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-headset"/></svg></span><b>Tư vấn tận tâm</b><p>Tư vấn đúng nhu cầu, không ép mua, hỗ trợ cả sau bán hàng.</p></div>
-        <div class="value"><span class="need__ico"><svg class="i"><use href="#i-truck"/></svg></span><b>Giao lắp nhanh</b><p>Đội xe riêng, giao trong ngày, thu gom đệm cũ khi có yêu cầu.</p></div>
+      <div class="section__head section__head--center"><span class="eyebrow">Vì sao chọn chúng tôi</span><h2 class="section__title">Lý do khách hàng lựa chọn <%= s.site_name %></h2></div>
+      <ol class="about-why">
+        <li><span class="about-why__ico"><svg class="i"><use href="#i-shield"/></svg></span><b>Cam kết chính hãng 100%</b><p>Hàng nhập từ nhà sản xuất và nhà phân phối chính thức, đầy đủ tem nhãn, phiếu bảo hành; bảo hành theo chính sách của hãng, có dòng lên đến 20 năm.</p></li>
+        <li><span class="about-why__ico"><svg class="i"><use href="#i-award"/></svg></span><b>Giá tại kho</b><p>Bán hàng theo mô hình kho, hạn chế chi phí trung gian. Có giá riêng cho khách mua số lượng, khách sạn và công trình.</p></li>
+        <li><span class="about-why__ico"><svg class="i"><use href="#i-truck"/></svg></span><b>Dịch vụ chu đáo</b><p>Vận chuyển toàn quốc, miễn phí giao và lắp đặt cho đơn hàng dưới 20km tính từ shop. Được nằm thử tại showroom, kiểm tra hàng rồi mới thanh toán.</p></li>
+        <li><span class="about-why__ico"><svg class="i"><use href="#i-spine"/></svg></span><b>Tư vấn tận tâm</b><p>Nhân viên tư vấn theo dáng nằm, cân nặng, tình trạng cột sống và ngân sách của từng người; hỗ trợ cả sau khi mua.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Thư ngỏ / sứ mệnh -->
+  <section class="section">
+    <div class="container about-letter">
+      <svg class="i about-letter__q" aria-hidden="true"><use href="#i-quote"/></svg>
+      <p class="about-letter__tag">Giấc ngủ ngon – khởi đầu cho một ngày khoẻ mạnh</p>
+      <p>Một phần ba cuộc đời chúng ta dành cho giấc ngủ. Vì vậy, chọn đúng chiếc đệm, chiếc gối không chỉ là chuyện tiện nghi mà còn là chăm sóc sức khoẻ lâu dài cho cả gia đình. <%= s.site_name %> ra đời với mong muốn giúp mỗi khách hàng chọn được sản phẩm thật sự phù hợp với mình, đúng chất lượng, đúng giá, và được phục vụ tận nơi.</p>
+      <p>Chúng tôi chân thành cảm ơn quý khách đã tin tưởng và đồng hành cùng <%= s.site_name %>. Hãy mua sắm trực tuyến tại website hoặc ghé showroom để trải nghiệm trực tiếp – chúng tôi luôn sẵn sàng phục vụ.</p>
+      <p class="about-letter__sign">Trân trọng,<br><b><%= s.biz_name || s.site_name %></b></p>
+    </div>
+  </section>
+
+  <!-- Liên hệ & hệ thống showroom -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="about-contact">
+        <div>
+          <span class="eyebrow">Liên hệ</span>
+          <h2 class="section__title"><%= s.site_name %> – <%= s.tagline %></h2>
+          <ul class="about-contact__list">
+            <li><svg class="i"><use href="#i-phone"/></svg><span>Hotline: <a href="tel:<%= telx(s.hotline) %>"><b><%= s.hotline %></b></a><% if (s.hotline2) { %> – <a href="tel:<%= telx(s.hotline2) %>"><b><%= s.hotline2 %></b></a><% } %> (Zalo)</span></li>
+            <% if (s.email) { %><li><svg class="i"><use href="#i-mail"/></svg><span>Email: <a href="mailto:<%= s.email %>"><%= s.email %></a></span></li><% } %>
+            <li><svg class="i"><use href="#i-grid"/></svg><span>Website: <a href="<%= siteUrl %>"><%= host %></a></span></li>
+          </ul>
+        </div>
+        <div class="about-shops">
+          <% shops.forEach((a, i) => { %>
+          <article class="about-shop">
+            <h3>Showroom <%= i + 1 %></h3>
+            <p><svg class="i"><use href="#i-pin"/></svg><span><%= a %></span></p>
+            <p><svg class="i"><use href="#i-phone"/></svg><span><a href="tel:<%= telx(s.hotline) %>"><%= s.hotline %></a></span></p>
+            <p><svg class="i"><use href="#i-clock"/></svg><span><%= s.open_hours %></span></p>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=<%= encodeURIComponent(a) %>" target="_blank" rel="noopener">Chỉ đường <svg class="i"><use href="#i-arrow-r"/></svg></a>
+          </article>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chính sách & điều khoản -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head"><h2 class="section__title">Chính sách &amp; điều khoản</h2></div>
+      <div class="about-policies">
+        <a href="/chinh-sach/bao-hanh"><svg class="i"><use href="#i-shield"/></svg>Chính sách bảo hành</a>
+        <a href="/chinh-sach/dieu-khoan"><svg class="i"><use href="#i-news"/></svg>Điều khoản giao dịch</a>
+        <a href="/chinh-sach/thanh-toan"><svg class="i"><use href="#i-card"/></svg>Hình thức thanh toán</a>
+        <a href="/chinh-sach/giao-hang"><svg class="i"><use href="#i-truck"/></svg>Vận chuyển &amp; giao nhận</a>
+        <a href="/chinh-sach/doi-tra"><svg class="i"><use href="#i-refresh"/></svg>Đổi trả &amp; hoàn tiền</a>
+        <a href="/chinh-sach/bao-mat"><svg class="i"><use href="#i-users"/></svg>Bảo mật thông tin</a>
       </div>
     </div>
   </section>

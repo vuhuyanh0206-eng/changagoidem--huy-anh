@@ -357,7 +357,8 @@
     "warranty": "5 năm",
     "best": 0,
     "is_hot": 0,
-    "pin": 95
+    "pin": 95,
+    "hidden": 1
   },
   {
     "name": "Đệm Nano U.Eros Plus",
@@ -1272,7 +1273,8 @@
     "warranty": "5 năm",
     "best": 0,
     "is_hot": 0,
-    "pin": 0
+    "pin": 0,
+    "hidden": 1
   },
   {
     "name": "Đệm Elan Alias 2M chần foam",
@@ -2768,7 +2770,8 @@
     "warranty": "5 năm",
     "best": 0,
     "is_hot": 0,
-    "pin": 0
+    "pin": 0,
+    "hidden": 1
   },
   {
     "name": "Đệm bông ép Kim Cương Bonus",
