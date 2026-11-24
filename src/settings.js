@@ -20,7 +20,7 @@ const DEFAULTS = {
   meta_description:
     'Đệm 191 – chuyên đệm cao su, đệm lò xo, đệm foam, chăn ga gối chính hãng giá tại kho. Giao nhanh, quà tặng cao cấp, bảo hành chính hãng.',
   ga_id: '',
-  fb_pixel: '',
+  fb_pixel: '2086145585500475', // Meta Pixel / tập dữ liệu "sản phẩm 2026" (nối với danh mục Catalog_Products)
   flash_sale_end: '2026-12-05T23:59',
   // Popup nhận voucher (bật = '1', tắt = '0')
   voucher_on: '1',
@@ -36,6 +36,7 @@ async function all() {
   const rows = await db.query('SELECT skey, svalue FROM settings');
   const map = { ...DEFAULTS };
   for (const r of rows) map[r.skey] = r.svalue ?? '';
+  if (!String(map.fb_pixel || '').trim()) map.fb_pixel = DEFAULTS.fb_pixel; // ô Pixel để trống trong admin thì dùng Pixel mặc định
   cache = map;
   return map;
 }
