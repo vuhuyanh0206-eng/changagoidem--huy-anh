@@ -6,7 +6,7 @@ const DEFAULTS = {
   hotline: '0988 367 226',
   hotline2: '0912 831 034',
   zalo: '0988367226',
-  email: 'lienhe@khodemhp.vn',
+  email: '',
   address: '191 Tôn Đức Thắng, Lê Chân, Hải Phòng | 172 Đà Nẵng, Ngô Quyền, Hải Phòng',
   map_embed: '',
   open_hours: '8:00 – 21:00 tất cả các ngày',
@@ -27,6 +27,17 @@ const DEFAULTS = {
   voucher_value: '200.000đ',
   voucher_title: 'Nhận voucher ưu đãi khi mua đệm',
   voucher_sub: 'Để lại thông tin, Đệm 191 gửi voucher và tư vấn chọn đệm miễn phí cho bạn.',
+  // Thông tin chủ sở hữu website (bắt buộc hiển thị theo NĐ 52/2013, NĐ 85/2021)
+  biz_name: '',        // Tên hộ kinh doanh / công ty trên giấy ĐKKD
+  biz_reg_no: '',      // Số giấy chứng nhận ĐKKD
+  biz_reg_date: '',    // Ngày cấp
+  biz_reg_place: '',   // Nơi cấp
+  biz_tax_code: '',    // Mã số thuế
+  biz_rep: '',         // Người đại diện / chủ hộ
+  biz_address: '',     // Địa chỉ trụ sở (để trống = địa chỉ đầu tiên của cửa hàng)
+  bct_url: '',         // Link xác thực "Đã thông báo Bộ Công Thương" (dán sau khi được duyệt)
+  price_note: 'Giá niêm yết trên website là giá bán lẻ. Đơn cần xuất hóa đơn VAT vui lòng báo trước để được báo giá kèm VAT. Phí vận chuyển (nếu có) được thông báo và xác nhận trước khi giao.',
+  return_days: '7',    // Số ngày đổi trả
 };
 
 let cache = null;

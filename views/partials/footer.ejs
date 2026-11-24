@@ -15,6 +15,7 @@
       <label class="sr-only" for="nl-phone">Số điện thoại</label>
       <input id="nl-phone" name="phone" type="tel" placeholder="Số điện thoại *" required pattern="[0-9+ ]{9,15}" autocomplete="tel">
       <button class="btn btn--gold" type="submit">Gọi lại cho tôi</button>
+      <label class="agree agree--light newsletter__agree"><input type="checkbox" name="agree" value="1" required><span>Tôi đồng ý để <%= s.site_name %> lưu và sử dụng thông tin trên để liên hệ tư vấn, theo <a href="/chinh-sach/bao-mat" target="_blank">Chính sách bảo mật</a>.</span></label>
     </form>
   </div>
 </section>
@@ -26,11 +27,11 @@
         <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="currentColor" stroke-opacity=".35"/><path d="M30.5 12.5a11 11 0 1 0 5 15.5 8.6 8.6 0 0 1-5-15.5z" fill="var(--gold-400)"/><path d="M9 33.5c4-2.2 9.6-3.3 15-3.3s11 1.1 15 3.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
         <span class="logo__text"><span class="logo__name">Đệm <b>191</b></span><span class="logo__sub">Sleep &amp; Bedding Store</span></span>
       </a>
-      <p class="footer__about"><%= s.tagline %>. Nhập trực tiếp từ nhà máy, cam kết hàng chính hãng, giá tốt nhất khu vực.</p>
+      <p class="footer__about"><%= s.tagline %>. Cam kết hàng chính hãng, đầy đủ phiếu bảo hành của nhà sản xuất.</p>
       <ul class="footer__contact">
         <% String(s.address || '').split('|').map(x => x.trim()).filter(Boolean).forEach(a => { %><li><svg class="i"><use href="#i-pin"/></svg><span><%= a %></span></li><% }) %>
         <li><svg class="i"><use href="#i-phone"/></svg><span><a href="tel:<%= tel2(s.hotline) %>"><%= s.hotline %></a> – <a href="tel:<%= tel2(s.hotline2) %>"><%= s.hotline2 %></a> (Zalo)</span></li>
-        <li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:<%= s.email %>"><%= s.email %></a></li>
+        <% if (s.email) { %><li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:<%= s.email %>"><%= s.email %></a></li><% } %>
         <li><svg class="i"><use href="#i-clock"/></svg><span><%= s.open_hours %></span></li>
       </ul>
     </div>
@@ -48,6 +49,10 @@
         <li><a href="/chinh-sach/bao-hanh">Bảo hành</a></li>
         <li><a href="/chinh-sach/tra-gop">Trả góp 0%</a></li>
         <li><a href="/chinh-sach/bao-mat">Bảo mật thông tin</a></li>
+        <li><a href="/chinh-sach/kiem-hang">Chính sách kiểm hàng</a></li>
+        <li><a href="/chinh-sach/thanh-toan">Hình thức thanh toán</a></li>
+        <li><a href="/chinh-sach/khieu-nai">Giải quyết khiếu nại</a></li>
+        <li><a href="/chinh-sach/dieu-khoan">Điều khoản giao dịch</a></li>
       </ul>
     </div>
     <div>
@@ -60,6 +65,16 @@
       <h3 class="footer__h footer__h--sm">Thanh toán</h3>
       <div class="pay-badges"><span>COD</span><span>Chuyển khoản</span><span>VietQR</span><span>Trả góp 0%</span></div>
     </div>
+  </div>
+  <% const bizAddr = s.biz_address || String(s.address || '').split('|')[0].trim(); %>
+  <div class="container footer__legal">
+    <div class="footer__legal-txt">
+      <p><b><%= s.biz_name || s.site_name %></b></p>
+      <% if (s.biz_reg_no) { %><p>Giấy chứng nhận đăng ký kinh doanh số <%= s.biz_reg_no %><% if (s.biz_reg_date) { %> cấp ngày <%= s.biz_reg_date %><% } %><% if (s.biz_reg_place) { %> tại <%= s.biz_reg_place %><% } %>.</p><% } %>
+      <% if (s.biz_tax_code) { %><p>Mã số thuế: <%= s.biz_tax_code %><% if (s.biz_rep) { %> · Người đại diện: <%= s.biz_rep %><% } %></p><% } else if (s.biz_rep) { %><p>Người đại diện: <%= s.biz_rep %></p><% } %>
+      <p>Địa chỉ trụ sở: <%= bizAddr %> · Điện thoại: <%= s.hotline %><% if (s.email) { %> · Email: <%= s.email %><% } %></p>
+    </div>
+    <% if (s.bct_url) { %><a class="footer__bct" href="<%= s.bct_url %>" target="_blank" rel="noopener" title="Đã thông báo Bộ Công Thương"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span><small>Đã thông báo</small>Bộ Công Thương</span></a><% } %>
   </div>
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
@@ -121,6 +136,7 @@
       <input id="vp-phone" name="phone" placeholder="Số điện thoại *" required inputmode="tel" pattern="[0-9 +.]{9,15}" maxlength="15" autocomplete="tel">
       <label class="sr-only" for="vp-email">Email</label>
       <input id="vp-email" name="email" type="email" placeholder="Email (nếu có)" maxlength="120" autocomplete="email">
+      <label class="agree agree--light"><input type="checkbox" name="agree" value="1" required><span>Tôi đồng ý với <a href="/chinh-sach/bao-mat" target="_blank">Chính sách bảo mật</a> của <%= s.site_name %>.</span></label>
       <button class="vpop__btn" type="submit">Nhận ngay</button>
     </form>
     <div class="vpop__done" data-vpop-done hidden>

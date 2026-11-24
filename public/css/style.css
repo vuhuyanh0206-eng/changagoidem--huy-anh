@@ -1214,3 +1214,27 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 .pd__consult a { white-space: nowrap; }
 .pd__consult-call em { font-style: normal; }
 @media (max-width: 760px) { .pd__consult-call em { display: none; } .pd__consult-call b { font-size: 17px; } }
+/* Chân trang: thông tin chủ sở hữu website (Bộ Công Thương) */
+.footer__legal { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-top: 18px; padding-bottom: 18px; border-top: 1px solid rgba(255, 255, 255, .08); font-size: 13px; line-height: 1.6; opacity: .85; }
+.footer__legal p { margin: 0; }
+.footer__legal b { font-size: 14px; }
+.footer__bct { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px 8px 8px; border-radius: 10px; background: #fff; color: #0b4fa3; font-weight: 800; font-size: 13px; line-height: 1.1; text-transform: uppercase; box-shadow: 0 0 0 2px #d7262e inset; }
+.footer__bct .i { width: 26px; height: 26px; padding: 5px; border-radius: 50%; background: #d7262e; color: #fff; }
+.footer__bct small { display: block; font-size: 10.5px; font-weight: 700; color: #d7262e; }
+@media (max-width: 760px) { .footer__legal { flex-direction: column; align-items: flex-start; font-size: 12.5px; } }
+/* Ô đồng ý điều khoản trong các form */
+.agree { display: flex; align-items: flex-start; gap: 8px; margin: 4px 0 0; font-size: 13px; line-height: 1.45; text-align: left; cursor: pointer; }
+.agree input { flex: none; width: 17px; height: 17px; margin: 1px 0 0; accent-color: var(--navy-800); }
+.agree a { text-decoration: underline; text-underline-offset: 2px; }
+.price-note { margin: 8px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--muted, #667085); }
+.policy .prose h2 { font-size: 19px; margin: 1.3em 0 .4em; }
+.policy .prose ul, .policy .prose ol { padding-left: 1.3em; }
+.policy .prose li { margin: .25em 0; }
+.agree--light { color: rgba(255, 255, 255, .9); }
+.agree--light a { color: #fff; }
+.agree--light input { accent-color: #ffd21f; }
+.newsletter__agree { grid-column: 1 / -1; font-size: 12.5px; }
+.vpop__form .agree { font-size: 12.5px; margin: 0; }
+.vpop__form .agree input { width: 17px; height: 17px; padding: 0; }
+.pd__price-note { margin: -4px 0 14px; }
+.pd__price-note a { text-decoration: underline; text-underline-offset: 2px; }

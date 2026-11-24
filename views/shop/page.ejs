@@ -6,7 +6,7 @@
     <nav class="side-nav" aria-label="Chính sách">
       <% Object.entries(policies).forEach(([k, v]) => { %><a href="/chinh-sach/<%= k %>" class="<%= k === current ? 'is-active' : '' %>"><%= v.title %></a><% }) %>
     </nav>
-    <article class="card">
+    <article class="card policy">
       <h1 class="section__title" style="margin:0 0 18px"><%= page.title %></h1>
       <div class="prose"><%- page.body %></div>
     </article>

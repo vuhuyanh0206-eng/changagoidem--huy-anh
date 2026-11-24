@@ -2,6 +2,7 @@ const express = require('express');
 const db = require('../db');
 const catalog = require('../catalog');
 const reviews = require('../reviews');
+const policies = require('../policies');
 const { hydrateProduct, orderCode, now, parseJSON } = require('../utils');
 
 const router = express.Router();
@@ -227,6 +228,7 @@ router.post(
     if (!/^(\+?84|0)\d{9,10}$/.test(form.phone)) errors.phone = 'Số điện thoại chưa đúng (VD: 0988 367 226)';
     if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errors.email = 'Email chưa đúng định dạng';
     if (form.address.length < 5) errors.address = 'Vui lòng nhập địa chỉ nhận hàng';
+    if (!b.agree) errors.agree = 'Vui lòng đánh dấu đồng ý với điều khoản giao dịch và chính sách bảo mật';
     const cart = await catalog.priceCart(parseJSON(b.items, []));
     if (!cart.lines.length) errors.cart = 'Giỏ hàng đang trống';
     if (Object.keys(errors).length) {
@@ -287,14 +289,8 @@ router.get(
 router.get('/gioi-thieu', (req, res) => res.render('shop/about', { meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Đệm 191 – hệ thống kho chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… giá tại kho, giao nhanh, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] }));
 router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Đệm 191: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1' }));
 
-const POLICIES = {
-  'giao-hang': { title: 'Chính sách giao hàng & lắp đặt', body: '<p>Miễn phí giao hàng và lắp đặt trong bán kính 20km. Các khu vực khác tính phí theo đơn vị vận chuyển, nhân viên sẽ báo trước khi giao.</p><p>Thời gian giao: nội thành 2–24 giờ, tỉnh thành khác 2–5 ngày làm việc.</p>' },
-  'doi-tra': { title: 'Chính sách đổi trả', body: '<p>Đổi trả theo chính sách bảo hành, đổi trả của từng hãng. Sản phẩm lỗi do nhà sản xuất được hỗ trợ bảo hành chính hãng.</p><p>Vui lòng liên hệ hotline hoặc Zalo để được hỗ trợ nhanh nhất.</p>' },
-  'bao-hanh': { title: 'Chính sách bảo hành', body: '<p>Sản phẩm được bảo hành chính hãng theo thời gian ghi trên phiếu bảo hành (3–20 năm tuỳ dòng). Bảo hành lún, xẹp quá 3cm, bung keo, gãy lò xo do lỗi sản xuất.</p>' },
-  'tra-gop': { title: 'Mua trả góp 0%', body: '<p>Hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân hàng, kỳ hạn 3–12 tháng. Liên hệ hotline để được hướng dẫn.</p>' },
-  'bao-mat': { title: 'Chính sách bảo mật', body: '<p>Thông tin khách hàng chỉ được dùng để xử lý đơn hàng, giao hàng và chăm sóc sau bán. Đệm 191 không chia sẻ thông tin cho bên thứ ba khi chưa có sự đồng ý của khách hàng.</p>' },
-};
 router.get('/chinh-sach/:slug', (req, res, next) => {
+  const POLICIES = policies.build(res.locals.s);
   const p = POLICIES[req.params.slug];
   if (!p) return next();
   res.render('shop/page', { meta: { title: `${p.title} | ${res.locals.s.site_name}`, description: ((t) => (t.length > 158 ? t.slice(0, 156).replace(/\s\S*$/, '') + '…' : t))(p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()) }, page: p, policies: POLICIES, current: req.params.slug, breadcrumb: [{ name: p.title }] });
@@ -308,8 +304,9 @@ router.post(
     const email = String(req.body.email || '').trim().slice(0, 120);
     const message = [String(req.body.message || '').trim().slice(0, 2000), email ? `Email: ${email}` : ''].filter(Boolean).join(' · ');
     const source = String(req.body.source || 'lien-he').slice(0, 60);
-    if (phone.length >= 9) await db.run('INSERT INTO leads (name, phone, message, source, handled, created_at) VALUES (?,?,?,?,0,?)', [name, phone, message, source, now()]);
-    if (req.get('accept')?.includes('application/json')) return res.json({ ok: phone.length >= 9 });
+    const ok = phone.length >= 9 && !!req.body.agree;
+    if (ok) await db.run('INSERT INTO leads (name, phone, message, source, handled, created_at) VALUES (?,?,?,?,0,?)', [name, phone, message, source, now()]);
+    if (req.get('accept')?.includes('application/json')) return res.json({ ok });
     const back = String(req.body.back || '/lien-he');
     res.redirect((back.startsWith('/') && !back.startsWith('//') ? back : '/lien-he') + (back.includes('?') ? '&' : '?') + 'sent=1');
   })
@@ -326,7 +323,7 @@ router.post(
     const rating = Math.min(5, Math.max(1, parseInt(req.body.rating, 10) || 5));
     const content = String(req.body.content || '').trim().slice(0, 1500);
     // Trường ẩn "website" để chặn bot tự điền form
-    if (name && content.length >= 5 && !req.body.website) await reviews.create({ productId: product.id, name, phone, rating, content });
+    if (name && content.length >= 5 && req.body.agree && !req.body.website) await reviews.create({ productId: product.id, name, phone, rating, content });
     res.redirect(`/san-pham/${product.slug}?reviewed=1#danh-gia`);
   })
 );

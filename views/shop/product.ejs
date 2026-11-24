@@ -50,6 +50,7 @@
         <s class="price__old" data-price-old <%= product.discount ? '' : 'hidden' %>><%= vnd(product.price) %></s>
         <span class="pd__save" data-price-save <%= product.discount ? '' : 'hidden' %>></span>
       </div>
+      <% if (s.price_note) { %><p class="price-note pd__price-note"><%= s.price_note %> <a href="/chinh-sach/giao-hang">Phí giao hàng</a></p><% } %>
       <% if (product.gift) { %>
       <div class="pd__gift">
         <svg class="i" aria-hidden="true"><use href="#i-gift"/></svg>
@@ -195,6 +196,7 @@
         <label class="sr-only" for="rv-content">Nội dung</label>
         <textarea class="rv__in" id="rv-content" name="content" rows="4" placeholder="Cảm nhận của bạn về sản phẩm *" required minlength="5" maxlength="1500"></textarea>
         <input class="sr-only" tabindex="-1" autocomplete="off" name="website" aria-hidden="true">
+        <label class="agree"><input type="checkbox" name="agree" value="1" required><span>Tôi đồng ý để <%= s.site_name %> hiển thị họ tên và nội dung đánh giá trên website, theo <a href="/chinh-sach/bao-mat" target="_blank">Chính sách bảo mật</a>.</span></label>
         <button class="btn btn--gold" type="submit">Gửi đánh giá</button>
       </form>
     </div>

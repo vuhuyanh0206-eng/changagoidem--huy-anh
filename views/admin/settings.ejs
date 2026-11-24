@@ -20,6 +20,24 @@
       <label class="f"><span>Link nhúng Google Maps <small>(Google Maps → Chia sẻ → Nhúng bản đồ → copy phần trong src="…")</small></span><input class="in" name="map_embed" value="<%= s.map_embed %>" placeholder="https://www.google.com/maps/embed?pb=..."></label>
     </section>
     <section class="panel">
+      <h2>Thông tin doanh nghiệp (Bộ Công Thương)</h2>
+      <p class="muted">Bắt buộc hiển thị ở chân trang và trong các chính sách khi thông báo website với Bộ Công Thương (online.gov.vn). Điền đúng như trên giấy đăng ký kinh doanh.</p>
+      <div class="row2">
+        <label class="f"><span>Tên hộ kinh doanh / công ty</span><input class="in" name="biz_name" value="<%= s.biz_name %>" placeholder="VD: Hộ kinh doanh Đệm 191"></label>
+        <label class="f"><span>Người đại diện / chủ hộ</span><input class="in" name="biz_rep" value="<%= s.biz_rep %>"></label>
+        <label class="f"><span>Số giấy chứng nhận ĐKKD</span><input class="in" name="biz_reg_no" value="<%= s.biz_reg_no %>"></label>
+        <label class="f"><span>Mã số thuế</span><input class="in" name="biz_tax_code" value="<%= s.biz_tax_code %>"></label>
+        <label class="f"><span>Ngày cấp</span><input class="in" name="biz_reg_date" value="<%= s.biz_reg_date %>" placeholder="dd/mm/yyyy"></label>
+        <label class="f"><span>Nơi cấp</span><input class="in" name="biz_reg_place" value="<%= s.biz_reg_place %>" placeholder="VD: Phòng Tài chính – Kế hoạch quận Lê Chân"></label>
+      </div>
+      <label class="f"><span>Địa chỉ trụ sở <small>(để trống = địa chỉ cửa hàng đầu tiên)</small></span><input class="in" name="biz_address" value="<%= s.biz_address %>"></label>
+      <div class="row2">
+        <label class="f"><span>Số ngày đổi trả</span><input class="in" name="return_days" value="<%= s.return_days %>" inputmode="numeric"></label>
+        <label class="f"><span>Link xác thực Bộ Công Thương <small>(dán sau khi được duyệt, logo tự hiện)</small></span><input class="in" name="bct_url" value="<%= s.bct_url %>" placeholder="http://online.gov.vn/Home/WebDetails/..."></label>
+      </div>
+      <label class="f"><span>Ghi chú giá (hiện dưới giá sản phẩm và ở trang thanh toán)</span><textarea class="in" name="price_note" rows="2"><%= s.price_note %></textarea></label>
+    </section>
+    <section class="panel">
       <h2>Giao hàng &amp; khuyến mãi</h2>
       <label class="f"><span>Dòng thông báo trên cùng</span><input class="in" name="free_ship_text" value="<%= s.free_ship_text %>"></label>
       <div class="row3">

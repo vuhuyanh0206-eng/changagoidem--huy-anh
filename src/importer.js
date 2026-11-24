@@ -205,7 +205,7 @@ const CATEGORY_COVERS = {
 };
 
 // Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
-const DATA_VERSION = '2026-11-21a';
+const DATA_VERSION = '2026-11-24a';
 
 // Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
 const MAIN_BANNERS = [
@@ -236,7 +236,9 @@ async function importAll(opts = {}) {
       }
     }
     // Ngày kết thúc đếm ngược Black Friday: bỏ giá trị cũ đã lưu để dùng mặc định trong settings.js
-    await db.run("DELETE FROM settings WHERE skey = 'flash_sale_end'");
+    if (!ver || String(ver.svalue) < '2026-11-21a') await db.run("DELETE FROM settings WHERE skey = 'flash_sale_end'");
+    // Email theo tên miền cũ khodemhp.vn không dùng được: xoá để chủ shop nhập email thật trong Cài đặt
+    await db.run("DELETE FROM settings WHERE skey = 'email' AND svalue LIKE '%khodemhp.vn%'");
     if (ver) await db.run("UPDATE settings SET svalue = ? WHERE skey = 'data_version'", [DATA_VERSION]);
     else await db.run("INSERT INTO settings (skey, svalue) VALUES ('data_version', ?)", [DATA_VERSION]);
     console.log(`Đồng bộ dữ liệu sản phẩm theo phiên bản ${DATA_VERSION}`);

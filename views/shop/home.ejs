@@ -168,9 +168,9 @@
         <h2 class="section__title">Giá tại kho, chất lượng như showroom cao cấp</h2>
         <p>Đệm 191 nhập hàng trực tiếp từ nhà máy, bỏ qua các tầng trung gian để bạn sở hữu chiếc đệm tốt với giá hợp lý nhất. Mỗi sản phẩm đều được kiểm tra kỹ trước khi giao, kèm phiếu bảo hành chính hãng.</p>
         <ul class="stats">
-          <li><b data-count="15000">15.000</b><span>khách hàng tin dùng</span></li>
-          <li><b data-count="120">120</b><span>dự án khách sạn</span></li>
-          <li><b>4.9<small>/5</small></b><span>điểm đánh giá</span></li>
+          <li><b>10<small>+</small></b><span>thương hiệu chính hãng</span></li>
+          <li><b>2</b><span>showroom tại Hải Phòng</span></li>
+          <li><b>20<small> năm</small></b><span>bảo hành tối đa</span></li>
         </ul>
         <div class="story__cta">
           <a class="btn btn--navy" href="/gioi-thieu">Câu chuyện của chúng tôi</a>
@@ -202,29 +202,27 @@
     </div>
   </section>
 
-  <!-- Đánh giá -->
+  <!-- Đánh giá thật của khách (chỉ hiện khi đã có đánh giá được duyệt) -->
+  <% if (reviews.length) { %>
   <section class="section">
     <div class="container">
       <div class="section__head section__head--center">
         <span class="eyebrow">Khách hàng nói gì</span>
-        <h2 class="section__title">Hơn 15.000 giấc ngủ ngon mỗi đêm</h2>
+        <h2 class="section__title">Đánh giá từ khách hàng đã mua</h2>
       </div>
       <div class="reviews">
-        <% (reviews.length >= 3 ? reviews.map(r => [r.name, r.product_name ? 'Đánh giá ' + r.product_name : 'Khách hàng', r.content, r.rating, r.product_slug]) : [
-          ['Chị Thu Hà', 'Hải Phòng', 'Mua đệm cao su Liên Á được 3 tháng, chồng mình hết hẳn đau lưng. Nhân viên giao lắp nhanh, rất nhiệt tình.'],
-          ['Anh Minh Quân', 'Hà Nội', 'Giá rẻ hơn showroom gần 3 triệu mà vẫn đầy đủ bảo hành. Đệm lò xo Dunlopillo nằm êm, không truyền động.'],
-          ['Khách sạn Sea Pearl', 'Đồ Sơn', 'Đã nhập 45 bộ đệm và chăn ga cho khách sạn. Báo giá nhanh, đúng hẹn, khách lưu trú khen giường êm.'],
-        ]).forEach(r => { %>
+        <% reviews.slice(0, 6).forEach(r => { %>
           <figure class="review">
             <svg class="i review__q"><use href="#i-quote"/></svg>
-            <div class="review__stars" aria-label="<%= r[3] || 5 %> sao"><% for (let i = 0; i < (r[3] || 5); i++) { %><svg class="i"><use href="#i-star"/></svg><% } %></div>
-            <blockquote><%= r[2] %></blockquote>
-            <figcaption><span class="avatar"><%= (r[0].trim().split(' ').pop() || 'K')[0].toUpperCase() %></span><span><b><%= r[0] %></b><small><% if (r[4]) { %><a href="/san-pham/<%= r[4] %>"><%= r[1] %></a><% } else { %><%= r[1] %> · Đã mua hàng<% } %></small></span></figcaption>
+            <div class="review__stars" aria-label="<%= r.rating %> sao"><% for (let i = 0; i < r.rating; i++) { %><svg class="i"><use href="#i-star"/></svg><% } %></div>
+            <blockquote><%= r.content %></blockquote>
+            <figcaption><span class="avatar"><%= (String(r.name).trim().split(' ').pop() || 'K')[0].toUpperCase() %></span><span><b><%= r.name %></b><small><% if (r.product_slug) { %><a href="/san-pham/<%= r.product_slug %>">Đánh giá <%= r.product_name %></a><% } else { %>Khách hàng<% } %></small></span></figcaption>
           </figure>
         <% }) %>
       </div>
     </div>
   </section>
+  <% } %>
 
   <!-- Tin tức -->
   <% if (latestPosts.length) { %>
