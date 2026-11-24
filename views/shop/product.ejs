@@ -224,4 +224,5 @@
   aggregateRating: product.rating_count ? { '@type': 'AggregateRating', ratingValue: product.rating_avg, reviewCount: product.rating_count } : undefined,
   offers: contact ? undefined : { '@type': 'Offer', priceCurrency: 'VND', price: product.finalPrice, availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', url: siteUrl + path }
 }).replace(/</g, '\\u003c') %></script><% } %>
+<% if (s.fb_pixel) { %><script>window.fbq && fbq('track', 'ViewContent', <%- JSON.stringify(Object.assign({ content_ids: [String(product.id)], content_type: 'product', content_name: product.name, content_category: cat ? cat.name : '' }, contact ? {} : { value: product.finalPrice, currency: 'VND' })).replace(/</g, '\\u003c') %>);</script><% } %>
 <%- include('../partials/footer') %>

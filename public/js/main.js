@@ -18,6 +18,7 @@
       Cart.sync();
     },
     add(id, size = '', qty = 1) {
+      if (window.fbq) try { fbq('track', 'AddToCart', { content_ids: [String(id)], content_type: 'product', contents: [{ id: String(id), quantity: qty }] }); } catch {}
       const items = Cart.read();
       const hit = items.find((i) => i.id === id && i.size === size);
       if (hit) hit.qty = Math.min(99, hit.qty + qty);
@@ -499,6 +500,7 @@
   /* ---------------- Checkout ---------------- */
   const co = $('[data-checkout]');
   if (co) {
+    if (window.fbq) try { const it = Cart.read(); if (it.length) fbq('track', 'InitiateCheckout', { content_ids: it.map((i) => String(i.id)), content_type: 'product', num_items: it.reduce((a, i) => a + i.qty, 0) }); } catch {}
     const itemsField = $('input[name="items"]', co);
     const render = async () => {
       itemsField.value = JSON.stringify(Cart.read());

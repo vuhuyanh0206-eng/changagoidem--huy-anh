@@ -42,4 +42,5 @@
     </div>
   </div>
 </main>
+<% if (s.fb_pixel) { %><script>(function(){var k='khp_px_'+<%- JSON.stringify(order.code) %>;try{if(localStorage.getItem(k))return;localStorage.setItem(k,'1')}catch(e){}window.fbq&&fbq('track','Purchase',<%- JSON.stringify({ value: Number(order.total), currency: 'VND', content_type: 'product', content_ids: order.items.map(i => String(i.id)), contents: order.items.map(i => ({ id: String(i.id), quantity: i.qty, item_price: i.unit })), num_items: order.items.reduce((a, i) => a + i.qty, 0) }).replace(/</g, '\\u003c') %>,{eventID:<%- JSON.stringify(order.code) %>})})();</script><% } %>
 <%- include('../partials/footer') %>

@@ -193,6 +193,7 @@ router.get(
         description: product.short_desc,
         image: product.image,
         type: 'product',
+        product: product.finalPrice > 0 ? { id: product.id, brand: product.brand || res.locals.s.site_name, availability: Number(product.in_stock) ? 'in stock' : 'out of stock', price: product.finalPrice } : null,
       },
       product,
       cat,
@@ -345,6 +346,52 @@ router.get(
     ]);
     const urls = ['/', '/dem', '/khuyen-mai', '/tin-tuc', '/du-an-khach-san', '/gioi-thieu', '/lien-he', ...cats.map((c) => `/danh-muc/${c.slug}`), ...prods.map((p) => `/san-pham/${p.slug}`), ...posts.map((p) => `/tin-tuc/${p.slug}`)];
     res.type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map((u) => `<url><loc>${base}${u}</loc></url>`).join('')}</urlset>`);
+  })
+);
+
+/* ---------- Feed sản phẩm cho Facebook / Meta Commerce Manager (danh mục quảng cáo, băng chuyền) ---------- */
+router.get(
+  '/feed/facebook.csv',
+  wrap(async (req, res) => {
+    const base = res.locals.siteUrl;
+    const s = res.locals.s;
+    const rows = await db.query(
+      `SELECT p.*, (SELECT c.name FROM categories c WHERE c.id = p.category_id) AS cat_name, (SELECT c.slug FROM categories c WHERE c.id = p.category_id) AS cat_slug
+       FROM products p WHERE p.active = 1 ORDER BY p.id`
+    );
+    const abs = (u) => (/^https?:/i.test(u) ? u : base + u);
+    const plain = (h) => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+    const cell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    const head = ['id', 'title', 'description', 'availability', 'condition', 'price', 'sale_price', 'link', 'image_link', 'additional_image_link', 'brand', 'product_type'];
+    const lines = [head.join(',')];
+    for (const r of rows) {
+      const p = hydrateProduct(r);
+      if (!(p.finalPrice > 0)) continue; // "Liên hệ báo giá": Facebook bắt buộc có giá nên bỏ qua
+      const imgs = p.images.filter((i) => !/placeholder/.test(i));
+      if (!imgs.length) continue;
+      const desc = (plain(p.short_desc) || plain(p.description) || p.name).slice(0, 5000);
+      const hasSale = p.discount > 0;
+      lines.push(
+        [
+          p.id,
+          p.name.slice(0, 200),
+          desc,
+          Number(p.in_stock) ? 'in stock' : 'out of stock',
+          'new',
+          `${Number(p.price)} VND`,
+          hasSale ? `${Number(p.sale_price)} VND` : '',
+          `${base}/san-pham/${p.slug}`,
+          abs(imgs[0]),
+          imgs.slice(1, 10).map(abs).join(','),
+          p.brand || s.site_name,
+          p.cat_name || '',
+        ]
+          .map(cell)
+          .join(',')
+      );
+    }
+    res.set('Cache-Control', 'public, max-age=900');
+    res.type('text/csv; charset=utf-8').send('﻿' + lines.join('\n') + '\n');
   })
 );
 

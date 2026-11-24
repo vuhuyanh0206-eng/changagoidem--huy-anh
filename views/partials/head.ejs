@@ -20,6 +20,14 @@
   <meta property="og:image" content="<%= ogImg %>">
   <meta property="og:url" content="<%= siteUrl + path %>">
   <meta property="og:locale" content="vi_VN">
+  <% if (m.product) { %>
+  <meta property="product:retailer_item_id" content="<%= m.product.id %>">
+  <meta property="product:brand" content="<%= m.product.brand %>">
+  <meta property="product:availability" content="<%= m.product.availability %>">
+  <meta property="product:condition" content="new">
+  <meta property="product:price:amount" content="<%= m.product.price %>">
+  <meta property="product:price:currency" content="VND">
+  <% } %>
   <meta name="theme-color" content="#0F2A4D">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +41,7 @@
   <% } %>
   <% if (s.fb_pixel) { %>
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','<%= s.fb_pixel %>');fbq('track','PageView');</script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=<%= s.fb_pixel %>&ev=PageView&noscript=1"></noscript>
   <% } %>
 </head>
 <body>

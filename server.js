@@ -43,7 +43,7 @@ app.use(
         styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         fontSrc: ["'self'", 'https://fonts.gstatic.com'],
         imgSrc: ["'self'", 'data:', 'https:'],
-        connectSrc: ["'self'", 'https://www.google-analytics.com', 'https://*.google-analytics.com'],
+        connectSrc: ["'self'", 'https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.facebook.com', 'https://connect.facebook.net'],
         frameSrc: ["'self'", 'https://www.google.com', 'https://maps.google.com', 'https://www.youtube.com'],
         upgradeInsecureRequests: isProd ? [] : null,
       },
