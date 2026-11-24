@@ -13,6 +13,7 @@ function build(s) {
   const email = s.email ? esc(s.email) : '';
   const contact = `hotline <b>${hotlines}</b> (Zalo)${email ? `, email <b>${email}</b>` : ''} hoặc trực tiếp tại cửa hàng: ${addrs.map(esc).join('; ')}`;
   const hours = esc(s.open_hours);
+  const web = esc(String(s.website || '').replace(/^https?:\/\//, '').replace(/\/$/, ''));
   const days = parseInt(s.return_days, 10) || 7;
   const fee = Number(s.shipping_fee) || 0;
   const freeMin = Number(s.free_ship_min) || 0;
@@ -23,7 +24,7 @@ function build(s) {
     'dieu-khoan': {
       title: 'Điều khoản & điều kiện giao dịch chung',
       body: `
-<p>Website này thuộc sở hữu của <b>${owner}</b>, địa chỉ trụ sở: ${hq}. Khi đặt hàng hoặc để lại thông tin trên website, quý khách đồng ý với các điều khoản dưới đây.</p>
+<p>Website${web ? ` <b>${web}</b>` : ' này'} thuộc sở hữu của <b>${owner}</b>, địa chỉ trụ sở: ${hq}. Khi đặt hàng hoặc để lại thông tin trên website, quý khách đồng ý với các điều khoản dưới đây.</p>
 <h2>1. Đối tượng áp dụng</h2>
 <p>Áp dụng cho mọi khách hàng mua sản phẩm chăn, ga, gối, đệm và phụ kiện do ${name} bán thông qua website, điện thoại, Zalo hoặc tại cửa hàng sau khi xem sản phẩm trên website.</p>
 <h2>2. Thông tin sản phẩm và giá</h2>
@@ -196,7 +197,7 @@ ${bank}
 <h2>5. Những người hoặc tổ chức có thể được tiếp cận</h2>
 <p>Chủ cửa hàng và nhân viên bán hàng, giao hàng, chăm sóc khách hàng của ${name}; các bên nêu tại mục 3 trong phạm vi cần thiết.</p>
 <h2>6. Đơn vị thu thập và quản lý thông tin</h2>
-<p><b>${owner}</b><br>Địa chỉ: ${hq}<br>Điện thoại: ${hotlines}${email ? `<br>Email: ${email}` : ''}</p>
+<p><b>${owner}</b><br>Địa chỉ: ${hq}<br>Điện thoại: ${hotlines}${email ? `<br>Email: ${email}` : ''}${web ? `<br>Website: ${web}` : ''}</p>
 <h2>7. Phương tiện và công cụ để khách hàng tiếp cận, chỉnh sửa dữ liệu</h2>
 <p>Khách hàng có quyền yêu cầu xem, chỉnh sửa, xoá dữ liệu cá nhân, rút lại sự đồng ý hoặc ngừng nhận tin quảng cáo bằng cách liên hệ ${contact}. ${name} thực hiện yêu cầu trong vòng 72 giờ làm việc.</p>
 <h2>8. Cam kết bảo mật</h2>

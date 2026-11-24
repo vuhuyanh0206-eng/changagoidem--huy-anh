@@ -1,14 +1,14 @@
 <%- include('../partials/head') %>
 <%- include('../partials/header') %>
 <%- include('../partials/breadcrumb') %>
-<% const telx = (x) => String(x || '').replace(/[^\d+]/g, ''); const shops = String(s.address || '').split('|').map(x => x.trim()).filter(Boolean); const host = siteUrl.replace(/^https?:\/\//, ''); %>
+<% const telx = (x) => String(x || '').replace(/[^\d+]/g, ''); const shops = String(s.address || '').split('|').map(x => x.trim()).filter(Boolean); const web = s.website || siteUrl; const host = web.replace(/^https?:\/\//, '').replace(/\/$/, ''); %>
 <main id="main" class="about">
   <!-- Giới thiệu chung -->
   <section class="container about-intro">
     <div class="about-intro__txt">
       <span class="eyebrow">Giới thiệu</span>
       <h1>Về <%= s.site_name %></h1>
-      <p class="about-intro__lead"><b><%= s.site_name %></b> là cửa hàng chuyên chăn, ga, gối, đệm chính hãng tại Hải Phòng, với <%= shops.length %> showroom trưng bày để khách hàng xem tận mắt, nằm thử và được tư vấn trực tiếp trước khi mua.</p>
+      <p class="about-intro__lead"><b><%= s.site_name %></b> là cửa hàng chuyên chăn, ga, gối, đệm chính hãng tại Hải Phòng, có showroom trưng bày để khách hàng xem tận mắt, nằm thử và được tư vấn trực tiếp trước khi mua.</p>
       <% if (brands.length) { %>
       <p>Chúng tôi là đại lý phân phối các thương hiệu được nhiều gia đình Việt tin dùng:
         <% brands.forEach((b, i) => { %><b><%= b %></b><%= i < brands.length - 1 ? ', ' : '.' %><% }) %>
@@ -18,7 +18,7 @@
     </div>
     <figure class="about-intro__img">
       <img src="/images/store/mat-tien-dem-191.jpg" alt="Mặt tiền showroom <%= s.site_name %>" width="528" height="840">
-      <figcaption><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= shops[0] || '' %></figcaption>
+      <figcaption><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Showroom <%= s.site_name %></figcaption>
     </figure>
   </section>
 
@@ -56,13 +56,13 @@
           <ul class="about-contact__list">
             <li><svg class="i"><use href="#i-phone"/></svg><span>Hotline: <a href="tel:<%= telx(s.hotline) %>"><b><%= s.hotline %></b></a><% if (s.hotline2) { %> – <a href="tel:<%= telx(s.hotline2) %>"><b><%= s.hotline2 %></b></a><% } %> (Zalo)</span></li>
             <% if (s.email) { %><li><svg class="i"><use href="#i-mail"/></svg><span>Email: <a href="mailto:<%= s.email %>"><%= s.email %></a></span></li><% } %>
-            <li><svg class="i"><use href="#i-grid"/></svg><span>Website: <a href="<%= siteUrl %>"><%= host %></a></span></li>
+            <li><svg class="i"><use href="#i-grid"/></svg><span>Website: <a href="<%= web %>"><%= host %></a></span></li>
           </ul>
         </div>
         <div class="about-shops">
           <% shops.forEach((a, i) => { %>
           <article class="about-shop">
-            <h3>Showroom <%= i + 1 %></h3>
+            <h3>Showroom<%= shops.length > 1 ? ' ' + (i + 1) : '' %></h3>
             <p><svg class="i"><use href="#i-pin"/></svg><span><%= a %></span></p>
             <p><svg class="i"><use href="#i-phone"/></svg><span><a href="tel:<%= telx(s.hotline) %>"><%= s.hotline %></a></span></p>
             <p><svg class="i"><use href="#i-clock"/></svg><span><%= s.open_hours %></span></p>

@@ -205,7 +205,7 @@ const CATEGORY_COVERS = {
 };
 
 // Tăng số này mỗi khi sửa giá / quà / bảo hành trong data/imports để website (kể cả trên Hostinger) tự cập nhật 1 lần khi khởi động
-const DATA_VERSION = '2026-11-24a';
+const DATA_VERSION = '2026-11-25a';
 
 // Banner trượt trang chủ do chủ shop chọn (khớp theo đường dẫn), áp dụng 1 lần theo DATA_VERSION
 const MAIN_BANNERS = [
@@ -241,6 +241,8 @@ async function importAll(opts = {}) {
     await db.run("DELETE FROM settings WHERE skey = 'email' AND svalue LIKE '%khodemhp.vn%'");
     // Dòng giao hàng mới: vận chuyển toàn quốc, miễn phí dưới 20km từ shop
     await db.run("DELETE FROM settings WHERE skey = 'free_ship_text' AND svalue LIKE '%nội thành%'");
+    // Tạm ẩn địa chỉ 191 Tôn Đức Thắng: xoá địa chỉ đã lưu nếu còn chứa địa chỉ này (dùng mặc định trong settings.js)
+    await db.run("DELETE FROM settings WHERE skey = 'address' AND svalue LIKE '%Tôn Đức Thắng%'");
     if (ver) await db.run("UPDATE settings SET svalue = ? WHERE skey = 'data_version'", [DATA_VERSION]);
     else await db.run("INSERT INTO settings (skey, svalue) VALUES ('data_version', ?)", [DATA_VERSION]);
     console.log(`Đồng bộ dữ liệu sản phẩm theo phiên bản ${DATA_VERSION}`);

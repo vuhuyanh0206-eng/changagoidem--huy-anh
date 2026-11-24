@@ -288,7 +288,7 @@ router.get(
 );
 router.get('/gioi-thieu', wrap(async (req, res) => {
   const brands = (await db.query("SELECT p.brand, COUNT(*) n FROM products p WHERE p.active = 1 AND p.brand IS NOT NULL AND p.brand <> '' GROUP BY p.brand ORDER BY n DESC")).map((r) => r.brand);
-  res.render('shop/about', { brands,  meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Giới thiệu Đệm 191 – cửa hàng chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… 2 showroom, giá tại kho, vận chuyển toàn quốc, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] });
+  res.render('shop/about', { brands,  meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Giới thiệu Đệm 191 – cửa hàng chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… showroom tại Hải Phòng, giá tại kho, vận chuyển toàn quốc, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] });
 }));
 router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Đệm 191: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1' }));
 

@@ -7,7 +7,8 @@ const DEFAULTS = {
   hotline2: '0912 831 034',
   zalo: '0988367226',
   email: '',
-  address: '191 Tôn Đức Thắng, Lê Chân, Hải Phòng | 172 Đà Nẵng, Ngô Quyền, Hải Phòng',
+  address: '172 Đà Nẵng, Ngô Quyền, Hải Phòng', // tạm ẩn 191 Tôn Đức Thắng, Lê Chân
+  website: 'https://dem191.com',
   map_embed: '',
   open_hours: '8:00 – 21:00 tất cả các ngày',
   facebook: '',

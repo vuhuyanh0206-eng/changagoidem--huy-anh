@@ -72,7 +72,7 @@
       <p><b><%= s.biz_name || s.site_name %></b></p>
       <% if (s.biz_reg_no) { %><p>Giấy chứng nhận đăng ký kinh doanh số <%= s.biz_reg_no %><% if (s.biz_reg_date) { %> cấp ngày <%= s.biz_reg_date %><% } %><% if (s.biz_reg_place) { %> tại <%= s.biz_reg_place %><% } %>.</p><% } %>
       <% if (s.biz_tax_code) { %><p>Mã số thuế: <%= s.biz_tax_code %><% if (s.biz_rep) { %> · Người đại diện: <%= s.biz_rep %><% } %></p><% } else if (s.biz_rep) { %><p>Người đại diện: <%= s.biz_rep %></p><% } %>
-      <p>Địa chỉ trụ sở: <%= bizAddr %> · Điện thoại: <%= s.hotline %><% if (s.email) { %> · Email: <%= s.email %><% } %></p>
+      <p>Địa chỉ trụ sở: <%= bizAddr %> · Điện thoại: <%= s.hotline %><% if (s.email) { %> · Email: <%= s.email %><% } %><% if (s.website) { %> · Website: <a href="<%= s.website %>"><%= s.website.replace(/^https?:\/\//, '') %></a><% } %></p>
     </div>
     <% if (s.bct_url) { %><a class="footer__bct" href="<%= s.bct_url %>" target="_blank" rel="noopener" title="Đã thông báo Bộ Công Thương"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span><small>Đã thông báo</small>Bộ Công Thương</span></a><% } %>
   </div>
