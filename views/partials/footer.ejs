@@ -97,7 +97,7 @@
   <button type="button" data-open="drawer-menu"><svg class="i"><use href="#i-grid"/></svg><span>Danh mục</span></button>
   <a href="tel:<%= tel2(s.hotline) %>" class="bottom-nav__call"><svg class="i"><use href="#i-phone"/></svg><span>Gọi ngay</span></a>
   <a href="https://zalo.me/<%= tel2(s.zalo) %>" target="_blank" rel="noopener"><span class="bn-zalo">Zalo</span><span>Chat</span></a>
-  <a href="/gio-hang" data-open="drawer-cart"><span class="cart-ico"><svg class="i"><use href="#i-cart"/></svg><em class="cart-count" data-cart-count>0</em></span><span>Giỏ hàng</span></a>
+  <% if (s.cart_on === '1') { %><a href="/gio-hang" data-open="drawer-cart"><span class="cart-ico"><svg class="i"><use href="#i-cart"/></svg><em class="cart-count" data-cart-count>0</em></span><span>Giỏ hàng</span></a><% } else { %><a href="/lien-he" class="<%= path === '/lien-he' ? 'is-active' : '' %>"><svg class="i"><use href="#i-pin"/></svg><span>Liên hệ</span></a><% } %>
 </nav>
 
 <% if (s.voucher_on === '1' && !/^\/(gio-hang|thanh-toan|dat-hang)/.test(path)) { %>
@@ -150,6 +150,6 @@
 
 <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
 <script>window.KHP = { csrf: '<%= csrfToken %>' };</script>
-<script src="/js/main.js?v=4" defer></script>
+<script src="/js/main.js?v=5" defer></script>
 </body>
 </html>

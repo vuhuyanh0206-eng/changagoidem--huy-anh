@@ -39,6 +39,7 @@
     </section>
     <section class="panel">
       <h2>Giao hàng &amp; khuyến mãi</h2>
+      <label class="f"><span>Giỏ hàng &amp; đặt hàng online</span><select class="in" name="cart_on"><option value="1"<%= s.cart_on === '1' ? ' selected' : '' %>>Bật – khách tự thêm vào giỏ và đặt hàng trên web</option><option value="0"<%= s.cart_on !== '1' ? ' selected' : '' %>>Tắt – chỉ hiện nút gọi / Zalo / gửi yêu cầu</option></select></label>
       <label class="f"><span>Dòng thông báo trên cùng</span><input class="in" name="free_ship_text" value="<%= s.free_ship_text %>"></label>
       <div class="row3">
         <label class="f"><span>Phí giao mặc định (₫, 0 = miễn phí)</span><input class="in" name="shipping_fee" value="<%= s.shipping_fee %>" inputmode="numeric"></label>

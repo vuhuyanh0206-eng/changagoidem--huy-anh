@@ -207,6 +207,8 @@ router.get(
 );
 
 /* ---------- Giỏ hàng & đặt hàng ---------- */
+// Tắt giỏ hàng trong Cài đặt (cart_on = 0) thì mọi trang giỏ hàng / thanh toán chuyển về Liên hệ
+router.use(['/gio-hang', '/thanh-toan', '/dat-hang'], (req, res, next) => (res.locals.s.cart_on === '1' ? next() : res.redirect(303, '/lien-he')));
 router.get('/gio-hang', (req, res) => res.render('shop/cart', { meta: { title: 'Giỏ hàng', robots: 'noindex' }, breadcrumb: [{ name: 'Giỏ hàng' }] }));
 router.get('/thanh-toan', (req, res) => res.render('shop/checkout', { meta: { title: 'Thanh toán', robots: 'noindex' }, breadcrumb: [{ name: 'Giỏ hàng', href: '/gio-hang' }, { name: 'Thanh toán' }], errors: null, form: {} }));
 
@@ -290,7 +292,7 @@ router.get('/gioi-thieu', wrap(async (req, res) => {
   const brands = (await db.query("SELECT p.brand, COUNT(*) n FROM products p WHERE p.active = 1 AND p.brand IS NOT NULL AND p.brand <> '' GROUP BY p.brand ORDER BY n DESC")).map((r) => r.brand);
   res.render('shop/about', { brands,  meta: { title: `Giới thiệu | ${res.locals.s.site_name}`, description: 'Giới thiệu Đệm 191 – cửa hàng chăn ga gối đệm chính hãng tại Hải Phòng: Liên Á, Dunlopillo, Vikosan, Elan… showroom tại Hải Phòng, giá tại kho, vận chuyển toàn quốc, bảo hành chính hãng.' }, breadcrumb: [{ name: 'Giới thiệu' }] });
 }));
-router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Đệm 191: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1' }));
+router.get('/lien-he', (req, res) => res.render('shop/contact', { meta: { title: `Liên hệ | ${res.locals.s.site_name}`, description: `Liên hệ Đệm 191: hotline ${res.locals.s.hotline}, showroom tại Hải Phòng. Tư vấn chọn đệm, báo giá tốt nhất và đặt hàng nhanh qua điện thoại, Zalo.` }, breadcrumb: [{ name: 'Liên hệ' }], sent: req.query.sent === '1', sp: String(req.query.sp || '').slice(0, 200) }));
 
 router.get('/chinh-sach/:slug', (req, res, next) => {
   const POLICIES = policies.build(res.locals.s);

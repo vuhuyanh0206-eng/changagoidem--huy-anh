@@ -30,6 +30,8 @@
       </div>
       <% if (contact) { %>
         <a class="pcard__add" href="/san-pham/<%= p.slug %>" aria-label="Xem và nhận báo giá <%= p.name %>"><svg class="i"><use href="#i-phone"/></svg></a>
+      <% } else if (s.cart_on !== '1') { %>
+        <a class="pcard__add" href="/san-pham/<%= p.slug %>" aria-label="Xem chi tiết <%= p.name %>"><svg class="i"><use href="#i-arrow-r"/></svg></a>
       <% } else if (multi) { %>
         <a class="pcard__add" href="/san-pham/<%= p.slug %>" aria-label="Chọn kích thước <%= p.name %>"><svg class="i"><use href="#i-cart"/></svg></a>
       <% } else { %>

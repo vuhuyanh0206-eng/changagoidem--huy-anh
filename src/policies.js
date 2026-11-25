@@ -20,6 +20,7 @@ function build(s) {
   const vnd = (n) => n.toLocaleString('vi-VN') + 'đ';
   const bank = s.bank_account ? `<p>Thông tin tài khoản nhận tiền: <b>${esc(s.bank_code)}</b> – số tài khoản <b>${esc(s.bank_account)}</b> – chủ tài khoản <b>${esc(s.bank_holder)}</b>. ${name} không yêu cầu chuyển khoản vào bất kỳ tài khoản nào khác.</p>` : `<p>Số tài khoản nhận tiền được hiển thị trên trang xác nhận đơn hàng (kèm mã VietQR) và chỉ là tài khoản đứng tên ${owner}. ${name} không yêu cầu chuyển khoản vào bất kỳ tài khoản nào khác.</p>`;
 
+  const cartOn = s.cart_on === '1';
   return {
     'dieu-khoan': {
       title: 'Điều khoản & điều kiện giao dịch chung',
@@ -36,9 +37,10 @@ function build(s) {
 </ul>
 <h2>3. Quy trình đặt hàng và xác nhận</h2>
 <ol>
-<li>Chọn sản phẩm, kích thước, số lượng và bấm “Thêm vào giỏ” hoặc “Mua ngay”.</li>
+${cartOn ? `<li>Chọn sản phẩm, kích thước, số lượng và bấm “Thêm vào giỏ” hoặc “Mua ngay”.</li>
 <li>Tại trang thanh toán, kiểm tra lại toàn bộ thông tin đơn hàng (sản phẩm, số lượng, đơn giá, phí giao hàng, tổng tiền), nhập thông tin người nhận, chọn hình thức thanh toán.</li>
-<li>Đánh dấu đồng ý với điều khoản này và chính sách bảo mật, sau đó bấm “Đặt hàng”. Website hiển thị mã đơn hàng ngay sau khi đặt.</li>
+<li>Đánh dấu đồng ý với điều khoản này và chính sách bảo mật, sau đó bấm “Đặt hàng”. Website hiển thị mã đơn hàng ngay sau khi đặt.</li>` : `<li>Xem sản phẩm, giá và thông tin trên website, sau đó liên hệ đặt hàng qua hotline <b>${hotlines}</b>, Zalo, hoặc bấm “Gửi yêu cầu đặt hàng” và để lại họ tên, số điện thoại, sản phẩm cần mua (có đánh dấu đồng ý với điều khoản này và chính sách bảo mật).</li>
+<li>Nhân viên báo lại đầy đủ thông tin đơn hàng gồm sản phẩm, kích thước, số lượng, đơn giá, phí giao hàng, tổng tiền và hình thức thanh toán để khách hàng kiểm tra.</li>`}
 <li>Nhân viên ${name} gọi điện xác nhận đơn hàng, thời gian và địa điểm giao. Hợp đồng mua bán được xác lập khi ${name} xác nhận đơn hàng với khách.</li>
 </ol>
 <h2>4. Huỷ và thay đổi đơn hàng</h2>
@@ -107,7 +109,7 @@ function build(s) {
 <h2>1. Thanh toán khi nhận hàng (COD)</h2>
 <p>Khách hàng thanh toán bằng tiền mặt hoặc chuyển khoản cho nhân viên giao hàng sau khi đã kiểm tra hàng theo <a href="/chinh-sach/kiem-hang">Chính sách kiểm hàng</a>. Không thu thêm phí thu hộ.</p>
 <h2>2. Chuyển khoản ngân hàng / quét mã VietQR</h2>
-<p>Sau khi đặt hàng, trang xác nhận hiển thị mã VietQR có sẵn số tiền và nội dung chuyển khoản (mã đơn hàng). Nhân viên xác nhận khi nhận được tiền.</p>
+<p>${cartOn ? 'Sau khi đặt hàng, trang xác nhận hiển thị mã VietQR có sẵn số tiền và nội dung chuyển khoản (mã đơn hàng).' : 'Sau khi đơn hàng được xác nhận qua điện thoại/Zalo, nhân viên gửi thông tin tài khoản, số tiền và nội dung chuyển khoản.'} Nhân viên xác nhận khi nhận được tiền.</p>
 ${bank}
 <h2>3. Thanh toán tại cửa hàng</h2>
 <p>Khách hàng có thể đến trực tiếp cửa hàng để xem hàng, nằm thử và thanh toán bằng tiền mặt, chuyển khoản hoặc thẻ.</p>

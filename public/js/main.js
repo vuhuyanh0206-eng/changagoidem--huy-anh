@@ -387,6 +387,8 @@
       })
     );
     $$('input[name="size"]', pd).forEach((r) => r.addEventListener('change', () => { syncDimLabel(); renderPrice(); }));
+    const orderReq = $('[data-order-req]', pd);
+    if (orderReq) { const base = orderReq.getAttribute('href'); orderReq.addEventListener('click', () => { const sz = currentSize(); orderReq.href = base + (sz ? encodeURIComponent(' – ' + sz) : ''); }); }
     syncDimLabel();
     renderPrice();
     pd.addEventListener('click', (e) => {
