@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const db = require('../db');
 const catalog = require('../catalog');
 const reviews = require('../reviews');
@@ -352,6 +354,36 @@ router.get(
 );
 
 /* ---------- Feed sản phẩm cho Facebook / Meta Commerce Manager (danh mục quảng cáo, băng chuyền) ---------- */
+// Ảnh có in sẵn nhãn (loại đệm, tên dòng, bảo hành, độ dày) cho băng chuyền: tạo trên máy bằng `npm run feed-images`,
+// lưu ở public/images/feed/<slug>.jpg. Có file thì feed dùng làm ảnh chính, ảnh gốc chuyển xuống ảnh phụ.
+const FEED_IMG_DIR = path.join(__dirname, '..', '..', 'public', 'images', 'feed');
+const feedImage = (slug) => {
+  try {
+    const st = fs.statSync(path.join(FEED_IMG_DIR, `${slug}.jpg`));
+    return `/images/feed/${slug}.jpg?v=${Math.floor(st.mtimeMs / 1000)}`;
+  } catch {
+    return null;
+  }
+};
+
+// Trang dựng ảnh 1080x1080 để chụp thành ảnh feed (chỉ chạy trên máy, không bật trên Hostinger)
+router.get(
+  '/feed/label/:id',
+  wrap(async (req, res, next) => {
+    if (process.env.DB_HOST) return next();
+    const [r] = await db.query(
+      `SELECT p.*, (SELECT c.name FROM categories c WHERE c.id = p.category_id) AS cat_name, (SELECT c.slug FROM categories c WHERE c.id = p.category_id) AS cat_slug
+       FROM products p WHERE p.id = ?`,
+      [Number(req.params.id)]
+    );
+    if (!r) return next();
+    const p = hydrateProduct(r);
+    const img = p.images.find((i) => !/placeholder/.test(i));
+    if (!p.imgLabel || !img) return next();
+    res.render('feed-label', { L: p.imgLabel, img });
+  })
+);
+
 router.get(
   '/feed/facebook.csv',
   wrap(async (req, res) => {
@@ -371,6 +403,7 @@ router.get(
       if (!(p.finalPrice > 0)) continue; // "Liên hệ báo giá": Facebook bắt buộc có giá nên bỏ qua
       const imgs = p.images.filter((i) => !/placeholder/.test(i));
       if (!imgs.length) continue;
+      const labeled = p.imgLabel ? feedImage(p.slug) : null;
       const desc = (plain(p.short_desc) || plain(p.description) || p.name).slice(0, 5000);
       const hasSale = p.discount > 0;
       lines.push(
@@ -383,8 +416,8 @@ router.get(
           `${Number(p.price)} VND`,
           hasSale ? `${Number(p.sale_price)} VND` : '',
           `${base}/san-pham/${p.slug}`,
-          abs(imgs[0]),
-          imgs.slice(1, 10).map(abs).join(','),
+          abs(labeled || imgs[0]),
+          (labeled ? imgs.slice(0, 9) : imgs.slice(1, 10)).map(abs).join(','),
           p.brand || s.site_name,
           p.cat_name || '',
         ]
